@@ -1,1 +1,48 @@
-theme: jekyll-theme-cayman
+#Jekyll 
+permalink: /:title
+plugins: [jekyll-paginate-v2]
+encoding: "utf-8"
+
+source: source
+destination: _site
+sass:
+  sass_dir: _sass
+  style: compressed # expanded
+exclude: ["Gemfile", "Gemfile.lock", "vendor"]
+
+excerpt_separator: <!--e-->
+
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: "/page=:num/"
+  sort_reverse: true
+  sort_field: "date"
+
+sitemap_exclude: ["assets/"]
+
+#Site
+url: https://do-your-own-seo.com
+lang: uk
+languages: "uk ru en"
+name: "Do Your Own SEO"
+
+author:
+  name: Olya Vo
+  job: Technical SEO
+  thumb: /images/author-avatar.jpg
+  github: https://github.com/do-your-own-seo?tab=repositories
+  twitter: https://twitter.com/do_your_own_seo
+  email: https://contact.do/44CB
+
+ga: UA-145849621-1
+comments: true
+
+github-repo: "do-your-own-seo/do-your-own-seo.github.io"
+staticman:
+    branch: "source"
+    app: "https://dyos.herokuapp.com"
+
+recaptcha:
+  siteKey: "6LcrELsUAAAAABaEzQPKYAwk3YPEBQJbBlQMjnWJ"
+  secret: "dD0f5GSBIfJBoqGynHs6Ovp6qatv9aGCUPnmHR/jS38QHeWfMUFhnKyPrk8qxA9BD+LS4fFnLQCHc4AEDsaFOaFHyUKRfpYx7fS0fn6MKk6ZcsXWE/7U39rBQ1ePKk9h8dWYWBLz0Ax5Ftyj0VPuRYnkvnqQupOz6igZxCV0vibNEu4RDs48fiMNDKb0QKtxy/WgcIEe89x3uUHgzmiIXS9Bk6WYLqdRrejr+Okbtdq/uSYuG1r/NHd5YHvQhyDKtOoaVygXMfR36uO5NtXAZtGWEo5QHrWn0k3Hrcxl4t4Ek3CAJ14bXmVAUhlfiHdtqP1mI0ACBdbvIVTaAoxvRw=="
