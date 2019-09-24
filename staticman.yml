@@ -1,0 +1,90 @@
+# Name of the property. You can have multiple properties with completely
+# different config blocks for different sections of your site.
+
+# To encrypt strings use https://api.staticman.net/v2/encrypt/{TEXT TO BE ENCRYPTED} endpoint.
+
+comments:
+  # (*) REQUIRED
+  #
+  # Names of the fields the form is allowed to submit.
+  allowedFields: ["name", "email", "url", "message", "replying_to"]
+
+  # (*) REQUIRED WHEN USING NOTIFICATIONS
+  #
+  # The origin will be sent as part as the `options` object
+  # (e.g. <input name="options[origin]" value="http://yourdomain.com/post1")
+  allowedOrigins: ["localhost","do-your-own-seo.com"]
+
+  # (*) REQUIRED
+  #
+  # Name of the branch being used.
+  branch: "master"
+
+  commitMessage: "New comment by {fields.name}"
+
+  # (*) REQUIRED
+  #
+  # Destination path (filename) for the data files. Accepts placeholders.
+  filename: "comment-{@timestamp}"
+
+  # The format of the generated data files. Accepted values: "json","yaml","frontmatter"
+  format: "yaml"
+
+  # Fields to be populated automatically by Staticman and included to the data file.
+  # Key is the name of the field, value can be an object with a `type` property, or a constant to be used directly.
+  generatedFields:
+    date:
+      type: "date"
+      options:
+        format: "ISO 8601"
+
+  # If moderation set to `true`, a pull request will be created.
+  # Otherwise, entries will be published to the main branch automatically.
+  moderation: true
+
+  # Akismet spam detection.
+  # akismet:
+  #   enabled: true
+  #   author: "name"
+  #   authorEmail: "email"
+  #   authorUrl: "url"
+  #   content: "message"
+  #   type: "comment"
+
+  # Name of the site. Used in notification emails.
+  name: "do-your-own-SEO.com"
+
+  # Notification settings. When enabled, users can choose to receive notifications
+  # via email when someone adds a reply or a new comment. This requires an account
+  # with Mailgun, which you can get for free at http://mailgun.com.
+  notifications:
+    enabled: false
+
+  # (!) ENCRYPTED
+    #
+    # Mailgun API key
+    #apiKey: "1q2w3e4r"
+
+    # (!) ENCRYPTED
+    #
+    # Mailgun domain (encrypted)
+    #domain: "4r3e2w1q"
+
+  # (*) REQUIRED
+  #
+  # Destination path (directory) for the data files. Accepts placeholders.
+  path: "/source/_data/comments/{options.slug}"
+
+  # Names of required files.
+  requiredFields: ["name", "email", "message"]
+
+  # Transformations to apply to any of the fields supplied. Keys are
+  # the name of the field and values are possible transformation types.
+  transforms:
+    email: md5
+
+  # reCaptcha
+  reCaptcha:
+    enabled: false
+    siteKey: ""
+    secret: ""
