@@ -1,9 +1,0 @@
-theme: jekyll-theme-leap-day
-description: Seo tips and articles on how to become an SEO expert from scratch
-google_analytics: UA-145849621-1
-
-
-github-repo: "do-your-own-seo/do-your-own-seo.github.io"
-staticman:
-  branch: "master"
-  endpoint: "https://doy.herokuapp.com/v3/entry/github/do-your-own-seo/do-your-own-seo.github.io/master/comments"
