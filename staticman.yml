@@ -7,7 +7,7 @@ comments:
   # (*) REQUIRED
   #
   # Names of the fields the form is allowed to submit.
-  allowedFields: ["name", "email", "url", "message", "replying_to"]
+  allowedFields: ["name", "email", "url", "message", "replying_to", "lang"]
 
   # (*) REQUIRED WHEN USING NOTIFICATIONS
   #
