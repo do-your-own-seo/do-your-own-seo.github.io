@@ -1,7 +1,7 @@
 # Name of the property. You can have multiple properties with completely
 # different config blocks for different sections of your site.
 
-# To encrypt strings use https://api.staticman.net/v2/encrypt/{TEXT TO BE ENCRYPTED} endpoint.
+# To encrypt strings use https://YOUR staticman API/v3/encrypt/{TEXT TO BE ENCRYPTED} endpoint.
 
 comments:
   # (*) REQUIRED
@@ -35,8 +35,9 @@ comments:
   generatedFields:
     date:
       type: "date"
-      options:
-        format: "ISO 8601"
+      
+    updated:
+      type: "date"
 
   # If moderation set to `true`, a pull request will be created.
   # Otherwise, entries will be published to the main branch automatically.
