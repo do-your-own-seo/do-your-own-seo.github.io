@@ -73,7 +73,7 @@ comments:
   # (*) REQUIRED
   #
   # Destination path (directory) for the data files. Accepts placeholders.
-  path: "/source/_data/comments/{options.slug}"
+  path: "source/_data/comments/{options.slug}"
 
   # Names of required files.
   requiredFields: ["name", "email", "message"]
