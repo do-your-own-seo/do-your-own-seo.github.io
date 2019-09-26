@@ -3,7 +3,7 @@
 
 # To encrypt strings use https://YOUR staticman API/v3/encrypt/{TEXT TO BE ENCRYPTED} endpoint.
 
-comments:
+comments_en:
   # (*) REQUIRED
   allowedFields: ["name", "email", "url", "message", "replying_to", "lang"]
 
@@ -14,7 +14,7 @@ comments:
   # (*) REQUIRED
   branch: "master"
 
-  commitMessage: "Новий коментар від {fields.name}"
+  commitMessage: "New comment by {fields.name}"
 
   # (*) REQUIRED
   # Destination path (filename) for the data files. Accepts placeholders.
@@ -63,7 +63,7 @@ comments:
 
   # (*) REQUIRED
   # Destination path (directory) for the data files. Accepts placeholders.
-  path: "source/_data/comments/{options.slug}"
+  path: "source/_data/comments_en/{options.slug}"
 
   # Names of required files.
   requiredFields: ["name", "email", "message"]
@@ -81,25 +81,23 @@ comments:
 
 # Other properties -- comments_en and comments_ru. Differ in "path:" value
 
-comments_en:
+comments_uk:
   allowedFields: ["name", "email", "url", "message", "replying_to", "lang"]
   allowedOrigins: ["localhost","do-your-own-seo.com"]
   branch: "master"
-  commitMessage: "New comment by {fields.name}"
+  commitMessage: "Новий коментар від {fields.name}"
   filename: "comment-{@timestamp}"
   format: "yaml"
   generatedFields:
     date:
       type: "date"
-      
     updated:
       type: "date"
-
   moderation: true
   name: "do-your-own-SEO.com"
   notifications:
     enabled: false
-  path: "source/_data/comments_en/{options.slug}"
+  path: "source/_data/comments_uk/{options.slug}"
   requiredFields: ["name", "email", "message"]
   transforms:
     email: md5
@@ -118,10 +116,8 @@ comments_ru:
   generatedFields:
     date:
       type: "date"
-      
     updated:
       type: "date"
-
   moderation: true
   name: "do-your-own-SEO.com"
   notifications:
