@@ -26,10 +26,8 @@ comments_en:
   # Fields to be populated automatically by Staticman and included to the data file.
   generatedFields:
     date:
-      type: "date"
-      
-    updated:
-      type: "date"
+      type: "date"  
+    replying_to: ""
 
   # If moderation set to `true`, a pull request will be created.
   moderation: true
