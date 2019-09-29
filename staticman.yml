@@ -89,8 +89,8 @@ comments_uk:
   generatedFields:
     date:
       type: "date"
-    updated:
-      type: "date"
+    replying_to: ""
+
   moderation: true
   name: "do-your-own-SEO.com"
   notifications:
@@ -114,8 +114,8 @@ comments_ru:
   generatedFields:
     date:
       type: "date"
-    updated:
-      type: "date"
+    replying_to: ""
+
   moderation: true
   name: "do-your-own-SEO.com"
   notifications:
