@@ -72,9 +72,9 @@ comments_en:
 
   # reCaptcha
   reCaptcha:
-    enabled: false
-    siteKey: ""
-    secret: ""
+    enabled: true
+    siteKey: "6LcrELsUAAAAABaEzQPKYAwk3YPEBQJbBlQMjnWJ"
+    secret: "dD0f5GSBIfJBoqGynHs6Ovp6qatv9aGCUPnmHR/jS38QHeWfMUFhnKyPrk8qxA9BD+LS4fFnLQCHc4AEDsaFOaFHyUKRfpYx7fS0fn6MKk6ZcsXWE/7U39rBQ1ePKk9h8dWYWBLz0Ax5Ftyj0VPuRYnkvnqQupOz6igZxCV0vibNEu4RDs48fiMNDKb0QKtxy/WgcIEe89x3uUHgzmiIXS9Bk6WYLqdRrejr+Okbtdq/uSYuG1r/NHd5YHvQhyDKtOoaVygXMfR36uO5NtXAZtGWEo5QHrWn0k3Hrcxl4t4Ek3CAJ14bXmVAUhlfiHdtqP1mI0ACBdbvIVTaAoxvRw=="
 
 # Other properties -- comments_en and comments_ru. Differ in "path:" value
 
@@ -98,9 +98,9 @@ comments_uk:
   transforms:
     email: md5
   reCaptcha:
-    enabled: false
-    siteKey: ""
-    secret: ""
+    enabled: true
+    siteKey: "6LcrELsUAAAAABaEzQPKYAwk3YPEBQJbBlQMjnWJ"
+    secret: "dD0f5GSBIfJBoqGynHs6Ovp6qatv9aGCUPnmHR/jS38QHeWfMUFhnKyPrk8qxA9BD+LS4fFnLQCHc4AEDsaFOaFHyUKRfpYx7fS0fn6MKk6ZcsXWE/7U39rBQ1ePKk9h8dWYWBLz0Ax5Ftyj0VPuRYnkvnqQupOz6igZxCV0vibNEu4RDs48fiMNDKb0QKtxy/WgcIEe89x3uUHgzmiIXS9Bk6WYLqdRrejr+Okbtdq/uSYuG1r/NHd5YHvQhyDKtOoaVygXMfR36uO5NtXAZtGWEo5QHrWn0k3Hrcxl4t4Ek3CAJ14bXmVAUhlfiHdtqP1mI0ACBdbvIVTaAoxvRw=="
 
 comments_ru:
   allowedFields: ["name", "email", "url", "message", "replying_to", "lang"]
@@ -122,6 +122,6 @@ comments_ru:
   transforms:
     email: md5
   reCaptcha:
-    enabled: false
-    siteKey: ""
-    secret: ""
+    enabled: true
+    siteKey: "6LcrELsUAAAAABaEzQPKYAwk3YPEBQJbBlQMjnWJ"
+    secret: "dD0f5GSBIfJBoqGynHs6Ovp6qatv9aGCUPnmHR/jS38QHeWfMUFhnKyPrk8qxA9BD+LS4fFnLQCHc4AEDsaFOaFHyUKRfpYx7fS0fn6MKk6ZcsXWE/7U39rBQ1ePKk9h8dWYWBLz0Ax5Ftyj0VPuRYnkvnqQupOz6igZxCV0vibNEu4RDs48fiMNDKb0QKtxy/WgcIEe89x3uUHgzmiIXS9Bk6WYLqdRrejr+Okbtdq/uSYuG1r/NHd5YHvQhyDKtOoaVygXMfR36uO5NtXAZtGWEo5QHrWn0k3Hrcxl4t4Ek3CAJ14bXmVAUhlfiHdtqP1mI0ACBdbvIVTaAoxvRw=="
