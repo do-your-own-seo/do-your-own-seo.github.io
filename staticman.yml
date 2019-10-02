@@ -9,7 +9,7 @@ comments_en:
 
   # (*) REQUIRED WHEN USING NOTIFICATIONS
    # The origin will be sent as part as the `options` object
-  allowedOrigins: ["localhost","do-your-own-seo.com"]
+  allowedOrigins: ["do-your-own-seo.com"]
 
   # (*) REQUIRED
   branch: "development"
