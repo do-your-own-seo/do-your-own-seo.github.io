@@ -25,7 +25,7 @@ It was possible to make the site multilingual thanks to helpful and inspiring ex
 
 I did not hesitate to choose [Staticman](https://staticman.net/) as a commenting system, because third-party services like Disqus load tons of scripts, and it is unclear what do they do on the page. In addition, I personally do not like tracking. Many thanks to [Staticman's creator](https://github.com/eduardoboucas), Eduardo Bouças, for such a great, Github-related commenting system.
 
-There is a step-by-step guide on [static comments implementation](https://mademistakes.com/articles/jekyll-static-comments/) on  "Made-Mistakes" blog. Moreover, the source code for that blog is [available on Github](https://github.com/mmistakes/made-mistakes-jekyll). From there and [there](https://github.com/mmistakes/minimal-mistakes) I borrowed the client-side nested comments structure. 
+There is a step-by-step guide on [static comments implementation](https://mademistakes.com/articles/jekyll-static-comments/) on  "Made-Mistakes" blog. Moreover, the source code for that blog is [available on Github](https://github.com/mmistakes/made-mistakes-jekyll). From there and [here](https://github.com/mmistakes/minimal-mistakes) I borrowed the client-side nested comments structure. 
 
 As of September 2019, neither v2 nor v3 of public Staticman instance was working, and official docs didn’t explain anything. So I had to set up my own instance of the API. It was feasible because of detailed Vincent Tam's [instructions](https://vincenttam.gitlab.io/post/2018-09-16-staticman-powered-gitlab-pages/2/) on deployment Staticman App to Heroku, and his further [explanation](https://github.com/eduardoboucas/staticman/issues/299#issuecomment-508029359) of the issue.
 
