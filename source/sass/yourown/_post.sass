@@ -1,0 +1,88 @@
+.toc
+  list-style-type: none
+  font-weight: 600
+  text-align: left
+
+  li
+    margin: $xsmall-spacing $small-spacing
+
+.toc a, 
+.relatedPosts a
+  &:active, 
+  &:focus, 
+  &:hover
+    font-size: 101%
+    transition: font-size $base-duration $base-timing
+
+.post
+  &-meta
+    margin: 0 0 $small-spacing 0
+
+  &-title
+    font-size: 1.8rem
+    text-align: center
+    margin-bottom: $xsmall-spacing
+
+    +media(600px)
+      text-align: left
+
+    +media($tablet-small)
+      font-size: 2em
+
+  &-content
+    
+    img
+      border-radius: $base-border-radius
+
+      &.restr
+        max-height: 40vw
+        width: auto
+
+      &.fs
+        display: block
+        width: auto
+        margin: auto
+        float: none
+
+        +media($phone-large)
+          max-height: 45vw
+          float: right
+          margin-left: 5px
+
+    p
+      margin: $small-spacing 0
+
+    +media($tablet-small)
+      p 
+        margin: 1em 0
+
+
+.post-share
+  margin: $small-spacing $base-spacing 0 0
+
+  a
+    display: inline-block
+    margin: 0 $xsmall-spacing
+
+  .icon
+    font-size: 115%
+
+  em
+    display: none
+
+    +media($phone-large)
+      display: inline
+
+.relatedPosts
+  margin-top: $xsmall-spacing
+
+  h4
+    font-size: 1.2em
+  a 
+    font-weight: 600
+    display: block
+    margin: $small-spacing 0
+
+.question
+  color: #618930
+  font-size: 1.2em

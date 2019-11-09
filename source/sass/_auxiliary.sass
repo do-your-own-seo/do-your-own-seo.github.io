@@ -1,0 +1,85 @@
+
+/* Functions
+
+@function _is-color($color)
+  @return type-of($color) == color or $color == "currentColor"
+
+@function shade($color, $percent)
+  @if not _is-color($color)
+    @error "`#{$color}` is not a valid color for the `$color` argument in " + "the `shade` mixin."
+  @else
+    @return mix(#000, $color, $percent)
+
+@function tint($color, $percent)
+  @if not _is-color($color)
+    @error "`#{$color}` is not a valid color for the `$color` argument in " + "the `tint` mixin."
+  @else
+    @return mix(#fff, $color, $percent)
+
+/* Mixins
+
+=media($query: $feature $value)
+  @if length($query) == 1
+    @media screen and ($default-feature: nth($query, 1))
+      @content
+  @else
+    $loop-to: length($query)
+    $media-query: "screen and "
+
+    @if length($query) % 2 != 0
+      $loop-to: $loop-to - 1
+
+    $i: 1
+
+    @while $i <= $loop-to
+      $media-query: $media-query + "(" + nth($query, $i) + ": " + nth($query, $i + 1) + ") "
+
+      @if $i + 1 != $loop-to
+        $media-query: $media-query + "and "
+
+      $i: $i + 2
+
+    @media #{$media-query}
+      @content
+
+=clearfix
+  &::after
+    clear: both
+    content: ""
+    display: block
+
+/* Placeholders
+
+%button
+  appearance: none
+  border: 0
+  border-radius: $base-border-radius
+  cursor: pointer
+  display: inline-block
+  font-family: inherit
+  font-size: inherit
+  -webkit-font-smoothing: antialiased
+  font-weight: 700
+  line-height: 1.35
+  color: #fff
+  padding: $small-spacing
+  text-decoration: none
+  user-select: none
+  vertical-align: middle
+
+  &::-moz-focus-inner
+    border: none
+    padding: 0
+  &:focus
+    outline: none
+
+
+  &.disabled,
+  &:disabled
+    cursor: not-allowed
+    box-shadow: none
+    opacity: .6
+
+    &:hover,
+    &:focus
+      background: none transparent

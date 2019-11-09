@@ -1,0 +1,72 @@
+html
+  font-size: 16px
+  
+body
+  color: $base-font-color
+  font-family: $base-font-family
+  font-size: .85em
+  line-height: $base-line-height
+
+  +media($tablet-small)
+    font-size: .98em
+
+h1,
+h2,
+h3,
+h4
+  font-family: $heading-font-family
+  line-height: $heading-line-height
+  font-weight: 600
+
+h1,
+h2 
+  color: $blue
+
+h1
+  font-size: 2em
+  margin: .67em 0
+
+  &.txt-center
+    font-size: 1.9em
+
+h2
+  text-align: left
+
+small
+  color: $gray
+  font-size: 90%
+
+a
+  color: $action-color
+  text-decoration: none
+
+  &:active,
+  &:focus,
+  &:hover
+    font-weight: bold
+
+hr
+  box-sizing: content-box
+  height: 0
+  overflow: visible
+  border-bottom: $base-border
+  border-left: 0
+  border-right: 0
+  border-top: 0
+  margin: $base-spacing 0
+
+blockquote
+  border-left: 7px double rgba($olive,.5)
+  margin: 1.5em 10px
+  padding-left: 1em
+  font-size: 92%
+
+  +media($tablet-small)
+    font-size: 100%
+
+code
+  font-family: "Courier New", monospace
+  font-size: 1em
+  margin: 0
+  padding: 0 5px
+  background-color: $background-color
