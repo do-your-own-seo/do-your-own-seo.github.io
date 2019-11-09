@@ -1,8 +1,8 @@
 # SEO blog for everyone: read, think & Do It Yourself!
 
 * [x] SEO friendly
-* [x] Multilingual
 * [x] Responsive
+* [x] Multilingual
 * [x] No JQuery, no Disqus
 * [x] Static comments that you own
 
@@ -15,7 +15,7 @@
 * Post sharing buttons (Twitter, Facebook, LinkedIn, Reddit) + social meta tags.
 * Schema.org markup (WebSite, WebPage, BlogPosting).
 
-NB! *TOCs for the posts are compiled manually, because I prefer to change the anchor text when necessary. You might want to use the [Jekyll-toc](https://github.com/toshimaru/jekyll-toc) plugin instead. In this case, you can remove the "snippet" variable from the front matter and use {{ post.excerpt }} in templates.*
+NB! TOCs for the posts are compiled manually, because I prefer to change the anchor text when necessary. You might want to use the [Jekyll-toc](https://github.com/toshimaru/jekyll-toc) plugin instead. In this case, you can remove the "snippet" variable from the front matter and use {{post.excerpt}} in templates.
 
 
 ## Background
