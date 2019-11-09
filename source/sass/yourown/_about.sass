@@ -1,0 +1,73 @@
+ul.social
+  list-style-type: none
+  display: inline
+  padding-left: 0
+
+  li
+    display: inline-block
+    margin-right: $xsmall-spacing
+    padding: $xsmall-spacing
+    line-height: 1em
+    background-color: white
+    border-radius: 50%
+    box-shadow: 0px 1px 3px rgba($base-font-color,.7)
+
+    &:hover,
+    &:focus,
+    &:active
+      box-shadow: 0px 1px 3px rgba($base-font-color,.7), 0 7px 7px -7px
+
+  a
+    color: rgba($base-font-color,.7)
+
+  i
+    font-size: 1.4em
+
+.about
+
+  .toc
+    text-align: right
+
+    li
+      display: inline-block
+      margin-top: 0
+
+  .intro 
+    width: 100%
+    margin: 0 auto
+
+    em
+      font-family: $script-font-family
+      font-size: 1.35em
+      font-style: normal 
+
+      +media($tablet)
+        font-size: 1.4em
+    p
+      margin-bottom: $xsmall-spacing
+
+    +media($tablet)
+      width: 84%
+      margin-left: 12%
+
+  
+  h1
+    margin: .35em 0 .4em 4px
+
+  .card
+      margin: $base-spacing auto
+
+  .dot
+    border: 3px double $light-gray
+    float: right
+    margin: .3em 0 0 1em
+
+code
+  border: 1px solid #bababa
+  border-radius: 4px
+
+.padd-em-right
+  padding-right: 1em
+
+.olive
+  color: $olive

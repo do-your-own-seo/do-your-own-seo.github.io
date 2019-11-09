@@ -1,0 +1,24 @@
+[type=reset],
+[type=submit],
+button
+  -webkit-appearance: button
+
+button, 
+input[type="button"], 
+input[type="submit"]
+  @extend %button
+
+.button-ghost
+  @extend %button
+  
+  border: 2px solid $action-color
+  color: $action-color
+  background: transparent
+  margin-bottom: 2px
+  transition: all $base-duration $base-timing
+
+  &:not(.disabled):hover,
+  &:not(.disabled):focus
+    color: #fff
+    background: tint($action-color, 10%)
+    border: 2px solid transparent

@@ -1,0 +1,151 @@
+#submit-comment
+  margin: $small-spacing 0
+  -ms-flex-item-align: center
+  align-self: center
+
+#comment-form,
+#comments,
+.feedback,
+  width: 90%
+
+  +media($tablet-small)
+    width: 100%
+
+  +media(900px)
+    width: 90%
+
+#comment-form
+  margin: 0 auto $base-spacing auto
+
+  label
+    width: 100%
+
+  textarea
+    margin-bottom: 0
+
+#comments,
+.feedback
+  margin: $base-spacing auto
+  padding-bottom: $xsmall-spacing
+
+.feedback
+  border-bottom: 3px double $light-gray
+
+#comments
+  border-bottom: 1px solid $light-gray
+
+.comment-meta
+  border-bottom: 3px double $light-gray
+
+.form-group
+  +media($tablet-small)
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
+    justify-content: space-between
+
+    label:nth-child(2)
+      padding: 0 $mid-spacing
+
+    label[for="comment-form-location"]
+      max-width: 50%
+      padding-right: $mid-spacing
+
+    label[for="comment-form-url"]
+      padding-top: 2px
+
+    /* fix reCAPTCHA iframe overflow
+    &.g-recaptcha > *
+      margin-left: 0.5em
+      padding: 0
+
+.comment
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+
+  + .comment
+    margin-top: $base-spacing
+
+  &:last-child
+    margin-bottom: $base-spacing
+
+  &.child
+    margin-left: 40px
+
+    +media($tablet-small)
+      margin-left: 80px
+
+.comment-avatar
+  -ms-flex-negative: 0
+  flex-shrink: 0
+  margin-right: 10px
+
+  &, & img
+    width: $avatar-size
+    height: $avatar-size
+
+    +media($phone-large)
+      margin-right: 15px
+
+    +media($tablet-small)
+      width: 2 * $avatar-size
+      height: 2 * $avatar-size
+
+.comment-meta
+  margin-bottom: 1em
+  padding-bottom: 0.25em
+  line-height: $base-line-height
+
+  time
+    font-family: monospace
+
+  a
+    color: $base-font-color
+
+  h4
+    display: inline
+
+button .icon
+  
+  &.icon-cross:before
+    color: $danger-color
+
+.alert
+  margin-bottom: $small-spacing
+
+.comment-message
+  font-size: 90%
+
+  > *:last-child
+    margin-bottom: 0
+
+  img
+    max-width: 100%
+
+.comment-reply
+  margin-top: $small-spacing / 3
+
+#cancel-link
+  display: block
+  margin: $small-spacing 0
+  color: $danger-color
+
+  &.hidden
+    display: none
+
+.g-recaptcha
+  display: inline-block
+  margin: $small-spacing $small-spacing 0 0
+
+.g-recaptcha,
+.g-recaptcha iframe
+  max-width: 230px
+
+  +media($phone)
+    max-width: 290px
+
+  +media($phone-large)
+    max-width: 100%

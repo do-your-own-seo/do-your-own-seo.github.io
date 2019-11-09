@@ -1,0 +1,95 @@
+.post-list
+  padding-bottom: $base-spacing
+
+  +media($tablet)
+    padding-bottom: 0
+    
+  .post
+    cursor: pointer
+    
+    h2 
+      color: $green
+
+    &-meta
+      margin-top: $xsmall-spacing
+
+    .noimage
+      width: intrinsic
+      width: max-content
+      max-width: 100%
+      margin: auto
+
+    a
+        color: $base-font-color
+
+        &:hover,
+        &:active,
+        &:focus
+          color: $action-color
+
+    +media($tablet-small)
+      padding-left:  $small-spacing *3
+      padding-right:  $small-spacing *3
+
+      &-meta
+        margin-top: 0
+
+    &-thumbnail
+      width: 250px
+      margin: $xsmall-spacing auto $small-spacing auto
+      line-height: $xsmall-spacing
+      &, img
+        border-radius: $base-border-radius
+
+      +media(470px)
+        width: 250px
+        margin: $xsmall-spacing $mid-spacing 0 0
+        float: left
+
+      +media($tablet-small)
+        margin-right: $base-spacing
+
+    &-title
+      font-size: 1.55rem
+      text-align: center
+      margin: 0
+      padding: 0
+
+      +media(470px)
+        text-align: left
+        font-size: 1.25rem
+
+      +media($tablet-small)
+        font-size: 1.65rem
+
+  .post:hover
+    box-shadow: -1px 2.5px 8px 0 rgba(0,0,0,0.4)
+    transform: translate(0px, -2px)
+
+.pagination
+  text-align: center
+  margin: $base-spacing 0 0
+
+  li
+    padding: 0 .4em
+
+  li, a, span
+    display: inline-block
+
+  a, span
+    font-size: 0.8rem
+
+  span.page-number
+    color: $gray
+    font-style: italic
+
+#cat-shelter
+  position: absolute
+  right: 320px
+  margin-top: 18px
+
+  +media($tablet)
+    margin-top: -49px
+
+  +media($desktop)
+    right: calc(320px + 15%)

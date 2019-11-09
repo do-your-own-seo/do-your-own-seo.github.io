@@ -1,0 +1,26 @@
+ul,
+ol
+  list-style-position: inside
+  margin: 0 0 $small-spacing 0
+  padding: 0 0 0 $small-spacing
+
+  +media($phone-large)
+    padding-left: $mid-spacing
+
+  +media($tablet-small)
+    padding-left: $base-spacing
+
+ol li
+  font-weight: bold 
+
+ol li > *
+  font-weight: normal
+
+li
+  margin: $small-spacing 0
+
+details
+  display: block
+
+summary
+  display: list-item
