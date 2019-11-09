@@ -1,0 +1,127 @@
+# Name of the property. You can have multiple properties with completely
+# different config blocks for different sections of your site.
+
+# To encrypt strings use https://YOUR staticman API/v3/encrypt/{TEXT TO BE ENCRYPTED} endpoint.
+
+comments_en:
+  # (*) REQUIRED
+  allowedFields: ["name", "email", "url", "message", "replying_to", "lang"]
+
+  # (*) REQUIRED WHEN USING NOTIFICATIONS
+   # The origin will be sent as part as the `options` object
+  allowedOrigins: ["do-your-own-seo.com"]
+
+  # (*) REQUIRED
+  branch: "source"
+
+  commitMessage: "New comment by {fields.name}"
+
+  # (*) REQUIRED
+  # Destination path (filename) for the data files. Accepts placeholders.
+  filename: "comment-{@timestamp}"
+
+  # The format of the generated data files. Accepted values: "json","yaml","frontmatter"
+  format: "yaml"
+
+  # Fields to be populated automatically by Staticman and included to the data file.
+  generatedFields:
+    date:
+      type: "date"
+
+  # If moderation set to `true`, a pull request will be created.
+  moderation: true
+
+  # Akismet spam detection.
+  # akismet:
+  #   enabled: true
+  #   author: "name"
+  #   authorEmail: "email"
+  #   authorUrl: "url"
+  #   content: "message"
+  #   type: "comment"
+
+  # Name of the site. Used in notification emails.
+  name: "do-your-own-SEO.com"
+
+  # When notification is enabled, users can choose to receive notifications
+  # via email when someone adds a reply or a new comment. This requires a Mailgun account
+  notifications:
+    enabled: false
+
+  # (!) ENCRYPTED
+    #
+    # Mailgun API key
+    #apiKey: "1q2w3e4r"
+
+    # (!) ENCRYPTED
+    #
+    # Mailgun domain (encrypted)
+    #domain: "4r3e2w1q"
+
+  # (*) REQUIRED
+  # Destination path (directory) for the data files. Accepts placeholders.
+  path: "source/_data/comments_en/{options.slug}"
+
+  # Names of required files.
+  requiredFields: ["name", "email", "message"]
+
+  # Transformations to apply to any of the fields supplied. Keys are
+  # the name of the field and values are possible transformation types.
+  transforms:
+    email: md5
+
+  # reCaptcha
+  reCaptcha:
+    enabled: true
+    siteKey: "6LcrELsUAAAAABaEzQPKYAwk3YPEBQJbBlQMjnWJ"
+    secret: "dD0f5GSBIfJBoqGynHs6Ovp6qatv9aGCUPnmHR/jS38QHeWfMUFhnKyPrk8qxA9BD+LS4fFnLQCHc4AEDsaFOaFHyUKRfpYx7fS0fn6MKk6ZcsXWE/7U39rBQ1ePKk9h8dWYWBLz0Ax5Ftyj0VPuRYnkvnqQupOz6igZxCV0vibNEu4RDs48fiMNDKb0QKtxy/WgcIEe89x3uUHgzmiIXS9Bk6WYLqdRrejr+Okbtdq/uSYuG1r/NHd5YHvQhyDKtOoaVygXMfR36uO5NtXAZtGWEo5QHrWn0k3Hrcxl4t4Ek3CAJ14bXmVAUhlfiHdtqP1mI0ACBdbvIVTaAoxvRw=="
+
+# Other properties -- comments_en and comments_ru. Differ in "path:" value
+
+comments_uk:
+  allowedFields: ["name", "email", "url", "message", "replying_to", "lang"]
+  allowedOrigins: ["localhost","do-your-own-seo.com"]
+  branch: "source"
+  commitMessage: "Новий коментар від {fields.name}"
+  filename: "comment-{@timestamp}"
+  format: "yaml"
+  generatedFields:
+    date:
+      type: "date"
+
+  moderation: true
+  name: "do-your-own-SEO.com"
+  notifications:
+    enabled: false
+  path: "source/_data/comments_uk/{options.slug}"
+  requiredFields: ["name", "email", "message"]
+  transforms:
+    email: md5
+  reCaptcha:
+    enabled: true
+    siteKey: "6LcrELsUAAAAABaEzQPKYAwk3YPEBQJbBlQMjnWJ"
+    secret: "dD0f5GSBIfJBoqGynHs6Ovp6qatv9aGCUPnmHR/jS38QHeWfMUFhnKyPrk8qxA9BD+LS4fFnLQCHc4AEDsaFOaFHyUKRfpYx7fS0fn6MKk6ZcsXWE/7U39rBQ1ePKk9h8dWYWBLz0Ax5Ftyj0VPuRYnkvnqQupOz6igZxCV0vibNEu4RDs48fiMNDKb0QKtxy/WgcIEe89x3uUHgzmiIXS9Bk6WYLqdRrejr+Okbtdq/uSYuG1r/NHd5YHvQhyDKtOoaVygXMfR36uO5NtXAZtGWEo5QHrWn0k3Hrcxl4t4Ek3CAJ14bXmVAUhlfiHdtqP1mI0ACBdbvIVTaAoxvRw=="
+
+comments_ru:
+  allowedFields: ["name", "email", "url", "message", "replying_to", "lang"]
+  allowedOrigins: ["localhost","do-your-own-seo.com"]
+  branch: "source"
+  commitMessage: "Новый коммент от {fields.name}"
+  filename: "comment-{@timestamp}"
+  format: "yaml"
+  generatedFields:
+    date:
+      type: "date"
+
+  moderation: true
+  name: "do-your-own-SEO.com"
+  notifications:
+    enabled: false
+  path: "source/_data/comments_ru/{options.slug}"
+  requiredFields: ["name", "email", "message"]
+  transforms:
+    email: md5
+  reCaptcha:
+    enabled: true
+    siteKey: "6LcrELsUAAAAABaEzQPKYAwk3YPEBQJbBlQMjnWJ"
+    secret: "dD0f5GSBIfJBoqGynHs6Ovp6qatv9aGCUPnmHR/jS38QHeWfMUFhnKyPrk8qxA9BD+LS4fFnLQCHc4AEDsaFOaFHyUKRfpYx7fS0fn6MKk6ZcsXWE/7U39rBQ1ePKk9h8dWYWBLz0Ax5Ftyj0VPuRYnkvnqQupOz6igZxCV0vibNEu4RDs48fiMNDKb0QKtxy/WgcIEe89x3uUHgzmiIXS9Bk6WYLqdRrejr+Okbtdq/uSYuG1r/NHd5YHvQhyDKtOoaVygXMfR36uO5NtXAZtGWEo5QHrWn0k3Hrcxl4t4Ek3CAJ14bXmVAUhlfiHdtqP1mI0ACBdbvIVTaAoxvRw=="
