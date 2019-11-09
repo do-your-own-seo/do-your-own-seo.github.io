@@ -1,0 +1,21 @@
+{%- include assign.liquid -%}
+<script type = 'application/ld+json'> {
+	"@context": "https://schema.org",
+	"@type": "WebPage",
+		"@id": "{{ site.url }}/about#{{ page.lang }}",
+		"url": "{{ site.url }}{{ lng }}about",
+		"inLanguage": "{{ inLanguage }}",
+		"name": "{{ page.title }}",
+		"isPartOf": {
+			"@id": "{{ site.url }}/#website"
+		},
+		"dateModified": "{{ site.time }}",
+		"description": "{{ page.description}}",
+		"author": {
+			"@type": "Person",
+			"name": "{{ site.author.name }}",
+			"sameAs": "{{ site.author.twitter }}",
+			"JobTitle": "{{ site.author.job }} Specialist"
+		}
+	}
+</script>

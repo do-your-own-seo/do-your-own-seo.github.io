@@ -1,0 +1,76 @@
+{%- include assign.liquid -%}
+{%- if paginator.page > 1-%} 
+	{%- assign title = site.t.pagination.title[page.lang] | append: paginator.page -%} 
+	{%- elsif page.title -%} {%- assign title = page.title -%} 
+	{%- else -%} {%- assign title = site.t.title[page.lang] -%} 
+{%- endif -%}
+{%- if page.description -%} 
+	{%- assign descr = page.description -%} 
+	{%- elsif page.excerpt-%} {%- assign descr = page.excerpt | strip_html -%} 
+	{%- else -%} {%- assign descr = site.t.description[page.lang] -%} 
+{%- endif -%}
+{%- if paginator.page > 1 -%} 
+	{%- assign descr = descr | truncate:100 | append:"-- c." | append: paginator.page -%} 
+{%- endif -%}
+{%- assign canonical = site.url | append: page.url | replace:'index.html','' -%} 
+{%- if page.noindex -%}<meta name="robots" content="noindex,nofollow"/>{%- endif -%}
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#618930">
+<title>{{title}}</title>
+<meta name="description" content="{{ descr }}">
+<meta name="keywords" content="{%- if page.keywords -%}{{ page.keywords }}{%- endif -%}">
+<link rel="canonical" href="{{ canonical }}">
+{% if page.layout == "about" %}{% if page.lang == "en" %}
+<link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/marckscript/v10/nwpTtK2oNgBA3Or78gapdwuyyCg_.woff2" crossorigin="anonymous">{% else %}
+<link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/marckscript/v10/nwpTtK2oNgBA3Or78gapdwuyzCg_.woff2" crossorigin="anonymous">{% endif %} 
+{% else %}
+<link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2" crossorigin="anonymous">
+{% if page.lang != "en" %}
+<link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwkxdu.woff2" crossorigin="anonymous">
+{% endif %} {% endif %}
+<link rel="preload" as="font" href="/fonts/icomoon.woff" type="font/woff" crossorigin="anonymous">
+<style type="text/css">html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}button,input{margin:0}</style> 
+{% capture critical %}{% include fundamentals.sass %}{% include navbar.sass %}{% endcapture %}
+<style type="text/css">{{ critical | sassify }}</style>
+<link rel="stylesheet" href="/css/main.css"> {% if page.layout == "about" %}
+<link rel="stylesheet" href="/css/about.css">{% endif %}  {% if page.layout == "blog" %}
+<link rel="stylesheet" href="/css/blog.css"> {% endif %}  {% if page.layout == "post" %}
+<link rel="stylesheet" href="/css/post.css"> {% endif %}
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="240x240"/>
+{%- for tr in translated reversed -%}
+	{%- assign ref = site.url | append:tr.url | replace:'index.html', '' -%}
+	{%- assign f=0 -%}{%- unless paginator.page -%} {%- assign f=1 -%} {%- endunless -%}
+	{%- if paginator.page == tr.pagination_info.curr_page -%} {%- assign f=1 -%} {%- endif -%} 
+	{% if f==1 %}
+<link rel="alternate" hreflang="{{ tr.lang }}" href="{{ ref }}"/> {% if tr.lang == "en" %}
+<link rel="alternate" hreflang="x-default" href="{{ ref }}"/> {% endif %} {% endif %} 
+{%- endfor -%}
+{% if page.layout == "blog" and paginator.page == 1 %}
+<link rel="alternate" type="application/atom+xml" href="{{ site.url }}/feed.xml" title="{{site.t.title.uk}}" />
+<link rel="alternate" type="application/atom+xml" href="{{ site.url }}/en/feed.xml" title="{{site.t.title.en}}" />
+<link rel="alternate" type="application/atom+xml" href="{{ site.url }}/ru/feed.xml" title="{{site.t.title.ru}}" />
+<meta property="og:type" content="website" /> {% endif %}
+{% if page.layout == "post" %}
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@olyavo" />
+<meta name="twitter:title" content="{{ title }}" />
+<meta name="twitter:description" content="{{ descr }}" /> {% if page.image %}
+<meta name="twitter:image" content="{{ site.url }}/images/posts/{{ page.image }}" />
+<meta property="og:image" content="{{ site.url }}/images/posts/{{ page.image }}" /> {% endif %}
+<meta property="og:type" content="article" />
+{% endif %}  {% unless paginator.page >1 %}
+<meta property="og:url" content="{{ canonical }}" />
+<meta property="og:title" content="{{ title }}" />
+<meta property="og:description" content="{{ descr }}" />
+<meta property="og:site_name" content="do-your-own-SEO.com" /> {% if page.locale and page.lang !="en" %}
+<meta property="og:locale" content="{{ page.lang }}_{{ page.locale | upcase }}" /> {% endif %}
+{% endunless %}
+<script>
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', '{{ site.ga }}', 'auto');
+	ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>

@@ -1,0 +1,55 @@
+{%- assign userName = include.name | strip_html | escape  -%}
+<div id="comment{% unless include.r %}{{ index | prepend: '-' }}{% else %}{{ include.index | prepend: '-' }}{% endunless %}" class="comment{% if userName == site.author.name %} admin{% endif %}{% unless include.replying_to == 0 %} child{% endunless %}" itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+  <div class="comment-avatar">
+    {% if include.avatar %}
+      <img src="{{ include.avatar }}" alt="{{ userName }} avatar" class="dot">
+    {% elsif include.email %}
+      <img src="https://www.gravatar.com/avatar/{{ include.email }}?d=mp&s=60" alt="{{ userName }} avatar" class="dot">
+    {% else %}
+      <img src="/images/default-avatar.png" alt="Default avatar" class="dot">
+    {% endif %}
+  </div>
+  <div class="comment-main">
+    <div class="comment-meta">
+      <h4 itemprop="author" itemscope itemtype="https://schema.org/Person">
+        {%- if include.url and include.url !='' -%}
+          <a title="{{ userName }}'s site" rel="ugc nofollow" href="{{ include.url | truncate 100 | replace: 'javascript:', ''}}" itemprop="url"><span itemprop="name">{{ userName }}</span></a>
+        {%- else -%}
+          <span itemprop="name">{{ userName }}</span>
+        {%- endif -%}
+      </h4>
+      {%- if include.date -%}&ensp;
+        {% if include.index %}<a rel="nofollow" href="#comment{% if r %}{{ index | prepend: '-' }}{% else %}{{ include.index | prepend: '-' }}{% endif %}" title="Permalink to this comment" itemprop="url">{% endif %}
+        <small><time datetime="{{ include.date | date_to_xmlschema }}" itemprop="datePublished">
+          {%- if page.lang == "en" -%}{{ include.date | date: "%b %-d, %Y" }}{%- else -%}{%- include dates.html date=date minute=true -%}{%- endif -%}
+        </time></small>
+        {%- if include.index -%}</a>{%- endif -%}
+      {%- endif -%}
+    </div>
+    <div itemprop="text" class="comment-message">
+      {{ include.message | markdownify | smartify}}
+    </div>
+    {% unless include.replying_to >0 or page.comments_locked == true %}
+      <div class="comment-reply">
+        <small><a rel="nofollow" data-i="{{ include.index }}" href="#comment-{{ include.index }}"> {{site.t.reply[page.lang]}}&nbsp;&#10548;</a></small>
+      </div>
+    {% endunless %}
+  </div>
+</div>
+
+{% capture i %}{{ include.index }}{% endcapture %}
+{% assign replies = site.data[comments_lng][page.slug] | where_exp: "item", "item.replying_to == i" | sort: 'date'%}
+
+{% for reply in replies %}
+  {% assign index       = forloop.index | prepend: '-' | prepend: include.index %}
+  {% assign r           = reply.replying_to %}
+  {% assign replying_to = r | to_integer %}
+  {% assign avatar      = reply.avatar %}
+  {% assign email       = reply.email %}
+  {% assign name        = reply.name %}
+  {% assign url         = reply.url %}
+  {% assign date        = reply.date %}
+  {% assign message     = reply.message %}
+
+  {% include comment_single.html index=index replying_to=replying_to avatar=avatar email=email name=name url=url date=date message=message %}
+{% endfor %}
