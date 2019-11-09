@@ -31,7 +31,7 @@ As of September 2019, neither v2 nor v3 of public Staticman instance was working
 
 I am grateful to all the people mentioned for the opportunity to use the results of their work!
 
-Oh, and the cat:cat:: I met a similar [on CodePen](https://codepen.io/agoodwin/pen/ypeWYE). Now the pet is resting in the footer of the homepage and asks not to poke him any kind of :mouse: mice.
+Oh, and the cat :cat:: I met a similar [on CodePen](https://codepen.io/agoodwin/pen/ypeWYE). Now the pet is resting in the footer of the homepage and asks not to poke him any kind of :mouse: mice.
 
 ## Quick start
 
