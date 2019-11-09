@@ -51,7 +51,7 @@ Run `rake` `title="Post title"` `url=words-joined-with-hyphens`
 
 **NB!** URL (for non-Latin languages) or TITLE is required, other variables are optional. See the hints in the Rakefile.
 
-By default, the post will be hidden from view. If you prefer to publish it immediately, please add `public=y` to the rake task. 
+By default, the post will be hidden. If you prefer to publish it immediately, please add `public=y` to the rake task. 
 
 ---
 ### Create a draft in /\_drafts or /lang/\_drafts
@@ -68,4 +68,4 @@ Run `bundle exec jekyll build` to compose a production version of the Jekyll blo
 ---
 ## Copyright and license
 
-Content is under copyright. The source code is available under the [MIT license](https://github.com/do-your-own-seo/do-your-own-seo.github.io/blob/master/LICENSE).
+Content is under copyright. The source code is available under the [MIT license](https://github.com/do-your-own-seo/do-your-own-seo.github.io/blob/development/LICENSE).
