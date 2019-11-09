@@ -1,13 +1,12 @@
-#SEO blog for everyone: read, think & Do It Yourself!
-
-> Multilingual Jekyll blog.
+# SEO blog for everyone: read, think & Do It Yourself!
 
 * [x] SEO friendly
+* [x] Multilingual
 * [x] Responsive
 * [x] No JQuery, no Disqus
 * [x] Static comments that you own
 
-**Features**
+## Features 
 
 * Pagination for each language via [Jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2) (non-supported by Github Pages).
 * Аutomatic generation of the sitemap. The [Jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap) plugin allows us to exclude pages and files (*pdf*, etc.) from sitemap.xml.
@@ -34,7 +33,6 @@ As of September 2019, neither v2 nor v3 of public Staticman instance was working
 I am grateful to all the people mentioned for the opportunity to use the results of their work!
 
 Oh, and the cat: I met a similar [on CodePen](https://codepen.io/agoodwin/pen/ypeWYE).
-
 
 ## Quick start
 
