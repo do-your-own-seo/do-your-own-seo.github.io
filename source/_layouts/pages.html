@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<main class="main-container">
+  <div class="container">
+    {{ content }}
+  </div>
+{%- if page.modal =="needed" -%} 
+	{%- include modal.html -%}
+{%- endif -%}
+</main>

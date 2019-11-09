@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<div class="main-container">
+  <section class="about container">
+    <div class="intro clf">
+    	<img width="84" src="{{ site.url }}{{ site.author.thumb }}" alt="Author's Avatar" class="dot">
+      <p><em>{{ page.intro }}</em></p> 
+      <div class="txt-left">
+      	<ul class="social txt-center">
+          <li><a href="{{ site.author.github }}" target="_blank" rel="noopener"><i class="icon icon-github" role="button" aria-label="Github Account"></i></a></li>
+          <li><a href="{{ site.author.twitter }}" target="_blank" rel="noopener"><i class="icon icon-twitter" role="button" aria-label="Author on Twitter"></i></a></li>
+          <li><a href="{{ site.author.email }}" target="_blank" rel="noopener"><i class="icon icon-envelop" role="button" aria-label="Drop me a line"></i></a></li>
+        </ul>&nbsp; <em>{{ site.t.bye[page.lang] }}! {{ site.author.name }}, {{ site.author.job }}</em>
+      </div>
+    </div>
+    <div class="card">
+      {{ content }}
+    </div>
+  </section>
+</div>
+{%- comment -%} redirect.js changes the language of the homepage 
+    if the referrer is not from our domain, and navigator.languages does not contain uk-**.
+{%- endcomment -%}
+
+<script>{% include redirect.js %}</script>
+
+{% include schema_about.JSON %}
+
+
