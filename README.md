@@ -9,14 +9,13 @@
 ## Features 
 
 * Pagination for each language via [Jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2) (non-supported by Github Pages).
-* Аutomatic generation of the sitemap. The [Jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap) plugin allows us to exclude pages and files (*pdf*, etc.) from sitemap.xml.
+* Аutomatic generation of the sitemap. The [Jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap) plugin allows us to exclude pages and files from sitemap.xml.
 * Full control over the commenting system with [Staticman](https://github.com/eduardoboucas/staticman).
 * RSS feeds for each language without plugins.
 * Post sharing buttons (Twitter, Facebook, LinkedIn, Reddit) + social meta tags.
 * Schema.org markup (WebSite, WebPage, BlogPosting).
 
 NB! TOCs for the posts are compiled manually, because I prefer to change the anchor text when necessary. You might want to use the [Jekyll-toc](https://github.com/toshimaru/jekyll-toc) plugin instead. In this case, you can remove the "snippet" variable from the front matter and use {{post.excerpt}} in templates.
-
 
 ## Background
 
@@ -32,7 +31,7 @@ As of September 2019, neither v2 nor v3 of public Staticman instance was working
 
 I am grateful to all the people mentioned for the opportunity to use the results of their work!
 
-Oh, and the cat: I met a similar [on CodePen](https://codepen.io/agoodwin/pen/ypeWYE).
+Oh, and the cat: I met a similar [on CodePen](https://codepen.io/agoodwin/pen/ypeWYE). :cat: Now the pet is resting in the footer of the homepage and asks not to poke him any kind of mice :mouse:.
 
 ## Quick start
 
