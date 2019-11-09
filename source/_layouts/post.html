@@ -1,1 +1,28 @@
+---
+layout: pages
+---
 
+<article role="article" class="post">
+  <div class="card">
+    <h1 class="post-title"> {{ page.h1 }} </h1> 
+	<div class="post-meta">
+	<small>
+	    <time datetime="{{ page.date | date:'%F' }}">
+	    {%- if page.lang == "en" -%}
+		    {{ page.date | date: "%b %-d, %Y" }}
+		    {%- assign words_per_min = 220 -%}
+		{%- else -%}
+			{%- include dates.html date = page.date -%}
+			{%- assign words_per_min = 180 -%}
+		{%- endif -%}</time>
+	    •&ensp;{{ page.content| number_of_words| divided_by: words_per_min }}&nbsp;{{site.t.minRead[page.lang]}}{%- if page.author -%} • {{ page.author }}{%- endif -%}
+	</small>
+	</div>
+    <div class="post-content"> {{ content }} </div>
+    {%- include share.html -%}
+    {%- include related.html -%}
+    {%- include comments.html -%}
+<script src="/assets/comments.min.js"></script>
+  </div>
+{%- include schema_post.JSON -%}
+</article>

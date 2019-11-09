@@ -1,0 +1,40 @@
+---
+layout: pages
+---
+<h1 class="txt-center">{{page.h1}}</h1>
+{{ content }}
+<div id="cat-shelter"></div>
+<section class="post-list">
+  {%- for post in paginator.posts -%}
+    {%- include preview.html -%}
+  {%- endfor -%}
+  {%- if paginator.total_pages > 1 -%}
+	<nav class="pagination" role="pagination">
+	  <ul>
+	    {%- if paginator.previous_page -%}
+	      <li><a class="prev button-ghost" href="{{ paginator.previous_page_path }}" title="Newer">&#10094;&#10094;</a></li>
+	    {%- else -%}
+	      <li><span class="prev button-ghost disabled">&#10095;&#10095;</span></li>
+	    {%- endif -%}
+	    <li><span class="page-number"> {{paginator.page}} of {{paginator.total_pages}}</span></li>
+	    {%- if paginator.next_page -%}
+	      <li><a class="next button-ghost" href="{{ paginator.next_page_path }}" title="Older">&#10095;&#10095;</a></li>
+	    {%- else -%}
+	      <li><span class="next button-ghost disabled">&#10094;&#10094;</span></li>
+	    {%- endif -%}
+	  </ul>
+	</nav>
+  {%- endif -%}
+</section>
+{%- include cat.html -%}
+<script>
+  {%- comment -%} 
+  	Change the language of the homepage if the referrer is not from our domain, and navigator.languages does not contain “uk”.
+  {%- endcomment -%}
+  {%- include redirect.js -%}
+  document.querySelector('.post-list').addEventListener('click', function(e){
+  	var parent = e.target.closest('.post');
+  	if (parent) {parent.querySelector('header a').click()}
+  })
+</script>
+{%- include schema_blog.JSON -%}
