@@ -1,0 +1,48 @@
+---
+layout: none
+noindex: true
+sitemap: false
+---
+
+<!DOCTYPE html>
+<html prefix="og: html://ogp.me/ns#" >
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SEO blog for everyone: read, think &amp; Do It Yourself</title>
+<link rel="preload" as="font" href="/fonts/icomoon.woff" type="font/woff" crossorigin="anonymous">
+{% capture critical %}{% include fundamentals.sass %}{% include navbar.sass %}{% endcapture %}
+<style type="text/css">{{ critical | sassify }}</style>
+<link rel="stylesheet" href="/css/main.css"><link rel="shortcut icon" href="/favicon.png">
+</head>
+<body>
+  <header class="site-header">
+  <div class="container">
+    <input type="checkbox" id="toggleNavbar">
+    <div class="logo"><a href="http://localhost:4000/en/">Do Your Own!</a></div>
+    <label for="toggleNavbar" class="toggle-navbar-button">
+      <i class="icon icon-menu" role="button" aria-label="Show navbar"></i>
+      <i class="icon icon-cross" role="button" aria-label="Hide navbar">&#10006;</i>
+    </label>
+    <nav class="navbar">
+      <ul><li class="lang"><a class="en" data-lang=en href="http://localhost:4000/404.html"></a></li><li><a href="http://localhost:4000/en/about" title="Author's intro and contact information"><i class="icon icon-pencil" role="button" aria-label="Author's intro and contact information"></i><span class="mobile">Contacts</span></a></li>
+        <li><a href="http://localhost:4000/en/feed.xml" target="_blank" title="RSS"><i class="icon icon-rss" role="button" aria-label="RSS"></i><span class="mobile">RSS feed</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="main-container">
+  <div class="container">
+    <div class="page card">
+  <div class="post-content txt-center">
+    <h1><span style="color:#c32711">Error 404</span> &nbsp;:&nbsp;(&nbsp;&nbsp;Not&nbsp;found</h1>
+	<h3>Sorry, the requested page does not exist.</h3>
+  </div>
+</div>
+</div>
+</main>
+<footer class="site-footer txt-center">
+	<small>Made with <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a>. &copy;2019 Content is under copyright, the code is available under the  <a href="https://github.com/do-your-own-seo/do-your-own-seo.github.io/blob/source/LICENSE" target="_blank" rel="noopener">MIT license</a></small>
+</footer>
+</body>
+</html>
