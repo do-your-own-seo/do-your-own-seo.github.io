@@ -1,0 +1,194 @@
+.site-header
+  padding: 0
+  margin: 0
+  position: fixed
+  top: 0
+  right: 0
+  left: 0
+  min-height: 80px
+  width: 100%
+  z-index: 99
+  background-color: #fff
+  box-shadow: 0 1.5px 3.5px rgba(0,0,0,.1)
+  border-bottom: 1px solid rgba($light-gray, .55)
+
+  +clearfix
+
+  a
+    &:active,
+    &:focus,
+    &:hover
+      font-weight: normal
+
+  +media($tablet-small)
+    position: relative
+    top: auto
+    left: auto
+
+  .navbar
+    float: right
+    line-height: 2
+
+.logo
+  margin: 0
+  padding: 0
+  font-family: 'logo'
+  float: left
+  font-size: 2.1rem
+  position: fixed
+  top: .45em
+  left: $small-spacing
+  z-index: 100
+
+  a
+    color: $olive
+    text-shadow: $text-shadow-day
+    transition: all $base-duration $base-timing
+
+    &:hover,
+    &:focus,
+    &:active
+      font-size: 2.12rem
+
+  +media($tablet-small)
+    position: relative
+    left: auto
+    
+.navbar
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 99
+  text-align: center
+  background-color: $olive
+  width: 100%
+  height: 100%
+
+  .mobile
+    display: inline-block
+    padding-left: $xsmall-spacing
+
+  ul
+    padding: 0 $base-spacing
+    margin: 0
+    list-style-type: none
+
+  a
+    display: block
+    text-shadow: $text-shadow-night
+
+  li.lang
+    display: inline-block
+
+  a
+    margin: 0 $xsmall-spacing
+    font-size: 1.8em
+    position: relative
+    color: #fff
+
+    &:before,
+    &:after
+      content: ''
+      display: block
+      width: 0
+      height: 2px
+      transition: width 0.43s $base-timing
+      position: absolute
+      right: 0
+
+    &:before
+      top: 1px
+      left: 0
+
+    &:after
+      bottom: 0
+      right: 0
+
+    &:hover, &:focus
+      color: #fff
+      &:before,
+      &:after
+        width: 100%
+
+  +media($tablet-small)
+    text-align: left
+    background-color: transparent
+    position: relative
+    float: right
+    width: auto
+
+    ul
+      padding: 0
+
+    &, li, a,
+      display: inline-block
+
+    .mobile
+      display: none
+
+    li.lang a
+      color: $indigo
+      margin: 0 20px 0 0
+
+      &:before,
+      &:after
+        background-color: shade($indigo, 10%)
+
+    a
+      padding: 5px
+      margin: auto 10px
+      color: shade($olive, 10%)
+      font-size: $mid-spacing
+      font-family: sans-serif
+      text-shadow: $text-shadow-day
+
+      &:before, 
+      &:after
+        opacity: .7
+        background-color: $olive
+
+      &:hover, 
+      &:focus
+        color: rgba($olive, .8)
+
+.toggle-navbar-button
+  float: right
+  background-color: $indigo
+  padding: .45em .65em
+  margin: 0
+  position: fixed
+  top: $mid-spacing
+  right: $base-spacing
+  z-index: 100
+  @extend %button
+
+  .icon-menu
+    display: block
+
+  .icon-cross
+    display: none
+
+  +media($tablet-small)
+    display: none
+
+#toggleNavbar
+  position: fixed
+  top: -999999px
+  right: -999999px
+
+  &:checked
+    ~ .navbar
+      display: table
+      padding-top: 7em
+
+    ~ .logo a
+      color: #fff
+      text-shadow: $text-shadow-night
+
+    ~ .toggle-navbar-button
+      .icon-menu
+        display: none
+      .icon-cross
+        display: block
+

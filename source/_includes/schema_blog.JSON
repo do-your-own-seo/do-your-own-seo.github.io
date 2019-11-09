@@ -1,0 +1,28 @@
+{%- include assign.liquid -%}
+<script type = 'application/ld+json'> {
+	"@context": "https://schema.org",
+	"@graph": [{
+		"@type": "WebSite",
+		"@id": "{{ site.url }}/#website",
+		"url": "{{ site.url }}/",
+		"name": "{{ site.name }}",
+		"creator": {
+			"@type": "Person",
+			"name": "{{ site.author.name }}",
+			"sameAs": "{{ site.author.twitter }}",
+			"JobTitle": "{{ site.author.job }} Specialist"
+		}
+	}, {
+		"@type": "WebPage",
+		"@id": "{{ site.url }}/#webpage",
+		"url": "{{ site.url }}/",
+		"inLanguage": "{{ inLanguage }}",
+		"name": "{{ site.t.title[page.lang] }}",
+		"isPartOf": {
+			"@id": "{{ site.url }}/#website"
+		},
+		"datePublished": "{{ site.time }}",
+		"dateModified": "{{ site.time }}",
+		"description": "{{ site.t.description[page.lang] }}"
+	}]
+}</script>

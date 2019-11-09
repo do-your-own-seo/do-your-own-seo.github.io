@@ -1,0 +1,62 @@
+{%- if include.date -%} {%- assign dat = include.date -%}
+{%- elsif page.date %-} {%- assign dat = page.date -%}
+{%- else -%} {%- assign dat = post.date -%} {{dat}}
+{%- endif -%}
+{%- assign m = dat | date: "%m" -%} {{ dat | date: "%-d "}}
+{%- if page.lang == "uk" -%}
+  {%- case m -%}
+    {%- when '01' -%} 
+      Січ
+    {%- when '02' -%}
+      Лют
+    {%- when '03' -%}
+      Берез
+    {%- when '04' -%}
+      Квіт
+    {%- when '05' -%}
+      Трав
+    {%- when '06' -%}
+      Черв
+    {%- when '07' -%}
+      Лип
+    {%- when '08' -%}
+      Серп
+    {%- when '09' -%}
+      Верес
+    {%- when '10' -%}
+      Жовт
+    {%- when '11' -%}
+      Лист
+    {%- when '12' -%}
+      Груд
+  {%- endcase -%} 
+{%- endif -%}
+{%- if page.lang == "ru" -%}
+  {%- case m -%}
+    {%- when '01' -%}
+      Янв
+    {%- when '02' -%}
+      Фев
+    {%- when '03' -%}
+      Марта
+    {%- when '04' -%}
+      Апр
+    {%- when '05' -%}
+      Мая
+    {%- when '06' -%}
+      Июня
+    {%- when '07' -%}
+      Июля
+    {%- when '08' -%}
+      Авг
+    {%- when '09' -%}
+      Сент
+    {%- when '10' -%}
+      Окт
+    {%- when '11' -%}
+      Нояб
+    {%- when '12' -%}
+      Дек
+  {%- endcase -%}
+{%- endif -%}
+{{ dat | date: " %Y"}}{%- if include.date and include.minute -%} {{ dat | date: " %R"}}{%- endif -%}

@@ -1,1 +1,14 @@
+{%- assign translated = site.posts | concat:site.pages | where:"i18n-link", page.i18n-link | sort:'lang' -%}
+{%- if page.lang == site.lang -%} 
+	{%- assign lng ="/" -%} 
+{%- elsif page.lang -%} 
+	{%- assign lng = page.lang | prepend:"/" | append:"/" -%} 
+{%- endif -%}
 
+{%- if page.lang == "uk" -%} 
+	{%- assign inLanguage = "українська" -%}
+{%- elsif page.lang == "ru" -%}
+	{%- assign inLanguage = "русский" -%}
+{%- else -%}
+	{%- assign inLanguage = "English" -%}
+{%- endif -%}
