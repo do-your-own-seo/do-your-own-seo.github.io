@@ -13,7 +13,10 @@
 	{%- assign descr = descr | truncate:100 | append:"-- c." | append: paginator.page -%} 
 {%- endif -%}
 {%- assign canonical = site.url | append: page.url | replace:'index.html','' -%} 
-{%- if page.noindex -%}<meta name="robots" content="noindex,nofollow"/>{%- endif -%}
+{%- if page.noindex -%}
+<meta name="robots" content="noindex,nofollow"/>
+{%- endif -%}
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,7 +40,10 @@
 <link rel="stylesheet" href="/css/main.css"> {% if page.layout == "about" %}
 <link rel="stylesheet" href="/css/about.css">{% endif %}  {% if page.layout == "blog" %}
 <link rel="stylesheet" href="/css/blog.css"> {% endif %}  {% if page.layout == "post" %}
-<link rel="stylesheet" href="/css/post.css"> {% endif %}
+<link rel="stylesheet" href="/css/post.css">
+<link href="https://www.google.com" rel="dns-prefetch"> {% endif %}
+<link href="https://www.google-analytics.com" rel="dns-prefetch">
+<link rel="preconnect" href="https://www.gstatic.com/" crossorigin>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="240x240"/>
 {%- for tr in translated reversed -%}

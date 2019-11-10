@@ -19,14 +19,14 @@ sitemap: false
   <header class="site-header">
   <div class="container">
     <input type="checkbox" id="toggleNavbar">
-    <div class="logo"><a href="http://localhost:4000/en/">Do Your Own!</a></div>
+    <div class="logo"><a href="{{site.url}}/en/">Do Your Own!</a></div>
     <label for="toggleNavbar" class="toggle-navbar-button">
       <i class="icon icon-menu" role="button" aria-label="Show navbar"></i>
       <i class="icon icon-cross" role="button" aria-label="Hide navbar">&#10006;</i>
     </label>
     <nav class="navbar">
-      <ul><li class="lang"><a class="en" data-lang=en href="http://localhost:4000/404.html"></a></li><li><a href="http://localhost:4000/en/about" title="Author's intro and contact information"><i class="icon icon-pencil" role="button" aria-label="Author's intro and contact information"></i><span class="mobile">Contacts</span></a></li>
-        <li><a href="http://localhost:4000/en/feed.xml" target="_blank" title="RSS"><i class="icon icon-rss" role="button" aria-label="RSS"></i><span class="mobile">RSS feed</span></a></li>
+      <ul><li><a href="{{site.url}}/en/about" title="Author's intro and contact information"><i class="icon icon-pencil" role="button" aria-label="Author's intro and contact information"></i><span class="mobile">Contacts</span></a></li>
+        <li><a href="{{site.url}}/en/feed.xml" target="_blank" title="RSS"><i class="icon icon-rss" role="button" aria-label="RSS"></i><span class="mobile">RSS feed</span></a></li>
       </ul>
     </nav>
   </div>
