@@ -1,4 +1,4 @@
-# SEO blog for everyone: read, think & Do It Yourself!
+# [SEO blog for everyone: read, think & Do It Yourself!](https://do-your-own-seo.com)
 
 * [x] SEO friendly
 * [x] Responsive
