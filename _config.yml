@@ -155,19 +155,19 @@ t:
     en: "Submit"
 
   commentSending:
-    uk: "В процесі..."
+    uk: "В&nbsp;процесі..."
     ru: "Отправляю..."
     en: "Sending..."
 
   commentSubmitted:
     uk: "Відправлено"
-    ru: "Отправлен"
+    ru: "Отправлено"
     en: "Submitted"
 
   commentNotSubmitted:
     uk: "Відхилено"
     ru: "Отклонено"
-    en: "Not submitted"
+    en: "Not&nbsp;submitted"
 
   commentSuccess:
     uk: "Дякую за відгук! Повідомлення з'явиться на сайті після модерації людиною :)"
@@ -178,6 +178,11 @@ t:
     uk: ":( На жаль, щось трапилось. Будь ласка, перевірте, чи всі важливі поля заповнені коректно."
     ru: ":( К сожалению, не вышло. Пожалуйста, убедитесь, что необходимые поля заполнены корректно."
     en: "Please make sure the required fields have been completed correctly. :( Sorry for the error."
+
+  cookieMessage:
+    uk: "Фільтрувати спам блогу допомагає reCAPTCHA. Цей Google-сервіс використовує cookies, тому, натискаючи Відправити, ви автоматично погоджуєтеся з їх застосуванням."
+    ru: "Отфильтровывать спам блогу помогает reCAPTCHA: этот сервис использует cookies. Отправляя сообщение, вы автоматически соглашаетесь делиться информацией с Google."
+    en: "To protect against spam, we use reCAPTCHA. reCAPTCHA uses cookies. By submitting a comment, you automatically agree to share personal information with Google:"
   
   honeypot:
     uk: "Пастка для ботів"

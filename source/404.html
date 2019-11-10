@@ -12,7 +12,7 @@ sitemap: false
 <title>SEO blog for everyone: read, think &amp; Do It Yourself</title>
 <link rel="preload" as="font" href="/fonts/icomoon.woff" type="font/woff" crossorigin="anonymous">
 {% capture critical %}{% include fundamentals.sass %}{% include navbar.sass %}{% endcapture %}
-<style type="text/css">{{ critical | sassify }}</style>
+<style>{{ critical | sassify }}</style>
 <link rel="stylesheet" href="/css/main.css"><link rel="shortcut icon" href="/favicon.png">
 </head>
 <body>
@@ -25,8 +25,8 @@ sitemap: false
       <i class="icon icon-cross" role="button" aria-label="Hide navbar">&#10006;</i>
     </label>
     <nav class="navbar">
-      <ul><li><a href="{{site.url}}/en/about" title="Author's intro and contact information"><i class="icon icon-pencil" role="button" aria-label="Author's intro and contact information"></i><span class="mobile">Contacts</span></a></li>
-        <li><a href="{{site.url}}/en/feed.xml" target="_blank" title="RSS"><i class="icon icon-rss" role="button" aria-label="RSS"></i><span class="mobile">RSS feed</span></a></li>
+      <ul><li><a href="{{site.url}}/en/about" title="Author's intro and contact information"><i class="icon icon-pencil"></i><span class="mobile">Contacts</span></a></li>
+        <li><a href="{{site.url}}/en/feed.xml" target="_blank" title="RSS"><i class="icon icon-rss"></i><span class="mobile">RSS feed</span></a></li>
       </ul>
     </nav>
   </div>
