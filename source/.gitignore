@@ -1,0 +1,8 @@
+---
+layout: none
+sitemap: false
+---
+assets/resources
+assets/textboxio.js
+editor.html
+*.psd

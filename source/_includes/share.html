@@ -2,9 +2,9 @@
 {%- assign param_title = page.title | uri_escape -%}
 <div class="post-share txt-right">
   <em>{{site.t.share[page.lang]}}:&nbsp;</em>
-  <a href="https://facebook.com/sharer.php?u={{ full_url }}&p[title]={{ param_title }}" rel="nofollow" target="_blank" rel="noopener"><i class="icon icon-facebook" role="button" aria-label="Share on Facebook"></i></a>
-  <a href="https://twitter.com/intent/tweet?text={{ param_title }}&url={{ full_url }}" rel="nofollow" target="_blank" rel="noopener"><i class="icon icon-twitter" role="button" aria-label="Share on Twitter"></i></a>
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ full_url }}&title={{ param_title }}&source=LinkedIn" rel="nofollow" target="_blank" rel="noopener"><i class="icon icon-linkedin2" role="button" aria-label="Share on LinkedIn"></i></a>
-  <a href="https://www.reddit.com/submit?url={{ full_url }}&title={{ param_title }}" rel="nofollow" target="_blank" rel="noopener"><i class="icon icon-reddit-alien" role="button" aria-label="Share on Reddit"></i></a>
+  <a href="https://facebook.com/sharer.php?u={{ full_url }}&p[title]={{ param_title }}" rel="nofollow noopener" target="_blank"><i class="icon icon-facebook" role="button" aria-label="Share on Facebook"></i></a>
+  <a href="https://twitter.com/intent/tweet?text={{ param_title }}&url={{ full_url }}" rel="nofollow noopener" target="_blank"><i class="icon icon-twitter" role="button" aria-label="Share on Twitter"></i></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ full_url }}&title={{ param_title }}&source=LinkedIn" rel="nofollow noopener" target="_blank"><i class="icon icon-linkedin2" role="button" aria-label="Share on LinkedIn"></i></a>
+  <a href="https://www.reddit.com/submit?url={{ full_url }}&title={{ param_title }}" rel="nofollow noopener" target="_blank"><i class="icon icon-reddit-alien" role="button" aria-label="Share on Reddit"></i></a>
   <a href="mailto:?Subject=Do%20your%20own%20SEO%20blog%20post&body={{ param_title }}"><i class="icon icon-envelop" role="button" aria-label="Mail this"></i></a>
 </div>
