@@ -16,9 +16,12 @@
 {%- if page.noindex -%}
 <meta name="robots" content="noindex,nofollow"/>
 {%- endif -%}
+<meta http-equiv="Content-Security-Policy" content="script-src 'self' https://www.gstatic.com https://www.google-analytics.com https://www.google.com; base-uri 'self';">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="X-XSS-Protection" content="1; mode=block">
+<meta http-equiv="X-Frame-Options" content="sameorigin">
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#618930">
 <title>{{title}}</title>
@@ -33,17 +36,17 @@
 {% if page.lang != "en" %}
 <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwkxdu.woff2" crossorigin="anonymous">
 {% endif %} {% endif %}
-<link rel="preload" as="font" href="/fonts/icomoon.woff" type="font/woff" crossorigin="anonymous">
-<style type="text/css">html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}button,input{margin:0}</style> 
-{% capture critical %}{% include fundamentals.sass %}{% include navbar.sass %}{% endcapture %}
-<style type="text/css">{{ critical | sassify }}</style>
+<link rel="preload" as="font" href="/fonts/icomoon.woff2" type="font/woff2" crossorigin="anonymous">
+<style>html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}button,input{margin:0}</style> 
+{% capture critical %}{% include fundamentals.sass %}{% include navbar.sass %}{%-if page.layout == "post"-%}{% include post_head.sass %}{%-endif-%}{% endcapture %}
+<style>{{ critical | sassify }}</style>
 <link rel="stylesheet" href="/css/main.css"> {% if page.layout == "about" %}
-<link rel="stylesheet" href="/css/about.css">{% endif %}  {% if page.layout == "blog" %}
-<link rel="stylesheet" href="/css/blog.css"> {% endif %}  {% if page.layout == "post" %}
-<link rel="stylesheet" href="/css/post.css">
-<link href="https://www.google.com" rel="dns-prefetch"> {% endif %}
-<link href="https://www.google-analytics.com" rel="dns-prefetch">
-<link rel="preconnect" href="https://www.gstatic.com/" crossorigin>
+<link rel="stylesheet" href="/css/about.css"> {% endif %}  {% if page.layout == "blog" %}
+<link rel="stylesheet" href="/css/blog.css">
+<style>{% include cat.css %}</style> {% endif %} {% if page.layout == "post" %}
+<link rel="stylesheet" href="/css/post.css"> {% endif %} {% if page.modal == "needed" %}
+<style>{% include modal.css %}</style>{% endif %}
+<link href="https://www.google-analytics.com" rel="preconnect" crossorigin >
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="240x240"/>
 {%- for tr in translated reversed -%}
@@ -63,16 +66,21 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@olyavo" />
 <meta name="twitter:title" content="{{ title }}" />
-<meta name="twitter:description" content="{{ descr }}" /> {% if page.image %}
+<meta name="twitter:description" content="{{ page.snippet }}" /> {% if page.image %}
 <meta name="twitter:image" content="{{ site.url }}/images/posts/{{ page.image }}" />
 <meta property="og:image" content="{{ site.url }}/images/posts/{{ page.image }}" /> {% endif %}
 <meta property="og:type" content="article" />
+<link href="https://www.google.com" rel="dns-prefetch">
+<link href="https://www.gstatic.com/" rel="dns-prefetch"> 
 {% endif %}  {% unless paginator.page >1 %}
 <meta property="og:url" content="{{ canonical }}" />
 <meta property="og:title" content="{{ title }}" />
 <meta property="og:description" content="{{ descr }}" />
 <meta property="og:site_name" content="do-your-own-SEO.com" /> {% if page.locale and page.lang !="en" %}
 <meta property="og:locale" content="{{ page.lang }}_{{ page.locale | upcase }}" /> {% endif %}
+	{%-unless page.image-%}
+<meta property="og:image" content="{{ site.url }}/apple-touch-icon.png" />
+	{%-endunless-%}
 {% endunless %}
 <script>
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;

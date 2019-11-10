@@ -1,9 +1,1 @@
-var referrer = document.referrer, landing = false, path = location.pathname, lngs = document.documentElement.dataset.lngs.split(" ");
-if (referrer) { landing = (referrer.indexOf(location.hostname) === -1) }
-if (landing && navigator.languages && lngs.every(function(x){return path.indexOf(x) === -1}))	{
-	let navLng = navigator.languages.map(function(x){return x.split('-')[0]});
-	if (!navLng.includes(lngs[0])) {
-    	if (navLng.includes(lngs[1])) {path = '/' + lngs[1] + path;} else {path = '/en' + path;}
-    	window.location.pathname = path;
-    }
-}
+var referrer=document.referrer,landing=!1,path=location.pathname,lngs=document.documentElement.dataset.lngs.split(" ");if(referrer&&(landing=-1===referrer.indexOf(location.hostname)),landing&&navigator.languages&&lngs.every(function(n){return-1===path.indexOf(n)})){let n=navigator.languages.map(function(n){return n.split("-")[0]});n.includes(lngs[0])||(path=n.includes(lngs[1])?"/"+lngs[1]+path:"/en"+path,window.location.pathname=path)}
