@@ -63,7 +63,7 @@ comments_en:
   path: "source/_data/comments_en/{options.slug}"
 
   # Names of required files.
-  requiredFields: ["name", "email", "message"]
+  requiredFields: ["name", "message"]
 
   # Transformations to apply to any of the fields supplied. Keys are
   # the name of the field and values are possible transformation types.
