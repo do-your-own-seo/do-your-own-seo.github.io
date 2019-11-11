@@ -1,0 +1,34 @@
+language: ruby
+rvm:
+  - 2.3
+sudo: false
+cache:
+  - bundler: true
+
+install:
+  - bundle install
+script:
+  - bundle exec jekyll build
+
+env:
+  global:
+    - JEKYLL_ENV=production
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
+branches:
+  only:
+    - source
+
+deploy:
+  provider: pages
+  target_branch: master
+  local_dir: ./_site
+  skip_cleanup: true
+  keep_history: true
+  github_token: $GITHUB_TOKEN
+  fqdn: "do-your-own-seo.com"
+  on:
+    branch: source
+
+notifications:
+  email: false
