@@ -13,13 +13,11 @@
 	{%- assign descr = descr | truncate:100 | append:"-- c." | append: paginator.page -%} 
 {%- endif -%}
 {%- assign canonical = site.url | append: page.url | replace:'index.html','' -%} 
-{%- if page.noindex -%}
-<meta name="robots" content="noindex,nofollow"/>
+{%- if page.noindex -%} <meta name="robots" content="noindex,nofollow"/> 
 {%- endif -%}
-<meta http-equiv="Content-Security-Policy" content="script-src 'self' https://www.gstatic.com https://www.google-analytics.com https://www.google.com; base-uri 'self';">
+<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'nonce-ga' 'nonce-blog' 'nonce-modal' 'nonce-cat' https://www.gstatic.com https://www.google-analytics.com https://www.google.com; base-uri 'self';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta http-equiv="X-XSS-Protection" content="1; mode=block">
-<meta http-equiv="X-Frame-Options" content="sameorigin">
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -82,7 +80,7 @@
 <meta property="og:image" content="{{ site.url }}/apple-touch-icon.png" />
 	{%-endunless-%}
 {% endunless %}
-<script>
+<script nonce="ga">
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
 	ga('create', '{{ site.ga }}', 'auto');
 	ga('send', 'pageview');

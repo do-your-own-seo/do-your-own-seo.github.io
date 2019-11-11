@@ -8,8 +8,8 @@
       <label for="comment-form-name">{{ site.t.commentName[page.lang] }} <sup>&Star;</sup>
         <input type="text" id="comment-form-name" name="fields[name]" maxlength="50" required spellcheck="false">
       </label>
-      <label for="comment-form-email">E-mail <sup>&Star;</sup>
-        <input type="email" id="comment-form-email" name="fields[email]" required spellcheck="false" placeholder="{{ site.t.emailPlacehold[page.lang] }}">
+      <label for="comment-form-email">E-mail
+        <input type="email" id="comment-form-email" name="fields[email]" spellcheck="false" placeholder="{{ site.t.emailPlacehold[page.lang] }}">
       </label>
       <label for="comment-form-url">{{ site.t.commentSite[page.lang] }} 
         <input type="URL" id="comment-form-url" name="fields[url]" maxlength="70">
@@ -17,7 +17,7 @@
     </div>
     <div class="form-group">
       <label for="comment-form-message">{{ site.t.comment[page.lang] }} <sup>&Star;</sup>
-        <textarea id="comment-form-message" name="fields[message]" required rows="6" maxlength="700" placeholder="{{site.t.cookieMessage[page.lang]}} https://policies.google.com/technologies/partner-sites"></textarea>
+        <textarea id="comment-form-message" name="fields[message]" required rows="6" maxlength="700" placeholder="{{site.t.cookieMessage[page.lang]}} policies.google.com/privacy"></textarea>
       </label>
     </div>
     <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.url | replace: '/', ''}}">

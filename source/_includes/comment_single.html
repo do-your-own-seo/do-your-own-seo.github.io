@@ -23,7 +23,7 @@
       {%- if include.date -%}&ensp;
         {% if include.index %}<a rel="nofollow" href="#comment{% if r %}{{ index | prepend: '-' }}{% else %}{{ include.index | prepend: '-' }}{% endif %}" title="Permalink to this comment" itemprop="url">{% endif %}
         <small><time datetime="{{ include.date | date_to_xmlschema }}" itemprop="datePublished">
-          {%- if page.lang == "en" -%}{{ include.date | date: "%b %-d, %Y" }}{%- else -%}{%- include dates.html date=date minute=true -%}{%- endif -%}
+          {%- if page.lang == "en" -%}{{ include.date | date: "%b %-d, %Y %R" }}{%- else -%}{%- include dates.html date=date minute=true -%}{%- endif -%}
         </time></small>
         {%- if include.index -%}</a>{%- endif -%}
       {%- endif -%}
