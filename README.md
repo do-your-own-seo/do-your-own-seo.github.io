@@ -1,4 +1,4 @@
-# SEO blog for everyone: read, think & Do It Yourself!
+# [SEO blog for everyone: read, think & Do It Yourself!](https://do-your-own-seo.com/en/) [![Build Status](https://travis-ci.com/do-your-own-seo/do-your-own-seo.github.io.svg?branch=source)](https://travis-ci.com/do-your-own-seo/do-your-own-seo.github.io)
 
 * [x] SEO friendly
 * [x] Responsive
