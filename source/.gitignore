@@ -1,5 +1,5 @@
-*.psd
 assets/resources
 assets/textboxio.js
 .editorconfig
 editor.html
+*.psd
