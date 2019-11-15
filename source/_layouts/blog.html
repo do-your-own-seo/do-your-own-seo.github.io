@@ -27,14 +27,10 @@ layout: pages
   {%- endif -%}
 </section>
 {%- include cat.html -%}
-<script nonce="blog">
-  {%- comment -%} 
-  	Change the language of the homepage if the referrer is not from our domain, and navigator.languages does not contain “uk”.
-  {%- endcomment -%}
-  {%- include redirect.js -%}
-  document.querySelector('.post-list').addEventListener('click', function(e){
-  	var parent = e.target.closest('.post');
-  	if (parent) {parent.querySelector('header a').click()}
-  })
+
+{%- comment -%} js changes the language if the referrer =/= our domain, navigator.languages exists, and it doesn't contain uk-**.
+{%- endcomment -%}
+<script nonce="blog">{%- if page.lang == 'uk' -%}{%- include redirect.js -%}{%- endif -%}
+	document.querySelector(".post-list").addEventListener("click",function(e){var t=e.target.closest(".post");t&&t.querySelector("header a").click()});
 </script>
 {%- include schema_blog.JSON -%}

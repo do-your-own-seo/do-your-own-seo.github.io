@@ -19,8 +19,8 @@ layout: default
     </div>
   </section>
 </div>
-{%- comment -%} redirect.js changes the language of the homepage 
-    if the referrer is not from our domain, and navigator.languages does not contain uk-**.
+{%- if page.lang == 'uk' -%}<script nonce="about">{%- include redirect.js -%}</script>{%- endif -%}
+{%- comment -%} js changes the language if the referrer =/= our domain, navigator.languages exists, and it doesn't contain uk-**.
 {%- endcomment -%}
 
 {% include schema_about.JSON %}
