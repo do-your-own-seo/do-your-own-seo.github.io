@@ -1,8 +1,8 @@
 _site
 .sass-cache
+icomoon
 source/assets/resources
 source/assets/textboxio.js
 source/editor.html
 source/images
-icomoon
 *.psd
