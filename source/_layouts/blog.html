@@ -4,7 +4,7 @@ layout: pages
 <h1 class="txt-center">{{page.h1}}</h1>
 {{ content }}
 <div id="cat-shelter"></div>
-<section class="post-list">
+<section class="post-list" data-nosnippet>
   {%- for post in paginator.posts -%}
     {%- include preview.html -%}
   {%- endfor -%}
