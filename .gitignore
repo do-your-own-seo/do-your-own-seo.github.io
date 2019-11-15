@@ -1,4 +1,3 @@
-*.psd
 _site
 .sass-cache
 source/assets/resources
@@ -6,3 +5,4 @@ source/assets/textboxio.js
 source/editor.html
 source/images
 icomoon
+*.psd
