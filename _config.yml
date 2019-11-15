@@ -180,9 +180,9 @@ t:
     en: "Please make sure the required fields have been completed correctly. :( Sorry for the error."
 
   cookieMessage:
-    uk: " reCAPTCHA &ndash; це Google-сервіс, який використовує cookies.\n Натискаючи Надіслати, ви погоджуєтеся з політикою Google:\n\n"
-    ru: " reCAPTCHA &ndash; это Google-сервис, который использует cookies.\n Отправляя сообщение, вы соглашаетесь с политикой Google:\n\n"
-    en: " reCAPTCHA uses cookies.\n By submitting a comment, you agree with Google's policy:\n\n"
+    uk: " reCAPTCHA &ndash; це Google-сервіс, який читає cookies.\n Натискаючи Надіслати, ви погоджуєтеся з політикою Google:\n\n"
+    ru: " reCAPTCHA &ndash; это Google-сервис, который читает cookies.\n Отправляя сообщение, вы соглашаетесь с политикой Google:\n\n"
+    en: " reCAPTCHA reads cookies.\n By submitting a comment, you agree with Google's Privacy policy:\n\n"
   
   honeypot:
     uk: "Пастка для ботів"
