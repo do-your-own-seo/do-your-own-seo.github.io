@@ -3,7 +3,7 @@
   <div class="comment-avatar">
     {%- if include.avatar -%}
       <img src="{{ include.avatar }}" alt="{{ userName }} avatar" class="dot">
-    {%- elsif include.email -%}
+    {%- elsif include.email and include.email !='' -%}
       <img src="https://www.gravatar.com/avatar/{{ include.email }}?d=mp&s=60" alt="{{ userName }} avatar" class="dot">
     {%- elsif userName == site.author.name -%} 
     <img src="{{ site.author.thumb }}" alt="Author avatar" class="dot">
