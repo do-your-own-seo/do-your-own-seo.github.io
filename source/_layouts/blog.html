@@ -4,7 +4,7 @@ layout: pages
 <h1 class="txt-center">{{page.h1}}</h1>
 {{ content }}
 <div id="cat-shelter"></div>
-<section class="post-list" data-nosnippet>
+<div class="post-list" data-nosnippet>
   {%- for post in paginator.posts -%}
     {%- include preview.html -%}
   {%- endfor -%}
@@ -25,7 +25,7 @@ layout: pages
 	  </ul>
 	</nav>
   {%- endif -%}
-</section>
+</div>
 {%- include cat.html -%}
 
 {%- comment -%} js changes the language if the referrer =/= our domain, navigator.languages exists, and it doesn't contain uk-**.

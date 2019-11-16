@@ -2,7 +2,7 @@
 {%- assign comments_lng = "comments_" | append: page.lang -%}
 <h3 class="feedback"><i class="icon icon-bubbles4"></i>&ensp;{{ site.t.commentSection[page.lang] }}</h3>
   {%- if site.data[comments_lng][pageurl] -%}
-  <section id="comments" data-nosnippet>
+  <div id="comments" data-nosnippet>
     {%- assign comments = site.data[comments_lng][pageurl] | where_exp: 'item', 'item.replying_to == empty' | sort: 'date' -%}
     {%- for comment in comments -%}
       {%- assign index       = forloop.index -%}
@@ -17,7 +17,7 @@
       {%- assign message     = comment.message -%}
       {%- include comment_single.html index=index replying_to=replying_to avatar=avatar email=email name=name url=url date=date  message=message pageurl=pageurl -%}
     {%- endfor -%}
-  </section>
+  </div>
   {%- endif -%}
 {% include comment_form.html %}
 {%- endif -%}
