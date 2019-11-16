@@ -2,13 +2,13 @@
 <div id="comment{% unless include.r %}{{ index | prepend: '-' }}{% else %}{{ include.index | prepend: '-' }}{% endunless %}" class="comment{% if userName == site.author.name %} admin{% endif %}{% unless include.replying_to == 0 %} child{% endunless %}" itemprop="comment" itemscope itemtype="https://schema.org/Comment">
   <div class="comment-avatar">
     {%- if include.avatar -%}
-      <img src="{{ include.avatar }}" alt="{{ userName }} avatar" class="dot">
+      <img src="{{ include.avatar }}" alt="{{ userName }} avatar" class="dot" loading="lazy">
     {%- elsif include.email and include.email !='' -%}
-      <img src="https://www.gravatar.com/avatar/{{ include.email }}?d=mp&s=60" alt="{{ userName }} avatar" class="dot">
+      <img src="https://www.gravatar.com/avatar/{{ include.email }}?d=mp&s=60" alt="{{ userName }} avatar" class="dot" loading="lazy">
     {%- elsif userName == site.author.name -%} 
-    <img src="/images/pen.jpg" alt="Admin's avatar" class="dot">
+    <img src="/images/pen.jpg" alt="Admin's avatar" class="dot" loading="lazy">
     {%- else -%}
-      <img src="/images/default-avatar.png" alt="Default avatar" class="dot">
+      <img src="/images/default-avatar.png" alt="Default avatar" class="dot" loading="lazy">
     {%- endif -%}
   </div>
   <div class="comment-main">
