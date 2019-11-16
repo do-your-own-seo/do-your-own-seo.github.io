@@ -6,7 +6,7 @@ layout: null
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>{{ site.t.title[page.lang] | xml_escape }}</title>
-    <description>{{ site.t.description[page.lang] | xml_escape }}</description>
+    <description>{{ site.t.description[page.lang] | strip_html }}</description>
     <link>{{ site.url }}{{ lng }}</link>
     <atom:link href="{{ site.url }}{{ lng }}feed.xml" rel="self" type="application/rss+xml" />
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
@@ -16,7 +16,7 @@ layout: null
     {%- assign posts = site.posts | where:"lang", page.lang -%}
     {%- for post in posts limit:10 -%}
       <item>
-        <title>{{ post.title | xml_escape }}</title>
+        <title>{{ post.h1 | xml_escape }}</title>
         <description>{%- if post.snippet -%}{{ post.snippet | strip_html }}..{%- else -%}{{ post.excerpt | strip_html | truncatewords:40 | xml_escape }}{%- endif -%}</description>
         <pubDate>{{ post.date |  date_to_rfc822}}</pubDate>
         <link>{{ site.url }}{{ post.url }}</link>
