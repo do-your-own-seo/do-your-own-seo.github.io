@@ -6,7 +6,7 @@
     {%- elsif include.email and include.email !='' -%}
       <img src="https://www.gravatar.com/avatar/{{ include.email }}?d=mp&s=60" alt="{{ userName }} avatar" class="dot">
     {%- elsif userName == site.author.name -%} 
-    <img src="{{ site.author.thumb }}" alt="Author avatar" class="dot">
+    <img src="/images/pen.jpg" alt="Admin's avatar" class="dot">
     {%- else -%}
       <img src="/images/default-avatar.png" alt="Default avatar" class="dot">
     {%- endif -%}
