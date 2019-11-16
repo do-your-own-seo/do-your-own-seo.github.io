@@ -45,7 +45,6 @@
 <style>{% include cat.css %}</style> {% endif %} {% if page.layout == "post" %}
 <link rel="stylesheet" href="/css/post.css"> {% endif %} {% if page.modal == "needed" %}
 <style>{% include modal.css %}</style>{% endif %}
-<link href="https://www.google-analytics.com" rel="preconnect" crossorigin >
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="240x240"/>
 {%- for tr in translated reversed -%}
@@ -69,8 +68,8 @@
 <meta name="twitter:image" content="{{ site.url }}/images/posts/{{ page.image }}" />
 <meta property="og:image" content="{{ site.url }}/images/posts/{{ page.image }}" /> {% endif %}
 <meta property="og:type" content="article" />
+<link href="https://www.gstatic.com/" rel="preconnect" crossorigin> 
 <link href="https://www.google.com" rel="dns-prefetch">
-<link href="https://www.gstatic.com/" rel="dns-prefetch"> 
 {% endif %}  {% unless paginator.page >1 %}
 <meta property="og:url" content="{{ canonical }}" />
 <meta property="og:title" content="{{ title }}" />
