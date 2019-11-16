@@ -5,7 +5,7 @@ layout: null
 {%- include assign.liquid -%}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.t.title[page.lang] | xml_escape }}</title>
+    <title>{{ site.t.title[page.lang] }}</title>
     <description>{{ site.t.description[page.lang] | strip_html }}</description>
     <link>{{ site.url }}{{ lng }}</link>
     <atom:link href="{{ site.url }}{{ lng }}feed.xml" rel="self" type="application/rss+xml" />
