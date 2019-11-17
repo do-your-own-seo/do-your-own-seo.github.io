@@ -4,10 +4,6 @@ require "tmpdir"
 require "bundler/setup"
 require "jekyll"
 
-# Change your GitHub reponame
-GITHUB_REPONAME = "do-your-own-seo/do-your-own-seo.github.io"
-GITHUB_REPO_BRANCH = "master"
-
 SOURCE = "source/"
 DEST = "_site"
 CONFIG = {
@@ -54,7 +50,7 @@ task :post do
     post.puts "published: false" unless (ENV['public'] == 'y' || draft)
 
     #An ID for a whole family of translated posts.
-    post.puts "i18n-link: #{ENV['i18n-link'] || 'i18n-ID'}" 
+    post.puts "i18n-link: #{ENV['i18n'] || ''}" 
 
     #The name of the language directory or nothing for default lang.
     post.puts "lang: #{ENV['dir'] || CONFIG['default_lang']}" 
