@@ -71,7 +71,7 @@ t:
   description:
       uk: "SEO оптимізація сайту власними силами &#9728; Як зрозуміти і використовувати SEO на практиці &#9728; Як дійти згоди з Google і не боятися апдейтів пошукових систем"
       ru: "SEO оптимизация сайта самостоятельно &#9728; Как понять и применять SEO на практике &#9728; Блог о том, как поладить с Google и не бояться апдейтов поисковых систем"
-      en: "Bread &amp; butter of website optimization &#9728; Symbiosis of SEO practice and theory &#9728; Іf you understand SEO, you can Do It Yourself"
+      en: "Symbiosis of SEO practice and theory &#9728; Website optimization on your own &#9728; Іf you understand SEO, you can Do It Yourself: it's adventurous and exciting!"
   
   pagination:
     title:
@@ -140,13 +140,13 @@ t:
     en: "Comments are closed"
 
   pleaseContactMe:
-    uk: "Якщо вам є що додати або виникли питання, будь ласка, зв'яжіться зі мною одним зі"
-    ru: "Если вам есть что добавить или возникли вопросы, пожалуйста, дайте мне знать любым удобным "
-    en: "If you have a question concerning the content of this page, feel free to"
+    uk: "Якщо вам є що додати або виникли питання, будь ласка, "
+    ru: "Если вам есть что добавить или возникли вопросы, пожалуйста, "
+    en: "If you have a question concerning the content of the page, feel free to "
 
   pleaseContactMeAnchor:
-    uk: "способів"
-    ru: "способом"
+    uk: "зв'яжіться зі мною"
+    ru: "дайте мне знать"
     en: "contact me"
 
   submitComment:
@@ -212,7 +212,7 @@ t:
   footnote:
     uk: "Контент – предмет авторського права, код відкритий згідно з "
     ru: "Контент – предмет авторского права, код доступен по "
-    en: "Content is under copyright, the code is available under the "
+    en: "Content is under copyright; the code is available under the "
 
   cat:
     uk: "Хто, я? Я і не живий-то взагалі"

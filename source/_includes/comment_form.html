@@ -49,6 +49,6 @@
 <div class="notice">
   {%-if page.lang == site.lang-%}{%-assign lng ="/"-%}{%-elsif page.lang-%}{%-assign lng=page.lang | prepend:"/" | append:"/"-%}
   {%-endif-%} <h4>{{site.t.commentsClosed[page.lang]}}</h4>
-    <p>{{site.t.pleaseContactMe[page.lang]}} <a href="{{lng}}about">{{site.t.pleaseContactMeAnchor[page.lang]}}</a>.</p>
+    <p>{{site.t.pleaseContactMe[page.lang]}}<a href="{{site.author.email}}">{{site.t.pleaseContactMeAnchor[page.lang]}}</a>.</p>
 </div>
 {%- endunless -%}
