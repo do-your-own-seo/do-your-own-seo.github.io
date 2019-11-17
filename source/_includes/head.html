@@ -61,12 +61,12 @@
 <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/ru/feed.xml" title="{{site.t.title.ru}}" />
 <meta property="og:type" content="website" /> {% endif %}
 {% if page.layout == "post" %}
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@olyavo" />
+<meta name="twitter:card" content="{%-if page.image-%}summary_large_image{%-else-%}summary{%-endif-%}" />
+<meta name="twitter:creator" content="@olyavo" />
 <meta name="twitter:title" content="{{ title }}" />
 <meta name="twitter:description" content="{{ page.snippet }}" /> {% if page.image %}
-<meta name="twitter:image" content="{{ site.url }}/images/posts/{{ page.image }}" />
-<meta property="og:image" content="{{ site.url }}/images/posts/{{ page.image }}" /> {% endif %}
+<meta name="twitter:image" content="{{ site.url }}/images/posts/large/{{ page.image }}" />
+<meta property="og:image" content="{{ site.url }}/images/posts/large/{{ page.image }}" /> {% endif %}
 <meta property="og:type" content="article" />
 <link href="https://www.gstatic.com/" rel="preconnect" crossorigin> 
 <link href="https://www.google.com" rel="dns-prefetch">
