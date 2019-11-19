@@ -67,7 +67,7 @@ task :post do
     #The main heading of the post
     post.puts "h1: \"\""
 
-    post.puts "comments: true"
+    post.puts "comments_locked: false"
     post.puts "categories: #{ENV['category'] || ''}"
     post.puts "tags: [#{CONFIG['default_tags'] + (ENV['tags'] ? ", "+ ENV['tags'] : '')}]"  # tag1, tag2, etc
     post.puts "description: \"\""
