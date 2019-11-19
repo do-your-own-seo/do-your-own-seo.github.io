@@ -2,7 +2,7 @@
 layout: pages
 ---
 
-<article role="article" class="post">
+<article role="article" class="post" {% if page.faq %}itemscope itemtype="https://schema.org/FAQPage"{% endif %}>
   <div class="card">
     <h1 class="post-title"> {{ page.h1 }} </h1> 
 	<div class="post-meta">
