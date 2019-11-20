@@ -63,6 +63,11 @@ t:
     ru: "SEO самостоятельно: оптимизируем сайт своими силами!"
     en: "SEO for everyone: read, think &amp; Do It Yourself"
 
+  type: 
+    uk: "блог"
+    ru: "блог"
+    en: "blog"
+
   keywords: 
     uk: "SEO блог"
     ru: "SEO блог"
@@ -70,7 +75,7 @@ t:
 
   description:
       uk: "SEO оптимізація сайту власними силами &#9728; Як зрозуміти і використовувати SEO на практиці &#9728; Як дійти згоди з Google і не боятися апдейтів пошукових систем"
-      ru: "SEO оптимизация сайта самостоятельно &#9728; Как понять и применять SEO на практике &#9728; Блог о том, как поладить с Google и не бояться апдейтов поисковых систем"
+      ru: "Оптимизация сайта своими силами – это реально &#9728; Как понять и применять SEO на практике &#9728; Как поладить с Google и не бояться апдейтов поисковых систем"
       en: "Symbiosis of SEO practice and theory &#9728; Website optimization on your own &#9728; Іf you understand SEO, you can Do It Yourself: it's adventurous and exciting!"
   
   pagination:
@@ -212,7 +217,7 @@ t:
   footnote:
     uk: "Контент – предмет авторського права, код відкритий згідно з "
     ru: "Контент – предмет авторского права, код доступен по "
-    en: "Content is under copyright; the code is available under the "
+    en: "Content is copyrighted; the code is  available under the "
 
   cat:
     uk: "Хто, я? Я і не живий-то взагалі"
