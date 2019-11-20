@@ -3,18 +3,21 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?> 
 {%- include assign.liquid -%}
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:webfeeds="http://webfeeds.org/rss/1.0">
   <channel>
-    <title>{{ site.t.title[page.lang] }}</title>
+    <title>{{ site.name }} {{ site.t.type[page.lang] }}</title>
     <description>{{ site.t.description[page.lang] | strip_html }}</description>
     <link>{{ site.url }}{{ lng }}</link>
     <atom:link href="{{ site.url }}{{ lng }}feed.xml" rel="self" type="application/rss+xml" />
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
     <xhtml:meta xmlns:xhtml="http://www.w3.org/1999/xhtml" name="robots" content="noindex" />
+    <webfeeds:icon>{{ site.url }}/images/square-icon.png</webfeeds:icon>
+    <webfeeds:logo>{{ site.url }}/images/favicon-30px-height.png</webfeeds:logo>
+    <webfeeds:accentColor>618930</webfeeds:accentColor>
+    <webfeeds:related layout="card" target="browser"/>
     {%- assign posts = site.posts | where:"lang", page.lang -%}
-    {%- for post in posts limit:10 -%}
+    {% for post in posts limit:10 %}
       <item>
         <title>{{ post.h1 | xml_escape }}</title>
         <description>{%- if post.snippet -%}{{ post.snippet | strip_html }}..{%- else -%}{{ post.excerpt | strip_html | truncatewords:40 | xml_escape }}{%- endif -%}</description>
@@ -28,6 +31,6 @@ layout: null
         <category>{{ tag | xml_escape }}</category>
         {%- endfor -%}
       </item>
-    {%- endfor -%}
+    {% endfor %}
   </channel>
 </rss>

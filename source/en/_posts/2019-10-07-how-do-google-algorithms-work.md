@@ -28,7 +28,7 @@ snippet: "Unlike the situation in SEO ten years ago, now purchased magic does no
   <li><a href="#4">Why can low-grade websites get into the Top 10?</a></li>
 </ul>
 <div><p>{{ page.snippet }}</p>
-<p class="txt-center"> <img src="/images/posts/{{ page.image }}" alt="Google algo"> </p>
+<p class="txt-center"> <img src="/images/posts/{{ page.image }}" alt="Google algo" class="webfeedsFeaturedVisual"> </p>
 <p>Googlebot tirelessly crawls websites and supplies vast amounts of data <span class="under">to machine learning systems.</span> Absorbing and analyzing information, Artificial Intelligence improves itself, and the majority of AI-drawn conclusions are reminiscent of the results of a human expert work.</p>
 <p>Before the next core update is put into practice, the quality of new search results need necessarily be <a href="https://www.google.com/search/howsearchworks/mission/users/">rated by external experts</a>. According to their opinion, Google launches or doesn't new features and implements the algorithms update.
 </p>

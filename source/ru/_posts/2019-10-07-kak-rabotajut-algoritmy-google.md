@@ -28,7 +28,7 @@ snippet: 'Чтобы вывести страницу в Топ-10 результ
 </ul>
 <div>
 <p>{{ page.snippet }}</p>
-<p class="txt-center"> <img src="/images/posts/{{ page.image }}" alt="Google algo"> </p>
+<p class="txt-center"> <img src="/images/posts/{{ page.image }}" alt="Google algo" class="webfeedsFeaturedVisual"> </p>
 <p>Сканируя сайты, гуглбот поставляет системам машинного обучения огромные массивы данных для анализа. Поглощая информацию, Искусственный Интеллект совершенствуется, и результаты его работы все чаще пере&shy;кликаются с выводами человека-эксперта. Ключевые обновления поисковых алгоритмов <a href="https://www.google.com/intl/ru/search/howsearchworks/mission/users/">получают оценки</a> от сторонних рецензентов, после чего программы корректируются и вновь отправляются на тестирование.</p>
 </div>
 <div><h2 id="1">Ссылочный вес, авторитет и надежность</h2>
