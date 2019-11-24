@@ -1,6 +1,6 @@
 # [SEO blog for everyone: read, think & Do It Yourself!](https://do-your-own-seo.com/en/) [![Build Status](https://travis-ci.com/do-your-own-seo/do-your-own-seo.github.io.svg?branch=source)](https://travis-ci.com/do-your-own-seo/do-your-own-seo.github.io)
 
-* [x] SEO friendly
+* [x] SEO-friendly
 * [x] Responsive
 * [x] Multilingual
 * [x] No jQuery, no Disqus
@@ -10,8 +10,9 @@
 
 * Pagination for each language via [Jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2) (non-supported by Github Pages).
 * Аutomatic generation of the sitemap. The [Jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap) plugin allows us to exclude pages and files from sitemap.xml.
+* Separate sitemap for images related to the posts.
 * Full control over the commenting system with [Staticman](https://github.com/eduardoboucas/staticman).
-* RSS feeds for each language without plugins.
+* RSS-feed for each language without plugins.
 * Post sharing buttons (Twitter, Facebook, LinkedIn, Reddit) + social meta tags.
 * Schema.org markup (WebSite, WebPage, BlogPosting).
 
