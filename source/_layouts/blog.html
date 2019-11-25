@@ -6,7 +6,22 @@ layout: pages
 <div id="cat-shelter"></div>
 <div class="post-list" data-nosnippet>
   {%- for post in paginator.posts -%}
-    {%- include preview.html -%}
+    <div class="post card clf">
+	  {%- if post.image -%}
+	  <img class="post-thumbnail" src="/images/preview/{{ post.image }}" alt="{{ site.t.preview[page.lang] }} {{ post.tags[0] }}">
+	  {%- endif -%}
+	  <div class="post-content">
+	    <header {% unless post.image %}class="noimage"{% endunless %}>
+	      <a href="{{ post.url }}"><h2 class="post-title">{{ post.h1 }}</h2></a>
+	      <div class="post-meta">
+	        <small><time>
+	          {%- if page.lang == "en" -%}{{ post.date | date: "%b %-d, %Y" }}{%- else -%}{%- include dates.html date=post.date -%}{%- endif -%}
+	        </time></small>
+	      </div>
+	    </header>
+	    <p>{%- if post.snippet -%}{{ post.snippet | strip_html }}..{%- else -%}{{ post.content | strip_html | truncatewords:40 }}{%- endif -%}</p>
+	  </div>
+	</div>
   {%- endfor -%}
   {%- if paginator.total_pages > 1 -%}
 	<nav class="pagination" role="pagination">
