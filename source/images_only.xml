@@ -22,11 +22,11 @@
           {%- if array[0] == '' -%}
             {%- assign src = array[1] | split:'"' -%}
             {%- unless allImages contains src[0] -%}
-              {%- assign allImages = allImages | push: src[0] -%}
+              {% assign allImages = allImages | push: src[0] %}
     <url>
       <loc>{{ site.url }}{{ src[0] }}</loc>
     </url>
-            {%- endunless -%}
+            {% endunless %}
           {%- endif -%}
         {%- endif -%}
       {% endfor %}
