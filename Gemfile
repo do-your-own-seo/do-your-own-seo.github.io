@@ -21,5 +21,4 @@ gem "sass", "~>3.4"
 # If you have any other plugins, list them here:
 group :jekyll_plugins do
   gem "jekyll-paginate-v2"
-  gem "jekyll-sitemap", "~>1.2.0"
 end

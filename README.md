@@ -9,10 +9,9 @@
 ## Features 
 
 * Pagination for each language via [Jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2) (non-supported by Github Pages).
-* Аutomatic generation of the sitemap. The [Jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap) plugin allows us to exclude pages and files from sitemap.xml.
-* Separate sitemap for images related to the posts.
 * Full control over the commenting system with [Staticman](https://github.com/eduardoboucas/staticman).
-* RSS-feed for each language without plugins.
+* Аutomatic generation of *sitemap.xml* with all the images from the posts. Adding `sitemap: false` to the front-matter of the page excludes it from the map; setting `sitemap_exclude: [array of paths]` in *\_config.yml* does the same with files and folders.
+* RSS-feed for each language, optimized for Feedly.
 * Post sharing buttons (Twitter, Facebook, LinkedIn, Reddit) + social meta tags.
 * Schema.org markup (WebSite, WebPage, BlogPosting).
 

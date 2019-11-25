@@ -1,6 +1,6 @@
 #Jekyll 
 permalink: /:title
-plugins: [jekyll-paginate-v2, jekyll-sitemap]
+plugins: [jekyll-paginate-v2]
 encoding: "utf-8"
 
 source: source
@@ -19,16 +19,7 @@ pagination:
   sort_reverse: true
   sort_field: "date"
 
-# Uncomment and edit the below block, if you need to exclude files (pdf, etc.) from the sitemap. 
-# But keep in mind a possible increase in building time.
-# For editable documents (txt, etc.) you can add "sitemap: false" to the front-matter.
-
-#defaults:
-#  -
-#    scope:
-#      path: "/assets/**/*.*"
-#    values:
-#      sitemap: false
+sitemap_exclude: ["assets/"]
 
 #Site
 url: https://do-your-own-seo.com

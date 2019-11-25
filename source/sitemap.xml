@@ -1,0 +1,86 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+{%- for page in site.pages -%}
+  {% if page.path contains 'index.html' or page.path contains 'index.md' %}
+  <url>
+    <loc> {{ site.url }}{{ page.url | remove: "index.html" | remove: "index.md"}} </loc>
+    <lastmod> {{ site.time }} </lastmod>
+  </url>
+  {% endif %}
+{%- endfor -%}
+{%- comment -%} If you want to exclude duplicate images, store SRC in uniqueImages array {%- endcomment -%}
+{%- comment -%}  assign uniqueImages = '' | split: ','   {%- endcomment -%}
+
+{%- for collection in site.collections -%}
+{%- assign name = collection.label -%}
+  {%- if name == 'posts' -%} 
+    {%- assign page_set = site[name] | sort:'date' | reverse -%} 
+    {%- else -%} 
+    {%- assign page_set = site[name] -%} 
+  {%- endif-%}
+  {% for page in page_set %}
+  <url>
+    <loc>{{ site.url }}{{ page.url }}</loc>
+    <lastmod>{%- if page.last_modified_at -%}{{ page.last_modified_at }}{%- else -%}{{ site.time }}{%- endif -%}</lastmod>
+    {%- assign images = page.content | split:"<img " -%}
+    {%- for image in images -%}
+      {%- assign inner = image | split:"/>" | first -%}
+      {%- if inner contains 'src=' -%}
+        {%- assign besideSRC = inner | split:'src="' -%}
+        {%- assign preSRC = '' -%}
+        {%- if besideSRC[0] != '' -%} 
+          {%- assign preSRC = besideSRC[0] | slice:-1, 1 | strip -%} 
+        {%- endif -%} 
+        {%- if preSRC == '' or preSRC == '-' -%}
+          {% assign src = besideSRC[1] | split:'"' | first %}
+{%- comment -%}  unless uniqueImages contains src  {%- endcomment -%}
+{% comment %}  assign uniqueImages = uniqueImages | push: src  {% endcomment %}
+    <image:image>
+      <image:loc>{{ site.url }}{{ src }}</image:loc>
+          {%- if inner contains 'alt=' -%}
+            {%- assign besideALT = inner | split:'alt="' -%}
+            {%- assign preALT = '' -%}
+            {%- if besideALT[0] != '' -%} 
+              {%- assign preALT = besideALT[0] | slice:-1, 1 | strip -%} 
+            {%- endif -%} 
+            {%- if preALT == '' -%}
+              {% assign alt = besideALT[1] | split:'"' | first %}
+      <image:caption>{{ alt }}</image:caption>
+            {%- endif -%}
+          {% endif %}
+    </image:image>
+{%-comment-%} { endunless } {%-endcomment-%}
+        {%- endif -%}
+      {%- endif -%}
+    {% endfor %}
+  </url>
+  {% endfor %}
+{%- endfor -%}
+
+{%- for image in site.static_files -%}
+  {% if image.path contains 'images/posts/large' %}
+  <url>
+    <loc>{{ site.url }}{{ image.path }}</loc>
+  </url>
+  {% endif %}
+{%- endfor  -%}
+
+{%- for page in site.pages -%} 
+  {%- unless page.sitemap == false or page.path contains 'robots.txt' or page.path contains 'index.html' or page.path contains 'index.md' -%} 
+    {%- assign ext = page.path | split: "." | last -%}
+    {%- if ext != 'css' and ext != 'sass' and ext != 'scss' and ext != 'js' and ext != 'xml' -%}
+      {%- for excl in site.sitemap_exclude -%}
+        {% unless page.path contains excl %}
+  <url>
+    <loc>{{ site.url }}{{ page.url }}</loc>
+    <lastmod>{%- if page.last_modified_at -%} {{ page.last_modified_at }} {%- else -%} {{ site.time }} {%- endif -%}</lastmod>
+  </url>
+        {% endunless %}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endunless -%}
+{% endfor %}
+
+</urlset>
