@@ -1,5 +1,5 @@
 <div class="relatedPosts" data-nosnippet>
-<h4>{{site.t.related[page.lang]}}:</h4> {%- assign posts = site.posts | where:"lang", page.lang -%}
+<h4>{{site.data.t.related[page.lang]}}:</h4> {%- assign posts = site.posts | where:"lang", page.lang -%}
 {%- assign maxRelated = 4 -%} {%- assign minCommonTags =  2 -%} {%- assign maxRelatedCounter = 0 -%}
   {%- for post in posts -%}
     {%- assign sameTagCount = 0 -%} {%- assign commonTags = '' -%}

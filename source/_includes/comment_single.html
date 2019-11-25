@@ -33,7 +33,7 @@
     </div>
     {% unless include.replying_to >0 or page.comments_locked == true %}
       <div class="comment-reply">
-        <small><a rel="nofollow" data-i="{{ include.index }}" href="#comment-{{ include.index }}"> {{site.t.reply[page.lang]}}&nbsp;&#10548;</a></small>
+        <small><a rel="nofollow" data-i="{{ include.index }}" href="#comment-{{ include.index }}"> {{site.data.t.reply[page.lang]}}&nbsp;&#10548;</a></small>
       </div>
     {% endunless %}
   </div>

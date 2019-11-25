@@ -1,13 +1,13 @@
 {%- include assign.liquid -%}
 {%- if paginator.page > 1-%} 
-	{%- assign title = site.t.pagination.title[page.lang] | append: paginator.page -%} 
+	{%- assign title = site.data.t.pagination.title[page.lang] | append: paginator.page -%} 
 	{%- elsif page.title -%} {%- assign title = page.title -%} 
-	{%- else -%} {%- assign title = site.t.title[page.lang] -%} 
+	{%- else -%} {%- assign title = site.data.t.title[page.lang] -%} 
 {%- endif -%}
 {%- if page.description -%} 
 	{%- assign descr = page.description -%} 
 	{%- elsif page.excerpt-%} {%- assign descr = page.excerpt | strip_html -%} 
-	{%- else -%} {%- assign descr = site.t.description[page.lang] -%} 
+	{%- else -%} {%- assign descr = site.data.t.description[page.lang] -%} 
 {%- endif -%}
 {%- if paginator.page > 1 -%} 
 	{%- assign descr = descr | truncate:100 | append:"-- c." | append: paginator.page -%} 
@@ -56,13 +56,13 @@
 <link rel="alternate" hreflang="x-default" href="{{ ref }}"/> {% endif %} {% endif %} 
 {%- endfor -%}
 {% if page.layout == "blog" and paginator.page == 1 %}
-<link rel="alternate" type="application/atom+xml" href="{{ site.url }}/feed.xml" title="{{site.t.title.uk}}" />
-<link rel="alternate" type="application/atom+xml" href="{{ site.url }}/en/feed.xml" title="{{site.t.title.en}}" />
-<link rel="alternate" type="application/atom+xml" href="{{ site.url }}/ru/feed.xml" title="{{site.t.title.ru}}" />
+<link rel="alternate" type="application/atom+xml" href="{{ site.url }}/feed.xml" title="{{site.data.t.title.uk}}" />
+<link rel="alternate" type="application/atom+xml" href="{{ site.url }}/en/feed.xml" title="{{site.data.t.title.en}}" />
+<link rel="alternate" type="application/atom+xml" href="{{ site.url }}/ru/feed.xml" title="{{site.data.t.title.ru}}" />
 <meta property="og:type" content="website" /> {% endif %}
 {% if page.layout == "post" %}
 <meta name="twitter:card" content="{%-if page.image-%}summary_large_image{%-else-%}summary{%-endif-%}" />
-<meta name="twitter:creator" content="@olyavo" />
+<meta name="twitter:creator" content="@do_your_own_seo" />
 <meta name="twitter:title" content="{{ title }}" />
 <meta name="twitter:description" content="{{ page.snippet }}" /> {% if page.image %}
 <meta name="twitter:image" content="{{ site.url }}/images/posts/large/{{ page.image }}" />

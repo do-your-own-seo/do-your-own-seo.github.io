@@ -5,8 +5,8 @@ layout: null
 {%- include assign.liquid -%}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:webfeeds="http://webfeeds.org/rss/1.0">
   <channel>
-    <title>{{ site.name }} {{ site.t.type[page.lang] }} ({{ page.locale }})</title>
-    <description>{{ site.t.description[page.lang] | strip_html }}</description>
+    <title>{{ site.name }} {{ site.data.t.type[page.lang] }} ({{ page.locale }})</title>
+    <description>{{ site.data.t.description[page.lang] | strip_html }}</description>
     <link>{{ site.url }}{{ lng }}</link>
     <atom:link href="{{ site.url }}{{ lng }}feed.xml" rel="self" type="application/rss+xml" />
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>

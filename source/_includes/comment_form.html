@@ -2,22 +2,22 @@
 <div id="feedback">
   <form id="comment-form" method="post" action="/f.php">
   <a rel="nofollow" id="cancel-link" href="#feedback" class="hidden">
-    <b>{{site.t.cancelReply[page.lang]}}</b> &ensp;<i class="icon icon-cross">&#10006;</i>
+    <b>{{site.data.t.cancelReply[page.lang]}}</b> &ensp;<i class="icon icon-cross">&#10006;</i>
   </a>
     <div class="form-group">
-      <label for="comment-form-name">{{ site.t.commentName[page.lang] }} <sup>&Star;</sup>
+      <label for="comment-form-name">{{ site.data.t.commentName[page.lang] }} <sup>&Star;</sup>
         <input type="text" id="comment-form-name" name="fields[name]" maxlength="50" required spellcheck="false">
       </label>
       <label for="comment-form-email">E-mail
-        <input type="email" id="comment-form-email" name="fields[email]" spellcheck="false" placeholder="{{ site.t.emailPlacehold[page.lang] }}">
+        <input type="email" id="comment-form-email" name="fields[email]" spellcheck="false" placeholder="{{ site.data.t.emailPlacehold[page.lang] }}">
       </label>
-      <label for="comment-form-url">{{ site.t.commentSite[page.lang] }} 
+      <label for="comment-form-url">{{ site.data.t.commentSite[page.lang] }} 
         <input type="URL" id="comment-form-url" name="fields[url]" maxlength="70">
       </label>
     </div>
     <div class="form-group">
-      <label for="comment-form-message">{{ site.t.comment[page.lang] }} <sup>&Star;</sup>
-        <textarea id="comment-form-message" name="fields[message]" required rows="6" maxlength="700" placeholder="{{site.t.cookieMessage[page.lang]}} policies.google.com/privacy"></textarea>
+      <label for="comment-form-message">{{ site.data.t.comment[page.lang] }} <sup>&Star;</sup>
+        <textarea id="comment-form-message" name="fields[message]" required rows="6" maxlength="700" placeholder="{{site.data.t.cookieMessage[page.lang]}} policies.google.com/privacy"></textarea>
       </label>
     </div>
     <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.url | replace: '/', ''}}">
@@ -26,20 +26,20 @@
     <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.recaptcha.siteKey }}">
     <input type="hidden" name="options[reCaptcha][secret]" value="{{ site.recaptcha.secret }}">
     <div class="alert txt-right">
-      <b class="ok hidden">{{site.t.commentSuccess[page.lang]}}</b>
-      <b class="err hidden">{{site.t.commentReject[page.lang]}}</b>
+      <b class="ok hidden">{{site.data.t.commentSuccess[page.lang]}}</b>
+      <b class="err hidden">{{site.data.t.commentReject[page.lang]}}</b>
     </div>
     <div class="form-group">
-      <label for="comment-form-location">{{site.t.honeypot[page.lang]}}
-        <input type="text" id="comment-form-location" name="fields[hidden]" autocomplete="off" placeholder="{{site.t.honeypotPlacehold[page.lang]}}" />
+      <label for="comment-form-location">{{site.data.t.honeypot[page.lang]}}
+        <input type="text" id="comment-form-location" name="fields[hidden]" autocomplete="off" placeholder="{{site.data.t.honeypotPlacehold[page.lang]}}" />
       </label>
       <div class="g-recaptcha " data-sitekey="{{ site.recaptcha.siteKey }}"></div>
 
       <button type="submit" id="submit-comment" class="button-ghost">
-        <b class="def">{{site.t.submitComment[page.lang]}}</b>
-        <b class="sending hidden">{{site.t.commentSending[page.lang]}}</b>
-        <span class="ok hidden"><i class="icon icon-checkmark">&#10004;</i>&emsp;<b>{{site.t.commentSubmitted[page.lang]}}</b></span>
-        <span class="err hidden"><i class="icon icon-cross">&#10006;</i>&emsp;<b>{{site.t.commentNotSubmitted[page.lang]}}</b></span>
+        <b class="def">{{site.data.t.submitComment[page.lang]}}</b>
+        <b class="sending hidden">{{site.data.t.commentSending[page.lang]}}</b>
+        <span class="ok hidden"><i class="icon icon-checkmark">&#10004;</i>&emsp;<b>{{site.data.t.commentSubmitted[page.lang]}}</b></span>
+        <span class="err hidden"><i class="icon icon-cross">&#10006;</i>&emsp;<b>{{site.data.t.commentNotSubmitted[page.lang]}}</b></span>
       </button>
     </div>
   </form>
@@ -48,7 +48,7 @@
 {%- else -%}
 <div class="notice">
   {%-if page.lang == site.lang-%}{%-assign lng ="/"-%}{%-elsif page.lang-%}{%-assign lng=page.lang | prepend:"/" | append:"/"-%}
-  {%-endif-%} <h4>{{site.t.commentsClosed[page.lang]}}</h4>
-    <p>{{site.t.pleaseContactMe[page.lang]}}<a href="{{site.author.email}}">{{site.t.pleaseContactMeAnchor[page.lang]}}</a>.</p>
+  {%-endif-%} <h4>{{site.data.t.commentsClosed[page.lang]}}</h4>
+    <p>{{site.data.t.pleaseContactMe[page.lang]}}<a href="{{site.author.email}}">{{site.data.t.pleaseContactMeAnchor[page.lang]}}</a>.</p>
 </div>
 {%- endunless -%}
