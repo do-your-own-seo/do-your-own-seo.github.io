@@ -13,7 +13,7 @@ last_modified_at: 2019-11-09T02:32:00Z
 description: "SEO magic no longer works: Google engines can process content, analyze contexts and draw conclusions. So what's better for ranking &#10112;&#10113;&#10114;: links, content, or other factors?"
 
 keywords: "google algorithms, how google ranks pages"
-tags: [Search ranking, Google, аlgorithms, SEO]
+tags: [Google аlgorithms, Google, search ranking, SEO]
 
 h1: "How does Google rank webpages?"
 
