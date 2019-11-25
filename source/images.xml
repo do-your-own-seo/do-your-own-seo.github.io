@@ -10,7 +10,7 @@
     {% endif %}
 {%- endfor  -%}
 {%- assign allImages = '' | split: ',' -%}
-{%- assign posts = site.posts | sort:'lang' | reverse -%}
+{%- assign posts = site.posts | sort:'date' | reverse -%}
 {% for post in posts %}
     <url>
       <loc>{{ site.url }}{{ post.url }}</loc>
