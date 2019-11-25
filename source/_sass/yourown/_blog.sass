@@ -36,15 +36,14 @@
         margin-top: 0
 
     &-thumbnail
+      display: block
       width: 250px
       margin: $xsmall-spacing auto $small-spacing auto
-      line-height: $xsmall-spacing
-      &, img
-        border-radius: $base-border-radius
+      border-radius: $base-border-radius
 
       +media(470px)
         width: 250px
-        margin: $xsmall-spacing $mid-spacing 0 0
+        margin: 0 $mid-spacing 0 0
         float: left
 
       +media($tablet-small)
@@ -62,6 +61,9 @@
 
       +media($tablet-small)
         font-size: 1.65rem
+
+    p
+      margin-top: $xsmall-spacing
 
   .post:hover
     box-shadow: -1px 2.5px 8px 0 rgba(0,0,0,0.4)
