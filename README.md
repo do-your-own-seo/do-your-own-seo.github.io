@@ -10,7 +10,7 @@
 
 * Pagination for each language via [Jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2) (non-supported by Github Pages).
 * Full control over the commenting system with [Staticman](https://github.com/eduardoboucas/staticman).
-* Аutomatic generation of *sitemap.xml* with all the images from the posts. Adding `sitemap: false` to the front-matter of the page excludes it from the map; setting `sitemap_exclude: [array of paths]` in *\_config.yml* does the same with files and folders.
+* Sitemap.xml with all the images for every post. Adding `sitemap:false` to the front-matter excludes the page from the map; setting `sitemap_exclude:[paths]` in *\_config.yml* does the same with files and folders.
 * RSS-feed for each language, optimized for Feedly.
 * Post sharing buttons (Twitter, Facebook, LinkedIn, Reddit) + social meta tags.
 * Schema.org markup (WebSite, WebPage, BlogPosting).
