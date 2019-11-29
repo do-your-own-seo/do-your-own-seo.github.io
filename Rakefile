@@ -3,6 +3,7 @@ require "rubygems"
 require "tmpdir"
 require "bundler/setup"
 require "jekyll"
+require "html-proofer"
 
 SOURCE = "source/"
 DEST = "_site"
@@ -13,8 +14,24 @@ CONFIG = {
   'post_ext' => "md"
 }
 
-task :default => ["post"]
+desc "Test with html-proofer"
+task :test do
+  sh "bundle exec jekyll build --drafts"
+  options = { 
+    assume_extension: true,
+    check_opengraph: true, 
+    check_favicon: true,
+    enforce_https: true,
+    typhoeus:  { :ssl_verifypeer => false },
+    internal_domains: ["do-your-own-seo.com"],
+    file_ignore: [/assets/, /editor/, /yandex(.+)\.html/],
+    url_ignore: [/LICENSE/, /gstatic\.com/, /google-analytics/]
+  }
 
+  HTMLProofer.check_directory("./_site", options).run
+end
+
+task :default => ["post"]
 
 desc "Create a new post or draft"
 task :post do
