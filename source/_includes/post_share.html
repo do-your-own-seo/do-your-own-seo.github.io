@@ -1,0 +1,43 @@
+  {%- assign full_url=post.url | prepend:site.url -%}{%- assign param_title=page.title | cgi_escape -%}
+
+  {%- comment -%} 
+    Trying to create hashtags from page.tags[0] and page.tags[1] 
+  {%- endcomment -%}
+
+  {%- assign tags = "" | split: ',' -%}
+    {%- for tag in page.tags -%}
+      {%- if tag and forloop.index < 3 -%}
+
+          {%- if page.lang=='en' -%}
+          {%- assign words = tag | split:" " -%}
+          {%- assign t = "" -%}
+          {%- for word in words -%} 
+            {%- if forloop.index >1 -%}
+                {%- assign t = word | capitalize | prepend:t -%}
+            {%- else -%}
+              {%- assign t = word | prepend:t -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- else -%} 
+          {%- assign t = tag | replace:" ", "_" -%}
+        {%- endif -%}
+        {%- assign tags = tags | push: t -%}
+      {%- endif-%}
+    {%- endfor -%}
+  <div class="post-share txt-right" data-proofer-ignore> <em>{{site.data.t.share[page.lang]}}:&nbsp;</em>
+    <a rel="nofollow" href="https://facebook.com/sharer.php?u={{full_url}}">
+      <i class="icon icon-facebook" aria-label="Share on Facebook"></i>
+    </a>
+    <a rel="nofollow" href="https://twitter.com/intent/tweet?text={{param_title}}&url={{full_url}}{%-if tags[0]-%}&hashtags={{tags|join:','}}{%-endif-%}">
+      <i class="icon icon-twitter" aria-label="Share on Twitter"></i>
+    </a>
+    <a rel="nofollow" href="https://www.linkedin.com/shareArticle?mini=true&url={{full_url}}&title={{param_title}}&source={{site.name|uri_escape}}">
+      <i class="icon icon-linkedin2" aria-label="Share on LinkedIn"></i>
+    </a>
+    <a rel="nofollow" href="https://www.reddit.com/submit?url={{full_url}}&title={{param_title}}&resubmit=true">
+      <i class="icon icon-reddit-alien" aria-label="Share on Reddit"></i>
+    </a>
+    <a rel="nofollow" href="mailto:?Subject={{site.name|uri_escape}}%20blog%20post&body={{param_title}}">
+      <i class="icon icon-envelop" aria-label="Mail this"></i>
+    </a>
+  </div>

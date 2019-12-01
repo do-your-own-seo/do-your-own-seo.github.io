@@ -19,18 +19,11 @@ layout: pages
 	</small>
 	</div>
     <div class="post-content"> {{ content }} </div>
-
-	<div class="post-share txt-right"> {%- assign full_url=post.url | prepend: site.url -%}{%- assign param_title = page.title | uri_escape -%}
-	  <em>{{site.data.t.share[page.lang]}}:&nbsp;</em>
-	  <a href="https://facebook.com/sharer.php?u={{full_url}}" rel="nofollow"><i class="icon icon-facebook" aria-label="Share on Facebook"></i></a>
-	  <a href="https://twitter.com/intent/tweet?text={{param_title}}&url={{full_url}}" rel="nofollow"><i class="icon icon-twitter" aria-label="Share on Twitter"></i></a>
-	  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{full_url}}&title={{param_title}}&source=LinkedIn" rel="nofollow"><i class="icon icon-linkedin2" aria-label="Share on LinkedIn"></i></a>
-	  <a href="https://www.reddit.com/submit?url={{full_url}}&title={{param_title}}" rel="nofollow"><i class="icon icon-reddit-alien" aria-label="Share on Reddit"></i></a>
-	  <a href="mailto:?Subject=Do%20your%20own%20SEO%20blog%20post&body={{param_title}}" rel="nofollow"><i class="icon icon-envelop" aria-label="Mail this"></i></a>
-	</div>
+	<script src="/assets/post.min.js" defer></script>
+	
+	{% include post_share.html %}
     {% include related_posts.html %}
     {% include comments.html %}
-<script src="/assets/comments.min.js"></script>
   </div>
 {% include schema_post.JSON %}
 </article>
