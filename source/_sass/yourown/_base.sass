@@ -8,6 +8,20 @@ body
   +media($tablet-small)
     padding-top: 0
 
+h2
+  padding-top: 96px
+  margin-top: -80px
+
+  +media($tablet-small)
+    padding-top: 1em
+    margin-top: 0
+
+img,
+picture
+  margin: 0
+  max-width: 100%
+  height: auto
+
 /* Background pattern from Toptal Subtle Patterns */
 .main-container
   position: relative
@@ -24,38 +38,6 @@ body
 
   +media($tablet)
     max-width: 980px
-
-h2
-  padding-top: 96px
-  margin-top: -80px
-
-  +media($tablet-small)
-    padding-top: 1em
-    margin-top: 0
-
-.site-footer
-  margin: 0
-  font-size: 90% 
-  padding: $small-spacing
-
-  +media($phone-large)
-    padding: $mid-spacing $small-spacing
-    font-size: 100%
-
-  small
-    +media($tablet)
-      margin-left: 3em
-
-.site-footer, 
-.rug
-  background-color: #fff
-  border-top: 1px solid rgba($light-gray, .55)
-
-img,
-picture
-  margin: 0
-  max-width: 100%
-  height: auto
 
 .card
   background-color: #fff
@@ -78,3 +60,21 @@ picture
       
   p:last-of-type
     margin-bottom: 0
+
+.site-footer
+  margin: 0
+  font-size: 90% 
+  padding: $small-spacing
+
+  +media($phone-large)
+    padding: $mid-spacing $small-spacing
+    font-size: 100%
+
+  small
+    +media($tablet)
+      margin-left: 3em
+
+.site-footer, 
+.rug
+  background-color: #fff
+  border-top: 1px solid rgba($light-gray, .55)
