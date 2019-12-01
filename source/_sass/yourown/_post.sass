@@ -1,3 +1,51 @@
+ul.featured
+  list-style-type: none
+
+  &.plus
+    li:before
+      content: "\002B\00a0"
+      color: $olive
+  
+  &.minus
+    li:before
+      content: "\2212\00a0"
+      color: $danger-color
+
+  li:before
+    font-weight: 600
+    font-size: 1.5em
+    line-height: 1
+    padding-right: 3px
+
+ 
+.restrict
+  width: auto
+
+  &.vw40
+      max-height: 40vw
+
+  &.vw35
+    max-height: 35vw
+
+.fullscreen-right
+  display: block
+  width: auto
+  margin: auto
+  float: none
+
+  +media($phone-large)
+    max-height: 45vw
+    float: right
+    margin-left: 5px
+
+#FAQ
+    padding-top: 90px
+    margin-top: -80px
+
+    +media($tablet-small)
+      padding-top: 5px
+      margin-top: 0
+
 .post-share
   margin: $small-spacing $base-spacing 0 0
 
@@ -25,5 +73,23 @@
     margin: $small-spacing 0
 
 .question
-  color: #618930
+  color: $olive
   font-size: 1.2em
+
+h3[itemprop="name"]
+  color: $green
+  opacity: .95
+
+h3[itemprop="name"]:before
+
+  +media($phone-large)
+    content: "\ea09\00a0"
+    font-family: 'icomoon'
+
+em:after
+  content: "\202F"
+
+small
+  a
+    color: inherit
+    text-decoration: underline
