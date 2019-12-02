@@ -3,11 +3,6 @@ title:
   ru: "SEO самостоятельно: оптимизируем сайт своими силами!"
   en: "SEO for everyone: read, think &amp; Do It Yourself"
 
-type: 
-  uk: "блог"
-  ru: "блог"
-  en: "blog"
-
 keywords: 
   uk: "SEO блог"
   ru: "SEO блог"
@@ -15,7 +10,7 @@ keywords:
 
 description:
     uk: "SEO оптимізація сайту власними силами &#9728; Як зрозуміти і використовувати SEO на практиці &#9728; Як дійти згоди з Google і не боятися апдейтів пошукових систем"
-    ru: "Оптимизация сайта своими силами – это реально &#9728; Как понять и применять SEO на практике &#9728; Как поладить с Google и не бояться апдейтов поисковых систем"
+    ru: "Оптимизация сайта своими силами &#9728; Как понять и применять SEO на практике &#9728; Как поладить с Google и не бояться апдейтов поисковых систем"
     en: "Symbiosis of SEO practice and theory &#9728; Website optimization on your own &#9728; Іf you understand SEO, you can Do It Yourself: it's adventurous and exciting!"
 
 pagination:
@@ -25,9 +20,9 @@ pagination:
     en: "Do Your Own SEO blog - page "
 
 about:
-  uk: "Інтро + Контакти"
-  ru: "Интро + Контакты"
-  en: "Intro and Contacts"
+  uk: "Від автора"
+  ru: "От автора"
+  en: "Author's Intro"
 
 show:
   uk: "Меню"
@@ -125,9 +120,9 @@ commentReject:
   en: "Please make sure the required fields have been completed correctly. :( Sorry for the error."
 
 cookieMessage:
-  uk: " reCAPTCHA &ndash; це Google-сервіс, який читає cookies.\n Натискаючи Надіслати, ви погоджуєтеся з політикою Google:\n\n"
-  ru: " reCAPTCHA &ndash; это Google-сервис, который читает cookies.\n Отправляя сообщение, вы соглашаетесь с политикой Google:\n\n"
-  en: " reCAPTCHA reads cookies.\n By submitting a comment, you agree with Google's Privacy policy:\n\n"
+  uk: " reCAPTCHA &ndash; це Google-сервіс, який читає cookies.\n Взаємодіючи з нею, ви погоджуєтеся з політикою Google:\n\n"
+  ru: " reCAPTCHA &ndash; это Google-сервис, который читает cookies.\n Ставя галочку, вы соглашаетесь с политикой Google:\n\n"
+  en: " reCAPTCHA is a Google service that reads cookies.\n By submitting a comment, you agree with Google's privacy policy:\n\n"
 
 honeypot:
   uk: "Пастка для ботів"
