@@ -8,7 +8,7 @@ layout: pages
   {%- for post in paginator.posts -%}
     <div class="post card clf">
 	  {%- if post.image -%}
-	  <img class="post-thumbnail" src="/images/preview/{{ post.image }}" alt="{{ site.data.t.preview[page.lang] }} {{ post.tags[0] }}">
+	  <img class="post-thumbnail" src="/images/preview/{{ post.image }}" alt="{{ site.data.t.preview[page.lang] }} {{ post.tags[0] }}" loading="lazy">
 	  {%- endif -%}
 	  <div class="post-content">
 	    <header {% unless post.image %}class="noimage"{% endunless %}>
