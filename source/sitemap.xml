@@ -78,7 +78,7 @@
         {% unless page.path contains excl %}
   <url>
     <loc>{{ site.url }}{{ page.url }}</loc>
-    <lastmod>{{ date }}</lastmod>
+    {%- if page.last_modified_at -%}<lastmod>{{ date }}</lastmod>{% endif %}
   </url>
         {% endunless %}
       {%- endfor -%}
