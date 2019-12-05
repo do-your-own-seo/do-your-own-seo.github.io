@@ -4,7 +4,7 @@
 		"@context": "http://schema.org",
 		"@graph": [{
 			"@type": "BlogPosting",
-			"image": {%- if page.image -%}"{{ site.url }}/images/posts/large/{{ page.image }}"{%-else-%}"{{ site.url }}/favicon.png"{%- endif -%}, 
+			"image": {%- if page.image -%}"{{ site.url }}/images/posts/{{ page.image }}"{%-else-%}"{{ site.url }}/apple-touch-icon.png"{%- endif -%}, 
 			"url": "{{ site.url }}{{ page.url }}",
 			"mainEntityOfPage": "True", {% if page.h1 %} 
 			"headline": "{{ page.h1 }}",  {% endif %}
@@ -42,6 +42,15 @@
 			    "name": "{{ page.tags[0] }}",
 			    "item": "{{ site.url }}{{ page.url }}"
 			  }]
+			}
+		{%-endif-%}
+		{%-if page.image -%},
+			{
+		        "@type": "ImageObject",
+		        "@id": "{{page.url}}#image",
+		        "url": "{{ site.url }}/images/posts/large/{{ page.image }}",
+		        "width": 1200,
+		        "height": 630
 			}
 		{%-endif-%}
 		]
