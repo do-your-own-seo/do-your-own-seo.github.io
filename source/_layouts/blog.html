@@ -12,7 +12,14 @@ layout: pages
 	  {%- endif -%}
 	  <div class="post-content">
 	    <header {% unless post.image %}class="noimage"{% endunless %}>
-	      <a href="{{ post.url }}"><h2 class="post-title">{{ post.h1 }}</h2></a>
+	      {%- if post.snippet_header -%}
+	      	{%- assign h2 = post.snippet_header -%}
+	      {%- elsif post.h1 -%}
+	      	{%- assign h2 = post.h1 -%}
+	      {%- else -%}
+	      	{%- assign h2 = post.title -%}
+	      {% endif %}
+	      <a href="{{ post.url }}"><h2 class="post-title">{{h2}}</h2></a>
 	      <div class="post-meta">
 	        <small><time>
 	          {%- if page.lang == "en" -%}{{ post.date | date: "%b %-d, %Y" }}{%- else -%}{%- include dates.html date=post.date -%}{%- endif -%}

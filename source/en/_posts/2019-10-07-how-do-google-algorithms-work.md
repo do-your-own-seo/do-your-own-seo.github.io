@@ -3,21 +3,22 @@ layout: post
 i18n-link: algo
 locale: en
 lang: en
-title: "How do Google Algorithms rank pages?"
-image: "how-do-google-algorithms-work.jpg"
-modal: "needed"
 
 date: 2019-10-07T22:19:00Z
 last_modified_at: 2019-12-01T00:21:00Z
+tags: [Google аlgorithms, Google, search ranking, SEO]
+title: "How do Google Algorithms rank pages?"
 
 description: "SEO magic no longer works: Google engines can process content, analyze contexts and draw conclusions. So what's better for ranking &#10112;&#10113;&#10114;: links, content, or other factors?"
-
 keywords: "google algorithms, how google ranks pages"
-tags: [Google аlgorithms, Google, search ranking, SEO]
+modal: "needed"
 
 h1: "How does Google rank webpages?"
+snippet_header: "How Search works and how reliable Google Algos are"
 
 snippet: "Unlike the situation in SEO ten years ago, now purchased magic does not work. Buying links won't bring the page to the Top and could even hurt your rankings. Search algorithms are more likely to choose high-grade resources, and Google patents confirm this trend."
+
+image: "how-do-google-algorithms-work.jpg"
 
 ---
 
