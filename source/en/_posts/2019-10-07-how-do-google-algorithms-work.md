@@ -14,7 +14,7 @@ keywords: "google algorithms, how google ranks pages"
 modal: "needed"
 
 h1: "How does Google rank webpages?"
-snippet_header: "How Search works and how reliable Google Algos are"
+snippet_header: "How web search works and how picky Google Algos are"
 
 snippet: "Unlike the situation in SEO ten years ago, now purchased magic does not work. Buying links won't bring the page to the Top and could even hurt your rankings. Search algorithms are more likely to choose high-grade resources, and Google patents confirm this trend."
 

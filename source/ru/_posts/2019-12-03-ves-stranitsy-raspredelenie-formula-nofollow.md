@@ -9,7 +9,7 @@ last_modified_at: 2019-12-03T20:09:00Z
 
 title: "О весе страниц: когда ссылки вредят, а когда помогают"
 tags: [PageRank, ссылочный вес, Google, SEO]
-description: "Как не допустить утечки веса с сайта? Какую формулу PageRank использует Google? &#10010; Все про nofollow, ugc и sponsored: что и как влияет на распределение ссылочного веса"
+description: "Как не допустить утечки ссылочного веса? Какую формулу PageRank использует Google &#10010; Про nofollow, ugc и sponsored: как rel-атрибуты влияют на передачу веса"
 keywords: "вес страницы"
 faq: true
 
@@ -68,7 +68,7 @@ image: "leaking-link-juice.jpg"
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<h3 itemprop="name">Могут ли входящие <em>nofollow</em> улучшить ранг?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">Могут, но не гарантированно. <a href="https://www.seroundtable.com/google-nofollow-link-attribute-change-sponsored-ugc-28196.html"> Подборка высказываний</a> гуглеров и известных SEO позволяет предположить, что поисковая система уже сейчас может учитывать nofollow ссылки при ранжи&#173;ровании.</p>
+		<p itemprop="text">Могут, но не гарантированно. <a href="https://www.seroundtable.com/google-nofollow-link-attribute-change-sponsored-ugc-28196.html">Подборка твитов гуглеров</a> и известных SEO вселяет надежду, что поисковая система уже сейчас может учиты&#173;вать nofollow ссылки при ран&#173;жировании.</p>
 	</div>
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
@@ -85,9 +85,9 @@ image: "leaking-link-juice.jpg"
 	</div>
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-	<h3 itemprop="name">Как 301-й редирект передает PangeRank?</h3>
+	<h3 itemprop="name">Переходит ли ссылочный вес с 301-м редиректом?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">Подход Google: если редирект один, переда&#173;ется почти 100% веса. Кроме случаев, когда страницы поисковику хорошо известны и он не считает их подобными. Тогда может не передаться вообще ничего: перенаправ&#173;ление будет расценено как Soft 404. Другие поисковые системы могут перенаправлять вес с потерями.</p>
+		<p itemprop="text">Подход Google: если редирект один, переда&#173;ется почти 100% веса. Кроме случаев, когда страницы поисковику хорошо известны и он не считает их подобными. Тогда может не передаться вообще ничего: перенаправ&#173;ление будет расценено как Soft 404. Другие поисковые системы могут перена&#173;правлять вес с потерями.</p>
 	</div>
 </div>
 <p>Если редиректы идут цепочкой, поисковик пытается определить каноническую стра&#173;ницу: ей и достанется значимость. Но <span class="under">чем длиннее цепь </span>редиректов, тем меньше шансов, что канонической будет признана нужная стра&#173;ница. То есть весь вес<span class="under"> может достаться не той.</span></p>

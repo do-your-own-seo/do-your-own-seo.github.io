@@ -9,7 +9,7 @@ last_modified_at: 2019-12-03T20:09:00Z
 
 title: "Вага сторінки: коли посилання шкодять, коли допомагають"
 tags: [PageRank, вага посилань, Google, SEO]
-description: "Хочете знати формулу ваги сторінки (PageRank)? А чому її прямо не використовує Google? &#10010; Інфо про nofollow та нові значення rel-атрибуту – ugc і sponsored. Чи втручаються вони в розподіл ваги між сайтами?"
+description: "Чи знаєте ви формулу PageRank? А чому Google патентує інші ії варіанти? &#10010; Про перенесення ваги посиланнями й обачне використання nofollow, ugc і sponsored"
 keywords: "вага сторінки"
 faq: true
 
@@ -68,11 +68,11 @@ image: "leaking-link-juice.jpg"
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<h3 itemprop="name">Чи можуть вхідні <em>nofollow</em> лінки збіль&#173;шити ранг?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">Можуть, але не гарантовано. <a href="https://www.seroundtable.com/google-nofollow-link-attribute-change-sponsored-ugc-28196.html">Добірка висловів</a> гуглерів та відомих SEO дозволяє зробити припущення, що пошукова система вже зараз може враховувати nofollow посилання, обчислюючи рейтинг сторінки.</p>
+		<p itemprop="text">Можуть, але не гарантовано. <a href="https://www.seroundtable.com/google-nofollow-link-attribute-change-sponsored-ugc-28196.html">Добірка висловів гуглерів</a> та відомих SEO дозволяє припустити, що пошукова система вже зараз може враховувати nofollow посилання, обчислюючи загальний ранг сторінки.</p>
 	</div>
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-	<h3 itemprop="name">Чи з кожним <em>follow</em> посиланням прибуває однаково ваги?</h3>
+	<h3 itemprop="name">Чи з кожним <em>follow</em> посиланням прибуває одна&#173;ково ваги?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 		<p itemprop="text">Ні. Найбільш помітне на сторінці посилання &ndash; те, яке з більшою ймовір&#173;ністю клікнуть &ndash; є найбільш вагомим. Далі &ndash; за зменшенням.</p>
 	</div>
@@ -87,10 +87,10 @@ image: "leaking-link-juice.jpg"
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<h3 itemprop="name">Скільки ваги передає 301-й редирект?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">Для Google: якщо редирект один, пере&#173;дається майже 100%. Окрім випадків, коли обидві сторінки пошуковику добре відомі і він не вважає їх тематично пов'язаними. Тоді з редиректом <span class="under"> може не перейти нічого:</span> його буде розцінено як Soft 404. Інші пошукові системи, ймовірно, переспрямовують вагу зі втратою.</p>
+		<p itemprop="text">Для Google: якщо редирект один, пере&#173;дається майже 100%. Окрім випадків, коли обидві сторінки пошуко&#173;вику добре відомі і він не вважає їх тематично пов'язаними. Тоді з редиректом <span class="under"> може не перейти нічого:</span> його буде розцінено як Soft 404. Інші пошукові системи, ймовірно, переспрямовують вагу зі втратою.</p>
 	</div>
 </div>
-<p>Коли ж виникає ланцюжок переспрямувань, пошуковик обирає канонічну сторінку: їй перепаде майже вся значу&#173;щість. Але є нюанс: <span class="under">що довше ланцюжок,</span> то менше шансів, що канонічною буде визнана потрібна сторінка. Тобто вага<span class="under"> може перейти зовсім не тій.</span></p>
+<p>Коли ж виникає ланцюжок переспрямувань, пошу&#173;ковик обирає канонічну сторінку: їй перепаде майже вся значу&#173;щість. Але є нюанс: <span class="under">що довше ланцюжок,</span> то менше шансів, що канонічною буде визнана потріб&#173;на сторінка. Тобто вага<span class="under"> може перейти зовсім не тій.</span></p>
 <p class="txt-center">&#10045;&nbsp;&#10045;&nbsp;&#10045;</p>
 <p>Ніби все сказано, можна завершувати? Ні, розмова тільки-но починається! Насправді <b>вихідні посилання</b> здатні <b class="green">додати значущості</b>, а <b>вхідні, натомість</b>, можуть <span class="red">додати щербатої слави</span>. Кожен html-тег</p>
 <p class="txt-center">&lt;a href="url-адреса" rel="інструкція"&gt;&#8239;анкор&#8239;&lt;/a&gt;
