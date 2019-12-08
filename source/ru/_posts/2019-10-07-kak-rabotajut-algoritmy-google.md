@@ -2,13 +2,13 @@
 layout: post
 i18n-link: algo
 locale: ru
-lang: ru
+lang: ru 
 
 date: 2019-10-07T22:19:00Z
 last_modified_at: 2019-12-01T00:21:00Z
 
 title: "Как Google ранжирует сайты? Выведут ли ссылки в Топ-10"
-tags: [Google алгоритмы, Google, ранжирование, SEO]
+tags: [Google, Google алгоритмы, ранжирование, SEO]
 description: "В 2020 магия в SEO бессильна: алгоритмы Google ранжируют страницы не хуже команды экспертов. Но что важнее для &#10112;&#10113;&#10114; ранжирования: контент, ссылки или др. факторы?"
 keywords: "google алгоритмы, как google ранжирует страницы"
 modal: "needed"

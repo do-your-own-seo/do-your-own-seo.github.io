@@ -2,13 +2,13 @@
 layout: post
 i18n-link: algo
 locale: ua
-lang: uk
+lang: uk 
 
 date: 2019-10-07T22:19:00Z
 last_modified_at: 2019-12-01T00:21:00Z
 
 title: "Як Google ранжує сторінки? Чи вистачить посилань для Топ-10"
-tags: [Google алгоритми, Google, ранжування, SEO]
+tags: [Google, Google алгоритми, ранжування, SEO]
 description: "Скоро 2020, і магія в SEO не діє. Алгоритми Google ранжують сайти не гірше за людей-експертів. Що ж важливіше: контент, посилання чі інші чинники ранжування?"
 keywords: "алгоритми google, як google ранжує сторінки"
 modal: "needed"

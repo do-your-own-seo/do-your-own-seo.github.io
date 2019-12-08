@@ -6,7 +6,7 @@ lang: en
 
 date: 2019-10-07T22:19:00Z
 last_modified_at: 2019-12-01T00:21:00Z
-tags: [Google аlgorithms, Google, search ranking, SEO]
+tags: [Google, Google аlgorithms, Search ranking, SEO]
 title: "How do Google Algorithms rank pages?"
 
 description: "SEO magic no longer works: Google engines can process content, analyze contexts and draw conclusions. So what's better for ranking &#10112;&#10113;&#10114;: links, content, or other factors?"
