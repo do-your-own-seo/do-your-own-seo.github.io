@@ -46,8 +46,8 @@ related:
 
 share:
   uk: "Поширити"
-  ru: "Поделиться статьей"
-  en: "Share the info"
+  ru: "Поделиться"
+  en: "Share"
 
 bye:
   uk: "Сподіваюся, буде цікаво"
@@ -150,9 +150,9 @@ cancelReply:
   en: "Cancel reply"
 
 preview:
-  uk: "Прев'ю зображення з посту про"
-  ru: "Превью картинки из поста про"
-  en: "Preview image for the post on"
+  uk: "Прев'ю зображення з посту №"
+  ru: "Превью картинки из поста №"
+  en: "Preview image for the post no."
 
 footnote:
   uk: "Контент – предмет авторського права, код відкритий згідно з "
@@ -160,6 +160,6 @@ footnote:
   en: "Content is copyrighted; the code is  available under the "
 
 cat:
-  uk: "Хто, я? Я і не живий-то взагалі"
-  ru: "Кто, я? Я даже не живой вообще!"
+  uk: "Хто, я? Я і не живий-то взагалі!"
+  ru: "Кто, я? Я даже не живой вообще"
   en: "Who, me? I'm not even alive!"
