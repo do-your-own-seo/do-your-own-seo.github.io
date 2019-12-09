@@ -20,8 +20,10 @@ layout: pages
 	</div>
     <div class="post-content"> {{ content }} </div>
 	<script src="/assets/post.min.js" defer></script>
-	
-	{% include post_share.html %}
+	<div class="bottom-nav-and-buttons">
+		{% include post_share.html %}
+		{% include breadcrumbs.html %}
+	</div>
     {% include related_posts.html %}
     {% include comments.html %}
   </div>

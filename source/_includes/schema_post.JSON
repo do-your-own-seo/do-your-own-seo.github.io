@@ -2,48 +2,38 @@
 <script type="application/ld+json">
 	{
 		"@context": "http://schema.org",
-		"@graph": [{
-			"@type": "BlogPosting",
-			"image": {%- if page.image -%}"{{ site.url }}/images/posts/{{ page.image }}"{%-else-%}"{{ site.url }}/apple-touch-icon.png"{%- endif -%}, 
-			"url": "{{ site.url }}{{ page.url }}",
-			"mainEntityOfPage": "True", {% if page.h1 %} 
-			"headline": "{{ page.h1 }}",  {% endif %}
-			"alternativeHeadline": "{{ page.title }}",
-			"datePublished": "{{ page.date }}",
-			"dateModified": "{%-if page.last_modified_at-%}{{ page.last_modified_at }}{%-else-%}{{page.date}}{%-endif-%}",
-			"inLanguage": "{{ inLanguage }}",
-			"isFamilyFriendly": "true",
-			"author": {
-				"@type": "Person",
-				"name": "{{ site.author.name }}",
-				"JobTitle": "{{ site.author.job }} Specialist",
-				"sameAs": "{{site.author.twitter}}"
-			},
-			"publisher": {
-				"@type": "Organization",
-				"name": "{{ site.name }}",
-				"@id": "{{ site.url }}/#organization",
-				"logo": {
-					"@type": "ImageObject",
-					"url": "{{ site.url }}/apple-touch-icon.png",
-					"width":"240",
-					"height":"240"
-				}
-			}, {% if page.keywords %}
-			"keywords": "{{ page.keywords }}", {% endif %} {% if page.tags %}
-			"articleSection": "{% for tag in page.tags %}{{ tag }}, {% endfor %}" {% endif %}
-		}
-		{%-if page.tags[0] -%},
+		"@graph": [
 			{
-			"@type": "BreadcrumbList",
-			  "itemListElement": [{
-			    "@type": "ListItem",
-			    "position": 1,
-			    "name": "{{ page.tags[0] }}",
-			    "item": "{{ site.url }}{{ page.url }}"
-			  }]
+				"@type": "BlogPosting",
+				"image": {%- if page.image -%}"{{ site.url }}/images/posts/{{ page.image }}"{%-else-%}"{{ site.url }}/apple-touch-icon.png"{%- endif -%}, 
+				"url": "{{ site.url }}{{ page.url }}",
+				"mainEntityOfPage": "True", {% if page.h1 %} 
+				"headline": "{{ page.h1 }}",  {% endif %}
+				"alternativeHeadline": "{{ page.title }}",
+				"datePublished": "{{ page.date }}",
+				"dateModified": "{%-if page.last_modified_at-%}{{ page.last_modified_at }}{%-else-%}{{page.date}}{%-endif-%}",
+				"inLanguage": "{{ inLanguage }}",
+				"isFamilyFriendly": "true",
+				"author": {
+					"@type": "Person",
+					"name": "{{ site.author.name }}",
+					"JobTitle": "{{ site.author.job }} Specialist",
+					"sameAs": "{{site.author.twitter}}"
+				},
+				"publisher": {
+					"@type": "Organization",
+					"name": "{{ site.name }}",
+					"@id": "{{ site.url }}/#organization",
+					"logo": {
+						"@type": "ImageObject",
+						"url": "{{ site.url }}/apple-touch-icon.png",
+						"width":"240",
+						"height":"240"
+					}
+				}, {% if page.keywords %}
+				"keywords": "{{ page.keywords }}", {% endif %} {% if page.tags %}
+				"articleSection": "{% for tag in page.tags %}{{ tag }}, {% endfor %}" {% endif %}
 			}
-		{%-endif-%}
 		{%-if page.image -%},
 			{
 		        "@type": "ImageObject",

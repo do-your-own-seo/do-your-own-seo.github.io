@@ -46,8 +46,25 @@ ul.featured
       padding-top: 5px
       margin-top: 0
 
+.bottom-nav-and-buttons
+  margin-top: $xsmall-spacing
+
+  +media(500px)
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: baseline
+    margin: $small-spacing $small-spacing 0 0
+
+  +media($tablet-small)
+    margin-top: $mid-spacing
+
 .post-share
-  margin: $small-spacing $base-spacing 0 0
+  margin-bottom: $xsmall-spacing
+
+  +media(500px)
+    margin-bottom: 0
+    order: 2
 
   a
     display: inline-block
@@ -59,7 +76,7 @@ ul.featured
   em
     display: none
 
-    +media($phone-large)
+    +media($tablet-small)
       display: inline
 
 .relatedPosts
@@ -71,6 +88,9 @@ ul.featured
     font-weight: 600
     display: block
     margin: $small-spacing 0
+
+.tags-color
+  color: rgba($green, .9)
 
 .question
   color: $olive

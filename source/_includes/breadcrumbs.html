@@ -1,0 +1,13 @@
+{%- if page.tags[0] -%}
+<div itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumbs" >
+	<b itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+		<meta itemprop="position" content="1" /><meta itemprop="name" content="Blog" />
+		<a itemprop="item" href="{{ site.url }}/">SEO&nbsp;Blog</a>
+	</b>&ensp;&rarr;&ensp;
+	{%- if page.lang != site.lang-%}<b><a href="{{ site.url }}/{{ page.lang }}/">{{ page.lang }}</a></b>&ensp;&rarr;&ensp;{%- endif -%}
+	<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="tags-color" >
+		<meta itemprop="position" content="2" /><link itemprop="item" href="{{ site.url }}{{ page.url }}"/>
+		<span itemprop="name">{{ page.tags[0] }}</span>
+	</span>
+</div>
+{%- endif -%}
