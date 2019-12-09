@@ -8,7 +8,7 @@ layout: pages
   {%- for post in paginator.posts -%}
     <div class="post card clf">
 	  {%- if post.image -%}
-	  <img class="post-thumbnail" src="/images/preview/{{ post.image }}" alt="{{ site.data.t.preview[page.lang] }} {{ post.tags[0] }}" loading="lazy">
+	  <img class="post-thumbnail" src="/images/preview/{{ post.image }}" alt="{{ site.data.t.preview[page.lang] }}{{ forloop.index }}" loading="lazy">
 	  {%- endif -%}
 	  <div class="post-content">
 	    <header {% unless post.image %}class="noimage"{% endunless %}>
@@ -29,28 +29,13 @@ layout: pages
 	    <p>{%- if post.snippet -%}{{ post.snippet | strip_html }}..{%- else -%}{{ post.content | strip_html | truncatewords:40 }}{%- endif -%}</p>
 	  </div>
 	</div>
-  {%- endfor -%}
-  {%- if paginator.total_pages > 1 -%}
-	<nav class="pagination" role="pagination">
-	  <ul>
-	    {%- if paginator.previous_page -%}
-	      <li><a class="prev button-ghost" href="{{ paginator.previous_page_path }}" title="Newer">&#10094;&#10094;</a></li>
-	    {%- else -%}
-	      <li><span class="prev button-ghost disabled">&#10095;&#10095;</span></li>
-	    {%- endif -%}
-	    <li><span class="page-number"> {{paginator.page}} of {{paginator.total_pages}}</span></li>
-	    {%- if paginator.next_page -%}
-	      <li><a class="next button-ghost" href="{{ paginator.next_page_path }}" title="Older">&#10095;&#10095;</a></li>
-	    {%- else -%}
-	      <li><span class="next button-ghost disabled">&#10094;&#10094;</span></li>
-	    {%- endif -%}
-	  </ul>
-	</nav>
-  {%- endif -%}
+  {% endfor %}
+  {% include pagination.html %}
 </div>
 {%- include cat.html -%}
 
-{%- comment -%} js changes the language if the referrer =/= our domain, navigator.languages exists, and it doesn't contain uk-**.
+{%- comment -%} 
+	JS changes the language if the referrer =/= our domain, Navigator.languages exists and doesn't contain uk-**.
 {%- endcomment -%}
 <script nonce="blog">{%- if page.lang == 'uk' -%}{%- include redirect.js -%}{%- endif -%}
 	document.querySelector(".post-list").addEventListener("click",function(e){var t=e.target.closest(".post");t&&t.querySelector("header a").click()});
