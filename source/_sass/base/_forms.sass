@@ -11,9 +11,9 @@ fieldset
 
 input,
 label,
-select
+select,
+textarea
   display: block
-  font-family: $base-font-family
   font-size: 14px
 
 label
@@ -22,6 +22,11 @@ label
 
   &.required::after
     content: "*"
+
+input,
+textarea,
+select[multiple=multiple]
+  box-sizing: border-box
 
 input[type="text"],
 input[type="search"],
@@ -34,9 +39,7 @@ select[multiple=multiple]
   border: $base-border
   border-radius: $base-border-radius
   box-shadow: $form-box-shadow
-  box-sizing: border-box
   font-family: $base-font-family
-  font-size: 1em
   margin: $xsmall-spacing 0 $small-spacing 0
   padding: $base-spacing / 3
   transition: border-color $base-duration $base-timing
@@ -65,6 +68,7 @@ input[type="checkbox"],
 input[type="radio"]
   display: inline
   margin-right: $small-spacing / 2
+  padding: 0
 
   + label
     display: inline-block

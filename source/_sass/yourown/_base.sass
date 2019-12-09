@@ -1,12 +1,8 @@
 html
   scroll-behavior: smooth
-
-body
-  min-height: 100vh
-  padding-top: 75px
-
-  +media($tablet-small)
-    padding-top: 0
+  -ms-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+  text-size-adjust: 100%
 
 h2
   padding-top: 96px
@@ -53,10 +49,12 @@ picture
 
   +media($phone-large)
     padding: $mid-spacing
-    text-align: left
 
   +media($tablet-small)
     padding: $base-spacing $huge-spacing $base-spacing $huge-spacing
+  
+  +media($tablet) 
+    text-align: left
       
   p:last-of-type
     margin-bottom: 0

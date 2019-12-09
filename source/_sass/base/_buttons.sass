@@ -1,16 +1,12 @@
-[type=reset],
-[type=submit],
-button
-  -webkit-appearance: button
-
 button, 
-input[type="button"], 
-input[type="submit"]
-  @extend %button
-
+[type="button"], 
+[type="submit"],
+[type="reset"],
 .button-ghost
   @extend %button
-  
+  -webkit-appearance: button
+
+.button-ghost
   border: 2px solid $action-color
   color: $action-color
   background: transparent

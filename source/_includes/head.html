@@ -45,8 +45,7 @@
   {%- else -%}
 <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/notosans/v9/o-0IIpQlx3QUlC5A4PNr4TRAW_0.woff2" crossorigin="anonymous">
   {%- endif -%}
-{% endif %}
-<style>html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}button,input{margin:0}</style> 
+{% endif %} 
 {% capture critical %}{% include fundamentals.sass %}{% include navbar.sass %}{%-if page.layout == "post"-%}{% include post_head.sass %}{%-endif-%}{% endcapture %}
 <style>{{ critical | sassify }}</style>
 <link rel="stylesheet" href="/css/main.css"> {% if page.layout == "about" %}
