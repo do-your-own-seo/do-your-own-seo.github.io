@@ -1,7 +1,9 @@
 #submit-comment
-  margin: $small-spacing 0
-  -ms-flex-item-align: center
+  margin: $mid-spacing 0 0 0
   align-self: center
+
+  +media($phone-large)
+    margin: $small-spacing 0 0 $xsmall-spacing
 
 #comment-form,
 #comments,
@@ -40,13 +42,12 @@
   border-bottom: 3px double $light-gray
 
 .form-group
+  display: flex
+  flex-wrap: wrap
+
   +media($tablet-small)
-    display: -webkit-box
-    display: -ms-flexbox
-    display: flex
-    -webkit-box-pack: justify
-    -ms-flex-pack: justify
     justify-content: space-between
+    flex-wrap: nowrap
 
     label:nth-child(2)
       padding: 0 $mid-spacing
@@ -58,14 +59,12 @@
     label[for="comment-form-url"]
       padding-top: 2px
 
-    /* fix reCAPTCHA iframe overflow
+/* fix reCAPTCHA iframe overflow */
     &.g-recaptcha > *
       margin-left: 0.5em
       padding: 0
 
 .comment
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
 
   + .comment
@@ -81,7 +80,6 @@
       margin-left: 80px
 
 .comment-avatar
-  -ms-flex-negative: 0
   flex-shrink: 0
   margin-right: 10px
 
