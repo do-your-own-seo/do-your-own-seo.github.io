@@ -18,11 +18,7 @@ layout: default
       {{ content }}
     </div>
   </div>
-</div> {% if page.lang == 'uk' %}
-<script nonce="about">{%- include redirect.js -%}</script>{% endif %}
-{%- comment -%} js changes the language if the referrer =/= our domain, navigator.languages exists, and it doesn't contain uk-**.
-{%- endcomment -%}
-
+</div>
 {% include schema_about.JSON %}
 
 
