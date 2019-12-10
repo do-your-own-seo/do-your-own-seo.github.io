@@ -7,7 +7,8 @@ sitemap: false
 <html prefix="og: html://ogp.me/ns#" >
 <head>
 <meta name="robots" content="noindex">
-<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'nonce-ga' 'nonce-blog' 'nonce-modal' 'nonce-cat' https://www.gstatic.com https://www.google-analytics.com https://www.google.com; base-uri 'self';">
+<meta http-equiv="Content-Security-Policy" content="script-src 'self' {% if page.lang=='uk'%}'sha256-xYvid2m/S8yAbUzU5g4/ygFqA1gI1CUedmhlrZTkMPw=' 'sha256-6xLOktMVIpI31rUfRovUh+nZsZDgmW2ep/5pmDYdylo=' {% else %}'sha256-fqBuFtF2eAKfetmrxewqUCIrUntI+h1dlM49ibXDrkM='{% endif %} {% if page.lang=='en'%} 'sha256-VPQ8i8SrVDsRByw+T78gj8zR13koGryqg3JZfFXkwtM='{% elsif page.lang=='ru'%}'sha256-l884zM0oIaL5EqI4A16ArRAdRTSsa6K6EXpfanhpZYI='{% endif %}
+https://www.gstatic.com https://www.google-analytics.com https://www.google.com; base-uri 'self';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta http-equiv="X-XSS-Protection" content="1; mode=block">
 <meta charset="utf-8">

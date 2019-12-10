@@ -16,7 +16,8 @@
 {% if page.noindex %} <meta name="robots" content="noindex{%-if page.nofollow-%}, nofollow{%-endif-%}"> 
 {% endif %} {% if page.layout == "about" %}
 <meta name="robots" content="noimageindex, noarchive">{% endif %}
-<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'nonce-blog' 'nonce-about' 'nonce-modal' 'nonce-ga' 'nonce-cat' https://www.gstatic.com https://www.google-analytics.com https://www.google.com; base-uri 'self';">
+<meta http-equiv="Content-Security-Policy" content="script-src 'self' {% if page.lang=='uk'%}'sha256-xYvid2m/S8yAbUzU5g4/ygFqA1gI1CUedmhlrZTkMPw=' 'sha256-6xLOktMVIpI31rUfRovUh+nZsZDgmW2ep/5pmDYdylo=' {% else %}'sha256-fqBuFtF2eAKfetmrxewqUCIrUntI+h1dlM49ibXDrkM='{% endif %} {% if page.lang=='en'%} 'sha256-VPQ8i8SrVDsRByw+T78gj8zR13koGryqg3JZfFXkwtM='{% elsif page.lang=='ru'%}'sha256-l884zM0oIaL5EqI4A16ArRAdRTSsa6K6EXpfanhpZYI='{% endif %}
+https://www.gstatic.com https://www.google-analytics.com https://www.google.com; base-uri 'self';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta http-equiv="X-XSS-Protection" content="1; mode=block">
 <meta charset="utf-8">
@@ -50,10 +51,8 @@
 <style>{{ critical | sassify }}</style>
 <link rel="stylesheet" href="/css/main.css"> {% if page.layout == "about" %}
 <link rel="stylesheet" href="/css/about.css"> {% endif %}  {% if page.layout == "blog" %}
-<link rel="stylesheet" href="/css/blog.css">
-<style>{% include cat.css %}</style> {% endif %} {% if page.layout == "post" %}
-<link rel="stylesheet" href="/css/post.css"> {% endif %} {% if page.modal == "needed" %}
-<style>{% include modal.css %}</style>{% endif %}
+<link rel="stylesheet" href="/css/blog.css"> {% endif %} {% if page.layout == "post" %}
+<link rel="stylesheet" href="/css/post.css"> {% endif %}
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="240x240"/>
 {%- for tr in translated reversed -%}
@@ -87,10 +86,8 @@
 <meta property="og:image" content="{{ site.url }}/apple-touch-icon.png" />
 	{%-endunless-%}
 {% endunless %}
-<script nonce="ga">
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', '{{ site.ga }}', 'auto', { 'transport': 'beacon' });
-	ga('send', 'pageview', {'dimension1' : '{{page.lang}}'});
-</script>
+{%-if jekyll.environment == 'production'-%}
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create', '{{ site.ga }}', 'auto', { 'transport': 'beacon' });ga('send', 'pageview', {'dimension1' : '{{page.lang}}'});</script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 <link rel="preconnect" href="https://www.google.com/" crossorigin>
+{% endif %}
