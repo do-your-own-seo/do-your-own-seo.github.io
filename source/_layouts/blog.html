@@ -37,7 +37,5 @@ layout: pages
 {%- comment -%} 
 	JS changes the language if the referrer =/= our domain, Navigator.languages exists and doesn't contain uk-**.
 {%- endcomment -%}
-<script nonce="blog">{%- if page.lang == 'uk' -%}{%- include redirect.js -%}{%- endif -%}
-	document.querySelector(".post-list").addEventListener("click",function(e){var t=e.target.closest(".post");t&&t.querySelector("header a").click()});
-</script>
+<script>{%- if page.lang == 'uk' -%}{%- include redirect.js -%}{%- endif -%}document.querySelector(".post-list").addEventListener("click",function(e){var t=e.target.closest(".post");t&&t.querySelector("header a").click()});var cat=document.getElementsByClassName("cat")[0];setTimeout(function(){cat.classList.add("live")},2500),cat.addEventListener("click",function(){this.removeChild(this.getElementsByTagName("span")[0]),this.classList.add("vanish");var t=document.getElementById("cat-shelter");cat.closest("#cat-shelter")?setTimeout(function(){t.previousElementSibling.style.paddingBottom="0"},800):setTimeout(function(){cat.previousElementSibling.style.paddingBottom="0",t.appendChild(cat),window.matchMedia("(max-width: 970px)").matches&&(t.previousElementSibling.style.paddingBottom="1.32em"),cat.classList.remove("vanish")},800)})</script>
 {%- include schema_blog.JSON -%}
