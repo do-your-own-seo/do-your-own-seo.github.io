@@ -96,11 +96,13 @@ ul.featured
   color: $olive
   font-size: 1.2em
 
-h3[itemprop="name"]
+h3[itemprop="name"],
+h3.faq
   color: $green
   opacity: .95
 
-h3[itemprop="name"]:before
+h3[itemprop="name"]:before,
+h3.faq:before
 
   +media($phone-large)
     content: "\ea09\00a0"
@@ -113,3 +115,4 @@ small
   a
     color: inherit
     text-decoration: underline
+
