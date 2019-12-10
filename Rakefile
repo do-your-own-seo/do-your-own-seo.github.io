@@ -16,7 +16,7 @@ CONFIG = {
 
 desc "Test with html-proofer"
 task :test do
-  sh "bundle exec jekyll build --drafts"
+  sh "bundle exec jekyll build JEKYLL_ENV=production --drafts"
   options = { 
     assume_extension: true,
     check_opengraph: true, 
@@ -29,6 +29,11 @@ task :test do
   }
 
   HTMLProofer.check_directory("./_site", options).run
+end
+
+desc "Jekyll serve"
+task :serve do
+  sh "bundle exec jekyll serve JEKYLL_ENV=development --drafts --livereload"
 end
 
 task :default => ["post"]
