@@ -8,7 +8,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "wdm", "~>0.1.0"
+gem "wdm", "~>0.1.1"
 gem "jekyll", "3.8.5"
 gem "rake", "~>12.0"
 gem "sass", "~>3.4"
