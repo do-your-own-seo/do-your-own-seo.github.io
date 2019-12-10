@@ -52,6 +52,13 @@ var app = "{{site.staticman.app}}",
         ga('send', 'event', 'outbound', 'click', url, options);
       }
     });
+    var modal=document.getElementById("modal"),
+        trigger=document.getElementById("trigger"),
+        content=document.querySelector("#modal .content");
+    if (modal && trigger) {
+      trigger.onclick=function(){content.src=this.dataset.src;modal.style.display="block"};
+      modal.onclick=function(e){if(e.target.tagName!=="IMG"){modal.style.display="none"}};
+    }
   });
 })();
 
@@ -98,9 +105,10 @@ function responseHandler(httpRequest) {
 }
 
 function serialize(form) {
-  var serialized = [encodeURIComponent("fields[lang]") + "=" + encodeURIComponent(lang)];
+  var field,
+    serialized = [encodeURIComponent("fields[lang]") + "=" + encodeURIComponent(lang)];
   for (var i = 0; i < form.elements.length; i++) {
-    var field = form.elements[i];
+    field = form.elements[i];
     if (!field.name || field.disabled || field.value === '' && field.name !== "fields[replying_to]" || field.type === 'file' || field.type === 'reset' || field.type === 'submit' || field.type === 'button' || field.type === 'select-multiple') {
       continue;
     } else if (field.type !== 'checkbox' && field.type !== 'radio' || field.checked) {
