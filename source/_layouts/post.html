@@ -29,3 +29,8 @@ layout: pages
   </div>
 {% include schema_post.JSON %}
 </article>
+{% if page.modal =="needed" %} 
+<div id="modal">
+  <img class="content" src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=" alt="modal" >
+  <span class="close">&times;</span>
+</div>{% endif %}
