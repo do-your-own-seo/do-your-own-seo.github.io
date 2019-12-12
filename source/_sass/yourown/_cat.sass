@@ -201,20 +201,27 @@
   border-top-left-radius: 100px
   border-top-right-radius: 100px
 
-  &:hover span
+  &:hover span,
+  &:active span
     position: absolute
-    left: 110px
     display: block
     z-index: 99
     border: 1px solid #666
     border-radius: 4px
-    padding: 0 7px
+    padding: 0 2px 0 6px
     background: #fff
     font-size: 90%
-    width: 220px
-    width: intrinsic
-    width: max-content
-    height: 1.6em
+    width: 195px
+    left: 40px
+    
+    +media($phone-large)
+      left: 110px
+      bottom: 50px
+      padding: 0 7px 4px 7px
+      width: 210px
+      width: intrinsic
+      width: max-content
+      height: 1.6em
 
     &:after
       content: ''
@@ -227,7 +234,8 @@
       border-bottom: 0
       margin: -0.3em 0 0 -0.6em
 
-.live:hover *
+.live:hover *, 
+.live:active *
   animation-play-state: paused !important
   cursor: pointer
 
@@ -428,7 +436,7 @@
     transform: scale(0.6, 0.6)
     filter: blur(3px)
 
-@media (min-width: 1024px)
++media($tablet)
   #cat-shelter
     margin-top: -49px
     right: 35%
