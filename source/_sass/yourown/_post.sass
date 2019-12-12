@@ -1,22 +1,23 @@
 ul.featured
   list-style-type: none
 
-  &.plus
-    li:before
-      content: "\002B\00a0"
-      color: $olive
-  
-  &.minus
-    li:before
-      content: "\2212\00a0"
-      color: $danger-color
+ul.featured li:before,
+.pros,
+.cons
+  font-weight: 600
+  font-size: 1.5em
+  line-height: 1
+  padding-right: 3px
 
-  li:before
-    font-weight: 600
-    font-size: 1.5em
-    line-height: 1
-    padding-right: 3px
+.featured.plus li:before,
+.pros:before
+  content: "\002B\00a0"
+  color: $olive
 
+.featured.minus li:before,
+.cons:before
+  content: "\2212\00a0"
+  color: $danger-color
  
 .restrict
   width: auto
@@ -92,9 +93,10 @@ ul.featured
 .tags-color
   color: rgba($green, .9)
 
-.question
+.question:after
   color: $olive
   font-size: 1.2em
+  content: '\003F \003F'
 
 h3[itemprop="name"],
 h3.faq
@@ -116,3 +118,13 @@ small
     color: inherit
     text-decoration: underline
 
+.emphasis > li
+  color: $danger-color
+
+  span
+    color: $base-font-color
+
+.danger
+  border-top: 4px tint($danger-color,50%) double
+  border-bottom: 4px tint($danger-color,50%) double
+  padding: $xsmall-spacing
