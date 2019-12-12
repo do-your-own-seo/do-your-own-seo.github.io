@@ -4,16 +4,9 @@ h1
 
 .post-list
   margin-top: $big-spacing
-  padding-bottom: $base-spacing
-
-  +media($tablet)
-    padding-bottom: 0
     
   .post
     cursor: pointer
-    
-    h2 
-      color: $green
 
     &-meta
       margin-top: $xsmall-spacing
@@ -25,12 +18,12 @@ h1
       margin: auto
 
     a
-        color: $base-font-color
+      color: $base-font-color
 
-        &:hover,
-        &:active,
-        &:focus
-          color: $action-color
+      &:hover,
+      &:active,
+      &:focus
+        color: $action-color
 
     +media($tablet-small)
       padding-left:  $small-spacing *3
@@ -54,10 +47,11 @@ h1
         margin-right: $base-spacing
 
     &-title
-      font-size: 1.55rem
-      text-align: center
       margin: 0
       padding: 0
+      color: $green
+      font-size: 1.55rem
+      text-align: center
 
       +media(470px)
         text-align: left
