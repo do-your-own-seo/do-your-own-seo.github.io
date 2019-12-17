@@ -12,7 +12,7 @@ title: "How do Google Algorithms rank pages?"
 description: "SEO magic no longer works. Google Algorithms can analyze contexts and draw the right conclusions. So what's now better for rankings &#10112;&#10113;&#10114;: links or other factors?"
 keywords: "google algorithms, how google ranks pages"
 modal: "needed"
-faq: true
+schema: FAQPage
 
 h1: "How does Google rank webpages?"
 snippet_header: "How do Google Algorithms rank pages?"
@@ -69,7 +69,7 @@ image: "how-do-google-algorithms-work.jpg"
 <p>Surely, there might be other rank-modifying factors. By the way, can Google (or Yandex) know about user actions outside the SERP? In theory, yes. Each of them can use its browser data and statistics from analytical scripts installed on most websites. Note, <span class="under"> I do not say the page's analytics affects the</span> page's rank. I only assume that data may be somehow used to distinguish user behavior patterns.</p>
 <blockquote>NB The visitor interacts not only with the content of the site but with the interface first: if something slows the page down, anyone will be annoyed. Googlebot also doesn't like to wait for the resources to load. That is why the <strong>website performance</strong> and <strong>mobile-friendliness</strong> are necessary to survive the web.</blockquote>
 <p>From the section, it's easy to conclude that neither link equity nor synonymous with it link juice will help a page that is not interesting to the visitor. On the other hand, useful webpages may get a slight head start and occasionally appear on the SERP in notable positions.</p></div>
-<div><h2 id="3">Website authority VS code and content quality. What affects the page rank most?</h2>
+<div><h2 id="3">Website authority VS content and code quality. What affects the page rank most?</h2>
 <p>The answer depends on query volume, niche competition, user's intent, location, and who knows what else. Naturally, everyone wants to see exact numbers, so I'll roughly estimate them. But you can at least argue about the proportion.</p>  
 <p class="txt-center"> 
 <img loading="lazy" src="/images/posts/domain-authority-or-page-content-what-weighs-more.jpg" alt="Domain authority or page content: what is more significant for rankings"> </p>
@@ -91,15 +91,14 @@ image: "how-do-google-algorithms-work.jpg"
 <h3>On the high-quality content</h3>
 <p>Well, you have faith in your skills and have decided to conquer Olympus with the perfection of content. I add my full support &nbsp;<i class="icon icon-handshake"></i>&nbsp; to the idea: let's try to produce well-structured content with clear headlines and descriptive illustrations.</p>
 <p class="txt-left">
-<img loading="lazy" class="fl-left restrict vw40" src="/images/posts/content-quality-is-crucial.jpg" alt="The quality of the content is crucial"> But there are nuances. To prevent misunder&#173;standing with Google regarding content quality, you could always use the <a href="https://static.googleusercontent.com/media/guidelines.raterhub.com/en//searchqualityevaluatorguidelines.pdf">General Guidelines</a> and this <a href="https://webmasters.googleblog.com/2019/08/core-updates.html">official post</a> about core updates. The latter contains an explanation of E-A-T concepts in a style of questions-to-myself.</p>
+<img loading="lazy" class="fl-left restrict vw40" src="/images/posts/content-quality-is-crucial.jpg" alt="The quality of the content is crucial"> But there are nuances. To prevent misunder&#173;standing with Google regarding quality, you could always use the <a href="https://static.googleusercontent.com/media/guidelines.raterhub.com/en//searchqualityevaluatorguidelines.pdf">General Guidelines</a> and this official <a href="https://webmasters.googleblog.com/2019/08/core-updates.html">post about core updates</a>. The latter contains an explanation of E-A-T concepts in a style of questions-to-myself.</p>
 <p>In short, <b>E</b>xpertise-<b>A</b>uthority-<b>T</b>rustworthiness means that writing well is not enough: the author should become a subject expert in advance. That is especially true for Your-Money-or-Your-Life websites, which can affect the health and financial stability of the visitors.</p>
 <blockquote>
  With the Aug 2018 Medic Update, the <strong>expertise</strong> of medical content creators became the necessary ranking factor to Google. Articles on health and nutrition not backed by the professional authority of the author or reviewer (doctor, therapist, or scientist) are no longer considered reliable.
 </blockquote>
 <p>Understandably &ndash; the search engine doesn't have the expertise to verify the accuracy of newly emerging information and thus, needs confirmation from the outside. But this doesn't mean the unimportance of correctness. If possible, Google checks the <strong>content accuracy</strong> and classifies articles with provable factual errors as substandard.</p> 
 <p>Studies disproving prevailing opinions are quite another matter: in this case, a lot depends on the publisher's reputation and community involvement.</p>
-<p>Now that the section is over, it's worth mentioning factors that<span class="under"> are unlikely to be relevant to</span> ranking and quality of content. I think the <i>optimal keyword density</i> and <i>percentage of text uniqueness</i> make no sense other than an intuitive.</p>
-<p>Falsely enhanced uniqueness won't turn plagiarism into an original. The necessary non-unique phrases won't worsen the rating of helpful tips. If you read, understand, and don't consider the text spam, keywords density is just optimal.
+<p>Now that the section is over, it's worth mentioning factors that<span class="under"> are unlikely to be related to</span> ranking and content quality. I believe the optimal <i>keyword density</i> and percentage of <i>text uniqueness</i> make no sense other than an intuitive. Falsely enhanced uniqueness won't turn plagiarism into an original. The necessary non-unique phrases won't worsen the rating of helpful tips. If you read, understand, and don't consider the text spam, keywords density is just optimal.
 </p>
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"><h2 id="4" itemprop="name">How can low-grade websites get into the Top 10?</h2>
@@ -129,7 +128,7 @@ image: "how-do-google-algorithms-work.jpg"
 <p class="txt-center">
 <img loading="lazy" src="/images/posts/doorway-en.jpg" alt="Classical doorways are still alive" title="Snippet of a doorway"></p>
 <p><b class="question"></b> Why do the tricksters bother with URL replace&#173;ment? Can't they have on the target site two versions of the page: the 1st one could show to bots some potentially well-ranking text; the 2nd &ndash; meet organic visitors, say, at the casino table&nbsp;<b class="question"></b></p>
-<p>Yes, they can. That method is called <em>cloaking</em>: it violates white-hat guidelines and entails <strong>manual actions from Google</strong>. The risk of getting caught and being excluded from the index is huge. No doubt, the content substitution will become known, at least due to the opportunity <a href="https://www.google.com/webmasters/tools/spamreportform" rel="nofollow">to complain to Google</a>.</p>
+<p>Yes, they can. That method is called <em>cloaking</em>: it violates white-hat guidelines and entails <strong>manual actions from Google</strong>. The risk of getting caught and being excluded from the index is huge. No doubt, the content substitution will become known, at least due to the opportunity <a href="https://www.google.com/webmasters/tools/spamreportform">to complain to Google</a>.</p>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 <blockquote class="txt-left">Update: <span itemprop="name">What to expect from the new algorithm BERT?</span></blockquote> 
 <p itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">With the implementation of the <strong>BERT algorithm on Oct 21st, 2019</strong>, Google has begun to better understand phrases. This major update relies on the technique of bidirectional language process&#173;ing that helps Google to <span class="under"> dive deep into the context </span>of a query and <span class="under">the intent behind it.</span></span> When BERT is fully operational in all languages, we won't need to arrange word order, as we do when searching <i>(thing) (feature) buy (conditions)</i>. On the side, we can be more confident that the engine will correctly understand the meaning of prepositions and other supplementary parts of speech. UPD: As of <strong>December 9th, 2019</strong>, BERT already speaks as many as 70 languages!</p>

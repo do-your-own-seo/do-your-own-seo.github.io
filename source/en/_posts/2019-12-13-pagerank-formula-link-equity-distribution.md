@@ -9,22 +9,22 @@ last_modified_at: 2019-12-16T22:00:00Z
 
 title: "How do links pass equity? When links harm and when help"
 tags: [PageRank, link juice, link equity, Google, SEO]
-description: "Do you know the PageRank formula and why Google patents improvements for it? How to be prudent with links &#10010; Use cases for link hints: nofollow, UGC, sponsored"
+description: "Do you know the PageRank formula and why Google patents variations of it? &#10010; Use cases for link hints: nofollow, UGC, sponsored &#10010; How not to waste link equity and be prudent with links"
 keywords: "link juice"
-faq: true
+schema: FAQPage
 
 h1: "How do links supply the page with juice? Talk about link attributes and more"
 snippet_header: "What if link juice is leaking? Let’s dive into how links pass value"
 
-snippet: "Everybody wants to know how links distribute &#8220;juice&#8221; among webpages, and what amount of it to be dissipated. And while we endeavor to guess a proportion, the GoogleBot chuckles reading that every dofollow link pass &#8727;&#8727;% of equity."
+snippet: "Everybody wants to know how links distribute &#8220;juice&#8221; among webpages, and what amount of it to be dissipated. And while we endeavor to guess a proportion, the GoogleBot chuckles reading that every dofollow link passes &#8727;&#8727;% of equity."
 
 image: "link-juice-leakage.jpg"
 ---
 
 <ul class="toc">
 	<li><a href="#1">Good old PageRank formula</a></li>
-	<li><a href="#2">Outbound links: how not to waste value</a></li>
-	<li><a href="#3">Nofollow: YES or NO</a></li>
+	<li><a href="#2">External links: pros and cons</a></li>
+	<li><a href="#3">Nofollow: how not to waste value</a></li>
 	<li><a href="#4">New from Google: "ugc" and "sponsored"</a></li>
 </ul>
 <div>
@@ -42,7 +42,7 @@ image: "link-juice-leakage.jpg"
 </p>
 <p id="FAQ">To sort things out, let’s start with simple questions.</p>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-	<h3 itemprop="name">Why outgoing links reduce the link equity?</h3>
+	<h3 itemprop="name">Why outbound links reduce the link equity?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 		<p itemprop="text">Because every link silently says, &ldquo;Don’t stay here, you’d better stop by <span class="u">there.</span>&rdquo;</p>
 	</div>
@@ -112,7 +112,7 @@ image: "link-juice-leakage.jpg"
 	</div>
 </div>
 
-<div><h2 id="2">Outbound links: how not to waste link equity</h2>
+<div><h2 id="2">Outbound links: when they harm and when help</h2>
 	<p>It might seem unreasonable to pass a portion of link juice to other sites, so webmasters sometimes generally avoid external links or set rel = "nofollow" for each anchor tag. In their pure form, both strategies do not lead to anything good. Outbound links are not so dangerous if you understand how they work.</p>
 	<p>You  <span class="under">share link juice <b>without any benefit</b></span> when:</p>
 	<ul>
@@ -130,19 +130,19 @@ image: "link-juice-leakage.jpg"
 		<li>provide the user with a list of online resources that will be useful to him in the next step.</li>
 	</ul>
 <blockquote>It is unthinkable that one site can satisfy all the needs of the user: he or she will leave anyway, yet will be grateful to you for farewell recommendations. Next time, seeing your logo on the SERP, the loyal user will immediately go to the site.</blockquote>
-<p>You <span class="under">definitely <b>need to add</b> an</span> external link:</p>
-	<ol>
-		<li><span>When using someone else’s content under a license with attribution required.</span></li>
-        <li><span>When translating a foreign publication.</span></li>
-    	<li><span>When discussing someone’s statement or an event you have read about on the Internet.</span></li>
+<p>You <span class="under">definitely <b>need to add</b> an</span> external link, regardless of cost:</p>
+	<ol type="i">
+		<li><span>when using someone else’s content under a license with attribution required;</span></li>
+        <li><span>when translating a foreign publication;</span></li>
+    	<li><span>when discussing someone’s statement or an event you have read about on the Internet.</span></li>
 	</ol>
 <p>That isn’t just about ethics: in either case, it’s unlikely that the search engine will applaud the site owner for the missing link.</p>
 <p class="txt-center"><img loading="lazy" src="/images/posts/webpages-and-links.jpg" alt="Pagerank is accumulated and can be passing through links"></p>
 <p>So far, we have been talking mainly of outgoing and backward links (commonly spelled as &ldquo;backlinks&rdquo;). But internal links are also essential: they can radically redistribute the link equity. Some crawlers calculate the Internal PageRank for all the pages of a given site: as examples, let’s highlight <a href="https://www.oncrawl.com/optimise-internal-linking-structure/">OnCrawl</a> (cloud-based) and <a href="https://netpeaksoftware.com/spider#features">Netpeak Spider</a> (desktop). In fact, the internal linking strategy is the basis of website optimization, but talking about it requires more space than we can take.</p>
 </div>
-<div><h2 id="3">Nofollow usage: cut off the extremes</h2>
+<div><h2 id="3">Nofollow usage: cut off the extremes. How not to waste link equity</h2>
 	<p>If used indiscriminately, this hint can force search bots to misunderstand your site structure and take away the benefits of outgoing links. Therefore, we website owners should use link hints consciously.</p>
-<p><strong>It makes sense to set rel="nofollow"</strong> for the hyperlinks below.</p>
+<p><strong>It makes sense to set rel="nofollow"</strong> for the hyperlinks below:</p>
 	<ul class="featured plus">
 	  <li>Internal links to non-indexable pages (site search, sorting, etc.). This can save the link juice, efforts of search bots, and your crawl budget.</li>
 	  <li>External links for which you wouldn’t like to vouch (e.g., the link posted by the user).</li>

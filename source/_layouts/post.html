@@ -4,7 +4,7 @@ layout: pages
 
 <article class="post">
   <div class="card">
-    <h1 class="post-title"> {{ page.h1 }} </h1> 
+    <h1> {{ page.h1 }} </h1> 
 	<div class="post-meta">
 	<small>
 	    <time datetime="{{ page.date | date:'%F' }}">
@@ -18,7 +18,7 @@ layout: pages
 	    •&ensp;{{ page.content| number_of_words| divided_by: words_per_min }}&nbsp;{{site.data.t.minRead[page.lang]}}{%- if page.author -%} • {{ page.author }}{%- endif -%}
 	</small>
 	</div>
-    <div class="post-content" {% if page.faq %}itemscope itemtype="https://schema.org/FAQPage"{% endif %}> {{ content }} </div>
+    <div class="post-content"{% if page.schema %} itemscope itemtype="https://schema.org/{{ page.schema }}"{% endif %}> {{ content }} </div>
 	<script src="/assets/post.min.js" defer></script>
 	<div class="bottom-nav-and-buttons">
 		{% include post_share.html %}
