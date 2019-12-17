@@ -3,7 +3,10 @@ body
   padding-top: 75px
   min-height: 100vh
   line-height: $base-line-height
-  font-size: $base-font-size * 0.84
+  font-size: $base-font-size * 0.75
+
+  +media(360px)
+    font-size: $base-font-size * 0.84
 
   +media($tablet-small)
     padding-top: 0
