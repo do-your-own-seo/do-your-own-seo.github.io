@@ -1,12 +1,16 @@
 {%- if page.tags[0] -%}
 <div itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumbs" >
 	<b itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-		<meta itemprop="position" content="1" /><meta itemprop="name" content="Blog" />
-		<a itemprop="item" href="{{ site.url }}/">SEO&nbsp;Blog</a>
+		<meta itemprop="position" content="1" />
+		<a itemprop="item" href="{{ site.url }}/"><span itemprop="name">SEO&nbsp;Blog</span></a>
 	</b>&ensp;&rarr;&ensp;
-	{%- if page.lang != site.lang-%}<b><a href="{{ site.url }}/{{ page.lang }}/">{{ page.lang }}</a></b>&ensp;&rarr;&ensp;{%- endif -%}
+
+	<b itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" >
+		<meta itemprop="position" content="2" />
+		<a itemprop="item" href="{{ site.url }}/{%- if page.lang != site.lang-%}{{ page.lang }}/{%- endif -%}"><span itemprop="name">{{ page.lang }}</span></a>
+	</b>&ensp;&rarr;&ensp;
 	<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="tags-color" >
-		<meta itemprop="position" content="2" /><link itemprop="item" href="{{ site.url }}{{ page.url }}"/>
+		<meta itemprop="position" content="3" /><link itemprop="item" href="{{ site.url }}{{ page.url }}#{{ page.tags[0] }}"/>
 		<span itemprop="name">{{ page.tags[0] }}</span>
 	</span>
 </div>
