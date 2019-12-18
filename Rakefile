@@ -4,15 +4,19 @@ require "tmpdir"
 require "bundler/setup"
 require "jekyll"
 require "html-proofer"
+require 'net/http'
 
 SOURCE = "source/"
 DEST = "_site"
 CONFIG = {
+  'url' => 'do-your-own-seo.com',
   'default_lang' => "uk",
   'default_loc' => "ua",
-  'default_tags' => "SEO, website optimization",
+  'default_tags' => "SEO",
   'post_ext' => "md"
 }
+
+task :default => ["post"]
 
 desc "Test with html-proofer"
 task :test do
@@ -23,12 +27,11 @@ task :test do
     check_favicon: true,
     enforce_https: true,
     typhoeus:  { :ssl_verifypeer => false },
-    internal_domains: ["do-your-own-seo.com"],
+    internal_domains: [CONFIG['url']],
     file_ignore: [/assets/, /editor/, /yandex(.+)\.html/],
     url_ignore: [/LICENSE/, /gstatic\.com/, /google-analytics/]
   }
-
-  HTMLProofer.check_directory("./_site", options).run
+  HTMLProofer.check_directory("./#{DEST}", options).run
 end
 
 desc "Jekyll serve"
@@ -36,7 +39,23 @@ task :serve do
   sh "bundle exec jekyll serve JEKYLL_ENV=development --drafts --livereload"
 end
 
-task :default => ["post"]
+desc "Ping the search engines if sitemap.xml has been updated"
+task :ping => ["ping:google", "ping:bing"]
+namespace :ping do
+  url = "/ping?sitemap=https://#{CONFIG['url']}/sitemap.xml"
+
+  task :google do
+    puts Net::HTTP.get("www.google.com", url)
+    rescue LoadError
+      puts "! Could not ping Google"
+  end
+
+  task :bing do
+    puts Net::HTTP.get("www.bing.com", url)
+    rescue LoadError
+      puts "! Could not ping Bing"
+  end
+end
 
 desc "Create a new post or draft"
 task :post do
@@ -89,17 +108,16 @@ task :post do
     #The main heading of the post
     post.puts "h1: \"\""
 
-    post.puts "comments_locked: false"
-    post.puts "categories: #{ENV['category'] || ''}"
     post.puts "tags: [#{CONFIG['default_tags'] + (ENV['tags'] ? ", "+ ENV['tags'] : '')}]"  # tag1, tag2, etc
+    post.puts "categories: #{ENV['category'] || ''}"
     post.puts "description: \"\""
     post.puts "keywords: \"\""
 
-    #The 1-st paragraph after the table of contents = Preview on the home page of the blog.
+    # snippet = The 1st paragraph after the table of contents = Preview on the home page of the blog.
     post.puts "snippet: \"#{ENV['snippet'] || ''}\""
+    post.puts "snippet_header: \"#{ENV['snippet_header'] || ''}\""
 
     post.puts "image: \"\""
-    post.puts (draft ? "sitemap: false" : "")
     post.puts "---"
   end
 end # task :post
