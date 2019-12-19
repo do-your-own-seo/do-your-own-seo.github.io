@@ -58,7 +58,7 @@ By default, the post will be hidden. If you prefer to publish it immediately, ad
 
 Run the above rake task with the additional parameter `draft=y`. In this case, no need to specify `date` and `public`.
 
-To preview the draft, run `bundle exec jekyll serve --drafts`. When you finish editing, add the date to the filename, remove "sitemap: false" from the front matter, and move the draft to the corresponding \_posts folder.
+To preview the draft, run `bundle exec jekyll serve --drafts`. When you finish editing, add the date to the filename and move the draft to the corresponding \_posts folder.
 
 ---
 ### Deploy to Github Pages
