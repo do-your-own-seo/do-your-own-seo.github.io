@@ -5,7 +5,7 @@ lang: uk
 locale: ua
 
 date: 2019-12-03T20:09:00Z
-last_modified_at: 2019-12-03T20:09:00Z
+last_modified_at: 2019-12-28T17:00:00Z
 
 title: "Вага сторінки: коли посилання шкодять, коли допомагають"
 tags: [PageRank, вага посилань, Google, SEO]
@@ -14,7 +14,7 @@ keywords: "вага сторінки"
 schema: FAQPage
 
 h1: "Як PageRank переходить з посиланням: про nofollow і не тільки" 
-snippet_header: "Вага притікає, вага тане&#8230; То що ж впливає на живильну силу посилань?"
+snippet_header: "Вага притікає до сайту, вага тане&#8230; То що ж впливає на живильну силу посилань?"
 
 snippet: "Всі хочуть знати, як само посилання розпо&#173;діляють вагу між сторінками. І поки ми про&#173;буємо вгадати пропорцію, гуглбот вирегочує, чита&#173;ючи, що «вага ділиться як 5:1» і «кожне вихідне посилання відбирає в донора 10–15% ваги»"
 
@@ -38,26 +38,23 @@ image: "leaking-link-juice.jpg"
 <p>де <b><i>PR&#8239;(A)</i></b> – <strong>PageRank</strong> сторінки <b><i>A</i></b>, а <b><i>d</i></b> – коефі&#173;цієнт загасання (&#8776;&#8239;0.85), який у формулі помно&#173;жається на суму за всіма посиланнями на <b><i>A</i></b>.&#8239; Кожен доданок (дріб) – це частка від ділення рангу сторінки-донора <b><i>Q</i></b>&#8239; на кіль&#173;кість вихідних посилань з неї. Хоча вираз є часто згадуваним в інтернеті, Google навряд чи ним прямо користується. Інакше 10 &#171;кишень&#173;кових&#187; сайтів, посилаючись один на одного, могли б суттєво підвищити ранг окремих сторінок.</p>
 <p>В тексті оновленого <a href="https://patents.google.com/patent/US9165040B1/en">патенту PageRank</a> наведено варіації першої формули, які оці&#173;нюють <b>&#171;відстань&#187; від <i>A</i></b>&#8239; до вибра&#173;ної мно&#173;жини сторінок-авторитетів. Знаменно, що в них враховуються коефіцієнти значущості <b>кож&#173;ного посилання</b> окремо. Числа ці знає тільки Гугл, а ми можемо лише здога&#173;дуватися, що й як впливає на вагомість посилань.</p>
 <p id="FAQ">Спробуємо дати собі раду з поняттями? Почнемо з простих питань.</p>
+<h3 class="faq">Чому вихідні посилання зменшують вагу сто&#173;рінки?</h3>
+<p>Тому що кожне посилання ніби говорить: «Не затри&#173;муйся тут, завітай <span class="u">сюди</span>».</p>
+<h3 class="faq">Чому вхідні посилання додають автори&#173;тету?</h3>
+<p>Тому що сторінка з посиланням ніби реко&#173;мендує: «Раджу поглянути <span class="u">ось на це</span>».</p>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-	<h3 itemprop="name">Чому вихідні посилання зменшують вагу сто&#173;рінки?</h3>
+	<h3 itemprop="name">В чому різниця між <em>dofollow</em> і <em>nofollow</em>?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">Тому що кожне посилання ніби говорить: «Не затри&#173;муйся тут, завітай <span class="u">сюди</span>».</p>
+		<p itemprop="text">В першому випадку пошуковий робот за посиланням перейде, а в іншому – ні, якщо це, звісно, добре вихований бот. Атрибут <span class="red">rel="nofollow"</span> для посилання – на кшталт вивіски <span class="red">«Проходу нема»</span>; dofollow – навпаки, дозвільне значення rel за замовчанням. Гуглбот завжди зважав на заборону ступати далі, але <span class="u">від березня 2020</span> матиме <span class="u">право ігнорувати</span> нофолоу і сканувати сторінку.</p>
 	</div>
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-	<h3 itemprop="name">Чому вхідні посилання додають автори&#173;тету?</h3>
+	<h3 itemprop="name">Як перевірити посилання на dofollow/&thinsp;nofollow?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">Тому що сторінка з посиланням ніби реко&#173;мендує: «Раджу поглянути <span class="u">ось на це</span>».</p>
+		<p itemprop="text">Це легко зробити за допомогою букмарклета &ndash; закладки з кодом JavaScript. Перетягніть цей текст <a href='javascript:(function(){var o,e,l=document.links;for(o=0;o<l.length;++o)-1!=(e=l[o].rel.toLowerCase()).indexOf("nofollow")?(l[o].style.backgroundColor="yellow",l[o].title+=" NOfollow"):l[o].style.backgroundColor="lightgreen",-1!=e.indexOf("ugc")&&(l[o].style.border="6px solid orange",l[o].title+=" UGC"),-1!=e.indexOf("sponsored")&&(l[o].style.outline="4px solid red",l[o].title+=" Sponsored")})()'>Nofollow-link-highlighter</a> на панель закладок вашого браузера. Знаходячись на сторінці, посилання з якої хочете перевірити, натисніть закладку-хайлайтер. Nofollow лінки стануть жовтими, всі інші &ndash; зеленими; до того ж <a href="#3">користувацькі та спонсоровані</a> посилання матимуть кольорову границю, помаранчеву або червону.</p>
 	</div>
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-	<h3 itemprop="name">В чому різниця між <em>follow</em> і <em>nofollow</em>?</h3>
-	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">В першому випадку пошуковий робот за посиланням перейде, а в іншому – ні. Якщо це, звісно, добре вихований бот. Атрибут <span class="red">rel="nofollow"</span> для посилання – на кшталт вивіски <span class="red">«Проходу нема»</span>. Гуглбот завжди сприймав це за сувору заборону ступати далі, але <span class="u">від березня 2020</span> матиме <span class="u">право ігнорувати</span> нофолоу і сканувати сторінку.</p>
-	</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-	
 <img loading="lazy" src="/images/posts/bot.jpg" alt="На малюнку робот" class="fullscreen-right" title="Може, це не гуглбот, але симпатичний, правда?">
 	<h3 itemprop="name">Чому посилання з <em>nofollow</em> не передає вагу?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
@@ -156,8 +153,8 @@ image: "leaking-link-juice.jpg"
 </ul>
 <p>В кожній незрозумілій ситуації згадуємо золоте правило: «<span class="red">Не стій на шляху пошу&#173;кового бота</span>, коли не маєш на те ваго&#173;мих причин!»</p></div>
 <div>
-<h2 id="3">Новинки від Google: як UGC і Sponsored діють на посилання</h2>
-<p>У вересні 2019 до підтримуваного усіма пошуковими роботами nofollow і його анти&#173;поду dofollow (за замовчан&#173;ням) додалися ще дві вказівки, виключно для гуглботів: <strong>ugc і sponsored</strong>. Обидві не є директивами: бот може взяти їх до уваги, але не зобов’язаний робити це.</p>
+<h2 id="3">Новинки від Google: як діють UGC і Sponsored</h2>
+<p>У вересні 2019 до підтримуваного усіма пошуковими роботами nofollow і його анти&#173;поду dofollow додалися ще дві вказівки, виключно для гуглботів: <strong>ugc і sponsored</strong>. Обидві не є директивами: бот може взяти їх до уваги, але не зобов’язаний вчиняти саме так.</p>
 <p><b>U</b>ser-<b>G</b>enerated-<b>C</b>ontent&nbsp;(ugc) – створений кори&#173;сту&#173;вачем контент: коментарі, відгуки, пости та обгово&#173;реннях на форумах. Sponso&#173;red – зрозу&#173;міло, афільо&#173;вані поси&#173;лання та реклама.</p>
 <p class="txt-center">
 <img loading="lazy" src="/images/posts/user-generated-content.jpg" alt="Молодь створює ugc-контент найбільш активно"><br>

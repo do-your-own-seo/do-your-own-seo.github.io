@@ -5,7 +5,7 @@ lang: en
 locale: en
 
 date: 2019-12-13T19:02:00Z
-last_modified_at: 2019-12-16T22:00:00Z
+last_modified_at: 2019-12-28T17:00:00Z
 
 title: "How do links pass equity? When links harm and when help"
 tags: [PageRank, link juice, link equity, Google, SEO]
@@ -41,22 +41,20 @@ image: "link-juice-leakage.jpg"
 <p>Anyway, the PR is only one of hundreds of the SERP-rank components: many of them are query-specific, intent-specific, or even user-specific. As opposed to the <em>static</em> PageRank, they’re sometimes called <em>dynamic</em> ranking factors.
 </p>
 <p id="FAQ">To sort things out, let’s start with simple questions.</p>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-	<h3 itemprop="name">Why outbound links reduce the link equity?</h3>
-	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">Because every link silently says, &ldquo;Don’t stay here, you’d better stop by <span class="u">there.</span>&rdquo;</p>
-	</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-	<h3 itemprop="name">Why inbound links add credibility to a website?</h3>
-	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">Because the page a link is on seems to suggest, &ldquo;Look, I highly recommend <span class="u">this</span>!&rdquo;</p>
-	</div>
-</div>
+<h3 class="faq">Why outbound links reduce the link equity?</h3>
+<p>Because every link silently says, &ldquo;Don’t stay here, you’d better stop by <span class="u">there.</span>&rdquo;</p>
+<h3 class="faq">Why inbound links add credibility to a website?</h3>
+<p>Because the page a link is on seems to suggest, &ldquo;Look, I highly recommend <span class="u">this</span>!&rdquo;</p>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<h3 itemprop="name">What is dofollow and nofollow links?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 		<p itemprop="text">It’s all about the <em>rel</em> attribute of the link tag. If <span class="red">rel="nofollow"</span>, the search robot won’t follow the link (we assume, it’s a well-mannered bot). The default value of rel is "dofollow": such a link kindly asks the bot to go to the href and pass some value to the target page.</p>
+	</div>
+</div>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+	<h3 itemprop="name">How to check nofollow and dofollow links?</h3>
+	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+		<p itemprop="text">It’s easy to highlight link types with the help of a bookmarklet. Drag this text <a href='javascript:(function(){var o,e,l=document.links;for(o=0;o<l.length;++o)-1!=(e=l[o].rel.toLowerCase()).indexOf("nofollow")?(l[o].style.backgroundColor="yellow",l[o].title+=" NOfollow"):l[o].style.backgroundColor="lightgreen",-1!=e.indexOf("ugc")&&(l[o].style.border="6px solid orange",l[o].title+=" UGC"),-1!=e.indexOf("sponsored")&&(l[o].style.outline="4px solid red",l[o].title+=" Sponsored")})()'>Nofollow-link-highlighter</a> to your browser bookmarks bar. Staying on the page whose links you want to check, click the created button: all <b>no</b>-follow links will turn yellow; <b>do</b>-follow will become green. The <a href="#4">user-generated and sponsored</a> links will have thick borders, orange or red.</p>
 	</div>
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
