@@ -1,21 +1,24 @@
 table
   border-collapse: collapse
   font-feature-settings: "kern", "liga", "tnum"
-  margin: $small-spacing 0
+  margin: $small-spacing auto
   table-layout: fixed
-  width: 100%
+  width: auto
+
+caption
+  caption-side: bottom
+  margin: $xsmall-spacing auto
+
 
 th
-  border-bottom: 1px solid shade($light-gray, 25%)
   font-weight: 600
-  padding: $small-spacing 0
-  text-align: left
 
+th,
 td
-  border-bottom: $base-border
-  padding: $small-spacing 0
+  padding: .5rem  .8rem
+  border: $base-border
+  font-size: 95%
 
-tr,
 td,
 th
   vertical-align: middle
