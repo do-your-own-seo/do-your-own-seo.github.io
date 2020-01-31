@@ -44,6 +44,11 @@ related:
   ru: "Другие статьи по теме"
   en: "Related Posts"
 
+recent:
+  uk: "Свіжі публікації"
+  ru: "Недавние публикации"
+  en: "Recent Posts"
+
 share:
   uk: "Поширити"
   ru: "Поделиться"
