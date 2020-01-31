@@ -8,32 +8,28 @@
 
 .toc a, 
 .relatedPosts a
-  &:active, 
   &:focus, 
   &:hover
     font-size: 101%
     transition: font-size $base-duration $base-timing
 
-.post
-  &-meta
-    margin: 0 0 $small-spacing 0
 
+.post-meta
+  margin: 0 0 $small-spacing 0
+
+h1
+  font-size: 1.7rem
+  text-align: center
+  
+img
+  border-radius: $base-border-radius
+
+p
+  margin: $small-spacing 0
+
++media($tablet-small)
   h1
-    font-size: 1.7rem
-    text-align: center
+    text-align: left
 
-    +media($tablet-small)
-      font-size: 2em
-      text-align: left
-
-  &-content
-    
-    img
-      border-radius: $base-border-radius
-
-    p
-      margin: $small-spacing 0
-
-    +media($tablet-small)
-      p 
-        margin: 1em 0
+  p 
+    margin: 1em 0

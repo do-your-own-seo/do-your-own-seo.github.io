@@ -6,17 +6,36 @@ body
   font-size: $base-font-size * 0.75
 
   +media(360px)
-    font-size: $base-font-size * 0.84
-
-  +media($tablet-small)
-    padding-top: 0
-    font-size: $base-font-size * 0.97  
+    font-size: $base-font-size * 0.84  
 
 @font-face
-  font-family: 'logo'
+  font-family: 'logo' 
   font-style: normal
   font-weight: 400
   src: local('Marck Script'), local('MarckScript-Regular'), url(data:font/ttf;base64,AAEAAAAOAIAAAwBgR0RFRgARAAsAAAjIAAAAFkdQT1PWR+fHAAAI4AAAAKRHU1VCbIx0hQAACYQAAAAaT1MvMoe9QZcAAAWYAAAAYGNtYXAB7gHTAAAF+AAAAGxnYXNwAAAAEAAACMAAAAAIZ2x5ZqCj1t8AAADsAAAD6mhlYWT4xJKBAAAFEAAAADZoaGVhB5cCfAAABXQAAAAkaG10eBVF/9QAAAVIAAAALGxvY2EETwVSAAAE+AAAABhtYXhwABMAdQAABNgAAAAgbmFtZTJ1SoYAAAZkAAACOnBvc3T/kgBLAAAIoAAAACAAAv/1AAEBGgKCAAUADQAAExcGByM2AjY0JiIGFBbrL49SOD4MGholGRkCgh306ff+gholGRklGgAC//b//gKOAn4AEgAqAAATMhYQBicmKwEiNTQ3NjciJjQ2FyIGFBYXNjcXFAcyNxcGBwYHFjI2NTQm6a73qIFFKS8dETgdZ7SIZ0JMaVgfBTwaCFUFFFsnKmSFTsYCfs7+7KACARYIIXB1cpFYKThtVQuDJgY+ZgohBw5+XAhjVJHMAAADAB4ABgLAAoQAEwAeACsAAAEVBgcOASMiJjQ+ATc2MzIWFAc2JQYUFjI3NjU0IyIDNjcGIyInBhUUFjMyAsAteTbqYTdEXJZOIEQzQQhM/rkhQGEkBlUnIWInGSeoFlQrKjsB7DAaLYfoTonBqSgVT2sbGUciPyUJHhxj/mZhaQVLdXEtNgAAAv+m/r4CdgKGACoAMwAAJRc+ATcGBwYjIiY1NBI3FwYVFDI2Nz4BMhYVFAcGBxYXBycOASMiJjU0NgMyNjciBhUUFgFAHgYrCWg5HyA1OqZqKN6SikoeIB4RXEBBLzUKajundDxR8jhRfR6Gti0JARV2E2IUC0Y/WgEtVSXvoF2gqEUsEg9AfoTEAxQiD5CPQTFaf/76g1hbQRwjAAABAAT/+gHCAZAAIwAAJRcOASImNDY1NCYjIgYHJz4BNxcGBzYzMhYUDgEUFjI+AwGtFRZNPiRFFxAzaEA8E0ceKRwrinQZIQw/FBIMDwwReRAsPCQ2hyAOF5uSFXTdMA1HruwiLiWHIhMGDAoRAAEACv/6AUEBbgAXAAABFhUUBiMiJjU0NjMyHwEiBhUUFjI2NCcBJxpwTDpBlFwRBwNQaipRMBMBKSs0UX9DO1+XASFcSCs1SGEoAAABAAwAAgFbAYMAFwAAATIWFRQHJzY1NCIOAQcnNjc2NTcOAQc2ASIZID4YDjw2SRM5NwgbOAMMF2UBYiIbNjwTHw4bTJ8hGX0WTngPQUdQtwAAAQAM//kBsAF8ACUAACUXDgEiJjQ3DgEjIjU0NjcXDgEUFjMyNjcXDgEUFjI+Aj8BPgEBmxURSTsiCy9sJThcFTApKhsSKHc+MwJXExMKCgcFCAILbhEqOilCNEpUUETUERVCgCsak5IXCNgrFgIGBAUHAw0AAAH//wADAl4BhQArAAABFwcGBwYiLgonBgcGBwYiLgEnJic2MxYXFhc+ATMyHgEXNgJCHDxqMw0bERUIBgIDAgIEAgcCNCUOKQkfExQFGBYdHQUIERoxdxMWEQ0LXgGFGkmDgRsHLD4sFRcMDAsJFgg4TB1XEwcoKMlJCAkuWXhenz2PMKEAAAABAAAACwB0AAcAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwAXgCiAPEBKAFOAXcBsgH1AAEAAAABAIP1zDW8Xw889QALA+gAAAAAyrinnQAAAADKuKed/3j+fwS8A2AAAAAIAAIAAAAAAAAB4AAAAeAAAAEB//UCrP/2ArYAHgKU/6YB0AAEAUsACgFjAAwBuAAMAlX//wABAAADYP5/AAAEmf94/1gEvAABAAAAAAAAAAAAAAAAAAAACwACAZsBkAAFAAACvAKKAAAAjAK8AooAAAHdADIA+gAAAgAAAAAAAAAAAIAAACcAAAACAAAAAAAAAABweXJzAEAAACCsA2D+fwAAA2ABgSAAAZcGAAAAAQcCfgAAACAAAgAAAAIAAAADAAAAFAADAAEAAAAUAAQAWAAAABIAEAADAAIAIQBEAE8AWQBvAHIAdQB3//8AAAAgAEQATwBZAG4AcgB1AHf////h/7//tf+s/5j/lv+U/5MAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAZgADAAEECQAAAOgAAAADAAEECQABABgA6AADAAEECQACAA4BAAADAAEECQADAFIBDgADAAEECQAEABgA6AADAAEECQAFABoBYAADAAEECQAGACYBegADAAEECQAOADQBoABDAG8AcAB5AHIAaQBnAGgAdAAgACgAYwApACAAMgAwADEAMQAsACAARABlAG4AaQBzACAATQBhAHMAaABhAHIAbwB2ACAAPABkAGUAbgBpAHMALgBtAGEAcwBoAGEAcgBvAHYAQABnAG0AYQBpAGwALgBjAG8AbQA+ACwAIABNAGEAcgBjAGsAIABGAG8AZwBlAGwALAAgAHcAaQB0AGgAIABSAGUAcwBlAHIAdgBlAGQAIABGAG8AbgB0ACAATgBhAG0AZQBzACAAIgBNAGEAcgBjAGsAIABTAGMAcgBpAHAAdAAiAC4ATQBhAHIAYwBrACAAUwBjAHIAaQBwAHQAUgBlAGcAdQBsAGEAcgBEAGUAbgBpAHMATQBhAHMAaABhAHIAbwB2ADoAIABNAGEAcgBjAGsAIABTAGMAcgBpAHAAdAAgAFIAZQBnAHUAbABhAHIAOgAgADIAMAAxADEAVgBlAHIAcwBpAG8AbgAgADEALgAwADAAMgBNAGEAcgBjAGsAUwBjAHIAaQBwAHQALQBSAGUAZwB1AGwAYQByAGgAdAB0AHAAOgAvAC8AcwBjAHIAaQBwAHQAcwAuAHMAaQBsAC4AbwByAGcALwBPAEYATAAAAAMAAAAAAAD/jwBLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAB//8ADwABAAAADAAAAAAAAAACAAEAAQAKAAEAAAABAAAACgAeACwAAWxhdG4ACAAEAAAAAP//AAEAAAABa2VybgAIAAAAAQAAAAEABAACAAAAAQAIAAEAGgAEAAAACAAkAC4ANABOAFQAWgBgAGYAAgABAAMACgAAAAIABP/YAAX/0gABAAX/sAAGAAT/dAAG/4gAB/90AAj/gAAJ/3gACv/QAAEABf/oAAEABf/sAAEABf/gAAEABf/yAAEABf/UAAEAAAAKABYAGAABbGF0bgAIAAAAAAAAAAAAAA==) format('truetype')
+
+@font-face 
+  font-family: 'icomoon'
+  src: url('#{$icon-font-path}/icomoon.woff2') format('woff2'), url('#{$icon-font-path}/icomoon.woff') format('woff'), url('#{$icon-font-path}/icomoon.ttf') format('truetype')
+  font-display: swap
+  font-style: normal
+
+.icon
+  font-family: 'icomoon'
+  font-style: normal
+  -webkit-font-smoothing: antialiased
+
+.icon-menu:before
+  content: "\e9bd"
+
+.icon-about:before
+  content: "\e901"
+  
+.icon-rss:before
+  content: "\ea9b"
+
+li
+  margin: $xsmall-spacing 0
 
 .site-header
   padding: 0
@@ -40,12 +59,6 @@ body
     &:hover
       font-weight: normal
 
-  +media($tablet-small)
-    position: relative
-    top: auto
-    left: auto
-    
-
 .logo
   margin: 0
   padding: 0
@@ -58,19 +71,14 @@ body
   z-index: 100
 
   a
+    transition: all $base-duration $base-timing
     color: $olive
     text-shadow: $text-shadow-day
-    transition: all $base-duration $base-timing
-
     &:hover,
     &:focus,
     &:active
       font-size: 2.12rem
 
-  +media($tablet-small)
-    position: relative
-    left: auto
-    
 .navbar
   display: none
   position: fixed
@@ -91,14 +99,15 @@ body
     margin: 0
     list-style-type: none
 
-  a
-    display: block
-    text-shadow: $text-shadow-night
-
   li.lang
     display: inline-block
 
+  .icon
+    font-size: $mid-spacing
+
   a
+    display: block
+    text-shadow: $text-shadow-night
     margin: 0 $xsmall-spacing
     font-size: 1.8em
     position: relative
@@ -128,7 +137,70 @@ body
       &:after
         width: 100%
 
-  +media($tablet-small)
+.toggle-navbar-button
+  position: fixed
+  top: 1.35em
+  right: 1.45em
+  z-index: 100
+  float: right
+  margin: 0
+  padding: .45em .65em
+  font-size: 1.2em
+  background-color: $indigo
+  @extend %button
+
+  .icon-menu
+    display: block
+
+  .icon-cross
+    display: none
+
+.site-header input[type="checkbox"]
+  position: fixed
+  top: -999999px
+  right: -999999px
+
+input:checked
+  ~ .navbar
+    display: table
+    padding: 8em 0 5em 0
+
+  ~ .logo a
+    color: #fff
+    text-shadow: $text-shadow-night
+
+  ~ .toggle-navbar-button
+    .icon-menu
+      display: none
+    .icon-cross
+      display: block
+
+
++media($tablet-small)
+  body
+    padding-top: 0
+    font-size: $base-font-size * 0.97
+  
+  .toggle-navbar-button
+    display: none
+
+  .logo
+    position: relative
+    left: auto
+
+  input:checked ~ .logo a
+    color: $olive
+    text-shadow: $text-shadow-day
+    
+  .site-header
+    position: relative
+    top: auto
+    left: auto
+    
+    input ~ .navbar
+      padding: 0
+
+  .navbar
     text-align: left
     background-color: transparent
     position: relative
@@ -143,6 +215,9 @@ body
 
     .mobile
       display: none
+ 
+    .icon
+      font-size: 1em
 
     li.lang a
       color: $indigo
@@ -151,12 +226,11 @@ body
       &:before,
       &:after
         background-color: shade($indigo, 10%)
-
     a
+      font-size: $mid-spacing
       padding: 5px
       margin: auto 10px
       color: shade($olive, 10%)
-      font-size: $mid-spacing
       font-family: sans-serif
       text-shadow: $text-shadow-day
 
@@ -168,50 +242,3 @@ body
       &:hover, 
       &:focus
         color: rgba($olive, .8)
-
-.toggle-navbar-button
-  float: right
-  background-color: $indigo
-  padding: .45em .65em
-  margin: 0
-  position: fixed
-  top: 1.35em
-  right: 1.45em
-  z-index: 100
-  @extend %button
-
-  .icon-menu
-    display: block
-
-  .icon-cross
-    display: none
-
-  +media($tablet-small)
-    display: none
-
-.toggle-navbar-button
-  font-size: 1.2em
-
-#toggleNavbar
-  position: fixed
-  top: -999999px
-  right: -999999px
-
-  &:checked
-    ~ .navbar
-      display: table
-      padding: 8em 0 5em 0 
-
-    ~ .navbar  .icon
-      font-size: 1.3em
-
-    ~ .logo a
-      color: #fff
-      text-shadow: $text-shadow-night
-
-    ~ .toggle-navbar-button
-      .icon-menu
-        display: none
-      .icon-cross
-        display: block
-
