@@ -1,8 +1,6 @@
 table
   border-collapse: collapse
-  font-feature-settings: "kern", "liga", "tnum"
   margin: $small-spacing auto
-  table-layout: fixed
   width: auto
 
 caption
@@ -15,9 +13,13 @@ th
 
 th,
 td
-  padding: .5rem  .8rem
+  padding: 3px  2px
   border: $base-border
-  font-size: 95%
+  font-size: 90%
+
+  +media($phone-large)
+    padding: .5rem  .8rem
+    font-size: 95%
 
 td,
 th
