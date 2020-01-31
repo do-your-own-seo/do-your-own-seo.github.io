@@ -17,7 +17,7 @@ pagination:
   per_page: 5
   permalink: "/page=:num/"
   sort_reverse: true
-  sort_field: "date"
+  sort_field: "order"
 
 sitemap_exclude: ["assets/"]
 
