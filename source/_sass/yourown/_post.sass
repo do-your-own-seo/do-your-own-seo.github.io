@@ -1,24 +1,36 @@
-ul.featured
+.featured
   list-style-type: none
 
-ul.featured li:before,
-.pros,
-.cons
+.featured li:before
   font-weight: 600
   font-size: 1.5em
   line-height: 1
   padding-right: 3px
 
-.featured.plus li:before,
-.pros:before
+.nobullets
+  list-style-type: none
+  
+  &.oneline
+    padding-left: 0
+    margin-left: 0 
+    li
+      display: inline-block
+
+.featured.plus li:before
   content: "\002B\00a0"
   color: $olive
 
-.featured.minus li:before,
-.cons:before
+.featured.minus li:before
   content: "\2212\00a0"
   color: $danger-color
  
+.flex-wrap
+  display: flex
+  flex-wrap: wrap
+
+.flex-center
+  justify-content: center
+   
 .restrict
   width: auto
 
@@ -81,9 +93,9 @@ ul.featured li:before,
       display: inline
 
 .relatedPosts
-  margin-top: $xsmall-spacing
+  margin-top: 1rem
 
-  h4
+  strong
     font-size: 1.2em
   a 
     font-weight: 600
