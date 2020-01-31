@@ -3,6 +3,7 @@ layout: post
 i18n-link: algo
 locale: en
 lang: en
+order: 1
 
 date: 2019-10-07T22:19:00Z
 last_modified_at: 2019-12-01T00:21:00Z
@@ -17,7 +18,7 @@ schema: FAQPage
 h1: "How does Google rank webpages?"
 snippet_header: "How do Google Algorithms rank pages?"
 
-snippet: "Unlike the situation in SEO ten years ago, now purchased magic does not work. Buying links won't bring the page to the Top and could even hurt your rankings. Search algorithms are more likely to choose high-grade resources, and Google patents confirm this trend."
+snippet: "Unlike the situation in SEO ten years ago, now purchased magic does not work. Buying links won't bring the page to the Top and could even hurt your rankings. Ranking algorithms are more likely to choose high-grade resources, and Google patents confirm this trend."
 
 image: "how-do-google-algorithms-work.jpg"
 
@@ -43,7 +44,7 @@ image: "how-do-google-algorithms-work.jpg"
 <p>However, the Google PageRank is still alive: the <a href="https://patents.google.com/patent/US9165040B1/en">respective patent</a> was re-registered in 2017 and will be valid until 2027. So, should we try to replicate the calculations? No, due to low priority: without reference to other factors, the PR <span class="under"> is useless for</span> ranking forecasts.</p>
 <p>The <strong>Authoritativeness</strong> and <strong>Trust&#173;worthiness</strong> mostly refer to a domain and indicate its reliability, power of influence, and depth of connection with other relevant resources. There are several reputation-related third-party metrics: <a href="https://moz.com/learn/seo/domain-authority">Moz's Domain Authority</a>, Majestic's Topical Trust Flow, etc., but we'll skip them. They are useful in analyzing the SERP, yet surely Google has own computational models for such concepts.</p>
 <p itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-<img loading="lazy" class="fullscreen-right" src="/images/posts/link-flow-link-equity-en.jpg" alt="Link flow and link equity"><span itemprop="name">How can we think of link equity?</span> <span itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text"> It's easy to imagine that link equity and website credibility <strong>accumulate and are redistributed</strong> <a href="{{site.url}}/pagerank-formula-link-equity-distribution">by the link flow</a>. <span class="under">The more reputable websites refer you</span>, the more trust you get from the Search Engines, and higher positions gain on the Results Page (SERP). Conversely, if the website has thinnish links or none at all, it will be difficult to prove its worth and relevance to the topic.</span></span> </p>
+<img loading="lazy" class="fullscreen-right" src="/images/posts/link-flow-link-equity-en.jpg" alt="What does link equity mean"><span itemprop="name">How can we think of link equity?</span> <span itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text"> It's easy to imagine that link equity and website credibility <strong>accumulate and are redistributed</strong> <a href="{{site.url}}/pagerank-formula-link-equity-distribution">by the link flow</a>. <span class="under">The more reputable websites refer you</span>, the more trust you get from the Search Engines, and higher positions gain on the Results Page (SERP). Conversely, if the website has thinnish links or none at all, it will be difficult to prove its worth and relevance to the topic.</span></span> </p>
 <p>That means the homepage of a newbie site won't soon surpass the reputable competitors in Search. It's hardly possible to build natural links quickly, and the algorithms won't believe the rest.
 </p>
 <p>But it's too early to talk about total defeat: there are many more ranking factors!</p>
@@ -86,7 +87,7 @@ image: "how-do-google-algorithms-work.jpg"
 <p>In contrast to high-volume, the <strong>long-tail searches</strong> <i>(looking for an extraordinary thing in the right color)</i> allow us to get on&nbsp;Top of the Search  only due to comprehensive content and user satisfaction. Unless the domain is newborn and its link profile is empty. But when the site grows out of the &ldquo;sandbox&rdquo; to which the search algorithms are slightly biased, it will be easier to master informational queries.</p>
 <p class="txt-left">
 <img loading="lazy" class="fl-right restrict vw40" src="/images/posts/inStock.jpg" alt="In order for product cards to rank high, the schema.org Product & Offer markup must be implemented."> Versions of this article in other languages ​​are positive that optimized product pages can get into the Top 10 without link building, even competing with authoritative Web stores.</p>
-<p>For some locations, this is the case. But I'm afraid this is not true where Amazon and eBay are so strong: I have no experience in promoting e-commerce sites in &ldquo;Amazon-basin&rdquo; countries. Thus, if it was about my business, I'd better open a branch in the marketplace and start optimizing it than to invest all my efforts into a separate store. So what do you think: is it worth to optimize shop product cards at all?</p>
+<p>For some locations, this is the case. But it appears not to be like that where Amazon and eBay are so strong: I have no experience in promoting e-commerce sites in &ldquo;Amazon-basin&rdquo; countries. Thus, if it was about my business, I'd better open a branch in the marketplace and start optimizing it than to invest all my efforts into a separate store. So what do you think: is it worth to optimize shop product cards at all?</p>
 <p>The<span class="under"> hardest thing is to promote hub pages</span>, such as product category or blog homepage. They can't solve the user's problem: their mission is to redirect to the destination. Without an influx of incoming links and authoritative domain support, they'll quickly lose the equity and be unable to hold Top positions.</p>
 <h3>On the high-quality content</h3>
 <p>Well, you have faith in your skills and have decided to conquer Olympus with the perfection of content. I add my full support &nbsp;<i class="icon icon-handshake"></i>&nbsp; to the idea: let's try to produce well-structured content with clear headlines and descriptive illustrations.</p>

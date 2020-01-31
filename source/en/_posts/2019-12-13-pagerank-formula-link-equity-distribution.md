@@ -3,6 +3,7 @@ layout: post
 i18n-link: PR
 lang: en
 locale: en
+order: 3
 
 date: 2019-12-13T19:02:00Z
 last_modified_at: 2019-12-28T17:00:00Z
@@ -32,7 +33,7 @@ image: "link-juice-leakage.jpg"
 <p>All those link juice, link equity, etc., mean nothing more than <strong>ranking power</strong> &ndash; the page’s ability to take high positions on the <abbr title="Search Engine Results Page">SERP</abbr>. But why a plain hyperlink can pass something from one document to another? That’s because search engines interpret <strong>links as votes</strong> in support of the cited page. Every vote is taken into account, but some weight more than others.
 </p>
 <p class="txt-center"> 
-<img src="/images/posts/{{ page.image }}" alt="How to prevent link juice leakage" class="webfeedsFeaturedVisual">
+<img src="/images/posts/{{ page.image }}" alt="SEO-task: prevent link juice leakage" class="webfeedsFeaturedVisual">
 </p>
 <p id="1">The point is that link juice is related to <strong>PageRank</strong> &ndash; an estimate of the page’s value that Google got a <a href="https://patents.google.com/patent/US6285999B1/en">patent</a> for in 2001. The underlying method calculates the importance rank of a page from the ranks of pages linking to it. Below is the original formula (click if you want to <a href="#FAQ"><b class="red">skip this</b></a>):
 </p>
@@ -54,7 +55,7 @@ image: "link-juice-leakage.jpg"
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<h3 itemprop="name">How to check nofollow and dofollow links?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">It’s easy to highlight link types with the help of a bookmarklet. Drag this text <a href='javascript:(function(){var o,e,l=document.links;for(o=0;o<l.length;++o)-1!=(e=l[o].rel.toLowerCase()).indexOf("nofollow")?(l[o].style.backgroundColor="yellow",l[o].title+=" NOfollow"):l[o].style.backgroundColor="lightgreen",-1!=e.indexOf("ugc")&&(l[o].style.border="6px solid orange",l[o].title+=" UGC"),-1!=e.indexOf("sponsored")&&(l[o].style.outline="4px solid red",l[o].title+=" Sponsored")})()'>Nofollow-link-highlighter</a> to your browser bookmarks bar. Staying on the page whose links you want to check, click the created button: all <b>no</b>-follow links will turn yellow; <b>do</b>-follow will become green. The <a href="#4">user-generated and sponsored</a> links will have thick borders, orange or red.</p>
+		<p itemprop="text">It’s easy to highlight no-followed links, including <a href="#4">user-generated and sponsored</a>, with the help of a bookmarklet. Drag this <b><a class="red" href='javascript:(function(){var o,e,l=document.links;for(o=0;o<l.length;++o)-1!=(e=l[o].rel.toLowerCase()).indexOf("nofollow")?(l[o].style.backgroundColor="yellow",l[o].title+=" NOfollow"):l[o].style.backgroundColor="lightgreen",-1!=e.indexOf("ugc")&&(l[o].style.border="6px solid orange",l[o].title+=" UGC"),-1!=e.indexOf("sponsored")&&(l[o].style.outline="4px solid red",l[o].title+=" Sponsored")})()'>Nofollow-and-UGC-link-highlighter</a></b> to your browser bookmarks bar. On the page you want to check, click the bookmark&#173;let: all <b>no</b>-follow links will turn yellow; <b>do</b>-follow will become green. User's or paid links will have orange or red borders.</p>
 	</div>
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
@@ -64,7 +65,7 @@ image: "link-juice-leakage.jpg"
 	</div>
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-	<img loading="lazy" src="/images/posts/bot.jpg" alt="A robot" class="fullscreen-right" title="It may not be the Googlebot, but it’s cute">
+	<img loading="lazy" src="/images/posts/bot.jpg" alt="How googlebot works" class="fullscreen-right" title="It may not be the Googlebot, but it’s cute">
 	<h3 itemprop="name">What does it mean that nofollow becomes a hint?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 		<p itemprop="text">The nofollow attribute of the anchor tag is no longer a directive. It may be considered by search engines for ranking purposes, and from <span class="u">March 1, 2020</span>, the googlebots will have the <span class="u">right to ignore</span> it. That means bots will be able to investigate and index the destination page.</p>
@@ -135,7 +136,7 @@ image: "link-juice-leakage.jpg"
     	<li><span>when discussing someone’s statement or an event you have read about on the Internet.</span></li>
 	</ol>
 <p>That isn’t just about ethics: in either case, it’s unlikely that the search engine will applaud the site owner for the missing link.</p>
-<p class="txt-center"><img loading="lazy" src="/images/posts/webpages-and-links.jpg" alt="Pagerank is accumulated and can be passing through links"></p>
+<p class="txt-center"><img loading="lazy" src="/images/posts/webpages-and-links.jpg" alt="Google Pagerank and rel=sponsored, nofollow, ugc"></p>
 <p>So far, we have been talking mainly of outgoing and backward links (commonly spelled as &ldquo;backlinks&rdquo;). But internal links are also essential: they can radically redistribute the link equity. Some crawlers calculate the Internal PageRank for all the pages of a given site: as examples, let’s highlight <a href="https://www.oncrawl.com/optimise-internal-linking-structure/">OnCrawl</a> (cloud-based) and <a href="https://netpeaksoftware.com/spider#features">Netpeak Spider</a> (desktop). In fact, the internal linking strategy is the basis of website optimization, but talking about it requires more space than we can take.</p>
 </div>
 <div><h2 id="3">Nofollow usage: cut off the extremes. How not to waste link equity</h2>
@@ -158,7 +159,7 @@ image: "link-juice-leakage.jpg"
 </ul>
 <p>In any situation, it’s safer to stick to the rule &ldquo;<span class="red">Do not interfere with the search bot</span> without any good reason&rdquo;.</p>
 </div>
-<div><h2 id="4">UGS and Sponsored: how these attributes influence the rank passing</h2>
+<div><h2 id="4">UGC and Sponsored: how these attributes influence the rank passing</h2>
 	<p>Two more link hints were added to the existing one in September 2019: rel="<b>ugc</b>"  and rel="<b>sponsored</b>". But, unlike the well-supported by different search engines nofollow, the last two make sense only to googlebots.</p>
 	<p>UGC stands for the <b>U</b>ser <b>G</b>enerated <b>C</b>ontent, such as comments, forum posts, profile bios, etc.. Sponsored is intended to highlight affiliate and paid links.</p>
 	<p class="txt-center">

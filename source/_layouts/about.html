@@ -17,7 +17,7 @@ layout: default
     <div class="card">
       {{ content }}
       <div class="relatedPosts" data-nosnippet><strong>{{site.data.t.recent[page.lang]}}:</strong> 
-        {%- assign posts = site.posts | where:"lang", page.lang -%}
+        {%- assign posts = site.posts | where:"lang", page.lang | sort:"order" | reverse -%}
         {% for post in posts limit:3 %}  
           <a href="{{ post.url }}">{{ post.title }}</a>
         {% endfor %} 

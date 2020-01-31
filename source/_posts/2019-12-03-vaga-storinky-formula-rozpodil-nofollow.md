@@ -3,6 +3,7 @@ layout: post
 i18n-link: PR
 lang: uk
 locale: ua
+order: 3
 
 date: 2019-12-03T20:09:00Z
 last_modified_at: 2019-12-28T17:00:00Z
@@ -129,7 +130,7 @@ image: "leaking-link-juice.jpg"
 </ol>
 <p>Мова не тільки про етику, а й про те, що пошукова система може не зрозуміти відсут&#173;ності цитати в цих випадках.</p>
 <p class="txt-center">
-<img loading="lazy" src="/images/posts/webpages-and-links.jpg" alt="Посилання розподіляють вагу між сайтами в мережі"></p>
+<img loading="lazy" src="/images/posts/webpages-and-links.jpg" alt="Розподіл ваги між сайтами: що роблять sponsored, nofollow, ugc"></p>
 <p>Досі ми говорили здебільшого про лінки назовні і у зворотному напрямку (беклінки). Проте внутрішні посилання теж важливі: вони здатні кардинально переподілити вагу на сайті. <strong>Внутрішній PageRank</strong> сторінок обрахо&#173;вують деякі краулери: з хмарних наз&#173;вемо <a href="https://www.oncrawl.com/optimise-internal-linking-structure/">Oncrawl</a>, з десктопних &ndash; <a href="https://netpeaksoftware.com/spider#features">Netpeak Spider</a>. Взагалі, внут&#173;рішня перелінковка – основа оптимі&#173;зації сайту, але розповідь про це потребує окремої статті.</p>
 </div>
 <div>

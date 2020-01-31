@@ -15,7 +15,7 @@ layout: pages
 			{%- include dates.html date = page.date -%}
 			{%- assign words_per_min = 180 -%}
 		{%- endif -%}</time>
-	    •&ensp;{{ page.content| number_of_words| divided_by: words_per_min }}&nbsp;{{site.data.t.minRead[page.lang]}}{%- if page.author -%} • {{ page.author }}{%- endif -%}
+	    •&ensp;{{ page.content| number_of_words| divided_by: words_per_min | minus: page.code_amount }}&nbsp;{{site.data.t.minRead[page.lang]}}{%- if page.author -%} • {{ page.author }}{%- endif -%}
 	</small>
 	</div>
     <div class="post-content"{% if page.schema %} itemscope itemtype="https://schema.org/{{ page.schema }}"{% endif %}> {{ content }} </div>
