@@ -1,6 +1,6 @@
 {%- if site.github-repo -%} {%- assign pageurl=page.url | replace: "/", "" -%}
 {%- assign comments_lng = "comments_" | append: page.lang -%}
-<h3 class="feedback"><i class="icon icon-bubbles4"></i>&ensp;{{ site.data.t.commentSection[page.lang] }}</h3>
+<h3 class="feedback"><i class="icon icon-bubbles4" aria-hidden="true"></i>&ensp;{{ site.data.t.commentSection[page.lang] }}</h3>
   {%- if site.data[comments_lng][pageurl] -%}
   <div id="comments" data-nosnippet>
     {%- assign comments = site.data[comments_lng][pageurl] | where_exp: 'item', 'item.replying_to == empty' | sort: 'date' -%}

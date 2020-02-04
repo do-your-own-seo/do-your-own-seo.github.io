@@ -1,28 +1,30 @@
 {%- include assign.liquid -%}
 <header class="site-header">
   <div class="container">
-    <input type="checkbox" id="toggleNavbar">
-    <div class="logo"><a href="{{ site.url }}{{lng}}">Do Your Own!</a></div>
-    <label for="toggleNavbar" class="toggle-navbar-button">
-      <i class="icon icon-menu" role="button" aria-label="{{ site.data.t.show[page.lang] }}"></i>
-      <i class="icon icon-cross" role="button" aria-label="{{ site.data.t.hide[page.lang] }}">&#10006;</i>
-    </label>
-    <nav class="navbar">
-      <ul>
-      {%- for tr in translated reversed -%} 
-        {%- if tr.lang == page.lang -%} 
-          {%- assign current = " data-lang=" |append:page.lang -%}
-        {%- endif -%}
-        {%- assign ref = site.url | append:tr.url | replace:'index.html', '' -%}
-        {%- assign f=0 -%} {%- unless paginator.page -%} {%- assign f=1 -%} {%- endunless -%}
-        {%- if paginator.page == tr.pagination_info.curr_page -%} {%- assign f=1 -%} {%- endif -%}
-        {%- if f==1 -%}
-        <li class="lang"><a class="{{ tr.lang }}"{{current}} href="{{ ref }}">{{ tr.locale }}</a></li>
-        {%- endif -%}
-      {%- endfor -%}
-        <li><a href="{{ site.url }}{{ lng }}about" title="{{ site.data.t.about[page.lang] }}"><i class="icon icon-about">&thinsp;</i><span class="mobile">{{site.data.t.about[page.lang]}}</span></a></li>
-        <li><a href="{{ site.url }}{{ lng }}feed.xml" target="_blank" title="RSS" rel="nofollow"><i class="icon icon-rss">&thinsp;</i><span class="mobile">RSS feed</span></a></li>
-      </ul>
+    <nav>
+      <input type="checkbox" id="toggleNavbar" aria-label="mobile menu">
+      <div class="logo"><a href="{{ site.url }}{{lng}}">Do Your Own!</a></div>
+      <label for="toggleNavbar" class="toggle-navbar-button">
+        <i class="icon icon-menu" role="button" aria-label="{{ site.data.t.show[page.lang] }}"></i>
+        <i class="icon icon-cross" role="button" aria-label="{{ site.data.t.hide[page.lang] }}">&#10006;</i>
+      </label>
+      <div class="navbar">
+        <ul>
+        {%- for tr in translated reversed -%} 
+          {%- if tr.lang == page.lang -%} 
+            {%- assign current = " data-lang=" |append:page.lang -%}
+          {%- endif -%}
+          {%- assign ref = site.url | append:tr.url | replace:'index.html', '' -%}
+          {%- assign f=0 -%} {%- unless paginator.page -%} {%- assign f=1 -%} {%- endunless -%}
+          {%- if paginator.page == tr.pagination_info.curr_page -%} {%- assign f=1 -%} {%- endif -%}
+          {%- if f==1 -%}
+          <li class="lang"><a class="{{ tr.lang }}"{{current}} href="{{ ref }}">{{ tr.locale }}</a></li>
+          {%- endif -%}
+        {%- endfor -%}
+          <li><a href="{{ site.url }}{{ lng }}about" title="{{ site.data.t.about[page.lang] }}"><i class="icon icon-about" aria-hidden="true">&thinsp;</i><span class="mobile">{{site.data.t.about[page.lang]}}</span></a></li>
+          <li><a href="{{ site.url }}{{ lng }}feed.xml" target="_blank" title="RSS" rel="nofollow"><i class="icon icon-rss" aria-hidden="true">&thinsp;</i><span class="mobile">RSS feed</span></a></li>
+        </ul>
+      </div>
     </nav>
   </div>
 </header>

@@ -25,19 +25,19 @@
       {%- endif-%}
     {%- endfor -%}
   <div class="post-share txt-right" data-proofer-ignore> <em>{{site.data.t.share[page.lang]}}:&nbsp;</em>
-    <a rel="nofollow" href="https://facebook.com/sharer.php?u={{full_url}}">
-      <i class="icon icon-facebook" aria-label="Share on Facebook"></i>
+    <a rel="nofollow" href="https://facebook.com/sharer.php?u={{full_url}}" aria-label="Share on Facebook">
+      <i class="icon icon-facebook" aria-hidden="true"></i>
     </a>
-    <a rel="nofollow" href="https://twitter.com/intent/tweet?text={{param_title}}&url={{full_url}}{%-if tags[0]-%}&hashtags={{tags|join:','}}{%-endif-%}">
-      <i class="icon icon-twitter" aria-label="Share on Twitter"></i>
+    <a rel="nofollow" href="https://twitter.com/intent/tweet?text={{param_title}}&url={{full_url}}{%-if tags[0]-%}&hashtags={{tags|join:','}}{%-endif-%}" aria-label="Share on Twitter">
+      <i class="icon icon-twitter" aria-hidden="true"></i>
     </a>
-    <a rel="nofollow" href="https://www.linkedin.com/shareArticle?mini=true&url={{full_url}}&title={{param_title}}&source={{site.name|uri_escape}}">
-      <i class="icon icon-linkedin2" aria-label="Share on LinkedIn"></i>
+    <a rel="nofollow" href="https://www.linkedin.com/shareArticle?mini=true&url={{full_url}}&title={{param_title}}&source={{site.name|uri_escape}}" aria-label="Share on LinkedIn">
+      <i class="icon icon-linkedin2" aria-hidden="true"></i>
     </a>
-    <a rel="nofollow" href="https://www.reddit.com/submit?url={{full_url}}&title={{param_title}}&resubmit=true">
-      <i class="icon icon-reddit-alien" aria-label="Share on Reddit"></i>
+    <a rel="nofollow" href="https://www.reddit.com/submit?url={{full_url}}&title={{param_title}}&resubmit=true" aria-label="Share on Reddit">
+      <i class="icon icon-reddit-alien" aria-hidden="true"></i>
     </a>
-    <a rel="nofollow" href="mailto:?Subject={{site.name|uri_escape}}%20blog%20post&body={{param_title}}">
-      <i class="icon icon-envelop" aria-label="Mail this"></i>
+    <a rel="nofollow" href="mailto:?Subject={{site.name|uri_escape}}%20blog%20post&body={{param_title}}" aria-label="Mail this">
+      <i class="icon icon-envelop" aria-hidden="true"></i>
     </a>
   </div>

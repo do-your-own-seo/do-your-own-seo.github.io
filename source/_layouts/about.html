@@ -1,16 +1,16 @@
 ---
 layout: default
 ---
-<div class="main-container">
+<main class="main-container">
   <div class="about container">
     <div class="intro clf">
     	<img width="84" src="{{ site.url }}{{ site.author.thumb }}" alt="Author's avatar" class="dot">
       <p><em>{{ page.intro }}</em></p> 
       <div class="txt-left">
       	<ul class="social txt-center">
-          <li><a href="{{ site.author.github }}" target="_blank" rel="noopener" aria-label="Github Account"><i class="icon icon-github"></i></a></li>
-          <li><a href="{{ site.author.twitter }}" target="_blank" rel="noopener" aria-label="Twitter"><i class="icon icon-twitter"></i></a></li>
-          <li><a href="{{ site.author.email }}" target="_blank" rel="noopener nofollow" aria-label="Drop me a line"><i class="icon icon-envelop"></i></a></li>
+          <li><a href="{{ site.author.github }}" target="_blank" rel="noopener" aria-label="Github Account"><i class="icon icon-github" aria-hidden="true"></i></a></li>
+          <li><a href="{{ site.author.twitter }}" target="_blank" rel="noopener" aria-label="Twitter"><i class="icon icon-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="{{ site.author.email }}" target="_blank" rel="noopener nofollow" aria-label="Drop me a line"><i class="icon icon-envelop" aria-hidden="true"></i></a></li>
         </ul>&nbsp; <em>{{ site.data.t.bye[page.lang] }}! {{ site.author.name }}, {{ site.author.job }}</em>
       </div>
     </div>
@@ -24,7 +24,7 @@ layout: default
       </div>
     </div>
   </div>
-</div>
+</main>
 {% include schema_about.JSON %}
 
 
