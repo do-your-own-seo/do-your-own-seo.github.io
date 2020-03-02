@@ -6,7 +6,7 @@
 {%- if page.last_modified_at -%} {%- assign date = page.last_modified_at -%} {%- endif -%}
 {%- assign date = date | date_to_xmlschema -%}
 {%- for page in site.pages -%}
-  {% if page.path contains 'index.html' or page.path contains 'index.md' %}
+  {% if page.url contains 'index.html' or page.url contains 'index.md' %}
   <url>
     <loc>{{ site.url }}{{ page.url | remove: "index.html" | remove: "index.md"}}</loc>
     <lastmod>{{ date }}</lastmod>
@@ -63,7 +63,7 @@
 {%- endfor -%}
 
 {%- for page in site.pages -%} 
-  {%- unless page.sitemap == false or page.path contains 'robots.txt' or page.path contains 'index.html' or page.path contains 'index.md' -%} 
+  {%- unless page.sitemap == false or page.path contains 'robots.txt' or page.url contains 'index.html' or page.url contains 'index.md' -%} 
     {%- assign ext = page.path | split: "." | last -%}
     {%- if ext != 'css' and ext != 'sass' and ext != 'scss' and ext != 'js' and ext != 'xml' -%}
       {%- for excl in site.sitemap_exclude -%}
