@@ -6,7 +6,7 @@ locale: ru
 order: 3
 
 date: 2019-12-03T20:09:00Z
-last_modified_at: 2019-12-28T17:00:00Z
+last_modified_at: 2020-03-01T11:00:00Z
 
 title: "Ссылочный вес страницы: как не потерять, а приумножить"
 tags: [PageRank, ссылочный вес, Google, SEO]
@@ -46,14 +46,14 @@ image: "leaking-link-juice.jpg"
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<h3 itemprop="name">В чем разница между <em>dofollow</em> и <em>nofollow</em>?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">В том, что по первой ссылке поисковый робот перейдет, а по второй – нет, если он хорошо воспитан. Атрибут <span class="red">rel&#8239;=&#8239;"nofollow"</span> – вроде таб&#173;лички <span class="red">«Хода нет»</span>, а dofollow – разрешительное значение rel по умолча&#173;нию. Пока что при виде nofollow googlebot послушно отвора&#173;чивается, но <span class="u">с 1 марта 2020</span> получит право <span class="u">игнорировать запрет</span> и скани&#173;ровать страницу.</p>
+		<p itemprop="text">В том, что по первой ссылке поисковый робот перейдет, а по второй – нет, если он хорошо воспитан. Атрибут <span class="red">rel&#8239;=&#8239;"nofollow"</span> – вроде таб&#173;лички <span class="red">«Хода нет»</span>, а dofollow – разрешительное значение rel по умолча&#173;нию. Раньше при виде nofollow googlebot послушно отвора&#173;чивался, но <span class="u">1 марта 2020</span> получил право <span class="u">игнорировать запрет</span> и сканиро&#173;вать страницу.</p>
 	</div>
 </div>
 
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<h3 itemprop="name">Как проверить ссылки на dofollow/&thinsp;nofollow?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">Это легко сделать с помощью букмарклета &ndash; закладки с кодом JavaScript. Перетащите этот текст <a href='javascript:(function(){var o,e,l=document.links;for(o=0;o<l.length;++o)-1!=(e=l[o].rel.toLowerCase()).indexOf("nofollow")?(l[o].style.backgroundColor="yellow",l[o].title+=" NOfollow"):l[o].style.backgroundColor="lightgreen",-1!=e.indexOf("ugc")&&(l[o].style.border="6px solid orange",l[o].title+=" UGC"),-1!=e.indexOf("sponsored")&&(l[o].style.outline="4px solid red",l[o].title+=" Sponsored")})()'>Nofollow-link-highlighter</a> на панель зак&#173;ладок брау&#173;зера. Находясь на странице, ссылки с которой хотите проверить, клик&#173;ните заклад&#173;ку-хайлайтер: все nofollow станут желтыми, остальные ссылки &ndash; зелеными, причем <a href="#3">пользо&#173;вательские и спонсорские</a> будут обведены оранжевым и красным (соотв.).</p>
+		<p itemprop="text">Это легко сделать с помощью букмарклета &ndash; закладки с кодом JavaScript. Перетащите <a class="red" href='javascript:(function(){var o,e,l=document.links;for(o=0;o<l.length;++o)-1!=(e=l[o].rel.toLowerCase()).indexOf("nofollow")?(l[o].style.backgroundColor="yellow",l[o].title+=" NOfollow"):l[o].style.backgroundColor="lightgreen",-1!=e.indexOf("ugc")&&(l[o].style.border="6px solid orange",l[o].title+=" UGC"),-1!=e.indexOf("sponsored")&&(l[o].style.outline="4px solid red",l[o].title+=" Sponsored")})()'>Nofollow-and-ugc-link-highlighter</a> на панель закладок браузера. Находясь на странице, ссылки с которой хотите проверить, клик&#173;ните букмарклет-хайлайтер. Все nofollow станут желтыми, остальные ссылки &ndash; зелеными, причем <a href="#3">пользо&#173;вательские и спонсорские</a> будут обведены оранжевым и красным.</p>
 	</div>
 </div>
 

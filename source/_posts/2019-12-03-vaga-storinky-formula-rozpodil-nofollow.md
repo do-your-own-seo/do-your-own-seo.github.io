@@ -6,7 +6,7 @@ locale: ua
 order: 3
 
 date: 2019-12-03T20:09:00Z
-last_modified_at: 2019-12-28T17:00:00Z
+last_modified_at: 2020-03-01T11:00:00Z
 
 title: "Вага сторінки: коли посилання шкодять, коли допомагають"
 tags: [PageRank, вага посилань, Google, SEO]
@@ -46,13 +46,13 @@ image: "leaking-link-juice.jpg"
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<h3 itemprop="name">В чому різниця між <em>dofollow</em> і <em>nofollow</em>?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">В першому випадку пошуковий робот за посиланням перейде, а в іншому – ні, якщо це, звісно, добре вихований бот. Атрибут <span class="red">rel="nofollow"</span> для посилання – на кшталт вивіски <span class="red">«Проходу нема»</span>; dofollow – навпаки, дозвільне значення rel за замовчанням. Гуглбот завжди зважав на заборону ступати далі, але <span class="u">від березня 2020</span> матиме <span class="u">право ігнорувати</span> нофолоу і сканувати сторінку.</p>
+		<p itemprop="text">В першому випадку пошуковий робот за посиланням перейде, а в іншому – ні, якщо це, звісно, добре вихований бот. Атрибут <span class="red">rel="nofollow"</span> для посилання – на кшталт вивіски <span class="red">«Проходу нема»</span>; dofollow – навпаки, дозвільне значення rel за замовчанням. Гуглбот завжди зважав на заборону ступати далі, але <span class="u">1 березня 2020</span> набув <span class="u">право ігнорувати</span> нофолоу і сканувати сторінку.</p>
 	</div>
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<h3 itemprop="name">Як перевірити посилання на dofollow/&thinsp;nofollow?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">Це легко зробити за допомогою букмарклета &ndash; закладки з кодом JavaScript. Перетягніть цей текст <a href='javascript:(function(){var o,e,l=document.links;for(o=0;o<l.length;++o)-1!=(e=l[o].rel.toLowerCase()).indexOf("nofollow")?(l[o].style.backgroundColor="yellow",l[o].title+=" NOfollow"):l[o].style.backgroundColor="lightgreen",-1!=e.indexOf("ugc")&&(l[o].style.border="6px solid orange",l[o].title+=" UGC"),-1!=e.indexOf("sponsored")&&(l[o].style.outline="4px solid red",l[o].title+=" Sponsored")})()'>Nofollow-link-highlighter</a> на панель закладок вашого браузера. Знаходячись на сторінці, посилання з якої хочете перевірити, натисніть закладку-хайлайтер. Nofollow лінки стануть жовтими, всі інші &ndash; зеленими; до того ж <a href="#3">користувацькі та спонсоровані</a> посилання матимуть кольорову границю, помаранчеву або червону.</p>
+		<p itemprop="text">Це легко зробити за допомогою букмарклета &ndash; закладки з кодом JavaScript. Перетягніть <a class="red" href='javascript:(function(){var o,e,l=document.links;for(o=0;o<l.length;++o)-1!=(e=l[o].rel.toLowerCase()).indexOf("nofollow")?(l[o].style.backgroundColor="yellow",l[o].title+=" NOfollow"):l[o].style.backgroundColor="lightgreen",-1!=e.indexOf("ugc")&&(l[o].style.border="6px solid orange",l[o].title+=" UGC"),-1!=e.indexOf("sponsored")&&(l[o].style.outline="4px solid red",l[o].title+=" Sponsored")})()'>Nofollow-and-ugc-link-highlighter</a> на панель закладок вашого браузера. Знаходячись на сторінці, посилання з якої хочете перевірити, натисніть букмарклет-хайлайтер. Всі nofollow лінки стануть жовтими, інші &ndash; зеленими. <a href="#3">Користувацькі та спонсоровані</a> посилання матимуть кольорову границю, помаранчеву або червону.</p>
 	</div>
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
