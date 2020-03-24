@@ -9,13 +9,13 @@ date: 2019-10-07T22:19:00Z
 last_modified_at: 2020-03-01T21:00:00Z
 
 tags: [Google, Google аlgorithms, Search ranking, SEO]
-title: "How do Google Algorithms rank pages?"
+title: "What Ranking Factors matter more to Google in 2020?"
 description: "SEO magic no longer works. Google Algorithms can analyze contexts and draw the right conclusions. So what's now better for rankings &#10112;&#10113;&#10114;: links or other factors?"
 keywords: "google algorithms, how google ranks pages"
 modal: "needed"
 schema: FAQPage
 
-h1: "How does Google rank webpages?"
+h1: "Google Search in principle: what ranking factors matter in 2020?"
 snippet_header: "How do Google Algorithms rank pages?"
 
 snippet: "Unlike the situation in SEO ten years ago, now purchased magic does not work. Buying links won't bring the page to the Top and could even hurt your rankings. Ranking algorithms are more likely to choose high-grade resources, and Google patents confirm this trend."
@@ -40,11 +40,11 @@ image: "how-do-google-algorithms-work.jpg"
 <div><h2 id="1">Link equity, site authority, and trustworthiness</h2>
 <p>The amount and quality of <strong>inbound links of a page</strong> + domain's backlink profile are strong signals of page importance to the search engines. Link equity helps to compare pages of one site with each other and stand them out against the competitors.
 </p>
-<p>In Google, the algorithm <strong>PageRank</strong> is responsible for handling the link equity. Since 2000, users had been able to see the webpage value in the browser toolbar, but in 2016 the PR-meter was deprecated. Making it public was considered a mistake, as this led to a significant increase in garbage links.</p>
+<p>In Google, the <strong>algorithm PageRank</strong> is responsible for handling the link equity. Since 2000, users had been able to see the webpage value in the browser toolbar, but in 2016 the PR-meter was deprecated. Making it public was considered a mistake, as this led to a significant increase in garbage links.</p>
 <p>However, the Google PageRank is still alive: the <a href="https://patents.google.com/patent/US9165040B1/en">respective patent</a> was re-registered in 2017 and will be valid until 2027. So, should we try to replicate the calculations? No, due to low priority: without reference to other factors, the PR <span class="under"> is useless for</span> ranking forecasts.</p>
 <p>The <strong>Authoritativeness</strong> and <strong>Trust&#173;worthiness</strong> mostly refer to a domain and indicate its reliability, power of influence, and depth of connection with other relevant resources. There are several reputation-related metrics: <a href="https://moz.com/learn/seo/domain-authority">Moz's Domain Authority</a>, Majestic's Topical Trust Flow, etc., but we'll skip them. They are useful in analyzing the SERP, yet surely Google has own computational models for such concepts.</p>
 <p itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-<img loading="lazy" class="fullscreen-right" src="/images/posts/link-flow-link-equity-en.jpg" alt="What does link equity mean"><span itemprop="name">How can we think of link equity?</span> <span itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text"> It's easy to imagine that link equity and website credibility <strong>accumulate and are redistributed</strong> <a href="{{site.url}}/pagerank-formula-link-equity-distribution">by the link flow</a>. <span class="under">The more reputable websites refer to you</span>, the more trust you get from the Search Engines and higher position you take on the Results Page (SERP). Conversely, if a website has poor links or none at all, it could be difficult to prove its worth and relevance to the topic.</span></span> </p>
+<img loading="lazy" class="fullscreen-right" src="/images/posts/link-flow-link-equity-en.jpg" alt="What does link equity mean"><span itemprop="name">How can we think of link equity?</span> <span itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text"> It's easy to imagine that <a href="{{site.url}}/pagerank-formula-link-equity-distribution">link equity</a> and website credibility <strong>accumulate and are redistributed</strong> by the link flow. <span class="under">The more reputable websites refer to you</span>, the more trust you get from the Search Engines and higher position you take on the Results Page (SERP). Conversely, if a website has poor links or none at all, it could be difficult to prove its worth and relevance to the topic.</span></span> </p>
 <p>That means the homepage of a newbie site won't soon surpass the reputable competitors in Search. It's hardly possible to build natural links quickly, and the algorithms won't believe the rest.
 </p>
 <p>But it's too early to talk about total defeat: there are many more ranking factors!</p>
@@ -54,8 +54,8 @@ image: "how-do-google-algorithms-work.jpg"
 <p>Then the behavior factor comes into effect. No matter how inconsistent googlers' cues were, practice convinces and patents indirectly confirm that user doings on the destination page and the SERP may <strong>affect the rank modification</strong>.</p>
 <p> An obvious example: actions of the visitor who has just returned from the site to Search, might tell the engine whether<span class="under"> the site met expectations as</span> well as whether the search results were satisfactory. But who measures satisfaction?</p>
 <p>
-<img loading="lazy" class="fl-left" src="/images/posts/user-response.jpg" alt="User response">The algorithm <strong>RankBrain</strong>. Of course, it doesn't read the mind of visitors but determine a context and analyzes user interactions with search result data.</p>
-<p><strong>RankBrain</strong> (<a href="https://patents.google.com/patent/US9104750">possible patent</a>) along with Panda, Penguin (spam filtering), and Pigeon (local search) have strengthened the complex Google's algorithm <strong>Hummingbird</strong>.</p>
+<img loading="lazy" class="fl-left" src="/images/posts/user-response.jpg" alt="User response">The <strong>algorithm RankBrain</strong>. Of course, it doesn't read the mind of visitors but determine a context and analyzes user interactions with search result data.</p>
+<p>RankBrain (<a href="https://patents.google.com/patent/US9104750">possible patent</a>) along with Panda, Penguin for spam filtering, and Pigeon for local search, have strengthened the complex Google's <strong>algorithm Hummingbird</strong>.</p>
 <p>No one can say for sure what exactly the ranking engine takes into account comparing trillions of pages. Still, it follows from publications that some activity-centered metrics could have been implemented and may somehow affect the page's rank:</p>
 <ul>
   <li>click data for the given snippet and others on the particular SERP (click-through rate, wait time, etc.);</li>

@@ -51,9 +51,9 @@ image: "leaking-link-juice.jpg"
 </div>
 
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-	<h3 itemprop="name">Как проверить ссылки на dofollow/&thinsp;nofollow?</h3>
+	<h3 itemprop="name">Как проверить ссылки на <em>dofollow/nofollow</em>?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">Это легко сделать с помощью букмарклета &ndash; закладки с кодом JavaScript. Перетащите <a class="red" href='javascript:(function(){var o,e,l=document.links;for(o=0;o<l.length;++o)-1!=(e=l[o].rel.toLowerCase()).indexOf("nofollow")?(l[o].style.backgroundColor="yellow",l[o].title+=" NOfollow"):l[o].style.backgroundColor="lightgreen",-1!=e.indexOf("ugc")&&(l[o].style.border="6px solid orange",l[o].title+=" UGC"),-1!=e.indexOf("sponsored")&&(l[o].style.outline="4px solid red",l[o].title+=" Sponsored")})()'>Nofollow-and-ugc-link-highlighter</a> на панель закладок браузера. Находясь на странице, ссылки с которой хотите проверить, клик&#173;ните букмарклет-хайлайтер. Все nofollow станут желтыми, остальные ссылки &ndash; зелеными, причем <a href="#3">пользо&#173;вательские и спонсорские</a> будут обведены оранжевым и красным.</p>
+		<p itemprop="text">Это легко сделать с помощью букмарклета &ndash; закладки с кодом JavaScript. Перетащите <a href='javascript:(function(){var o,e,l=document.links;for(o=0;o<l.length;++o)-1!=(e=l[o].rel.toLowerCase()).indexOf("nofollow")?(l[o].style.backgroundColor="yellow",l[o].title+=" NOfollow"):l[o].style.backgroundColor="lightgreen",-1!=e.indexOf("ugc")&&(l[o].style.border="6px solid orange",l[o].title+=" UGC"),-1!=e.indexOf("sponsored")&&(l[o].style.outline="4px solid red",l[o].title+=" Sponsored")})()'>Nofollow-and-ugc-link-highlighter</a> на панель закладок браузера. Находясь на странице, ссылки которой хотите проверить, клик&#173;ните букмарклет-хайлайтер. Все nofollow станут желтыми, остальные ссылки &ndash; зелеными, причем <a href="#3">пользо&#173;вательские и спонсорские</a> будут обведены оранжевым и красным.</p>
 	</div>
 </div>
 
@@ -79,7 +79,7 @@ image: "leaking-link-juice.jpg"
 </div>
 <p class="txt-center"><small>Robot by <a href="https://unsplash.com/@rocknrollmonkey?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rock'n Roll Monkey</a> on Unsplash. Modified with befunky.com</small></p>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-	<h3 itemprop="name">Как <em>noopener</em> и <em>noreferrer</em> связаны с <em>nofollow</em>?</h3>
+	<h3 itemprop="name">Как <em>noopener и noreferrer</em> связаны с <em>nofollow</em>?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 		<p itemprop="text">Общее у них только то, что это значения атрибута rel тега &lt;a&gt;. Noopener и noreferrer НЕ влияют на передачу веса и НЕ предназ&#173;начены для ботов. Одна из основ&#173;ных их задач – обезопасить страницу, содер&#173;жащую ссылку с target="_blank" на другой домен, от атак с подменой роди&#173;тельского окна. </p>
 	</div>

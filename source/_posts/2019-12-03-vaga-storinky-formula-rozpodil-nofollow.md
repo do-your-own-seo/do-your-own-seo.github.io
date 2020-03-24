@@ -50,9 +50,9 @@ image: "leaking-link-juice.jpg"
 	</div>
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-	<h3 itemprop="name">Як перевірити посилання на dofollow/&thinsp;nofollow?</h3>
+	<h3 itemprop="name">Як перевірити посилання на <em>dofollow/nofollow</em>?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">Це легко зробити за допомогою букмарклета &ndash; закладки з кодом JavaScript. Перетягніть <a class="red" href='javascript:(function(){var o,e,l=document.links;for(o=0;o<l.length;++o)-1!=(e=l[o].rel.toLowerCase()).indexOf("nofollow")?(l[o].style.backgroundColor="yellow",l[o].title+=" NOfollow"):l[o].style.backgroundColor="lightgreen",-1!=e.indexOf("ugc")&&(l[o].style.border="6px solid orange",l[o].title+=" UGC"),-1!=e.indexOf("sponsored")&&(l[o].style.outline="4px solid red",l[o].title+=" Sponsored")})()'>Nofollow-and-ugc-link-highlighter</a> на панель закладок вашого браузера. Знаходячись на сторінці, посилання з якої хочете перевірити, натисніть букмарклет-хайлайтер. Всі nofollow лінки стануть жовтими, інші &ndash; зеленими. <a href="#3">Користувацькі та спонсоровані</a> посилання матимуть кольорову границю, помаранчеву або червону.</p>
+		<p itemprop="text">Це легко зробити за допомогою букмарклета &ndash; закладки з кодом JavaScript. Перетягніть <a href='javascript:(function(){var o,e,l=document.links;for(o=0;o<l.length;++o)-1!=(e=l[o].rel.toLowerCase()).indexOf("nofollow")?(l[o].style.backgroundColor="yellow",l[o].title+=" NOfollow"):l[o].style.backgroundColor="lightgreen",-1!=e.indexOf("ugc")&&(l[o].style.border="6px solid orange",l[o].title+=" UGC"),-1!=e.indexOf("sponsored")&&(l[o].style.outline="4px solid red",l[o].title+=" Sponsored")})()'>Nofollow-and-ugc-link-highlighter</a> на панель закладок вашого браузера. Знаходячись на сторінці, посилання якої хочете перевірити, натисніть букмарклет-хайлайтер. Всі nofollow лінки стануть жовтими, інші &ndash; зеленими; <a href="#3">користувацькі та спонсоровані</a> посилання матимуть кольорову границю, помаранчеву або червону.</p>
 	</div>
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
@@ -90,7 +90,7 @@ image: "leaking-link-juice.jpg"
 </div>
 <p>Коли ж виникає ланцюжок переспрямувань, пошу&#173;ковик обирає <strong>канонічну сторінку</strong>: їй перепаде майже вся значу&#173;щість. Але є нюанс: <span class="under">що довше ланцюжок,</span> то менше шан&#173;сів, що канонічною буде визнана потріб&#173;на сторінка. Тобто вага<span class="under"> може не дійти за призна&#173;ченням.</span></p>
 <p class="txt-center">&#10045;&nbsp;&#10045;&nbsp;&#10045;</p>
-<p>Ніби все сказано, можна завершувати? Ні, розмова тільки-но починається! Насправді <b>вихідні посилання</b> здатні <b class="green">додати значу&#173;щості</b>, а <b>вхідні, натомість</b>, можуть <span class="red">додати щербатої слави</span>. До останніх можна зара&#173;хувати поси&#173;лання зі &#171;смітників&#187;, що заслуго&#173;вують на санкції пошукових систем. Якщо токсичних зовнішніх посилань багато, варто подумати, чи не відмовитися від них взагалі: Google та Bing для цього мають <span class="red">Disavow tool</span> в панелі вебмайстра.</p>
+<p>Ніби все сказано, можна завершувати? Ні, розмова тільки-но починається! Насправді <b>вихідні посилання</b> здатні <b class="green">додати значу&#173;щості</b>, а <b>вхідні</b>, натомість, можуть <span class="red">додати щербатої слави</span>. До останніх можна зара&#173;хувати поси&#173;лання зі &#171;смітників&#187;, що заслуго&#173;вують на санкції пошукових систем. Якщо токсичних зовнішніх посилань багато, варто подумати, чи не відмовитися від них взагалі: Google та Bing для цього мають <span class="red">Disavow tool</span> в панелі вебмайстра.</p>
 <p>Пропоную надалі забути про підрахунки і поклада&#173;тися виключно на здоровий глузд. Кожен html-тег</p>
 <p class="txt-center">&lt;a href="url-адреса" rel="інструкція"&gt;&#8239;анкор&#8239;&lt;/a&gt;
 </p>

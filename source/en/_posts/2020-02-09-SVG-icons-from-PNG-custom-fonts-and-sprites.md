@@ -9,7 +9,7 @@ date: 2020-02-09T18:02:00Z
 last_modified_at: 2020-02-09T18:02:00Z
 
 
-title: "SVG-icon from PNG-cartoon + 2 ways of using custom icons"
+title: "PNG cartoon to SVG icon + 2 ways of using custom icons"
 tags: [Content, svg icons, custom font, manga, SEO]
 description: "Content is King, but the presentation is royal &#9812; entourage. What we'll do: Create SVG icons from PNG &#10004; Generate an SVG sprite or icon font &#10004; Use SVG icons and play with CSS styling"
 keywords: "png to svg"
@@ -17,7 +17,7 @@ schema: HowTo
 styles: /assets/post-on-icons/manga.css
 code_amount: 2
 
-h1: "How to create an SVG of manageable size from PNG and use it for your custom font"
+h1: "How to generate SVGs of manageable size from PNG and use your custom icon set"
 snippet_header: "Need some flavoring to spice up your text content? A&#160;custom icon font will work"
 
 snippet: "How to convert PNG to a lightweight single-color SVG without any experience with vector graphics. How to create a webfont or sprite from SVG icons, style them, and use to sharpen focus on your text content."
@@ -25,11 +25,11 @@ snippet: "How to convert PNG to a lightweight single-color SVG without any exper
 image: "how-to-create-manga-icon-font.jpg"
 ---
 <ul class="toc">
-  <li><a href="#1">PNG to SVG icons in 9 steps</a></li>
+  <li><a href="#1">PNG to SVG icon in 9 steps</a></li>
   <li><a href="#2">Iconic font from SVGs: pros and cons</a></li>
-  <li><a href="#2.1">&bullet;&ensp;Fontello VS IcoMoon for webfont generation</a></li>
-  <li><a href="#3">How to use icons and SVG sprites in HTML</a></li>
-  <li><a href="#3.1">&bullet;&ensp;CSS styles for SVG sprites and custom fonts &nbsp;<span class="red">&#42;interactive</span></a></li>
+  <li><a href="#2.1">&bullet;&ensp;Fontello vs IcoMoon for creating a webfont</a></li>
+  <li><a href="#3">How to use custom icons and SVG sprites in HTML</a></li>
+  <li><a href="#3.1">&bullet;&ensp;CSS styles for SVG sprites and webfonts &nbsp;<span class="red">&#42;interactive</span></a></li>
 </ul>
 <div>
 <p>You may say, am I need the personal iconic font if there are enough already? Perhaps, it might help. Using custom icons, you'll equip your site with stylish buttons, or reinvigorate the piece of unleavened content. For instance, an ornamented alphabet is suited to <b>drop caps</b> that open every new text section.</p>
@@ -39,7 +39,7 @@ image: "how-to-create-manga-icon-font.jpg"
 <p>In today's post, we'll create a collection of black-and-white icons and learn how to style them with CSS. Yet the first section will be useful to those who want to get colorful vector images, since all the mentioned tools apply to color SVGs.</p>
 </div>
 <div>
-<h2 id="1" itemprop="name">How to create SVG icon from PNG</h2>
+<h2 id="1" itemprop="name">How to make an SVG icon from PNG file</h2>
 <meta itemprop="image" content="{{site.url}}/assets/post-on-icons/result-thumbnail.svg" />
 <p itemprop="description"><b>The task</b> is to convert a chosen PNG to the lightweight, single-color, but eloquent SVG. Fortunately, experience with vector graphics is not required for its implementation.</p>
 <p>In general, the logic is simple. The more contrasting are adjacent colors, the sharper and smoother are edges of the PNG, the better SVG we'll have. But we don't seek short cuts: we are going to make icons from pictures of manga characters!</p>
@@ -81,7 +81,7 @@ Go to the website of PNG&#10132;SVG converter. I recommend the free tool <a href
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">On pngtosvg.com, reduce the palette to 1 color (there are 5 by default), upload your file, and generate the SVG.</span>
     <meta itemprop="name" content="Converter adjustment" />
   </li>
-  <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">If the quality is not satisfactory yet, edit 200x200.png or create 300x300.png from the large PNG, and redo step 6. The new SVG will be more precise but weighty.</span>
+  <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">If the quality is not satisfactory yet, edit 200x200.png or make 300x300.png from the large PNG, and redo step 6. The new SVG will be more precise but weighty.</span>
     <meta itemprop="name" content="What if the quality is poor" />
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">It remains to thank the converter (they accept donations) and save the output SVG. But it's too early to relax: the file size can be significantly reduced!</span>
@@ -114,7 +114,7 @@ Go to the website of PNG&#10132;SVG converter. I recommend the free tool <a href
 </ul>
 <p>However, in our case, the main drawback is not so frightful. The custom webfont can be hosted on the same server as the entire site: then the client browser won't establish the connection to the CDN. What is more, at least 80% of browsers support the <a href="https://caniuse.com/#search=preload">preload</a> hint, enabling the preloading of cacheable resources like webfonts.</p>
 <p>So, if a webfont is your choice for organizing the set of icons, let's continue. Otherwise, <a href="#3">let's jump</a> through the section.</p>
-<h3 id="2.1">Webfont generators in use: IcoMoon VS Fontello</h3>
+<h3 id="2.1">Webfont generators in use: IcoMoon vs Fontello</h3>
 <p>Here are two powerful and user-friendly font generation applications: <b><a href="https://icomoon.io/app/">IcoMoon App</a></b> and <b><a href="http://fontello.com">Fontello</a></b>.</p>
 <table class="txt-center"><caption><small><em>The comparison of Web font generators Fontello and IcoMoon App</em></small></caption>
    <tr><th><img src="/assets/post-on-icons/icomoon-logo.jpg" alt="IcoMoon App logo" loading="lazy"></th><th><img src="/assets/post-on-icons/fontello-logo.jpg" alt="Fontello logo" loading="lazy"></th></tr>
