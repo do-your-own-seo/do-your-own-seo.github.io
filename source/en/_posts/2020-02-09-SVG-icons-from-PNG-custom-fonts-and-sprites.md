@@ -249,4 +249,4 @@ Go to the website of PNG&#10132;SVG converter. I recommend the free tool <a href
 <p>The idea of an ​​online icon decorator is not new: similar functionality was presented <a href="https://css-tricks.com/examples/IconFont/">on CSS Tricks</a> years ago. Unlike the predecessor, the icon decorator from here applies styles to SVG and works without jQuery. I'll try to fix the noticed bugs, so do not hesitate to point to them in the comments.</p>
 <p>See you at other pages of the blog!</p>
 </div>
-<script src="/assets/iconDecorator.min.js" defer></script>
+<script src="/assets/post-on-icons/iconDecorator.min.js" defer></script>

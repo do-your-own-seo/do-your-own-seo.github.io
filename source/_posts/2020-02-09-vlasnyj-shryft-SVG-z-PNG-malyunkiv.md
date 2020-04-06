@@ -246,4 +246,4 @@ image: "how-to-create-manga-icon-font.jpg"
 <p>Ідея створення онлайн-декоратора іконок не нова: подібний функціонал мені вперше зустрівся <a href="https://css-tricks.com/examples/IconFont/">на CSS Tricks</a>. На відміну від поперед&#173;ника, скрипт з цього посту засто&#173;совує стилі до SVG та працює без JQuery. Баги, на які буде вказано, спробую випра&#173;вити, тому без коливань перелічуйте їх у коментах.</p>
 <p>Сподіваюся, щось зі сказаного стане читачеві у пригоді. Зустрінемося на інших сторінках!</p>
 </div>
-<script src="/assets/iconDecorator.min.js" defer></script>
+<script src="/assets/post-on-icons/iconDecorator.min.js" defer></script>
