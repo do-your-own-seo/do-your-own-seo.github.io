@@ -29,7 +29,7 @@ task :test do
     typhoeus:  { :ssl_verifypeer => false },
     internal_domains: [CONFIG['url']],
     file_ignore: [/assets/, /editor/, /yandex(.+)\.html/],
-    url_ignore: [/LICENSE/, /gstatic\.com/, /google-analytics/, /fontello.com/, /#Google/, /#E-A-T/, /#Content/, /#PageRank/]
+    url_ignore: [/LICENSE/, /gstatic\.com/, /google-analytics/, /fontello.com/, /#.*/]
   }
   HTMLProofer.check_directory("./#{DEST}", options).run
 end
