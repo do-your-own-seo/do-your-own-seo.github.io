@@ -2,7 +2,7 @@
 layout: pages
 ---
 <h1 class="txt-center">{{page.h1}}</h1>
-{{ content }}
+{%- if paginator.page == 1 -%}{{ content }}{%- endif -%}
 <div id="cat-shelter"></div>
 <div class="post-list" data-nosnippet>
   {%- for post in paginator.posts -%}
