@@ -171,19 +171,19 @@ cat:
 
 snippet:
   title: 
-    uk: "Переконливий тайтл завширшки 600px, тобто ≈55-60 символів"
-    ru: "Кликабельный тайтл шириной до 600px, то есть ≈55-60 знаков"
-    en: "A neat title up to 600px (about 55-60 characters)"
+    uk: "Переконливий тайтл завширшки 600px, або близько 55-65 знаків"
+    ru: "Убедительный тайтл шириной до 600px, или около 55-65 знаков"
+    en: "A neat title up to 600px (about 55-65 characters)"
 
   descr:
     uk: "Залежно від розташування в тексті пошукової фрази, для користувачів ПК в дескріпшен буде виведено 135 - 160 символів"
-    ru: "Описание на 2 строки шириной 600px. В зависимости от вхождения ключевой фразы, на ПК будет показано 135 - 160 символов"
-    en: "Two-line description 600px wide. Depending on the location of the search phrase in the given text, about 135 - 160 characters to be displayed"
+    ru: "Описание на две строки шириной 600px. В зависимости от вхождения ключевой фразы, на ПК будет показано 135 - 160 знаков"
+    en: "Two-line description 600px wide. Depending on the location of the search phrase, about 135 - 160 chars to be displayed"
 
   extra:
-    uk: "Мобільні юзери можуть побачити більше, до 270 знаків + 90 у тайтлі"
-    ru: "Мобильные пользователи могут увидеть больше: до 270 знаков в описании и 90 в тайтле."
-    en: "Mobile users may see more: up to 280 chars of description and up to 100 of title."
+    uk: "Мобільні юзери можуть побачити більше, до чотирьох (4!) рядків у заголовку"
+    ru: "Мобильные пользователи смогут увидеть больше, до четырех строчек заголовка"
+    en: "Mobile users may see even more, up to 280 chars of description and up to 4 lines of title."
 
   date:
     uk: "Показувати дату"
