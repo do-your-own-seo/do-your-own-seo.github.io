@@ -17,6 +17,15 @@ var app = "{{site.staticman.app}}",
 
 (function(){
   document.addEventListener('DOMContentLoaded', function(){
+
+  if (!getById("googleCaptcha")) {
+    const script = document.createElement("script");
+    script.setAttribute("src", "https://www.google.com/recaptcha/api.js"); 
+    script.setAttribute("id", "googleCaptcha");
+    script.setAttribute("defer", "");
+    document.body.appendChild(script);
+  }
+
     if (window.matchMedia("(min-width: 768px)").matches) {
       try {
         var timeOffset = new Date().getTimezoneOffset()/60; 
