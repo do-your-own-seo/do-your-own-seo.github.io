@@ -1,8 +1,9 @@
 source "https://rubygems.org"
+# ruby ">=2.6.0"
+# To use nokogiri-1.13.7 uncomment the ruby specification above.
 
-# Hello! This is where you manage which Jekyll version is used to run.
-# When you want to use a different version, change it below, save the
-# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
+# When you want to use a different version of some gem, change it below, save the
+# file and run `bundle install`. Then run Jekyll with `bundle exec`, like so:
 #
 #     bundle exec jekyll serve
 #
@@ -10,11 +11,15 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "wdm", "~>0.1.1"
 gem "jekyll", "3.9.2"
+# jekyll-3.9.2 is the last currently supported by GitHub Pages version of Jekyll
+
 gem "rake", "~>12.0"
 gem "sass", "~>3.4"
 gem "html-proofer"
 gem "kramdown", "~>2.3.1"
 gem "kramdown-parser-gfm", "1.1.0"
+# gem "nokogiri", "1.13.7"
+# Currently used by GitHub Pages version of nokogiri requires ruby >=2.6.0"
 
 # If you have any other plugins, list them here:
 group :jekyll_plugins do
