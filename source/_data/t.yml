@@ -125,8 +125,8 @@ commentReject:
   en: "Please make sure the required fields have been completed correctly. :( Sorry for the error."
 
 cookieMessage:
-  uk: " reCAPTCHA &ndash; це Google-сервіс, який читає cookies.\n Взаємодіючи з нею, ви погоджуєтеся з політикою Google:\n\n"
-  ru: " reCAPTCHA &ndash; это Google-сервис, который читает cookies.\n Ставя галочку, вы соглашаетесь с политикой Google:\n\n"
+  uk: " reCAPTCHA – це Google-сервіс, який читає cookies.\n Взаємодіючи з нею, ви погоджуєтеся з політикою Google:\n\n"
+  ru: " reCAPTCHA – это Google-сервис, который читает cookies.\n Ставя галочку, вы соглашаетесь с политикой Google:\n\n"
   en: " reCAPTCHA is a Google service that reads cookies.\n By submitting a comment, you agree with Google's privacy policy:\n\n"
 
 honeypot:
@@ -140,9 +140,9 @@ honeypotPlacehold:
   en: "leave as it is"
 
 emailPlacehold:
-  uk: "для gravatar"
-  ru: "для gravatar"
-  en: "for gravatar only"
+  uk: ""
+  ru: ""
+  en: ""
   
 reply:
   uk: "Відповісти"
