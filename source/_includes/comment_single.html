@@ -4,11 +4,11 @@
     {%- if include.avatar -%}
       <img src="{{ include.avatar }}" alt="{{ userName }} avatar" class="dot" loading="lazy">
     {%- elsif include.email and include.email !='' -%}
-      <img src="https://www.gravatar.com/avatar/{{ include.email }}?d=mp&s=60" alt="{{ userName }} avatar" class="dot" loading="lazy">
+      <img src="https://www.gravatar.com/avatar/{{ include.email }}?d=mp&s=60" alt="{{ userName }} avatar" class="dot" loading="lazy" width="60" height="60">
     {%- elsif userName == site.author.name -%} 
-    <img src="/images/pen.jpg" alt="Admin's avatar" class="dot" loading="lazy">
+    <img src="/images/pen.jpg" alt="Admin's avatar" class="dot" loading="lazy" width="60" height="60">
     {%- else -%}
-      <img src="/images/default-avatar.png" alt="Default avatar" class="dot" loading="lazy">
+      <img src="/images/default-avatar.png" alt="Default avatar" class="dot" loading="lazy" width="60" height="60">
     {%- endif -%}
   </div>
   <div class="comment-main">
