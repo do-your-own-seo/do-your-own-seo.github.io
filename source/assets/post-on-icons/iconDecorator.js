@@ -144,7 +144,7 @@ function showCSSrules() {
   var rows = 4,
     colsSVG = 40,
     colsIcon = 40;
-  CSSforSVG.value = '.' + iconName + ' {\n  fill: ' + color + ';\n  width: ' + size + 'px; height: ' + size + ';\n}';
+  CSSforSVG.value = '.' + iconName + ' {\n  fill: ' + color + ';\n  width: ' + size + 'px; height: ' + size + 'px;\n}';
   CSSforIcon.value = '.' + iconName + ' {\n  color: ' + color + ';\n  font-size: ' + size + 'px;\n}';
   if (shadowIndicator) {
     CSSforSVG.value = CSSforSVG.value.split('\n}')[0] + '\n  -webkit-filter: drop-shadow(' + shadowText + ');\n  filter: drop-shadow(' + shadowText + ');\n}';
