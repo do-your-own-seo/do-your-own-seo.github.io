@@ -3,10 +3,10 @@ layout: post
 i18n-link: PR
 lang: uk
 locale: ua
-order: 3
+
 
 date: 2019-12-03T20:09:00Z
-last_modified_at: 2020-03-01T11:00:00Z
+last_modified_at: 2022-08-20T20:00:00Z
 
 title: "Вага сторінки: коли посилання шкодять, коли допомагають"
 tags: [PageRank, вага посилань, Google, SEO]
@@ -31,11 +31,11 @@ image: "leaking-link-juice.jpg"
 <div>
 <p> {{ page.snippet }}</p>
 <p class="txt-center"> 
-<img src="/images/posts/{{ page.image }}" alt="Як запобігти витоку link juice (соку посилань) на сайті" class="webfeedsFeaturedVisual"></p>
+<img src="/images/posts/{{ page.image }}" alt="Як запобігти витоку link juice (соку посилань) на сайті" class="webfeedsFeaturedVisual" width="490" height="450"></p>
 <p>Почати краще з того, що точної ваги в сторінки нема, якщо ми не говоримо про розмір завантажених ресурсів. Є <strong>порів&#173;няльна значу&#173;щість</strong>, для якої вага – лише наочне уявлення. Так, Google вираховує важливість сторінки, але не зі шкільної пропорції, а шляхом аналізу сотень чин&#173;ників, багаторазово поточнюючи результат.</p>
 <p>Початкова точка – ця рекурентна формула рангу (натисніть, якщо хочете <a href="#FAQ"><b class="red">&thinsp;пропустити</b></a>):</p>
 <p class="txt-center"> 
-<img loading="lazy" src="/images/posts/page-rank-formula.jpg" alt="Формула PageRank (ваги сторінки)"></p>
+<img loading="lazy" src="/images/posts/page-rank-formula.jpg" alt="Формула PageRank (ваги сторінки)" width="420" height="85"></p>
 <p>де <b><i>PR&#8239;(A)</i></b> – <strong>PageRank</strong> сторінки <b><i>A</i></b>, а <b><i>d</i></b> – коефі&#173;цієнт загасання (&#8776;&#8239;0.85), який у формулі помно&#173;жається на суму за всіма посиланнями на <b><i>A</i></b>.&#8239; Кожен доданок (дріб) – це частка від ділення рангу сторінки-донора <b><i>Q</i></b>&#8239; на кіль&#173;кість вихідних посилань з неї. Хоча вираз є часто згадуваним в інтернеті, Google навряд чи ним прямо користується. Інакше 10 &#171;кишень&#173;кових&#187; сайтів, посилаючись один на одного, могли б суттєво підвищити ранг окремих сторінок.</p>
 <p>В тексті оновленого <a href="https://patents.google.com/patent/US9165040B1/en">патенту PageRank</a> наведено варіації першої формули, які оці&#173;нюють <b>&#171;відстань&#187; від <i>A</i></b>&#8239; до вибра&#173;ної мно&#173;жини сторінок-авторитетів. Знаменно, що в них враховуються коефіцієнти значущості <b>кож&#173;ного посилання</b> окремо. Числа ці знає тільки Гугл, а ми можемо лише здога&#173;дуватися, що й як впливає на вагомість посилань.</p>
 <p id="FAQ">Спробуємо дати собі раду з поняттями? Почнемо з простих питань.</p>
@@ -52,11 +52,11 @@ image: "leaking-link-juice.jpg"
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<h3 itemprop="name">Як перевірити посилання на <em>dofollow/nofollow</em>?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">Це легко зробити за допомогою букмарклета &ndash; закладки з кодом JavaScript. Перетягніть <a href='javascript:(function(){var o,e,l=document.links;for(o=0;o<l.length;++o)-1!=(e=l[o].rel.toLowerCase()).indexOf("nofollow")?(l[o].style.backgroundColor="yellow",l[o].title+=" NOfollow"):l[o].style.backgroundColor="lightgreen",-1!=e.indexOf("ugc")&&(l[o].style.border="6px solid orange",l[o].title+=" UGC"),-1!=e.indexOf("sponsored")&&(l[o].style.outline="4px solid red",l[o].title+=" Sponsored")})()'>Nofollow-and-ugc-link-highlighter</a> на панель закладок вашого браузера. Знаходячись на сторінці, посилання якої хочете перевірити, натисніть букмарклет-хайлайтер. Всі nofollow лінки стануть жовтими, інші &ndash; зеленими; <a href="#3">користувацькі та спонсоровані</a> посилання матимуть кольорову границю, помаранчеву або червону.</p>
+		<p itemprop="text">Це легко зробити за допомогою букмарклета – закладки з кодом JavaScript. Перетягніть <a href='javascript:(function(){var o,e,l=document.links;for(o=0;o<l.length;++o)-1!=(e=l[o].rel.toLowerCase()).indexOf("nofollow")?(l[o].style.backgroundColor="yellow",l[o].title+=" NOfollow"):l[o].style.backgroundColor="lightgreen",-1!=e.indexOf("ugc")&&(l[o].style.border="6px solid orange",l[o].title+=" UGC"),-1!=e.indexOf("sponsored")&&(l[o].style.outline="4px solid red",l[o].title+=" Sponsored")})()'>Nofollow-and-ugc-link-highlighter</a> на панель закладок вашого браузера. Знаходячись на сторінці, посилання якої хочете перевірити, натисніть букмарклет-хайлайтер. Всі nofollow лінки стануть жовтими, інші – зеленими; <a href="#3">користувацькі та спонсоровані</a> посилання матимуть кольорову границю, помаранчеву або червону.</p>
 	</div>
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-<img loading="lazy" src="/images/posts/bot.jpg" alt="На малюнку робот" class="fullscreen-right" title="Може, це не гуглбот, але симпатичний, правда?">
+<img loading="lazy" src="/images/posts/bot.jpg" alt="На малюнку робот" class="fullscreen-right" title="Може, це не гуглбот, але симпатичний, правда?"  width="300" height="515">
 	<h3 itemprop="name">Чому посилання з <em>nofollow</em> не передає вагу?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 		<p itemprop="text">Тому що значущість наосліп не передається. Коли бот не може перевірити, що знахо&#173;диться за адресою, то не може й встановити, чи на доречну сторінку спрямо&#173;вують корис&#173;тувача.</p>
@@ -72,7 +72,7 @@ image: "leaking-link-juice.jpg"
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<h3 itemprop="name">Чи з кожним <em>follow</em> посиланням прибуває одна&#173;ково ваги?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">Ні. Найбільш помітне на сторінці посилання &ndash; те, яке з більшою ймовір&#173;ністю клікнуть &ndash; є найбільш ваго&#173;мим. Далі &ndash; за зменшенням.</p>
+		<p itemprop="text">Ні. Найбільш помітне на сторінці посилання – те, яке з більшою ймовір&#173;ністю клікнуть – є найбільш ваго&#173;мим. Далі – за зменшенням.</p>
 	</div>
 </div>
 <p class="txt-center"><small>Robot by <a href="https://unsplash.com/@rocknrollmonkey?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rock'n Roll Monkey</a> on Unsplash. Modified with befunky.com</small></p>
@@ -94,7 +94,7 @@ image: "leaking-link-juice.jpg"
 <p>Пропоную надалі забути про підрахунки і поклада&#173;тися виключно на здоровий глузд. Кожен html-тег</p>
 <p class="txt-center">&lt;a href="url-адреса" rel="інструкція"&gt;&#8239;анкор&#8239;&lt;/a&gt;
 </p>
-<p>впливає на значущість і донора, і реципієнта склад&#173;ним чином. Як само &ndash; спробуємо з’ясу&#173;вати.</p>
+<p>впливає на значущість і донора, і реципієнта склад&#173;ним чином. Як само – спробуємо з’ясу&#173;вати.</p>
 </div>
 <div>
 <h2 id="1">Вихідні посилання: коли вони шкодять, а коли допомагають</h2>
@@ -103,7 +103,7 @@ image: "leaking-link-juice.jpg"
 <ul>
   <li>посилаєтеся на сумнівний ресурс з нульовим авторитетом;</li>
   <li>посилання запропоноване в такому контексті, що користувач за ним перейде й навряд чи повер&#173;неться («в&nbsp;нас&nbsp;світлин обмаль, а <span class="u">ось тут</span> їх повно»);
-<img loading="lazy"  class="fl-right restrict vw35" src="/images/posts/give.jpg" alt="Втрачати PageRank (вагу сторінки)"></li>
+<img loading="lazy"  class="fl-right restrict vw35" src="/images/posts/give.jpg" alt="Втрачати PageRank (вагу сторінки)" width="160" height="160"></li>
   <li>анкором посилання є ключове слово, під яке оптимізована ваша сторінка;
   </li>
   <li>посилання розміщене в навігаційному меню або сайдбарі:
@@ -117,7 +117,7 @@ image: "leaking-link-juice.jpg"
 <ul>
   <li>посилаєтеся на визнаних авторитетів у своїй галузі чи загалом в Інтернет;</li>
   <li>створюєте мегакорисний для відвідувача контент («рейтинг безкоштовного софту»);
-<img loading="lazy"  class="fl-right restrict vw35" src="/images/posts/give-back.jpg" alt="Поділяти вагу з іншими вебсторінки буває вигідно"></li>
+<img loading="lazy"  class="fl-right restrict vw35" src="/images/posts/give-back.jpg" alt="Поділяти вагу з іншими вебсторінки буває вигідно" width="160" height="160"></li>
   <li>започатковуєте добрі взаємини з тематичним сайтом, чия аудиторія може зацікавитись вашим контентом;</li>
   <li>пропонуєте користувачеві реєстр онлайн-ресурсів, які стануть йому у пригоді на наступному етапі.</li>
 </ul>
@@ -130,8 +130,8 @@ image: "leaking-link-juice.jpg"
 </ol>
 <p>Мова не тільки про етику, а й про те, що пошукова система може не зрозуміти відсут&#173;ності цитати в цих випадках.</p>
 <p class="txt-center">
-<img loading="lazy" src="/images/posts/webpages-and-links.jpg" alt="Розподіл ваги між сайтами: що роблять sponsored, nofollow, ugc"></p>
-<p>Досі ми говорили здебільшого про лінки назовні і у зворотному напрямку (беклінки). Проте внутрішні посилання теж важливі: вони здатні кардинально переподілити вагу на сайті. <strong>Внутрішній PageRank</strong> сторінок обрахо&#173;вують деякі краулери: з хмарних наз&#173;вемо <a href="https://www.oncrawl.com/optimise-internal-linking-structure/">Oncrawl</a>, з десктопних &ndash; <a href="https://netpeaksoftware.com/spider#features">Netpeak Spider</a>. Взагалі, внут&#173;рішня перелінковка – основа оптимі&#173;зації сайту, але розповідь про це потребує окремої статті.</p>
+<img loading="lazy" src="/images/posts/webpages-and-links.jpg" alt="Розподіл ваги між сайтами: що роблять sponsored, nofollow, ugc" width="710" height="450"></p>
+<p>Досі ми говорили здебільшого про лінки назовні і у зворотному напрямку (беклінки). Проте внутрішні посилання теж важливі: вони здатні кардинально переподілити вагу на сайті. <strong>Внутрішній PageRank</strong> сторінок обрахо&#173;вують деякі краулери: з хмарних наз&#173;вемо <a href="https://www.oncrawl.com/optimise-internal-linking-structure/">Oncrawl</a>, з десктопних – <a href="https://netpeaksoftware.com/spider#features">Netpeak Spider</a>. Взагалі, внут&#173;рішня перелінковка – основа оптимі&#173;зації сайту, але розповідь про це потребує окремої статті.</p>
 </div>
 <div>
 <h2 id="2">Обережно: nofollow! &#8239;Як запобігти витоку ваги з сайту й не переборщити</h2>
@@ -142,9 +142,9 @@ image: "leaking-link-juice.jpg"
   <li>На посиланні з контенту, якщо не згодні відпо&#173;відати за ресурс репутацією. Зокрема, коли лінк розмі&#173;стив хтось із користувачів.</li>
   <li>На кнопках шерингу в соцмережах.</li>
   <li>На посиланнях з віджетів, лічильників і т.ін., якщо є можли&#173;вість редагувати код.</li>
-  <li>Коли гіперлінк розташований у найви&#173;гід&#173;нішому місці, а вказує на технічний ресурс (архів і т.ін.), який не потре&#173;бує ваги й не є авторите&#173;том. Альтер&#173;натива nofollow &ndash; винести такі посилання з приміт&#173;ками вниз.</li>
+  <li>Коли гіперлінк розташований у найви&#173;гід&#173;нішому місці, а вказує на технічний ресурс (архів і т.ін.), який не потре&#173;бує ваги й не є авторите&#173;том. Альтер&#173;натива nofollow – винести такі посилання з приміт&#173;ками вниз.</li>
 </ul>
-<p><b>NB!</b> rel&#8239;=&#8239;nofollow &ndash; ненадійний захист від скану&#173;вання сторінки, і точно не спосіб ухилитися від індексації. Небажані внутрішні адреси можна продублювати в файлі robots.txt, але краще <a href="https://support.google.com/webmasters/answer/93710?hl=en">заборонити їх індек&#173;сацію</a> надійним методом.</p>
+<p><b>NB!</b> rel&#8239;=&#8239;nofollow – ненадійний захист від скану&#173;вання сторінки, і точно не спосіб ухилитися від індексації. Небажані внутрішні адреси можна продублювати в файлі robots.txt, але краще <a href="https://support.google.com/webmasters/answer/93710?hl=en">заборонити їх індек&#173;сацію</a> надійним методом.</p>
 <p>Якщо на якійсь «застійній» сторінці сайту біль&#173;шість посилань веде туди, куди пошуко&#173;вому роботу краще не заглядати, можна скористатися тегом &lt;<b>meta</b> name="<b>robots</b>" content="nofollow"&#8239;/&gt;, який має міститися в &lt;head&gt; документу. Він забороняє ботам дивитися в бік посилань. І, на відміну від rel="nofollow", забороняє суворо.</p>
 <p><strong>Не ставимо rel="nofollow"</strong> не розбираючи:</p>
 <ul class="featured minus">
@@ -158,7 +158,7 @@ image: "leaking-link-juice.jpg"
 <p>У вересні 2019 до підтримуваного усіма пошуковими роботами nofollow і його анти&#173;поду dofollow додалися ще дві вказівки, виключно для гуглботів: <strong>ugc і sponsored</strong>. Обидві не є директивами: бот може взяти їх до уваги, але не зобов’язаний вчиняти саме так.</p>
 <p><b>U</b>ser-<b>G</b>enerated-<b>C</b>ontent&nbsp;(ugc) – створений кори&#173;сту&#173;вачем контент: коментарі, відгуки, пости та обгово&#173;реннях на форумах. Sponso&#173;red – зрозу&#173;міло, афільо&#173;вані поси&#173;лання та реклама.</p>
 <p class="txt-center">
-<img loading="lazy" src="/images/posts/user-generated-content.jpg" alt="Молодь створює ugc-контент найбільш активно"><br>
+<img loading="lazy" src="/images/posts/user-generated-content.jpg" alt="Молодь створює ugc-контент найбільш активно" width="600" height="420"><br>
 <small><a href="https://www.freepik.com">Designed by Freepik</a></small></p>
 <blockquote>В <a href="https://webmasters.googleblog.com/2019/09/evolving-nofollow-new-ways-to-identify.html">офіційному анонсі</a> сказано, що ново&#173;введення не має за мету посунути старий добрий nofollow. Застосу&#173;вання підказок від вебмайстрів ніхто не вимагає, хіба що вони самі вирішать допо&#173;могти Гуглу зрозуміти природу посилань.</blockquote>
 <p>Підказки можна застосовувати у зв’язці. Додамо ugc до nofollow – матимемо rel&#8239;=&#8239;"<span class="red">nofollow&nbsp;ugc</span>": користу&#173;вацький контент, на який боту не варто звертати уваги. Аналогічно, афільоване посилання від юзера може бути подане як rel&#8239;=&#8239;"<span class="red">ugc&nbsp;sponsored</span>". <a href="https://support.google.com/webmasters/answer/96569">Довідка Google</a> стверджує, що в тих ситуаціях, коли sponsored доречний, варто надати йому перевагу над nofollow. І натякає, що ugc зазвичай також означає заборону для ботів задивлятися на href.</p>
@@ -184,7 +184,7 @@ image: "leaking-link-juice.jpg"
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<h3 itemprop="name">Чи існує <em>альтернатива</em> PageRank?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">Як альтернативу можна розглянути метрики <em>Ahrefs URL Rank, Page Authority (MOZ), Trust Flow (Majestic)</em> і фірмові різновиди рангу &ndash; <em>Serpstat PageRank</em> та ін. Якщо ж питання поставлене з думкою про методи ранжу&#173;вання вершин динамічних графів, варто згадати про алгоритми <a href="https://www2003.org/cdrom/papers/refereed/p007/p7-abiteboul.html">OPIC</a> і <a href="https://en.wikipedia.org/wiki/SALSA_algorithm">SALSA</a>.</p>
+		<p itemprop="text">Як альтернативу можна розглянути метрики <em>Ahrefs URL Rank, Page Authority (MOZ), Trust Flow (Majestic)</em> і фірмові різновиди рангу – <em>Serpstat PageRank</em> та ін. Якщо ж питання поставлене з думкою про методи ранжу&#173;вання вершин динамічних графів, варто згадати про алгоритми <a href="https://www2003.org/cdrom/papers/refereed/p007/p7-abiteboul.html">OPIC</a> і <a href="https://en.wikipedia.org/wiki/SALSA_algorithm">SALSA</a>.</p>
 	</div>
 </div>
 </div>

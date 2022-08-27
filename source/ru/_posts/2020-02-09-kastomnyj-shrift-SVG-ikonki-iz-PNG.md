@@ -3,10 +3,10 @@ layout: post
 i18n-link: manga
 lang: ru
 locale: ru 
-order: 2
+
  
 date: 2020-02-09T18:02:00Z
-last_modified_at: 2020-02-09T18:02:00Z
+last_modified_at: 2022-08-20T20:00:00Z
 
 title: "SVG иконки из PNG: создаем собственный шрифт из манги"
 tags: [Content, собственный шрифт, SVG иконки, SEO]
@@ -31,11 +31,11 @@ image: "how-to-create-manga-icon-font.jpg"
   <li><a href="#3.1">&bullet;&ensp;CSS-стилизация иконок&nbsp;<span class="red">&#42;интерактив</span></a></li>
 </ul>
 <div>
-<p>Скажете, зачем нужен свой иконочный шрифт, когда их и без того достаточно? Для стили&#173;зации интер&#173;фейса и придания уника&#173;ль&#173;ного колорита контенту! К примеру, дизай&#173;нерский алфавит удобно исполь&#173;зовать для <b>буквиц</b>, выделяя ими начало каждого тексто&#173;вого раздела.</p>
-<p class="txt-center"><img src="/images/posts/celtic-and-slavic-initial-letters.jpg" alt="Кельтская и древнеславянская буквицы" loading="lazy"><br>
+<p>Зачем нужен свой иконочный шрифт, ведь их и так достаточно? Для стилизации интерфейса и придания уникаль&#173;ного колорита контенту. К примеру, дизай&#173;нерский алфавит можно исполь&#173;зовать для <b>буквиц</b>, выделяя ими начало раздела. Пиктограммы с маскотом (персонажем-талисманом) сайта могут провести пользователя к целевой странице. Наконец, с помощью темати&#173;ческих иконок легко привлечь внимание к ключевым пунктам статьи.</p>
+<p class="txt-center"><img src="/images/posts/celtic-and-slavic-initial-letters.jpg" alt="Кельтская и древнеславянская буквицы" loading="lazy" width="510" height="270"><br>
 <small>Кельтская (слева) и славянская буквицы</small></p>
-<p>Пиктограммы с персонажем-талисманом сайта помогут пользователю достичь целе&#173;вой стра&#173;ницы. Наконец, с помощью темати&#173;ческих иконок легко расставить акценты и привлечь внимание к ключевым пунктам статьи.</p> 
-<p>В сегодняшнем посте мы создадим коллек&#173;цию черно-белых иконок и научимся стили&#173;зовать их с помощью CSS. При этом первый раздел будет полезен и тем, кто хочет полу&#173;чить красочные векторные изображения. Всё потому, что исполь&#173;зуемые в руководстве инструменты применимы для цветных SVG.</p>
+<p></p> 
+<p>В сегодняшнем посте мы создадим коллек&#173;цию черно-белых SVG-символов и научимся стили&#173;зовать их в CSS. При этом материал будет полезен и тем, кому нужны красочные векторные иконки. Всё потому, что исполь&#173;зуемые здесь инструменты работают и с цветными PNG/SVG.</p>
 </div>
 <div>
 <h2 id="1" itemprop="name">Как создать SVG-иконку из PNG</h2>
@@ -50,7 +50,7 @@ image: "how-to-create-manga-icon-font.jpg"
 	<li><span itemprop="tool" itemtype="http://schema.org/HowToTool" itemscope><span itemprop="name">оптимизатор SVG</span></span> для уменьшения веса файла.</li>
 </ul>
 <p>&#171;Иконизировать&#187; для примера будем сразу две картинки:</p>
-<p class="txt-center"><img loading="lazy" src="/images/posts/before_1.png" alt="PNG-исходник №1"> &thinsp; <img loading="lazy" src="/images/posts/before_2.png" alt="PNG-исходник №2"></p>
+<p class="txt-center"><img loading="lazy" src="/images/posts/before_1.png" alt="PNG-исходник №1" width="400" height="400"> &thinsp; <img loading="lazy" src="/images/posts/before_2.png" alt="PNG-исходник №2" width="400" height="400"></p>
 <p>Эти и другие исходники были скачаны с бесплатных сайтов <b>hiclipart.com</b>, <b>imgbin.com</b>, <b>pngocean.com</b>, <b>pngguru.com</b>. Но в сети есть и другие ресурсы, так что выбор велик.</p>
 <p>У вас уже есть <span itemprop="supply" itemtype="http://schema.org/HowToSupply" itemscope><span itemprop="name">подходящий PNG</span></span>? Тогда дей&#173;ствуем по плану. Можно сразу перейти к <a href="#p_5">пункту&nbsp;5</a>, но для наилучшего результата желательно немного пора&#173;ботать с рисунком.</p>
 <ol class="emphasis">
@@ -66,7 +66,7 @@ image: "how-to-create-manga-icon-font.jpg"
     <meta itemprop="name" content="Обработка светлых участков" />
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Взгляните на темные области: если внутри имеются более светлые фрагменты, конвертер может решить, что они «белые». Лучше закрасить их темным вручную, причем красота не особо важна: главное, чтобы контуры не пострадали. Сохраните полученный PNG. Он будет выглядеть при&#173;мерно так:</span>
-    <ul class="nobullets oneline txt-center"><li><img loading="lazy" src="/images/posts/after-the-3rd-step_1.jpg" alt="Png №1 после 3-го шага"> &thinsp; </li><li><img loading="lazy" src="/images/posts/after-the-3rd-step_2.jpg" alt="Png №2 после 3-го шага"></li></ul>
+    <ul class="nobullets oneline txt-center"><li><img loading="lazy" src="/images/posts/after-the-3rd-step_1.jpg" alt="Png №1 после 3-го шага" width="400" height="400"> &thinsp; </li><li><img loading="lazy" src="/images/posts/after-the-3rd-step_2.jpg" alt="Png №2 после 3-го шага" width="400" height="400"></li></ul>
     <meta itemprop="name" content="Проверка темных участков" />
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Уменьшьте картинку до 200x200px: для нашего способа это обеспечит разумный баланс между детализацией и весом SVG-файла. Снова повысьте контрастность и сохраните файл <span class="u">под именем 200x200</span>.png.</span>
@@ -93,13 +93,13 @@ image: "how-to-create-manga-icon-font.jpg"
     <meta itemprop="name" content="Оптимизация полученного SVG" />
   </li>
 </ol>
-<p>Вот что у нас получилось: вес файлов <span class="under">&ndash; 2,05&thinsp;КБ и 2,75&thinsp;КБ </span>(будет еще меньше, если вклю&#173;чить GZIP-сжатие для SVG). До оптимизации было 7,6&thinsp;КБ и 10,3&thinsp;КБ, то есть оба файла похудели <span class="under">примерно в 3.7 раза</span>!</p>
+<p>Вот что у нас получилось: вес файлов <span class="under">– 2,05&thinsp;КБ и 2,75&thinsp;КБ </span>(будет еще меньше, если вклю&#173;чить GZIP-сжатие для SVG). До оптимизации было 7,6&thinsp;КБ и 10,3&thinsp;КБ, то есть оба файла похудели <span class="under">примерно в 3.7 раза</span>!</p>
 <p>А вот <a href="/assets/post-on-icons/improper_1.svg" rel="nofollow">что вышло бы</a>, если бы мы скон&#173;вертировали котофея в SVG без подготовки и не обработали бы результат: лишние 20&thinsp;КБ + очевидная непригод&#173;ность к использова&#173;нию. Исходник с мальчиком контра&#173;стнее, поэтому и SVG из него <a href="/assets/post-on-icons/improper_2.svg" rel="nofollow">получился бы</a> более отчет&#173;ливым, но тоже перегруженным деталями.</p>
 </div>
 <div>
 <h2 id="2">Веб-шрифт из SVG иконок: соби&#173;раем, взвешиваем За и Против</h2>
 <p>У меня готовы 11 манга-иконок в формате SVG: <a href="https://github.com/do-your-own-seo/icons">вот они</a>. Почему бы не собрать из них люби&#173;тельский веб-шрифт? К слову, в ком&#173;ментах поощряются ссыл&#173;ки на другие кол&#173;лекции SVG в бесплатном доступе.</p> 
-<blockquote>Шрифт &ndash; не единственный вариант испо&#173;льзова&#173;ния иконок: SVG можно подклю&#173;чить из файла или &laquo;вшить&raquo; в код HTML. Допустимо также применять <a href="#3">SVG-спрайты</a>. То есть способов много, но каждый имеет недостатки.</blockquote>
+<blockquote>Шрифт – не единственный вариант испо&#173;льзова&#173;ния иконок: SVG можно подклю&#173;чить из файла или &#171;вшить&#187; в код HTML. Допустимо также применять <a href="#3">SVG-спрайты</a>. То есть способов много, но каждый имеет недостатки.</blockquote>
 <p>Что можно сказать в защиту веб-шрифта?</p>
 <ul class="featured plus">
   <li>Не засоряет разметку. Чтобы внутри &lt;span&gt; появилась иконка, достаточно присвоить тегу нужный класс.</li>
@@ -111,18 +111,18 @@ image: "how-to-create-manga-icon-font.jpg"
 <li>Загрузка веб-шрифта может снижать произ&#173;во&#173;дительность сайта и задерживать вывод текста.</li>
 <li>Иконочные шрифты не отображаются в браузере Opera Mini (встречается реже, чем на 2% устройств).</li>
 </ul>
-<p>Однако в нашем случае главный недостаток не так страшен. Кастомный шрифт будет разме&#173;щен на том же серве&#173;ре, что и весь сайт: тогда браузеру клиента не придется допол&#173;нительно устанавливать соеди&#173;нение с CDN. К тому же >&nbsp;80% браузеров <a href="https://caniuse.com/#search=preload">поддержи&#173;вают preload</a> &ndash; пред&#173;загрузку кешируемых ресурсов, в том числе шрифтов.</p>
+<p>Однако в нашем случае главный недостаток не так страшен. Кастомный шрифт будет разме&#173;щен на том же серве&#173;ре, что и весь сайт: тогда браузеру клиента не придется допол&#173;нительно устанавливать соеди&#173;нение с CDN. К тому же более&#160;80% браузеров <a href="https://caniuse.com/#search=preload">поддержи&#173;вают preload</a> – пред&#173;загрузку кешируемых ресурсов, в том числе шрифтов.</p>
 <p>Итак, если для организации иконок выбран шрифт, продол&#173;жаем. В ином случае <a href="#3">прыгаем через раздел</a>.</p>
 <h3 id="2.1">Генераторы шрифтов в работе: IcoMoon App против Fontello</h3>
 <p>Вот два простых в применении, но почти магических приложения для генерации шри&#173;фтов: <b><a href="https://icomoon.io/app/">IcoMoon</a></b> и <b><a href="http://fontello.com">Fontello</a></b>.</p>
 <table class="txt-center"><caption><small><em>Таблица-сравнение генераторов веб-шрифтов Fontello и IcoMoon App</em></small></caption>
-   <tr><th><img src="/assets/post-on-icons/icomoon-logo.jpg" alt="IcoMoon App logo" loading="lazy"></th><th><img src="/assets/post-on-icons/fontello-logo.jpg" alt="Fontello logo" loading="lazy"></th></tr>
+   <tr><th><img src="/assets/post-on-icons/icomoon-logo.jpg" alt="IcoMoon App logo" loading="lazy" width="133" height="48"></th><th><img src="/assets/post-on-icons/fontello-logo.jpg" alt="Fontello logo" loading="lazy" width="81" height="48"></th></tr>
   <tbody>
     <tr><td>Платная и бесплатная версии</td><td>Бесплатный, Open source</td></tr>
     <tr><td colspan="2">Для скачивания шрифта не нужна регистрация</td></tr>
     <tr><td colspan="2">Можно комбинировать готовые иконки и собственные SVG в одном шрифте</td></tr>
     <tr><td>Базовое редакти&#173;рование иконок</td><td>------</td></tr>
-    <tr><td>------</td><td>Иногда &laquo;не видит&raquo; SVG, пока не обратишь path <b>:(</b></td></tr>
+    <tr><td>------</td><td>Иногда &#171;не видит&#187; SVG, пока не обратишь path <b>:(</b></td></tr>
     <tr><td>------</td><td>API для разработчиков</td></tr>
     <tr><td>Возможность ска&#173;чать иконки в PNG</td><td>------</td></tr>
     <tr><td>WOFF2 только в платной версии</td><td>Поддержка WOFF2</td></tr>
@@ -131,12 +131,12 @@ image: "how-to-create-manga-icon-font.jpg"
 <p>А вот ссылки на оригинальные руководства по созданию шрифтов: <a href="https://icomoon.io/#docs/importing">IcoMoon docs</a> и <a href="https://github.com/fontello/fontello/wiki/How-to-create-my-own-font">Fontello wiki</a> (оба на англ.). Я намечу лишь основные этапы для тех, кто не намерен углубляться в детали.</p>
 <ol start="10" class="emphasis">
   <li><span>Выбираем приложение и заходим на сайт. Присматриваемся к готовым бесплат&#173;ным иконкам: возможно, какие-то из них приго&#173;дятся. Выделяем нужные.</span></li>
-  <li><span><strong class="u">Для Fontello</strong>: перетаскиваем SVG-файлы в &laquo;приемник&raquo; в разделе  <em>Custom Icons</em>. <strong class="u">Для IcoMoon</strong>: на панели навигации находим кнопку <em>Import Icons</em> и загружаем SVG. Выделяем новые иконки.</span></li>
+  <li><span><strong class="u">Для Fontello</strong>: перетаскиваем SVG-файлы в &#171;приемник&#187; в разделе  <em>Custom Icons</em>. <strong class="u">Для IcoMoon</strong>: на панели навигации находим кнопку <em>Import Icons</em> и загружаем SVG. Выделяем новые иконки.</span></li>
   <li><span><strong class="u">Для Fontello</strong>: слева от кнопки <em>Download</em> вводим название шрифта и проверяем на&#173;стройки. Если иконки должны заменить буквы или другие стан&#173;дартные символы, во вкладке <em>Customize Codes</em> ука&#173;зываем нужные кодовые позиции (U-codepoint). <strong class="u">Для Ico&#173;Moon</strong>: нажав на карандаш в верх&#173;ней панели, оказы&#173;ваемся в окне редактора иконок. Наиг&#173;рав&#173;шись, жмем <em>Generate Font</em> и запол&#173;няем <em>Pre&#173;ferences</em>. Если нужно, меняем codepoints.</span>
-    <ul class="nobullets txt-center"><li><img loading="lazy" src="/images/posts/navbars.jpg" alt="Панели навигации приложений"></li><li><small>&laquo;Шапка&raquo; приложений Fontello (вверху) и IcoMoon</small></li></ul>
+    <ul class="nobullets txt-center"><li><img loading="lazy" src="/images/posts/navbars.jpg" alt="Панели навигации приложений" width="758" height="183"></li><li><small>&#171;Шапка&#187; приложений Fontello (вверху) и IcoMoon</small></li></ul>
   </li>
   <li><span>Если все устраивает, жмем <em>Download</em>. В архиве будет папка со шрифтами (.eot, .svg, .ttf, .woff + .<span class="u">woff2 у Fontello</span>), JSON с инфор&#173;мацией о выде&#173;ленных иконках, CSS-файлы и demo.html с приме&#173;рами использования.</span>
-  <ul class="nobullets txt-center"><li><img loading="lazy" src="/images/posts/icomoon-vs-fontello.jpg" alt="Содержимое архивов, генерируемых fontello и icomoon"></li><li><small>Разница в весе шрифтов, сгенерированных Fontello и IcoMoon: .eot и .ttf меньше у IcoMoon, .svg &ndash; у Fontello</small></li></ul>
+  <ul class="nobullets txt-center"><li><img loading="lazy" src="/images/posts/icomoon-vs-fontello.jpg" alt="Содержимое архивов, генерируемых fontello и icomoon" width="410" height="280"></li><li><small>Разница в весе шрифтов, сгенерированных Fontello и IcoMoon: .eot и .ttf меньше у IcoMoon, .svg – у Fontello</small></li></ul>
   </li>
   <li><span>Предпочтительный формат шрифта для совре&#173;менных браузеров ­– .woff2. Если вы восполь&#173;зовались бес&#173;платной версией Ico&#173;Moon, придется поискать WOFF &#10132; WOFF2 конвертер. <a href="https://everythingfonts.com/woff-to-woff2">Вот этот</a> – работа&#173;ет. Сохраняем .woff2 в папку с другими фор&#173;матами и все, шрифт можно подклю&#173;чать!</span></li>
 </ol>
@@ -144,7 +144,7 @@ image: "how-to-create-manga-icon-font.jpg"
 </div>
 <div>
 <h2 id="3">HTML + CSS для иконок из SVG-спрайтов и веб-шрифтов</h2>
-<p>Пришло время продемонстрировать упомя&#173;нутые манга-иконки. Они собраны в <strong>спрайте</strong> &ndash; едином SVG-файле в тегах <code>&lt;symbol&#8201;id="icon-name"&#8201;viewBox="_"&gt;&lt;/symbol&gt;</code>, а на странице выве&#173;дены как</p>
+<p>Пришло время продемонстрировать упомя&#173;нутые манга-иконки. Они собраны в <strong>спрайте</strong> – едином SVG-файле в тегах <code>&lt;symbol&#8201;id="icon-name"&#8201;viewBox="_"&gt;&lt;/symbol&gt;</code>, а на странице выве&#173;дены как</p>
 {%- highlight html -%}<svg><use xlink:href="/assets/post-on-icons/manga.svg#icon-name"/></svg>{% endhighlight %}
 <div id="svgs" class="iconset flex-wrap flex-center" data-size="52" title="Увеличить/Уменьшить" role="img" aria-label="Иконки с котами и персонажами манги">
   <b class="arrow hidden">&#10237;</b>
@@ -179,7 +179,7 @@ image: "how-to-create-manga-icon-font.jpg"
 <svg role="img" aria-label="Описание">...</svg>
 <i class="icon-name" role="button" aria-label="Действие"></i>
 <i class="icon-name" aria-hidden="true"></i>{% endhighlight %}
-<p>Если же новый шрифт &ndash; это просто алфавит, кото&#173;рый используется для буквиц, то <code>.icon</code> в CSS стоит заменить селектором 
+<p>Если же новый шрифт – это просто алфавит, кото&#173;рый используется для буквиц, то <code>.icon</code> в CSS стоит заменить селектором 
 <code>p:first-of-type::first-letter</code> (загла&#173;вная буква перво&#173;го абзаца раздела). Значение <code>::before</code>&thinsp; при этом задавать не нужно.</p>
 <h3 id="3.1" class="red">Стилизация иконок: применяем CSS-эффекты</h3>
 <p>Для редактирования можно выбрать любую из иконок manga: для этого введите ее имя вместо <code>icon-cat</code>. Картинка будет преобра&#173;жаться при изме&#173;нении CSS-свойств.</p>
