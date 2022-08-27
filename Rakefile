@@ -39,23 +39,23 @@ task :serve do
   sh "bundle exec jekyll serve JEKYLL_ENV=development --drafts --livereload"
 end
 
-desc "Ping the search engines if sitemap.xml has been updated"
-task :ping => ["ping:google", "ping:bing"]
-namespace :ping do
-  url = "/ping?sitemap=https://#{CONFIG['url']}/sitemap.xml"
+#desc "Ping the search engines if sitemap.xml has been updated"
+#task :ping => ["ping:google", "ping:bing"]
+#namespace :ping do
+#  url = "/ping?sitemap=https://#{CONFIG['url']}/sitemap.xml"
 
-  task :google do
-    puts Net::HTTP.get("www.google.com", url)
-    rescue LoadError
-      puts "! Could not ping Google"
-  end
+#  task :google do
+#    puts Net::HTTP.get("www.google.com", url)
+#    rescue LoadError
+#      puts "! Could not ping Google"
+#  end
 
-  task :bing do
-    puts Net::HTTP.get("www.bing.com", url)
-    rescue LoadError
-      puts "! Could not ping Bing"
-  end
-end
+#  task :bing do
+#    puts Net::HTTP.get("www.bing.com", url)
+#    rescue LoadError
+#      puts "! Could not ping Bing"
+#  end
+#end
 
 desc "Create a new post or draft"
 task :post do
