@@ -18,7 +18,7 @@ gem "sass", "~>3.4"
 gem "html-proofer"
 gem "kramdown", "~>2.3.1"
 gem "kramdown-parser-gfm", "1.1.0"
-gem "nokogiri", "1.13.7"
+gem "nokogiri", "1.13.6"
 # Currently used by GitHub Pages version of nokogiri requires ruby >=2.6.0"
 
 # If you have any other plugins, list them here:
