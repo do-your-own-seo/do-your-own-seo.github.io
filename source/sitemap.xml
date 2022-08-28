@@ -42,17 +42,6 @@
 {% comment %}  assign uniqueImages = uniqueImages | push: src  {% endcomment %}
     <image:image>
       <image:loc>{{ site.url }}{{ src }}</image:loc>
-          {%- if inner contains 'alt=' -%}
-            {%- assign besideALT = inner | split:'alt="' -%}
-            {%- assign preALT = '' -%}
-            {%- if besideALT[0] != '' -%} 
-              {%- assign preALT = besideALT[0] | slice:-1, 1 | strip -%} 
-            {%- endif -%} 
-            {%- if preALT == '' -%}
-              {% assign alt = besideALT[1] | split:'"' | first %}
-      <image:caption>{{ alt }}</image:caption>
-            {%- endif -%}
-          {% endif %}
     </image:image>
 {%-comment-%} { endunless } {%-endcomment-%}
         {%- endif -%}
