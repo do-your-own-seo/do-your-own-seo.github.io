@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-# ruby ">=2.6.0"
+ruby ">=2.6.0"
 # To use nokogiri-1.13.7 uncomment the ruby specification above.
 
 # When you want to use a different version of some gem, change it below, save the
@@ -18,7 +18,7 @@ gem "sass", "~>3.4"
 gem "html-proofer"
 gem "kramdown", "~>2.3.1"
 gem "kramdown-parser-gfm", "1.1.0"
-# gem "nokogiri", "1.13.7"
+gem "nokogiri", "1.13.7"
 # Currently used by GitHub Pages version of nokogiri requires ruby >=2.6.0"
 
 # If you have any other plugins, list them here:
