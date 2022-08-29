@@ -138,11 +138,6 @@ honeypotPlacehold:
   uk: "залиште як є"
   ru: "оставить как есть"
   en: "leave as it is"
-
-emailPlacehold:
-  uk: ""
-  ru: ""
-  en: ""
   
 reply:
   uk: "Відповісти"
