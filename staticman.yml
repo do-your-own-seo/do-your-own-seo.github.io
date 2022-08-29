@@ -94,7 +94,7 @@ comments_uk:
   notifications:
     enabled: false
   path: "source/_data/comments_uk/{options.slug}"
-  requiredFields: ["name", "email", "message"]
+  requiredFields: ["name", "message"]
   transforms:
     email: md5
   reCaptcha:
@@ -118,7 +118,7 @@ comments_ru:
   notifications:
     enabled: false
   path: "source/_data/comments_ru/{options.slug}"
-  requiredFields: ["name", "email", "message"]
+  requiredFields: ["name", "message"]
   transforms:
     email: md5
   reCaptcha:

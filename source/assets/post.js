@@ -120,7 +120,7 @@ function serialize(form) {
     serialized = [encodeURIComponent("fields[lang]") + "=" + encodeURIComponent(lang)];
   for (var i = 0; i < form.elements.length; i++) {
     field = form.elements[i];
-    if (!field.name || field.disabled || field.value === '' && field.name !== "fields[replying_to]" || field.type === 'file' || field.type === 'reset' || field.type === 'submit' || field.type === 'button' || field.type === 'select-multiple') {
+    if (!field.name || field.disabled || !field.value && field.name !== "fields[replying_to]" || field.type === 'file' || field.type === 'reset' || field.type === 'submit' || field.type === 'button' || field.type === 'select-multiple') {
       continue;
     } else if (field.type !== 'checkbox' && field.type !== 'radio' || field.checked) {
       serialized.push(encodeURIComponent(field.name) + "=" + encodeURIComponent(field.value));
