@@ -17,7 +17,7 @@ schema: FAQPage
 styles: /assets/post-on-snippets/snippet.css
 code_amount: 2
 
-h1: "What should be done to expand the page’s snippet and increase organic CTR?"
+h1: "What should be done to expand the page snippet and increase organic CTR?"
 snippet_header: "No one can leave without a click, or How to get an effective snippet on SERP"
 
 snippet: "Can we influence how users see our website on the Google results page? The search engine does not generate snippets in advance: they depend on a query and the user’s intent. However, there are ways to help Google to serve our page as well as possible."

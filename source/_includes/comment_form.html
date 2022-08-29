@@ -43,8 +43,7 @@
       </button>
     </div>
   </form>
-</div>{% comment %}{% if jekyll.environment == 'production' %}
-<script async defer src="https://www.google.com/recaptcha/api.js"></script>{% endif %}{% endcomment %}
+</div>
 {%- else -%}
 <div class="notice">
   {%-if page.lang == site.lang-%}{%-assign lng ="/"-%}{%-elsif page.lang-%}{%-assign lng=page.lang | prepend:"/" | append:"/"-%}

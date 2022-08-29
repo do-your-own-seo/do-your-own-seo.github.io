@@ -8,6 +8,14 @@ function showEl(str1, str2) {
     });
   document.querySelector(str1 +' '+ str2).classList.remove('hidden');
 }
+function loadRecaptcha() {
+  var recaptchaJS = document.createElement('script');
+  recaptchaJS.type = 'text/javascript';
+  recaptchaJS.src = 'https://www.google.com/recaptcha/api.js'
+  document.getElementsByTagName('head')[0].appendChild(recaptchaJS);
+  // remove onfocusin
+  getById('comment-form').removeEventListener('focusin', loadRecaptcha)
+}
 var app = "{{site.staticman.app}}",
     repo = "{{site.github-repo}}",
     branch = "/{{site.staticman.branch}}/",
@@ -18,13 +26,7 @@ var app = "{{site.staticman.app}}",
 (function(){
   document.addEventListener('DOMContentLoaded', function(){
 
-  if (!getById("googleCaptcha")) {
-    const script = document.createElement("script");
-    script.setAttribute("src", "https://www.google.com/recaptcha/api.js"); 
-    script.setAttribute("id", "googleCaptcha");
-    script.setAttribute("defer", "");
-    document.body.appendChild(script);
-  }
+    getById('comment-form').addEventListener('focusin', loadRecaptcha, false);
 
     if (window.matchMedia("(min-width: 768px)").matches) {
       try {
@@ -61,9 +63,9 @@ var app = "{{site.staticman.app}}",
         ga('send', 'event', 'outbound', 'click', url, options);
       }
     });
-    var modal=document.getElementById("modal"),
-        trigger=document.getElementById("trigger"),
-        content=document.querySelector("#modal .content");
+    var modal = getById("modal"),
+        trigger = getById("trigger"),
+        content = document.querySelector("#modal .content");
     if (modal && trigger) {
       trigger.onclick=function(){content.src=this.dataset.src;modal.style.display="block"};
       modal.onclick=function(e){if(e.target.tagName!=="IMG"){modal.style.display="none"}};
