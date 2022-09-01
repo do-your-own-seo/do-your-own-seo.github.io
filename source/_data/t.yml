@@ -1,7 +1,7 @@
 title: 
-  uk: "ХендМейд SEO: все про оптимізацію сайту власними силами"
-  ru: "SEO самостоятельно: оптимизируем сайт своими силами!"
-  en: "SEO for everyone: read, think &amp; Do It Yourself"
+  uk: "Сам собі SEO: блог про оптимізацію сайту власноруч!"
+  ru: "Сам себе SEO: блог об оптимизации сайта своими силами"
+  en: "SEO blog for everyone: read, think &amp; Do It Yourself"
 
 keywords: 
   uk: "SEO блог"
@@ -9,15 +9,21 @@ keywords:
   en: "SEO blog"
 
 description:
-    uk: "SEO оптимізація сайту власними силами &#9728; Як зрозуміти і використовувати SEO на практиці &#9728; Як дійти згоди з Google і не боятися апдейтів пошукових систем"
-    ru: "Оптимизация сайта своими силами &#9728; Как понять и применять SEO на практике &#9728; Как поладить с Google и не бояться апдейтов поисковых систем"
-    en: "Symbiosis of SEO practice and theory &#9728; Website optimization on your own &#9728; Іf you understand SEO, you can Do It Yourself: it’s adventurous and exciting!"
+    uk: "SEO оптимізація сайту своїми силами &#9728; Як зрозуміти і використовувати SEO на практиці &#9728; Як дійти згоди з Google і не боятися апдейтів пошукових систем &#9728; Технічні аспекти On-page SEO"
+    ru: "Оптимизация сайта своими руками &#9728; Как понять и применять SEO на практике &#9728; Как поладить с Google и не бояться апдейтов поисковых систем &#9728; Технические аспекты On-page SEO"
+    en: "Symbiosis of SEO practice and theory &#9728; Website optimization on your own &#9728; Technical On-page SEO &#9728; Іf you understand SEO, you can Do It Yourself: it’s adventurous and exciting!"
 
 pagination:
   title:
-    uk: "Do Your Own SEO блог - сторінка "
-    ru: "Do Your Own SEO блог - страница "
-    en: "Do Your Own SEO blog - page "
+    uk: "Do Your Own SEO українською  - сторінка "
+    ru: "Do Your Own SEO по-русски - страница "
+    en: "Do Your Own SEO in English - page "
+
+  description: 
+    uk: "Мультимовний SEO блог --> Українська --> Сторінка "
+    ru: "Мультиязычный SEO на трех языках --> Русский --> Страница "
+    en: "Multilingual SEO blog --> English --> Page "
+
 
 about:
   uk: "Від автора"

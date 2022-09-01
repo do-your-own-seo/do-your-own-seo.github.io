@@ -6,11 +6,9 @@
 {%- endif -%}
 {%- if page.description -%} 
 	{%- assign descr = page.description -%} 
-	{%- elsif page.excerpt-%} {%- assign descr = page.excerpt | strip_html -%} 
+	{%- elsif page.excerpt -%} {%- assign descr = page.excerpt | strip_html -%} 
+	{%- elsif paginator.page > 1 -%} {%- assign descr = site.data.t.pagination.description[page.lang] | append: paginator.page -%} 
 	{%- else -%} {%- assign descr = site.data.t.description[page.lang] -%} 
-{%- endif -%}
-{%- if paginator.page > 1 -%} 
-	{%- assign descr = descr | truncate:100 | append:"-- c." | append: paginator.page -%} 
 {%- endif -%}
 {%- assign canonical = site.url | append: page.url | replace:'index.html','' -%} 
 {% if page.noindex %} <meta name="robots" content="noindex{%-if page.nofollow-%}, nofollow{%-endif-%}"> 
