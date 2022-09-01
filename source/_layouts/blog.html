@@ -8,7 +8,11 @@ layout: pages
   {%- for post in paginator.posts -%}
     <div class="post card clf">
 	  {%- if post.image -%}
-	  <img class="post-thumbnail" src="/images/preview/{{ post.image }}" alt="{{ site.data.t.preview[page.lang] }}{{ forloop.index }}" loading="lazy" width="250" height="180">
+	  	{%- if forloop.index == 1 -%}
+	  		<img class="post-thumbnail" src="/images/preview/{{ post.image }}" alt="{{ site.data.t.preview[page.lang] | append:'1'}}" width="250" height="180">
+	  	{%- else -%}
+	  		<img class="post-thumbnail" src="/images/preview/{{ post.image }}" alt="{{ site.data.t.preview[page.lang] }}{{ forloop.index }}" width="250" height="180" loading="lazy">
+	  	{%- endif -%}
 	  {%- endif -%}
 	  <div class="post-content">
 	    <header {% unless post.image %}class="noimage"{% endunless %}>
