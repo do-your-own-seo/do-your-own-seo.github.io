@@ -1,5 +1,5 @@
 {%- if paginator.total_pages > 1 -%}
-<nav class="pagination" role="pagination">
+<nav class="pagination" role="navigation" aria-label="pagination">
   <ul>
     {%- if paginator.previous_page -%}
       <li><a class="prev button-ghost" href="{{ paginator.previous_page_path }}" title="Newer">&#10094;&#10094;</a></li>
