@@ -21,7 +21,7 @@ layout: pages
 	      {% endif %}
 	      <a href="{{ post.url }}"><h2 class="post-title">{{h2}}</h2></a>
 	      <div class="post-meta">
-	        <small><time>
+	        <small><time datetime="{{ post.date | date:'%F' }}">
 	          {%- if page.lang == "en" -%}{{ post.date | date: "%b %-d, %Y" }}{%- else -%}{%- include dates.html date=post.date -%}{%- endif -%}
 	        </time></small>
 	      </div>
