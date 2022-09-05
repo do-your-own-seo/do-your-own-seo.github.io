@@ -23,7 +23,7 @@ https://www.gstatic.com https://www.google-analytics.com https://www.google.com;
 <meta name="theme-color" content="#618930">
 <title>{{title}}</title>
 <meta name="description" content="{{ descr }}">
-<meta name="keywords" content="{%- if page.keywords -%}{{ page.keywords }}{%- endif -%}">
+<meta name="keywords" content="{%- if page.keywords -%}{{ page.keywords }}{%- elsif site.data.t.keywords -%}{{ site.data.t.keywords[page.lang] }}{%- endif -%}">
 <link rel="canonical" href="{{ canonical }}">
 {% if page.layout == "about" %}
 	{%- if page.lang == "en" -%}
