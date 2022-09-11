@@ -15,7 +15,7 @@ layout: pages
 			{%- include dates.html date = page.date -%}
 			{%- assign words_per_min = 180 -%}
 		{%- endif -%}</time>
-	    •&ensp;{{ page.content| number_of_words| divided_by: words_per_min | minus: page.code_amount }}&nbsp;{{site.data.t.minRead[page.lang]}}{%- if page.author -%} • {{ page.author }}{%- endif -%}
+	    •&#160;{{ page.content| number_of_words| divided_by: words_per_min | minus: page.code_amount }}&#160;{{site.data.t.minRead[page.lang]}}{%- if page.author -%} • {{ page.author }}{%- endif -%}
 	</small>
 	</div>
     <div class="post-content"{% if page.schema %} itemscope itemtype="https://schema.org/{{ page.schema }}"{% endif %}> {{ content }} </div>
@@ -32,5 +32,5 @@ layout: pages
 {% if page.modal =="needed" %} 
 <div id="modal">
   <img class="content" src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=" alt="modal" width="1" height="1">
-  <span class="close">&times;</span>
+  <span class="close">&#215;</span>
 </div>{% endif %}
