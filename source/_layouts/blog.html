@@ -22,11 +22,29 @@ layout: pages
 	      	{%- assign h2 = post.h1 -%}
 	      {%- else -%}
 	      	{%- assign h2 = post.title -%}
-	      {% endif %}
+	      {%- endif -%}
 	      <a href="{{ post.url }}"><h2 class="post-title">{{h2}}</h2></a>
 	      <div class="post-meta">
-	        <small><time datetime="{{ post.date | date:'%F' }}">
-	          {%- if page.lang == "en" -%}{{ post.date | date: "%b %-d, %Y" }}{%- else -%}{%- include dates.html date=post.date -%}{%- endif -%}
+	      	{%- assign last_date = post.date -%}
+			{%- if post.last_modified_at -%}
+				{%- assign last_date = post.last_modified_at -%}
+				{%- if last_date > post.date -%}
+					{%- assign modified = 1 -%}
+				{%- endif -%}
+			{%- endif -%}
+	        <small>{%- if modified !=1 -%}<time datetime="{{ last_date | date:'%F' }}">{%- endif -%}
+	        {%- if page.lang == "en" -%}
+	        	{{ post.date | date: "%b %-d, %Y" }}
+	        {%- else -%}
+	        	{%- include dates.html date = post.date -%}
+	        {%- endif -%}
+	        {%- if modified -%} &#160;&#8594;&#160;<time datetime="{{ last_date | date:'%F' }}">
+	          	{%- if page.lang == "en" -%}
+	          		{{ last_date | date: "%b %-d, %Y" }}
+	          	{%- else -%}
+	          		{%- include dates.html date = last_date -%}
+	          	{%- endif -%}
+	        {%- endif -%}
 	        </time></small>
 	      </div>
 	    </header>

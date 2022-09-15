@@ -7,15 +7,26 @@ layout: pages
     <h1> {{ page.h1 }} </h1> 
 	<div class="post-meta">
 	<small>
-	    <time datetime="{{ page.date | date:'%F' }}">
+		{%- assign last_date = page.date -%}
+		{%- if page.last_modified_at -%}
+			{%- assign last_date = page.last_modified_at -%}
+			{%- if last_date > page.date -%}
+				{%- assign modified = 1 -%}
+			{%- endif -%}
+		{%- endif -%}
+	    <time datetime='{{ last_date | date:"%F"}}'>
 	    {%- if page.lang == "en" -%}
-		    {{ page.date | date: "%b %-d, %Y" }}
+		    {%- if modified -%}Reviewed &#160;{%- endif -%}
+		    {{ last_date | date: "%b %-d, %Y" }}
 		    {%- assign words_per_min = 220 -%}
 		{%- else -%}
-			{%- include dates.html date = page.date -%}
+			{%- if modified -%}
+				{%- if page.lang == "uk" -%}Оновлено{%- else -%}Обновлен{%- endif -%} &#160;
+			{%- endif -%}
+			{%- include dates.html date = last_date -%}
 			{%- assign words_per_min = 180 -%}
 		{%- endif -%}</time>
-	    •&#160;{{ page.content| number_of_words| divided_by: words_per_min | minus: page.code_amount }}&#160;{{site.data.t.minRead[page.lang]}}{%- if page.author -%} • {{ page.author }}{%- endif -%}
+	    • &#160;{{ page.content| number_of_words| divided_by: words_per_min | minus: page.code_amount }}&#160;{{site.data.t.minRead[page.lang]}}{%- if page.author -%} • {{ page.author }}{%- endif -%}
 	</small>
 	</div>
     <div class="post-content"{% if page.schema %} itemscope itemtype="https://schema.org/{{ page.schema }}"{% endif %}> {{ content }} </div>

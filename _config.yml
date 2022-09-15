@@ -14,7 +14,7 @@ excerpt_separator: <!--e-->
 
 pagination:
   enabled: true
-  per_page: 4
+  per_page: 5
   permalink: "/page=:num/"
   sort_reverse: true
 # sort_field: "order"
