@@ -1,0 +1,6 @@
+_id: 641b9230-3760-11ed-8291-ed2ba51fbd05
+lang: en
+name: Olya Vo
+message: 'Hello! Thanks for the comment! I think they should work in Chrome. But on Android, running the script in the context of the current page is a bit tricky. Maybe I should write a post about it. In the meantime, I hope <a href="https://paul.kinlan.me/use-bookmarklets-on-chrome-on-android/">this article</a> will help you.'
+replying_to: '1'
+date: '2022-09-18T19:01:25.751Z'
