@@ -1,6 +1,11 @@
 ---
 layout: pages
 ---
+{%- if page.lang == "ru" -%}
+<div id="banner" data-nosnippet class="clf">
+	<img class="fl-left" src="/images/support-ukraine.jpg" alt="Support Ukraine" width="467" height="160"><div><small>Дорогой читатель! Если ты знаешь украинский, <b>переходь на українську сторінку</b>. Если нет – не поздно начать учить! Сейчас, пока нет ажиотажа. Что бы тебе ни говорили в школе, украинский универсален. Это язык для колыбельных и революционных гимнов, незамысловатых шуток и философских трактатов. На украинском можно быть ироничным, современным – любым, каким ты бываешь <span class="under">каждый день своей жизни</span>.</small></div>
+</div>
+{%- endif -%}
 <h1 class="txt-center">{{page.h1}}</h1>
 {%- if paginator.page == 1 -%}{{ content }}{%- endif -%}
 <div id="cat-shelter"></div>
