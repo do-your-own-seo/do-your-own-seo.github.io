@@ -1,4 +1,4 @@
-# [SEO blog for everyone: read, think & Do It Yourself!](https://do-your-own-seo.com/en/) [![Build Status](https://travis-ci.com/do-your-own-seo/do-your-own-seo.github.io.svg?branch=source)](https://travis-ci.com/do-your-own-seo/do-your-own-seo.github.io)
+# [SEO blog for everyone: read, think & Do It Yourself!](https://do-your-own-seo.com/en/) ![Build Status](https://github.com/do-your-own-seo/do-your-own-seo.github.io/actions/workflows/build-deploy.yml/badge.svg)
 
 * [x] SEO-friendly
 * [x] Responsive
@@ -27,7 +27,7 @@ I didn't hesitate to choose [Staticman](https://staticman.net/) as a commenting 
 
 There is a step-by-step guide [on static comments implementation](https://mademistakes.com/articles/jekyll-static-comments/) on the Made-Mistakes blog. The source code for that blog is [available on Github](https://github.com/mmistakes/made-mistakes-jekyll). From there and [here](https://github.com/mmistakes/minimal-mistakes), I borrowed the client-side nested comments structure. 
 
-As of September 2019, neither v2 nor v3 of public Staticman instance was working, and official docs didn't explain anything. So I had to set up my own instance of the API. It was feasible because of detailed Vincent Tam's [instructions](https://vincenttam.gitlab.io/post/2018-09-16-staticman-powered-gitlab-pages/2/) on deployment Staticman App to Heroku, and his further [explanation](https://github.com/eduardoboucas/staticman/issues/299#issuecomment-508029359) of the issue.
+As of September 2019, neither v2 nor v3 of public Staticman instance was working, and official docs didn't explain anything. So I had to set up my own instance of the API. It was feasible because of detailed Vincent Tam's [instructions](https://vincenttam.gitlab.io/post/2018-09-16-staticman-powered-gitlab-pages/2/) on deployment Staticman App to Heroku, and his further [explanation](https://github.com/eduardoboucas/staticman/issues/299#issuecomment-508029359) of the issue. **Update!** Now my own Staticman lives on Fly.io.
 
 I'm grateful to all the people mentioned for the opportunity to use the results of their work!
 
@@ -63,7 +63,7 @@ To preview the draft, run `bundle exec jekyll serve --drafts`. When you finish e
 ---
 ### Deploy to Github Pages
 
-Run `bundle exec jekyll build` to compose a production version of the Jekyll blog. Then place the contents of the \_site folder into the source repo for your GitHub Pages site. Alternatively, to avoid manual rebuilds, you can set up a build environment on [Travis](https://jekyllrb.com/docs/continuous-integration/travis-ci/).
+Since Github Pages will not build this site from source, run `bundle exec jekyll build` to compose a production version of the Jekyll blog. Then place the contents of the \_site folder into the source repo for your GitHub Pages site. Alternatively, to avoid manual rebuilds, you can set up a <del>build environment on Travis</del>  Github Action.
 
 ---
 ## Copyright and license
