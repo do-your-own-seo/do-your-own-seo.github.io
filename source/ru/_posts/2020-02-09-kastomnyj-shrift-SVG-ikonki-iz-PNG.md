@@ -54,7 +54,7 @@ image: "how-to-create-manga-icon-font.jpg"
 <p>Эти и другие исходники были скачаны с бесплатных сайтов <b>hiclipart.com</b>, <b>imgbin.com</b>, <b>pngocean.com</b>, <b>pngguru.com</b>. Но в сети есть и другие ресурсы, так что выбор велик.</p>
 <p>У вас уже есть <span itemprop="supply" itemtype="http://schema.org/HowToSupply" itemscope><span itemprop="name">подходящий PNG</span></span>? Тогда дей&#173;ствуем по плану. Можно сразу перейти к <a href="#p_5">пункту&nbsp;5</a>, но для наилучшего результата желательно немного пора&#173;ботать с рисунком.</p>
 <ol class="emphasis">
-  <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Откройте PNG в онлайн-редакторе изо&#173;бражений (<a href="https://pixlr.com/editor/">pixlr.com</a>, <a href="https://www.lunapic.com/editor/">lunapic.&#173;com</a> и др.) или на компьютере.</span>
+  <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Откройте PNG в онлайн-редакторе изо&#173;бражений (<a href="https://pixlr.com/editor/">pixlr.com</a>, <a href="https://www7.lunapic.com/editor/">lunapic.&#173;com</a> и др.) или на компьютере.</span>
     <ol type="A">
       <li><span>Кадрируйте картинку в отношении 1:1.</span></li>
       <li><span>Повысьте контрастность.</span></li>
@@ -114,7 +114,7 @@ image: "how-to-create-manga-icon-font.jpg"
 <p>Однако в нашем случае главный недостаток не так страшен. Кастомный шрифт будет разме&#173;щен на том же серве&#173;ре, что и весь сайт: тогда браузеру клиента не придется допол&#173;нительно устанавливать соеди&#173;нение с CDN. К тому же более&#160;80% браузеров <a href="https://caniuse.com/#search=preload">поддержи&#173;вают preload</a> – пред&#173;загрузку кешируемых ресурсов, в том числе шрифтов.</p>
 <p>Итак, если для организации иконок выбран шрифт, продол&#173;жаем. В ином случае <a href="#3">прыгаем через раздел</a>.</p>
 <h3 id="2.1">Генераторы шрифтов в работе: IcoMoon App против Fontello</h3>
-<p>Вот два простых в применении, но почти магических приложения для генерации шри&#173;фтов: <b><a href="https://icomoon.io/app/">IcoMoon</a></b> и <b><a href="http://fontello.com">Fontello</a></b>.</p>
+<p>Вот два простых в применении, но почти магических приложения для генерации шри&#173;фтов: <b><a href="https://icomoon.io/app/">IcoMoon</a></b> и <b><a href="https://fontello.com">Fontello</a></b>.</p>
 <table class="txt-center"><caption><small><em>Таблица-сравнение генераторов веб-шрифтов Fontello и IcoMoon App</em></small></caption>
    <tr><th><img src="/assets/post-on-icons/icomoon-logo.jpg" alt="IcoMoon App logo" loading="lazy" width="133" height="48"></th><th><img src="/assets/post-on-icons/fontello-logo.jpg" alt="Fontello logo" loading="lazy" width="81" height="48"></th></tr>
   <tbody>

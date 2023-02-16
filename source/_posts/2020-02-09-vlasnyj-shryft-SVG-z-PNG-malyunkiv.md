@@ -52,7 +52,7 @@ image: "how-to-create-manga-icon-font.jpg"
 <p>Ці та інші PNG завантажено з сайтів <b>hiclipart.com</b>, <b>imgbin.com</b>, <b>pngocean.com</b>, <b>pngguru.&#173;com</b>. Але в мережі є й інші безкош&#173;товні ресурси з необмеженим асор&#173;тиментом.</p>
 <p>Ви вже маєте годящий PNG? Тоді діємо за планом. Можна хоч зараз перейти до <a href="#p_5">пункту&nbsp;5</a>, але задля кращого результату бажано попра&#173;цювати з файлом.</p>
 <ol class="emphasis">
-  <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Відкрийте PNG в онлайн-редакторі зображень (<a href="https://pixlr.com/editor/">pixlr.com</a>, <a href="https://www.lunapic.com/editor/">lunapic.com</a> та ін.) або на комп'ютері.</span>
+  <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Відкрийте PNG в онлайн-редакторі зображень (<a href="https://pixlr.com/editor/">pixlr.com</a>, <a href="https://www7.lunapic.com/editor/">lunapic.com</a> та ін.) або на комп'ютері.</span>
     <ol type="A">
       <li><span>Кадруйте малюнок у відношенні 1:1.</span></li>
       <li><span>Збільште контраст.</span></li>
@@ -116,7 +116,7 @@ image: "how-to-create-manga-icon-font.jpg"
 <table class="txt-center"><caption><small><em>Таблиця-порівняння генераторів веб-шрифтів Fontello та IcoMoon App</em></small></caption>
   <tr>
     <th><a href="https://icomoon.io/app/"><img src="/assets/post-on-icons/icomoon-logo.jpg" alt="IcoMoon App logo" loading="lazy" width="133" height="48"></a></th>
-    <th><a href="http://fontello.com"><img src="/assets/post-on-icons/fontello-logo.jpg" alt="Fontello logo" loading="lazy" width="81" height="48"></a></th></tr>
+    <th><a href="https://fontello.com"><img src="/assets/post-on-icons/fontello-logo.jpg" alt="Fontello logo" loading="lazy" width="81" height="48"></a></th></tr>
   <tbody>
     <tr><td>Платна та безплатна версії</td><td>Free, Open source</td></tr>
     <tr><td colspan="2">Для завантаження генерованого шрифту не потрібно реєструватися</td></tr>
