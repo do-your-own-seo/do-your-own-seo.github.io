@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 ruby ">=2.6.0"
-# To use nokogiri-1.13.7 uncomment the ruby specification above.
+# To use nokogiri-1.13.10 uncomment the ruby specification above.
 
 # When you want to use a different version of some gem, change it below, save the
 # file and run `bundle install`. Then run Jekyll with `bundle exec`, like so:
