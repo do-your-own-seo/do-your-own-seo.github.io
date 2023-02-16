@@ -140,7 +140,7 @@ image: "how-to-create-manga-icon-font.jpg"
   </li>
   <li><span>Предпочтительный формат шрифта для совре&#173;менных браузеров ­– .woff2. Если вы восполь&#173;зовались бес&#173;платной версией Ico&#173;Moon, придется поискать WOFF &#10132; WOFF2 конвертер. <a href="https://everythingfonts.com/woff-to-woff2">Вот этот</a> – работа&#173;ет. Сохраняем .woff2 в папку с другими фор&#173;матами и все, шрифт можно подклю&#173;чать!</span></li>
 </ol>
-<p>Оба шрифта выложены на Github, архивы можно скачать по ссылкам <b><a class="red" href="https://github.com/do-your-own-seo/icons/archive/manga-font-icomoon.zip">icomoon-Manga</a></b> и <b><a class="red" href="https://github.com/do-your-own-seo/icons/archive/manga-font-fontello.zip">fontello-Manga</a></b>.</p>
+<p>Оба шрифта выложены на GitHub, архивы можно скачать по ссылкам <b><a class="red" href="https://github.com/do-your-own-seo/icons/archive/manga-font-icomoon.zip">icomoon-Manga</a></b> и <b><a class="red" href="https://github.com/do-your-own-seo/icons/archive/manga-font-fontello.zip">fontello-Manga</a></b>.</p>
 </div>
 <div>
 <h2 id="3">HTML + CSS для иконок из SVG-спрайтов и веб-шрифтов</h2>

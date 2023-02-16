@@ -140,7 +140,7 @@ image: "how-to-create-manga-icon-font.jpg"
   </li>
   <li><span>Найбільш ефективний web-шрифт для сучасних браузерів ­– .woff2. Якщо ви скорис&#173;талися безкош&#173;товною версією IcoMoon, доведеться пошукати WOFF &#10132; WOFF2 кон&#173;вертер. <a href="https://everythingfonts.com/woff-to-woff2">Цей</a> – працює. Додамо .woff2 у теку з іншими форматами і все: шрифт можна підключати!</span></li>
 </ol>
-<p>Обидва шрифти є на Github, архіви заван&#173;тажуються за посиланнями <b><a class="red" href="https://github.com/do-your-own-seo/icons/archive/manga-font-icomoon.zip">icomoon-Manga</a></b> та <b><a class="red" href="https://github.com/do-your-own-seo/icons/archive/manga-font-fontello.zip">fontello-Manga</a></b>.</p>
+<p>Обидва шрифти є на GitHub, архіви заван&#173;тажуються за посиланнями <b><a class="red" href="https://github.com/do-your-own-seo/icons/archive/manga-font-icomoon.zip">icomoon-Manga</a></b> та <b><a class="red" href="https://github.com/do-your-own-seo/icons/archive/manga-font-fontello.zip">fontello-Manga</a></b>.</p>
 </div>
 <div>
 <h2 id="3">HTML та CSS для застосування SVG-спрайтів та шрифтів</h2>

@@ -8,7 +8,7 @@
 
 ## Features 
 
-* Pagination for each language via [Jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2) (non-supported by Github Pages).
+* Pagination for each language via [Jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2) (non-supported by GitHub Pages).
 * Full control over the commenting system with [Staticman](https://github.com/eduardoboucas/staticman).
 * Sitemap.xml with all the images for every post. Adding `sitemap:false` to the front-matter excludes the page from the map; setting `sitemap_exclude:[paths]` in *\_config.yml* does the same with files and folders.
 * RSS-feed for each language, optimized for Feedly.
@@ -23,9 +23,9 @@ This static blog is based on the free Jekyll theme [end2end](https://nandomoreir
 
 It was possible to make the site multilingual thanks to helpful and inspiring examples found in the articles by [Sylvain Durand](https://www.sylvaindurand.org/making-jekyll-multilingual/), [Anthony Granger](http://chocanto.me/2016/04/16/jekyll-multilingual.html), and [Klaasnotfound](https://www.klaasnotfound.com/2017/02/16/proper-multilingual-site-with-github-pages-and-jekyll/).
 
-I didn't hesitate to choose [Staticman](https://staticman.net/) as a commenting system, because third-party services like Disqus load tons of scripts, and it is unclear what do they do on the page. Besides, I do not like tracking. Many thanks to [Staticman's creator](https://github.com/eduardoboucas), Eduardo Bouças, for such a great, Github-friendly commenting system.
+I didn't hesitate to choose [Staticman](https://staticman.net/) as a commenting system, because third-party services like Disqus load tons of scripts, and it is unclear what do they do on the page. Besides, I do not like tracking. Many thanks to [Staticman's creator](https://github.com/eduardoboucas), Eduardo Bouças, for such a great, GitHub-friendly commenting system.
 
-There is a step-by-step guide [on static comments implementation](https://mademistakes.com/articles/jekyll-static-comments/) on the Made-Mistakes blog. The source code for that blog is [available on Github](https://github.com/mmistakes/made-mistakes-jekyll). From there and [here](https://github.com/mmistakes/minimal-mistakes), I borrowed the client-side nested comments structure. 
+There is a step-by-step guide [on static comments implementation](https://mademistakes.com/articles/jekyll-static-comments/) on the Made-Mistakes blog. The source code for that blog is [available on GitHub](https://github.com/mmistakes/made-mistakes-jekyll). From there and [here](https://github.com/mmistakes/minimal-mistakes), I borrowed the client-side nested comments structure. 
 
 As of September 2019, neither v2 nor v3 of public Staticman instance was working, and official docs didn't explain anything. So I had to set up my own instance of the API. It was feasible because of detailed Vincent Tam's [instructions](https://vincenttam.gitlab.io/post/2018-09-16-staticman-powered-gitlab-pages/2/) on deployment Staticman App to Heroku, and his further [explanation](https://github.com/eduardoboucas/staticman/issues/299#issuecomment-508029359) of the issue. **Update!** Now my own Staticman lives on Fly.io.
 
@@ -61,9 +61,9 @@ Run the above rake task with the additional parameter `draft=y`. In this case, n
 To preview the draft, run `bundle exec jekyll serve --drafts`. When you finish editing, add the date to the filename and move the draft to the corresponding \_posts folder.
 
 ---
-### Deploy to Github Pages
+### Deploy to GitHub Pages
 
-Since Github Pages will not build this site from source, run `bundle exec jekyll build` to compose a production version of the Jekyll blog. Then place the contents of the \_site folder into the source repo for your GitHub Pages site. Alternatively, to avoid manual rebuilds, you can set up a <del>build environment on Travis</del>  Github Action.
+Since GitHub Pages will not build this site from source, run `bundle exec jekyll build` to compose a production version of the Jekyll blog. Then place the contents of the \_site folder into the source repo for your GitHub Pages site. Alternatively, to avoid manual rebuilds, you can set up a <del>build environment on Travis</del>  GitHub Action.
 
 ---
 ## Copyright and license

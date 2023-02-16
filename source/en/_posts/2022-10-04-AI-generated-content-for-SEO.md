@@ -18,7 +18,7 @@ code_amount: 2
 h1: "How to use AI to generate text and image content for your website"
 snippet_header: "Is it time to automate blogging? How AI generates SEO text, photos, and images"
 
-snippet: "The theme for the essay is the war in Ukraine. Let’s see how different content genera&#173;tors work. Some will just cope with the task, some will surprise us or even scare"
+snippet: "The theme for an essay is the war in Ukraine. Let’s see how different content genera&#173;tors work. Some will just cope with the task, some will surprise us or even scare"
 
 image: "ai-generated-content.jpg"
 ---

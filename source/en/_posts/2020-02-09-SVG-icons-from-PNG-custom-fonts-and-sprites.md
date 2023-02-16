@@ -142,7 +142,7 @@ Go to the website of PNG&#10132;SVG converter. I recommend the free tool <a href
   <li><span>The preferred font format for modern browsers ­is .woff2. If you have used free IcoMoon generator, you need WOFF &#10132; WOFF2 converter. <a href="https://everythingfonts.com/woff-to-woff2">This one</a> works. </span></li>
   <li><span>Save .woff2 to the folder with other formats. Congratulations, you have created the ready-for-use webfont.</span></li>
 </ol>
-<p>Both fonts are hosted on Github; you can download the archives from <b><a class="red" href="https://github.com/do-your-own-seo/icons/archive/manga-font-icomoon.zip">icomoon-Manga</a></b> and <b><a class="red" href="https://github.com/do-your-own-seo/icons/archive/manga-font-fontello.zip">fontello-Manga</a></b>.</p>
+<p>Both fonts are hosted on GitHub; you can download the archives from <b><a class="red" href="https://github.com/do-your-own-seo/icons/archive/manga-font-icomoon.zip">icomoon-Manga</a></b> and <b><a class="red" href="https://github.com/do-your-own-seo/icons/archive/manga-font-fontello.zip">fontello-Manga</a></b>.</p>
 </div>
 <div>
 <h2 id="3">How to use custom icon sets in HTML and style them with CSS</h2>
