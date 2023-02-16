@@ -5,7 +5,7 @@
 		"@graph": [
 			{
 				"@type": "BlogPosting",
-				"image": {%- if page.image -%}"{{ site.url }}/images/posts/{{ page.image }}"{%-else-%}"{{ site.url }}/apple-touch-icon.png"{%- endif -%}, 
+				"image": {%- if page.image -%}"{{ site.url }}/images/posts/{{ page.image }}"{%-else-%}"{{ site.url }}/icon-2x-to-x.png"{%- endif -%}, 
 				"url": "{{ site.url }}{{ page.url }}",
 				"mainEntityOfPage": "True", {% if page.h1 %} 
 				"headline": "{{ page.h1 }}",  {% endif %}

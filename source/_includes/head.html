@@ -1,17 +1,17 @@
-{%- include assign.liquid -%}
-{%- if paginator.page > 1-%} 
-	{%- assign title = site.data.t.pagination.title[page.lang] | append: paginator.page -%} 
-	{%- elsif page.title -%} {%- assign title = page.title -%} 
-	{%- else -%} {%- assign title = site.data.t.title[page.lang] -%} 
-{%- endif -%}
-{%- if page.description -%} 
-	{%- assign descr = page.description -%} 
-	{%- elsif page.excerpt -%} {%- assign descr = page.excerpt | strip_html -%} 
-	{%- elsif paginator.page > 1 -%} {%- assign descr = site.data.t.pagination.description[page.lang] | append: paginator.page -%} 
-	{%- else -%} {%- assign descr = site.data.t.description[page.lang] -%} 
-{%- endif -%}
-{%- assign canonical = site.url | append: page.url | replace:'index.html','' -%} 
-{% if page.noindex %} <meta name="robots" content="noindex{%-if page.nofollow-%}, nofollow{%-endif-%}"> 
+{% include assign.liquid %}
+{% if paginator.page > 1%} 
+	{% assign title = site.data.t.pagination.title[page.lang] | append: paginator.page %} 
+	{% elsif page.title %} {% assign title = page.title %} 
+	{% else %} {% assign title = site.data.t.title[page.lang] %} 
+{% endif %}
+{% if page.description %} 
+	{% assign descr = page.description %} 
+	{% elsif page.excerpt %} {% assign descr = page.excerpt | strip_html %} 
+	{% elsif paginator.page > 1 %} {% assign descr = site.data.t.pagination.description[page.lang] | append: paginator.page %} 
+	{% else %} {% assign descr = site.data.t.description[page.lang] %} 
+{% endif %}
+{% assign canonical = site.url | append: page.url | replace:'index.html','' %} 
+{% if page.noindex %} <meta name="robots" content="noindex{%if page.nofollow%}, nofollow{%endif%}"> 
 {% endif %} {% if page.layout == "about" %}
 <meta name="robots" content="noimageindex, noarchive">{% endif %}
 <meta http-equiv="Content-Security-Policy" content="script-src 'self' {% if page.lang=='uk'%}'sha256-GKjMy2faNoU9FApFa/8K0vqAlOdQKWQaZ+mZQbawci4=' 'sha256-6xLOktMVIpI31rUfRovUh+nZsZDgmW2ep/5pmDYdylo=' {% else %}'sha256-cC/QKmY6dJNVaB5x12YuIKJjuvoNOweXDt1bPtUQ6T0='{% endif %} {% if page.lang=='en'%} 'sha256-VPQ8i8SrVDsRByw+T78gj8zR13koGryqg3JZfFXkwtM='{% elsif page.lang=='ru'%}'sha256-l884zM0oIaL5EqI4A16ArRAdRTSsa6K6EXpfanhpZYI='{% endif %}
@@ -23,31 +23,31 @@ https://www.gstatic.com https://www.google-analytics.com https://www.google.com;
 <meta name="theme-color" content="#618930">
 <title>{{title}}</title>
 <meta name="description" content="{{ descr }}">
-<meta name="keywords" content="{%- if page.keywords -%}{{ page.keywords }}{%- elsif site.data.t.keywords -%}{{ site.data.t.keywords[page.lang] }}{%- endif -%}">
+<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% elsif site.data.t.keywords %}{{ site.data.t.keywords[page.lang] }}{% endif %}">
 <link rel="canonical" href="{{ canonical }}">
 {% if page.layout == "about" %}
-	{%- if page.lang == "en" -%}
+	{% if page.lang == "en" %}
 <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/marckscript/v10/nwpTtK2oNgBA3Or78gapdwuyyCg_.woff2" crossorigin="anonymous">
-	{%- else -%}
+	{% else %}
 <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/marckscript/v10/nwpTtK2oNgBA3Or78gapdwuyzCg_.woff2" crossorigin="anonymous">
-	{%- endif -%} 
+	{% endif %} 
 {% else %}
 <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2" crossorigin="anonymous">
-	{%- if page.lang != "en" -%}
+	{% if page.lang != "en" %}
 <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwkxdu.woff2" crossorigin="anonymous">
-	{%- endif -%}
+	{% endif %}
 {% endif %}
 <link rel="preload" as="font" href="/fonts/icomoon.woff2" type="font/woff2" crossorigin="anonymous">
 {% if page.layout == "post" %}
-  {%- if page.lang == "en" -%}
+  {% if page.lang == "en" %}
 <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/notosans/v9/o-0IIpQlx3QUlC5A4PNr5TRA.woff2" crossorigin="anonymous">
-  {%- else -%}
+  {% else %}
 <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/notosans/v9/o-0IIpQlx3QUlC5A4PNr4TRAW_0.woff2" crossorigin="anonymous">
-  {%- endif -%}
+  {% endif %}
 {% endif %} 
-{% capture critical %}{% include fundamentals.sass %}{% include navbar.sass %}{%-if page.layout == "post"-%}{% include post_head.sass %}{%-endif-%}{% endcapture %}
+{% capture critical %}{% include fundamentals.sass %}{% include navbar.sass %}{%if page.layout == "post"%}{% include post_head.sass %}{%endif%}{% endcapture %}
 <style>{{ critical | sassify }}</style>
-{%-if jekyll.environment == 'production'-%}
+{%if jekyll.environment == 'production'%}
 <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create', '{{ site.ga }}', 'auto', { 'transport': 'beacon' });ga('send', 'pageview', {'dimension1' : '{{page.lang}}'});</script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 {% endif %}
@@ -58,14 +58,14 @@ https://www.gstatic.com https://www.google-analytics.com https://www.google.com;
 <link rel="stylesheet" href="{{page.styles}}">{% endif %}{% endif %}
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="240x240"/>
-{%- for tr in translated reversed -%}
-	{%- assign ref = site.url | append:tr.url | replace:'index.html', '' -%}
-	{%- assign f=0 -%}{%- unless paginator.page -%} {%- assign f=1 -%} {%- endunless -%}
-	{%- if paginator.page == tr.pagination_info.curr_page -%} {%- assign f=1 -%} {%- endif -%} 
+{% for tr in translated reversed %}
+	{% assign ref = site.url | append:tr.url | replace:'index.html', '' %}
+	{% assign f=0 %}{% unless paginator.page %} {% assign f=1 %} {% endunless %}
+	{% if paginator.page == tr.pagination_info.curr_page %} {% assign f=1 %} {% endif %} 
 	{% if f==1 %}
 <link rel="alternate" hreflang="{{ tr.lang }}" href="{{ ref }}"/> {% if tr.lang == "en" %}
 <link rel="alternate" hreflang="x-default" href="{{ ref }}"/> {% endif %} {% endif %} 
-{%- endfor -%}
+{% endfor %}
 {% if page.layout == "blog" and paginator.page == 1 %}
 <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/feed.xml" title="{{site.data.t.title.uk}}" />
 <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/en/feed.xml" title="{{site.data.t.title.en}}" />
@@ -73,20 +73,20 @@ https://www.gstatic.com https://www.google-analytics.com https://www.google.com;
 <meta property="og:type" content="website" /> {% endif %}
 {% if page.layout == "post" %}
 <link rel="preconnect" href="https://www.google.com/" crossorigin>
-<meta name="twitter:card" content="{%-if page.image-%}summary_large_image{%-else-%}summary{%-endif-%}" />
+<meta name="twitter:card" content="{%if page.image %}summary_large_image{% else %}summary{% endif %}" />
 <meta name="twitter:creator" content="@do_your_own_seo" />
 <meta name="twitter:title" content="{{ title }}" />
 <meta name="twitter:description" content="{{ page.snippet }}" /> {% if page.image %}
-<meta name="twitter:image" content="{{ site.url }}/images/posts/large/{{ page.image }}" />
-<meta property="og:image" content="{{ site.url }}/images/posts/large/{{ page.image }}" /> {% endif %}
-<meta property="og:type" content="article" />
+<meta property="og:image" content="{{ site.url }}/images/posts/large/{{ page.image }}" />
+<meta name="twitter:image" content="{{ site.url }}/images/posts/large/{{ page.image }}" /> {% else %}
+<meta name="twitter:image" content="{{ site.url }}/icon-2x-to-x.png" />
+<meta property="og:image" content="{{ site.url }}/icon-2x-to-x.png" /> {% endif %} 
 {% endif %}  {% unless paginator.page >1 %}
 <meta property="og:url" content="{{ canonical }}" />
 <meta property="og:title" content="{{ title }}" />
 <meta property="og:description" content="{{ descr }}" />
 <meta property="og:site_name" content="Homemade SEO" /> {% if page.locale and page.lang !="en" %}
-<meta property="og:locale" content="{{ page.lang }}_{{ page.locale | upcase }}" /> {% endif %}
-	{%-unless page.image-%}
-<meta property="og:image" content="{{ site.url }}/apple-touch-icon.png" />
-	{%-endunless-%}
+<meta property="og:locale" content="{{ page.lang }}_{{ page.locale | upcase }}" /> {% endif %}  
+<meta property="og:type" content="{% if page.layout == 'about' %}profile{% else %}article{% endif %}" />{% unless page.layout == "post" %}
+<meta property="og:image" content="{{ site.url }}/icon-2x-to-x.png" />{% endunless %}
 {% endunless %}
