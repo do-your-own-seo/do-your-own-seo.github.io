@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="uk" xml:lang="uk" data-lngs="uk ru en" prefix="og: html://ogp.me/ns#" >
+<head> 
+<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'sha256-GKjMy2faNoU9FApFa/8K0vqAlOdQKWQaZ+mZQbawci4=' 'sha256-6xLOktMVIpI31rUfRovUh+nZsZDgmW2ep/5pmDYdylo='  
+https://www.gstatic.com https://www.google-analytics.com https://www.google.com; base-uri 'self';">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="X-XSS-Protection" content="1; mode=block">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#618930">
+<title>Вага сторінки: коли посилання шкодять, коли допомагають</title>
+<meta name="description" content="Про перенесення ваги посиланнями й обачне використання nofollow, ugc і sponsored &#10010; Про формулу PageRank і те, чому Google патентує інші ії варіанти">
+<meta name="keywords" content="вага сторінки">
+<link rel="canonical" href="https://do-your-own-seo.com/vaga-storinky-formula-rozpodil-nofollow">
+
+<link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2" crossorigin="anonymous"><link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwkxdu.woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="/fonts/icomoon.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/notosans/v9/o-0IIpQlx3QUlC5A4PNr4TRAW_0.woff2" crossorigin="anonymous"> 
+
+<style>.toggle-navbar-button{appearance:none;border:0;border-radius:6px;cursor:pointer;display:inline-block;font-family:inherit;font-size:inherit;-webkit-font-smoothing:antialiased;font-weight:700;line-height:1.35;color:#fff;padding:.825em;margin:0;text-decoration:none;user-select:none;vertical-align:middle}.toggle-navbar-button::-moz-focus-inner{border:none;padding:0}.toggle-navbar-button:focus{outline:none}.disabled.toggle-navbar-button,.toggle-navbar-button:disabled{cursor:not-allowed;box-shadow:none;opacity:.6}.disabled.toggle-navbar-button:hover,.disabled.toggle-navbar-button:focus,.toggle-navbar-button:disabled:hover,.toggle-navbar-button:disabled:focus{background:none transparent}body{margin:0;padding-top:75px;min-height:100vh;line-height:1.8;font-size:12px}@media screen and (min-width: 360px){body{font-size:13.44px}}@font-face{font-family:"logo";font-style:normal;font-weight:400;src:local("Marck Script"),local("MarckScript-Regular"),url(data:font/ttf;base64,AAEAAAAOAIAAAwBgR0RFRgARAAsAAAjIAAAAFkdQT1PWR+fHAAAI4AAAAKRHU1VCbIx0hQAACYQAAAAaT1MvMoe9QZcAAAWYAAAAYGNtYXAB7gHTAAAF+AAAAGxnYXNwAAAAEAAACMAAAAAIZ2x5ZqCj1t8AAADsAAAD6mhlYWT4xJKBAAAFEAAAADZoaGVhB5cCfAAABXQAAAAkaG10eBVF/9QAAAVIAAAALGxvY2EETwVSAAAE+AAAABhtYXhwABMAdQAABNgAAAAgbmFtZTJ1SoYAAAZkAAACOnBvc3T/kgBLAAAIoAAAACAAAv/1AAEBGgKCAAUADQAAExcGByM2AjY0JiIGFBbrL49SOD4MGholGRkCgh306ff+gholGRklGgAC//b//gKOAn4AEgAqAAATMhYQBicmKwEiNTQ3NjciJjQ2FyIGFBYXNjcXFAcyNxcGBwYHFjI2NTQm6a73qIFFKS8dETgdZ7SIZ0JMaVgfBTwaCFUFFFsnKmSFTsYCfs7+7KACARYIIXB1cpFYKThtVQuDJgY+ZgohBw5+XAhjVJHMAAADAB4ABgLAAoQAEwAeACsAAAEVBgcOASMiJjQ+ATc2MzIWFAc2JQYUFjI3NjU0IyIDNjcGIyInBhUUFjMyAsAteTbqYTdEXJZOIEQzQQhM/rkhQGEkBlUnIWInGSeoFlQrKjsB7DAaLYfoTonBqSgVT2sbGUciPyUJHhxj/mZhaQVLdXEtNgAAAv+m/r4CdgKGACoAMwAAJRc+ATcGBwYjIiY1NBI3FwYVFDI2Nz4BMhYVFAcGBxYXBycOASMiJjU0NgMyNjciBhUUFgFAHgYrCWg5HyA1OqZqKN6SikoeIB4RXEBBLzUKajundDxR8jhRfR6Gti0JARV2E2IUC0Y/WgEtVSXvoF2gqEUsEg9AfoTEAxQiD5CPQTFaf/76g1hbQRwjAAABAAT/+gHCAZAAIwAAJRcOASImNDY1NCYjIgYHJz4BNxcGBzYzMhYUDgEUFjI+AwGtFRZNPiRFFxAzaEA8E0ceKRwrinQZIQw/FBIMDwwReRAsPCQ2hyAOF5uSFXTdMA1HruwiLiWHIhMGDAoRAAEACv/6AUEBbgAXAAABFhUUBiMiJjU0NjMyHwEiBhUUFjI2NCcBJxpwTDpBlFwRBwNQaipRMBMBKSs0UX9DO1+XASFcSCs1SGEoAAABAAwAAgFbAYMAFwAAATIWFRQHJzY1NCIOAQcnNjc2NTcOAQc2ASIZID4YDjw2SRM5NwgbOAMMF2UBYiIbNjwTHw4bTJ8hGX0WTngPQUdQtwAAAQAM//kBsAF8ACUAACUXDgEiJjQ3DgEjIjU0NjcXDgEUFjMyNjcXDgEUFjI+Aj8BPgEBmxURSTsiCy9sJThcFTApKhsSKHc+MwJXExMKCgcFCAILbhEqOilCNEpUUETUERVCgCsak5IXCNgrFgIGBAUHAw0AAAH//wADAl4BhQArAAABFwcGBwYiLgonBgcGBwYiLgEnJic2MxYXFhc+ATMyHgEXNgJCHDxqMw0bERUIBgIDAgIEAgcCNCUOKQkfExQFGBYdHQUIERoxdxMWEQ0LXgGFGkmDgRsHLD4sFRcMDAsJFgg4TB1XEwcoKMlJCAkuWXhenz2PMKEAAAABAAAACwB0AAcAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwAXgCiAPEBKAFOAXcBsgH1AAEAAAABAIP1zDW8Xw889QALA+gAAAAAyrinnQAAAADKuKed/3j+fwS8A2AAAAAIAAIAAAAAAAAB4AAAAeAAAAEB//UCrP/2ArYAHgKU/6YB0AAEAUsACgFjAAwBuAAMAlX//wABAAADYP5/AAAEmf94/1gEvAABAAAAAAAAAAAAAAAAAAAACwACAZsBkAAFAAACvAKKAAAAjAK8AooAAAHdADIA+gAAAgAAAAAAAAAAAIAAACcAAAACAAAAAAAAAABweXJzAEAAACCsA2D+fwAAA2ABgSAAAZcGAAAAAQcCfgAAACAAAgAAAAIAAAADAAAAFAADAAEAAAAUAAQAWAAAABIAEAADAAIAIQBEAE8AWQBvAHIAdQB3//8AAAAgAEQATwBZAG4AcgB1AHf////h/7//tf+s/5j/lv+U/5MAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAZgADAAEECQAAAOgAAAADAAEECQABABgA6AADAAEECQACAA4BAAADAAEECQADAFIBDgADAAEECQAEABgA6AADAAEECQAFABoBYAADAAEECQAGACYBegADAAEECQAOADQBoABDAG8AcAB5AHIAaQBnAGgAdAAgACgAYwApACAAMgAwADEAMQAsACAARABlAG4AaQBzACAATQBhAHMAaABhAHIAbwB2ACAAPABkAGUAbgBpAHMALgBtAGEAcwBoAGEAcgBvAHYAQABnAG0AYQBpAGwALgBjAG8AbQA+ACwAIABNAGEAcgBjAGsAIABGAG8AZwBlAGwALAAgAHcAaQB0AGgAIABSAGUAcwBlAHIAdgBlAGQAIABGAG8AbgB0ACAATgBhAG0AZQBzACAAIgBNAGEAcgBjAGsAIABTAGMAcgBpAHAAdAAiAC4ATQBhAHIAYwBrACAAUwBjAHIAaQBwAHQAUgBlAGcAdQBsAGEAcgBEAGUAbgBpAHMATQBhAHMAaABhAHIAbwB2ADoAIABNAGEAcgBjAGsAIABTAGMAcgBpAHAAdAAgAFIAZQBnAHUAbABhAHIAOgAgADIAMAAxADEAVgBlAHIAcwBpAG8AbgAgADEALgAwADAAMgBNAGEAcgBjAGsAUwBjAHIAaQBwAHQALQBSAGUAZwB1AGwAYQByAGgAdAB0AHAAOgAvAC8AcwBjAHIAaQBwAHQAcwAuAHMAaQBsAC4AbwByAGcALwBPAEYATAAAAAMAAAAAAAD/jwBLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAB//8ADwABAAAADAAAAAAAAAACAAEAAQAKAAEAAAABAAAACgAeACwAAWxhdG4ACAAEAAAAAP//AAEAAAABa2VybgAIAAAAAQAAAAEABAACAAAAAQAIAAEAGgAEAAAACAAkAC4ANABOAFQAWgBgAGYAAgABAAMACgAAAAIABP/YAAX/0gABAAX/sAAGAAT/dAAG/4gAB/90AAj/gAAJ/3gACv/QAAEABf/oAAEABf/sAAEABf/gAAEABf/yAAEABf/UAAEAAAAKABYAGAABbGF0bgAIAAAAAAAAAAAAAA==) format("truetype")}@font-face{font-family:"icomoon";src:url("/fonts/icomoon.woff2") format("woff2"),url("/fonts/icomoon.woff") format("woff"),url("/fonts/icomoon.ttf") format("truetype");font-display:swap;font-style:normal}.icon{font-family:"icomoon";font-style:normal;-webkit-font-smoothing:antialiased}.icon-menu:before{content:""}.icon-about:before{content:""}.icon-rss:before{content:""}li{margin:.55em 0}.site-header{padding:0;margin:0;position:fixed;top:0;right:0;left:0;min-height:80px;width:100%;z-index:99;background-color:#fff;box-shadow:0 1.5px 3.5px rgba(0,0,0,0.1);border-bottom:1px solid rgba(186,186,186,0.55)}.site-header::after{clear:both;content:"";display:block}.site-header a:active,.site-header a:focus,.site-header a:hover{font-weight:normal}.logo{margin:0;padding:0;font-family:"logo";float:left;font-size:2.1rem;position:fixed;top:.3em;left:.825em;z-index:100}.logo a{transition:all .4s ease-in-out;color:#618930;text-shadow:-1px -1px 1px rgba(255,255,255,0.9),1px 1px 1px rgba(0,0,0,0.1)}.logo a:hover,.logo a:focus,.logo a:active{font-size:2.12rem}.navbar{display:none;position:fixed;top:0;left:0;z-index:99;text-align:center;background-color:#618930;width:100%;line-height:2}.navbar .mobile{display:inline-block;padding-left:.55em}.navbar ul{padding:0 1.65em;margin:0;list-style-type:none}.navbar li.lang{display:inline-block}.navbar .icon{font-size:1.32em}.navbar a{display:block;text-shadow:1px 1px 1px rgba(255,255,255,0.3),-1px -1px 1px rgba(0,0,0,0.3);margin:0 .55em;font-size:1.8em;position:relative;color:#fff}.navbar a:before,.navbar a:after{content:"";display:block;width:0;height:2px;transition:width .43s ease-in-out;position:absolute;right:0}.navbar a:before{top:1px;left:0}.navbar a:after{bottom:0;right:0}.navbar a:hover,.navbar a:focus{color:#fff}.navbar a:hover:before,.navbar a:hover:after,.navbar a:focus:before,.navbar a:focus:after{width:100%}.toggle-navbar-button{position:fixed;top:1.35em;right:1.45em;z-index:100;float:right;margin:0;padding:.45em .65em;font-size:1.2em;background-color:#2d7193}.toggle-navbar-button .icon-menu{display:block}.toggle-navbar-button .icon-cross{display:none}.site-header input[type="checkbox"]{position:fixed;top:-999999px;right:-999999px}input:checked ~ .navbar{display:table;padding:8em 0 5em 0}input:checked ~ .logo a{color:#fff;text-shadow:1px 1px 1px rgba(255,255,255,0.3),-1px -1px 1px rgba(0,0,0,0.3)}input:checked ~ .toggle-navbar-button .icon-menu{display:none}input:checked ~ .toggle-navbar-button .icon-cross{display:block}@media screen and (min-width: 768px){body{padding-top:0;font-size:15.52px}.toggle-navbar-button{display:none}.logo{position:relative;left:auto}input:checked ~ .logo a{color:#618930;text-shadow:-1px -1px 1px rgba(255,255,255,0.9),1px 1px 1px rgba(0,0,0,0.1)}.site-header{position:relative;top:auto;left:auto}.site-header input ~ .navbar{padding:0}.navbar{text-align:left;background-color:transparent;position:relative;float:right;width:auto}.navbar ul{padding:0}.navbar,.navbar li,.navbar a{display:inline-block}.navbar .mobile{display:none}.navbar .icon{font-size:1em}.navbar li.lang a{color:#2d7193;margin:0 20px 0 0}.navbar li.lang a:before,.navbar li.lang a:after{background-color:#296684}.navbar a{font-size:1.32em;padding:5px;margin:auto 10px;color:#577b2b;font-family:sans-serif;text-shadow:-1px -1px 1px rgba(255,255,255,0.9),1px 1px 1px rgba(0,0,0,0.1)}.navbar a:before,.navbar a:after{opacity:.7;background-color:#618930}.navbar a:hover,.navbar a:focus{color:rgba(97,137,48,0.8)}}.toc{list-style-type:none;font-weight:600;text-align:left}.toc li{margin:.55em .825em}.toc a:focus,.toc a:hover,.relatedPosts a:focus,.relatedPosts a:hover{font-size:101%;transition:font-size .4s ease-in-out}.post-meta{margin:0 0 .825em 0}h1{font-size:1.7rem;text-align:center}img{border-radius:6px}p{margin:.825em 0}@media screen and (min-width: 768px){h1{text-align:left}p{margin:1em 0}}
+</style><script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create', 'UA-145849621-1', 'auto', { 'transport': 'beacon' });ga('send', 'pageview', {'dimension1' : 'uk'});</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<link rel="stylesheet" href="/css/main.css">    
+<link rel="stylesheet" href="/css/post.css"> 
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="240x240"/>
+<link rel="alternate" hreflang="uk" href="https://do-your-own-seo.com/vaga-storinky-formula-rozpodil-nofollow"/>  
+<link rel="alternate" hreflang="ru" href="https://do-your-own-seo.com/ves-stranitsy-raspredelenie-formula-nofollow"/>  
+<link rel="alternate" hreflang="en" href="https://do-your-own-seo.com/pagerank-formula-link-equity-distribution"/> 
+<link rel="alternate" hreflang="x-default" href="https://do-your-own-seo.com/pagerank-formula-link-equity-distribution"/>  
+
+<link rel="preconnect" href="https://www.google.com/" crossorigin>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="@do_your_own_seo" />
+<meta name="twitter:title" content="Вага сторінки: коли посилання шкодять, коли допомагають" />
+<meta name="twitter:description" content="Всі хочуть знати, як само посилання розпо&#173;діляють вагу між сторінками. І поки ми про&#173;буємо вгадати пропорцію, гуглбот вирегочує, чита&#173;ючи, що «вага ділиться як 5:1» і «кожне вихідне посилання відбирає в донора 10–15% ваги»" /> 
+<meta name="twitter:image" content="https://do-your-own-seo.com/images/posts/large/leaking-link-juice.jpg" />
+<meta property="og:image" content="https://do-your-own-seo.com/images/posts/large/leaking-link-juice.jpg" /> 
+<meta property="og:type" content="article" />
+  
+<meta property="og:url" content="https://do-your-own-seo.com/vaga-storinky-formula-rozpodil-nofollow" />
+<meta property="og:title" content="Вага сторінки: коли посилання шкодять, коли допомагають" />
+<meta property="og:description" content="Про перенесення ваги посиланнями й обачне використання nofollow, ugc і sponsored &#10010; Про формулу PageRank і те, чому Google патентує інші ії варіанти" />
+<meta property="og:site_name" content="do-your-own-SEO.com" /> 
+<meta property="og:locale" content="uk_UA" /> </head>
+<body><header class="site-header">
+  <div class="container">
+    <nav>
+      <input type="checkbox" id="toggleNavbar" aria-label="mobile menu">
+      <div class="logo"><a href="https://do-your-own-seo.com/">Do Your Own!</a></div>
+      <label for="toggleNavbar" class="toggle-navbar-button">
+        <i class="icon icon-menu" role="button" aria-label="Меню"></i>
+        <i class="icon icon-cross" role="button" aria-label="Закрити меню">&#10006;</i>
+      </label>
+      <div class="navbar">
+        <ul><li class="lang"><a class="uk" data-lang=uk href="https://do-your-own-seo.com/vaga-storinky-formula-rozpodil-nofollow">ua</a></li><li class="lang"><a class="ru" data-lang=uk href="https://do-your-own-seo.com/ves-stranitsy-raspredelenie-formula-nofollow">ru</a></li><li class="lang"><a class="en" data-lang=uk href="https://do-your-own-seo.com/pagerank-formula-link-equity-distribution">en</a></li><li><a href="https://do-your-own-seo.com/about" title="Від автора"><i class="icon icon-about" aria-hidden="true">&thinsp;</i><span class="mobile">Від автора</span></a></li>
+          <li><a href="https://do-your-own-seo.com/feed.xml" target="_blank" title="RSS" rel="nofollow"><i class="icon icon-rss" aria-hidden="true">&thinsp;</i><span class="mobile">RSS feed</span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<main class="main-container">
+  <div class="container">
+    <article class="post">
+  <div class="card">
+    <h1> Як PageRank переходить з посиланням: про nofollow і не тільки </h1> 
+	<div class="post-meta">
+	<small><time datetime='2022-08-20'>Оновлено&#160;20 Серп 2022</time>
+	    • &#160;11&#160;хв читання</small>
+	</div>
+    <div class="post-content" itemscope itemtype="https://schema.org/FAQPage"> <ul class="toc">
+	<li><a href="#1">Вихідні посилання: шкода та користь</a></li>
+	<li><a href="#2">Nofollow: як запобігти витоку ваги</a></li>
+	<li><a href="#3">Новинки від Google: ugc і sponsored</a></li>
+	<li><a href="#4">Різновиди ваги (= зайвий розділ)</a></li>
+</ul>
+<div>
+<p> Всі хочуть знати, як само посилання розпо&#173;діляють вагу між сторінками. І поки ми про&#173;буємо вгадати пропорцію, гуглбот вирегочує, чита&#173;ючи, що «вага ділиться як 5:1» і «кожне вихідне посилання відбирає в донора 10–15% ваги»</p>
+<p class="txt-center"> 
+<img src="/images/posts/leaking-link-juice.jpg" alt="Як запобігти витоку link juice (соку посилань) на сайті" class="webfeedsFeaturedVisual" width="490" height="450" /></p>
+<p>Почати краще з того, що точної ваги в сторінки нема, якщо ми не говоримо про розмір завантажених ресурсів. Є <strong>порів&#173;няльна значу&#173;щість</strong>, для якої вага – лише наочне уявлення. Так, Google вираховує важливість сторінки, але не зі шкільної пропорції, а шляхом аналізу сотень чин&#173;ників, багаторазово поточнюючи результат.</p>
+<p>Початкова точка – ця рекурентна формула рангу (натисніть, якщо хочете <a href="#FAQ"><b class="red">&thinsp;пропустити</b></a>):</p>
+<p class="txt-center"> 
+<img loading="lazy" src="/images/posts/page-rank-formula.jpg" alt="Формула PageRank (ваги сторінки)" width="420" height="85" /></p>
+<p>де <b><i>PR&#8239;(A)</i></b> – <strong>PageRank</strong> сторінки <b><i>A</i></b>, а <b><i>d</i></b> – коефі&#173;цієнт загасання (&#8776;&#8239;0.85), який у формулі помно&#173;жається на суму за всіма посиланнями на <b><i>A</i></b>.&#8239; Кожен доданок (дріб) – це частка від ділення рангу сторінки-донора <b><i>Q</i></b>&#8239; на кіль&#173;кість вихідних посилань з неї. Хоча вираз є часто згадуваним в інтернеті, Google навряд чи ним прямо користується. Інакше 10 &#171;кишень&#173;кових&#187; сайтів, посилаючись один на одного, могли б суттєво підвищити ранг окремих сторінок.</p>
+<p>В тексті оновленого <a href="https://patents.google.com/patent/US9165040B1/en">патенту PageRank</a> наведено варіації першої формули, які оці&#173;нюють <b>&#171;відстань&#187; від <i>A</i></b>&#8239; до вибра&#173;ної мно&#173;жини сторінок-авторитетів. Знаменно, що в них враховуються коефіцієнти значущості <b>кож&#173;ного посилання</b> окремо. Числа ці знає тільки Гугл, а ми можемо лише здога&#173;дуватися, що й як впливає на вагомість посилань.</p>
+<p id="FAQ">Спробуємо дати собі раду з поняттями? Почнемо з простих питань.</p>
+<h3 class="faq">Чому вихідні посилання зменшують вагу сто&#173;рінки?</h3>
+<p>Тому що кожне посилання ніби говорить: «Не затри&#173;муйся тут, завітай <span class="u">сюди</span>».</p>
+<h3 class="faq">Чому вхідні посилання додають автори&#173;тету?</h3>
+<p>Тому що сторінка з посиланням ніби реко&#173;мендує: «Раджу поглянути <span class="u">ось на це</span>».</p>
+<div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+	<h3 itemprop="name">В чому різниця між <em>dofollow</em> і <em>nofollow</em>?</h3>
+	<div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+		<p itemprop="text">В першому випадку пошуковий робот за посиланням перейде, а в іншому – ні, якщо це, звісно, добре вихований бот. Атрибут <span class="red">rel="nofollow"</span> для посилання – на кшталт вивіски <span class="red">«Проходу нема»</span>; dofollow – навпаки, дозвільне значення rel за замовчанням. Гуглбот завжди зважав на заборону ступати далі, але <span class="u">1 березня 2020</span> набув <span class="u">право ігнорувати</span> нофолоу і сканувати сторінку.</p>
+	</div>
+</div>
+<div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+	<h3 itemprop="name">Як перевірити посилання на <em>dofollow/nofollow</em>?</h3>
+	<div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+		<p itemprop="text">Це легко зробити за допомогою букмарклета – закладки з кодом JavaScript. Перетягніть <a href="javascript:(function(){var o,e,l=document.links;for(o=0;o&lt;l.length;++o)-1!=(e=l[o].rel.toLowerCase()).indexOf(&quot;nofollow&quot;)?(l[o].style.backgroundColor=&quot;yellow&quot;,l[o].title+=&quot; NOfollow&quot;):l[o].style.backgroundColor=&quot;lightgreen&quot;,-1!=e.indexOf(&quot;ugc&quot;)&amp;&amp;(l[o].style.border=&quot;6px solid orange&quot;,l[o].title+=&quot; UGC&quot;),-1!=e.indexOf(&quot;sponsored&quot;)&amp;&amp;(l[o].style.outline=&quot;4px solid red&quot;,l[o].title+=&quot; Sponsored&quot;)})()">Nofollow-and-ugc-link-highlighter</a> на панель закладок вашого браузера. Знаходячись на сторінці, посилання якої хочете перевірити, натисніть букмарклет-хайлайтер. Всі nofollow лінки стануть жовтими, інші – зеленими; <a href="#3">користувацькі та спонсоровані</a> посилання матимуть кольорову границю, помаранчеву або червону.</p>
+	</div>
+</div>
+<div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+<img loading="lazy" src="/images/posts/bot.jpg" alt="На малюнку робот" class="fullscreen-right" title="Може, це не гуглбот, але симпатичний, правда?" width="300" height="515" />
+	<h3 itemprop="name">Чому посилання з <em>nofollow</em> не передає вагу?</h3>
+	<div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+		<p itemprop="text">Тому що значущість наосліп не передається. Коли бот не може перевірити, що знахо&#173;диться за адресою, то не може й встановити, чи на доречну сторінку спрямо&#173;вують корис&#173;тувача.</p>
+	</div>
+</div>
+<p>Втім, якщо вже ботам дозволили ігнорувати nofollow...</p>
+<div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+	<h3 itemprop="name">Чи можуть <em>nofollow</em> беклінки покращити позиції?</h3>
+	<div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+		<p itemprop="text">Так, але не гарантовано. <a href="https://www.seroundtable.com/google-nofollow-link-attribute-change-sponsored-ugc-28196.html">Добірка твітів</a> гуглерів та знаних SEO дозволяє припу&#173;стити, що технічно пошуковик здатен рахувати зовнішні посилання з nofollow як голоси ЗА, обчис&#173;люючи рейтинг сторінки. Понадто, якщо лінк розмістив трастовий сайт на зразок Вікіпедії.</p>
+	</div>
+</div>
+<div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+	<h3 itemprop="name">Чи з кожним <em>follow</em> посиланням прибуває одна&#173;ково ваги?</h3>
+	<div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+		<p itemprop="text">Ні. Найбільш помітне на сторінці посилання – те, яке з більшою ймовір&#173;ністю клікнуть – є найбільш ваго&#173;мим. Далі – за зменшенням.</p>
+	</div>
+</div>
+<p class="txt-center"><small>Robot by <a href="https://unsplash.com/@rocknrollmonkey?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Rock'n Roll Monkey</a> on Unsplash. Modified with befunky.com</small></p>
+<div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+	<h3 itemprop="name">Як <em>noopener</em> і <em>noreferrer</em> пов’язані з <em>nofollow</em>?</h3>
+	<div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+		<p itemprop="text">Спільне в них лише те, що це значення атрибута rel тега &lt;a&gt;. Noopener і noreferrer НЕ впливають на розподіл ваги і НЕ призначені для ботів. Одна з головних їхніх задач – захистити сайт, що містить поси&#173;лання з target="_blank" на інший домен, від атак з підміною вмісту вікна.</p>
+	</div>
+</div>
+<div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+	<h3 itemprop="name">Чи переносить посилання 301-реди&#173;рект?</h3>
+	<div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+		<p itemprop="text">Про Google: якщо редирект один, з ним переходить майже вся користь від посилань. Окрім випадків, коли вихідна та цільова сторінки тематично не пов’язані: тоді з редиректом <span class="under"> не перейде нічого,</span> його буде розцінено як Soft 404. Інші пошукові системи, ймовірно, переспрямовують вагу зі втратою.</p>
+	</div>
+</div>
+<p>Коли ж виникає ланцюжок переспрямувань, пошу&#173;ковик обирає <strong>канонічну сторінку</strong>: їй перепаде майже вся значу&#173;щість. Але є нюанс: <span class="under">що довше ланцюжок,</span> то менше шан&#173;сів, що канонічною буде визнана потріб&#173;на сторінка. Тобто вага<span class="under"> може не дійти за призна&#173;ченням.</span></p>
+<p class="txt-center">&#10045;&nbsp;&#10045;&nbsp;&#10045;</p>
+<p>Ніби все сказано, можна завершувати? Ні, розмова тільки-но починається! Насправді <b>вихідні посилання</b> здатні <b class="green">додати значу&#173;щості</b>, а <b>вхідні</b>, натомість, можуть <span class="red">додати щербатої слави</span>. До останніх можна зара&#173;хувати поси&#173;лання зі &#171;смітників&#187;, що заслуго&#173;вують на санкції пошукових систем. Якщо токсичних зовнішніх посилань багато, варто подумати, чи не відмовитися від них взагалі: Google та Bing для цього мають <span class="red">Disavow tool</span> в панелі вебмайстра.</p>
+<p>Пропоную надалі забути про підрахунки і поклада&#173;тися виключно на здоровий глузд. Кожен html-тег</p>
+<p class="txt-center">&lt;a href="url-адреса" rel="інструкція"&gt;&#8239;анкор&#8239;&lt;/a&gt;
+</p>
+<p>впливає на значущість і донора, і реципієнта склад&#173;ним чином. Як само – спробуємо з’ясу&#173;вати.</p>
+</div>
+<div>
+<h2 id="1">Вихідні посилання: коли вони шкодять, а коли допомагають</h2>
+<p>Ділитися вагою з іншими сайтами буває шкода, тому дехто намагається зовсім уни&#173;кати лінків назовні або додає до кожного атрибут rel=nofollow. Обидві стратегії ні до чого доброго не призводять. Насправді зовнішні посилання не такі вже й страшні, якщо розумієш, як вони працюють.</p>
+<p class="txt-left">Ви <span class="under">ділитеся значущістю <b>без користі</b> </span>для себе, коли:</p>
+<ul>
+  <li>посилаєтеся на сумнівний ресурс з нульовим авторитетом;</li>
+  <li>посилання запропоноване в такому контексті, що користувач за ним перейде й навряд чи повер&#173;неться («в&nbsp;нас&nbsp;світлин обмаль, а <span class="u">ось тут</span> їх повно»);
+<img loading="lazy" class="fl-right restrict vw35" src="/images/posts/give.jpg" alt="Втрачати PageRank (вагу сторінки)" width="160" height="160" /></li>
+  <li>анкором посилання є ключове слово, під яке оптимізована ваша сторінка;
+  </li>
+  <li>посилання розміщене в навігаційному меню або сайдбарі:
+    <ul>
+      <li>по-перше, наскрізні посилання назовні пошукові системи не схвалюють;</li>
+      <li>по-друге, лінк з меню означає, що вагу втрачатиме не одна єдина, а кожна сторінка. </li>
+    </ul>
+  </li>
+</ul>
+<p class="txt-left">Поділяючи <span class="under">вагу, <b>ви розбудовуєте</b> репутацію і</span> підкріплюєте довіру до сайту, якщо:</p>
+<ul>
+  <li>посилаєтеся на визнаних авторитетів у своїй галузі чи загалом в Інтернет;</li>
+  <li>створюєте мегакорисний для відвідувача контент («рейтинг безкоштовного софту»);
+<img loading="lazy" class="fl-right restrict vw35" src="/images/posts/give-back.jpg" alt="Поділяти вагу з іншими вебсторінки буває вигідно" width="160" height="160" /></li>
+  <li>започатковуєте добрі взаємини з тематичним сайтом, чия аудиторія може зацікавитись вашим контентом;</li>
+  <li>пропонуєте користувачеві реєстр онлайн-ресурсів, які стануть йому у пригоді на наступному етапі.</li>
+</ul>
+<blockquote>Навряд чи єдиний сайт задовольнить всі потреби користувача: він все одно піде, але запам’ятає напутню пораду. Можливо, поба&#173;чивши потім знайомий логотип у Пошуку, людина більш охоче перейде на сайт, що вже здобув довіру.</blockquote>
+<p class="txt-left">Коли <span class="under"><b>необхідно</b> додати посилання</span>, незважа&#173;ючи на ціну втрат:</p>
+<ol>
+  <li><span>Коли використовуєте чийсь контент за ліцензією, що вимагає атрибуції.</span></li>
+  <li><span>Коли перекладаєте іншомовні матеріали.</span></li>
+  <li><span>Коли обговорюєте події, що висвітлені в мережі, або чиєсь висловлювання.</span></li>
+</ol>
+<p>Мова не тільки про етику, а й про те, що пошукова система може не зрозуміти відсут&#173;ності цитати в цих випадках.</p>
+<p class="txt-center">
+<img loading="lazy" src="/images/posts/webpages-and-links.jpg" alt="Розподіл ваги між сайтами: що роблять sponsored, nofollow, ugc" width="710" height="450" /></p>
+<p>Досі ми говорили здебільшого про лінки назовні і у зворотному напрямку (беклінки). Проте внутрішні посилання теж важливі: вони здатні кардинально переподілити вагу на сайті. <strong>Внутрішній PageRank</strong> сторінок обрахо&#173;вують деякі краулери: з хмарних наз&#173;вемо <a href="https://www.oncrawl.com/optimise-internal-linking-structure/">Oncrawl</a>, з десктопних – <a href="https://netpeaksoftware.com/spider#features">Netpeak Spider</a>. Взагалі, внут&#173;рішня перелінковка – основа оптимі&#173;зації сайту, але розповідь про це потребує окремої статті.</p>
+</div>
+<div>
+<h2 id="2">Обережно: nofollow! &#8239;Як запобігти витоку ваги з сайту й не переборщити</h2>
+<p>Безпідставне застосування нофолоу лише дезорієн&#173;тує ботів пошукових систем і може звести нанівець користь від посилань назовні. Тож, користуймося ним обачно, лише щоби попередити витік PageRank.</p>
+<p><strong>Краще поставити rel="nofollow"</strong>:</p>
+<ul class="featured plus">
+  <li>На внутрішньому посиланні, яке веде на неінде&#173;ксовану сторінку: пошук на сайті, сортування і т.ін.. Це заощадить не тільки вагу, а й зусилля пошуко&#173;вих ботів (=&#8239;збере&#173;же ваш краулінговий бюджет).</li>
+  <li>На посиланні з контенту, якщо не згодні відпо&#173;відати за ресурс репутацією. Зокрема, коли лінк розмі&#173;стив хтось із користувачів.</li>
+  <li>На кнопках шерингу в соцмережах.</li>
+  <li>На посиланнях з віджетів, лічильників і т.ін., якщо є можли&#173;вість редагувати код.</li>
+  <li>Коли гіперлінк розташований у найви&#173;гід&#173;нішому місці, а вказує на технічний ресурс (архів і т.ін.), який не потре&#173;бує ваги й не є авторите&#173;том. Альтер&#173;натива nofollow – винести такі посилання з приміт&#173;ками вниз.</li>
+</ul>
+<p><b>NB!</b> rel&#8239;=&#8239;nofollow – ненадійний захист від скану&#173;вання сторінки, і точно не спосіб ухилитися від індексації. Небажані внутрішні адреси можна продублювати в файлі robots.txt, але краще <a href="https://support.google.com/webmasters/answer/93710?hl=en">заборонити їх індек&#173;сацію</a> надійним методом.</p>
+<p>Якщо на якійсь «застійній» сторінці сайту біль&#173;шість посилань веде туди, куди пошуко&#173;вому роботу краще не заглядати, можна скористатися тегом &lt;<b>meta</b> name="<b>robots</b>" content="nofollow"&#8239;/&gt;, який має міститися в &lt;head&gt; документу. Він забороняє ботам дивитися в бік посилань. І, на відміну від rel="nofollow", забороняє суворо.</p>
+<p><strong>Не ставимо rel="nofollow"</strong> не розбираючи:</p>
+<ul class="featured minus">
+  <li>На кожному посиланні назовні. Всі ви&#173;падки потребують індивідуального аналізу.</li>
+  <li>Посилаючись на першоджерела чи про&#173;філь автора цитованого висловлювання.</li>
+  <li>З метою «скульптурування рангу» – пере&#173;роз&#173;поділу ваги на своєму сайті.</li>
+</ul>
+<p>В кожній незрозумілій ситуації згадуємо золоте правило: «<span class="red">Не стій на шляху пошу&#173;кового бота</span>, коли не маєш на те ваго&#173;мих причин!»</p></div>
+<div>
+<h2 id="3">Новинки від Google: як діють UGC і Sponsored</h2>
+<p>У вересні 2019 до підтримуваного усіма пошуковими роботами nofollow і його анти&#173;поду dofollow додалися ще дві вказівки, виключно для гуглботів: <strong>ugc і sponsored</strong>. Обидві не є директивами: бот може взяти їх до уваги, але не зобов’язаний вчиняти саме так.</p>
+<p><b>U</b>ser-<b>G</b>enerated-<b>C</b>ontent&nbsp;(ugc) – створений кори&#173;сту&#173;вачем контент: коментарі, відгуки, пости та обгово&#173;реннях на форумах. Sponso&#173;red – зрозу&#173;міло, афільо&#173;вані поси&#173;лання та реклама.</p>
+<p class="txt-center">
+<img loading="lazy" src="/images/posts/user-generated-content.jpg" alt="Молодь створює ugc-контент найбільш активно" width="600" height="420" /><br />
+<small><a href="https://www.freepik.com">Designed by Freepik</a></small></p>
+<blockquote>В <a href="https://webmasters.googleblog.com/2019/09/evolving-nofollow-new-ways-to-identify.html">офіційному анонсі</a> сказано, що ново&#173;введення не має за мету посунути старий добрий nofollow. Застосу&#173;вання підказок від вебмайстрів ніхто не вимагає, хіба що вони самі вирішать допо&#173;могти Гуглу зрозуміти природу посилань.</blockquote>
+<p>Підказки можна застосовувати у зв’язці. Додамо ugc до nofollow – матимемо rel&#8239;=&#8239;"<span class="red">nofollow&nbsp;ugc</span>": користу&#173;вацький контент, на який боту не варто звертати уваги. Аналогічно, афільоване посилання від юзера може бути подане як rel&#8239;=&#8239;"<span class="red">ugc&nbsp;sponsored</span>". Довідка Google стверджує, що в тих ситуаціях, коли sponsored доречний, варто надати йому перевагу над nofollow. І натякає, що ugc зазвичай також означає заборону для ботів задивлятися на href.</p>
+<p>Однак... Для нас безпечніше вважати, що ugc та sponsored <b>НЕ РОБЛЯТЬ посилання nofollow</b>. Хоча б тому, що інші пошукові системи їх не розуміють.</p>
+<blockquote>Цей <a href="https://moz.com/blog/ugc-distilledodn-seo-test">A/B тест</a> підтверджує, що не варто відмовлятися від nofollow, коли він на своєму місці. Мoz.com/blog розповідає, як заради експерименту rel="nofollow" замінили на rel="ugc" на половині посилань з комен&#173;тарів.</blockquote> 
+<p>В результаті було відмічено падіння трафіку і доведено, що з імовірністю 95% відвідуваність за місяць лишається в межах<span class="under"> від -26 тис. до +9,3 тис. осіб</span>. Ніби й нічого, а все ж суттєва перевага втрат над виграшем впадає в око.</p>
+<p><b>Підсумовуємо</b>. Нові підказки обмежують перене&#173;сення ваги посиланнями, і найбільше це стосується sponsored. Проте основним методом контролю PageRank поки залиша&#173;ється nofollow. Якщо не виникає бажання підказувати ботам, на своєму сайті<span class="under"> можна не змінювати нічого. </span>Google стверджує, що в змозі самостійно розібратися, де спам, де реклама, а де значущі посилання, розміщені людьми заради людей.</p></div>
+<div>
+<h2 id="4">Різновиди ваги сторінки <span class="mute">&nbsp;Розділ, якого не було б, якби не SEO</span></h2>
+<p>Тут я мушу розказати, в чому різниця між динамічною і статичною вагою, як переві&#173;рити Page Rank онлайн і т.ін. Чому <span class="u">мушу</span>? Тому що сайти, які добре ранжуються за запитами про вагу сторінки, розлого розповідають про все це. Якщо я не зроблю того ж, пошуковик до-о-о-о-овго не зможе збагнути, що ця стаття з тієї ж тематики.</p>
+<div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+	<h3 itemprop="name">Чим відрізняються <em>статична</em> і <em>динамічна</em> вага?</h3>
+	<div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+		<p itemprop="text"><strong>Статична вага</strong> – це запитонезалежна вели&#173;чина, яка обчислюється на основі посилань. Тобто, це і є PageRank. <strong>Динамічну вагу</strong> неможна розрахувати заздалегідь: вона зміню&#173;ється з кожним запитом кожного користувача, залежить від наміру й поведінки юзера.</p>
+	</div>
+</div>
+<div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+	<h3 itemprop="name">Як перевірити вагу сторінки <em>онлайн</em>?</h3>
+	<div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+		<p itemprop="text">Достовірно вагу (PageRank) можна було дізнатися онлайн десь до 2013 року. Після того дані Google вже не онов&#173;лювалися, і у 2016 PR зник з тулбару браузера. Але й досі існують сайти на зразок <a href="https://www.checkpagerank.net/">checkpagerank.net</a>, які обчис&#173;лю&#173;ють PageRank онлайн. Щоправ&#173;да, ніхто не гарантує повноту бази посилань.</p>
+	</div>
+</div>
+<div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+	<h3 itemprop="name">Чи існує <em>альтернатива</em> PageRank?</h3>
+	<div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+		<p itemprop="text">Як альтернативу можна розглянути метрики <em>Ahrefs URL Rank, Page Authority (MOZ), Trust Flow (Majestic)</em> і фірмові різновиди рангу – <em>Serpstat PageRank</em> та ін. Якщо ж питання поставлене з думкою про методи ранжу&#173;вання вершин динамічних графів, варто згадати про алгоритми <a href="https://www2003.org/cdrom/papers/refereed/p007/p7-abiteboul.html">OPIC</a> і <a href="https://en.wikipedia.org/wiki/SALSA_algorithm">SALSA</a>.</p>
+	</div>
+</div>
+</div>
+<p>Поки все. Сподіваюся, текст не викликав жалю за витраченим часом.</p>
+<p>Якщо йому не вистачає чогось важливого, доповнення можна обговорити в комен&#173;тарях.</p>
+ </div>
+	<script src="/assets/post.min.js" defer></script>
+	<div class="bottom-nav-and-buttons">
+		<div class="post-share txt-right" data-proofer-ignore> <em>Поширити:&nbsp;</em>
+    <a rel="nofollow" href="https://facebook.com/sharer.php?u=https://do-your-own-seo.com" aria-label="Share on Facebook">
+      <i class="icon icon-facebook" aria-hidden="true"></i>
+    </a>
+    <a rel="nofollow" href="https://twitter.com/intent/tweet?text=%D0%92%D0%B0%D0%B3%D0%B0+%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B8%3A+%D0%BA%D0%BE%D0%BB%D0%B8+%D0%BF%D0%BE%D1%81%D0%B8%D0%BB%D0%B0%D0%BD%D0%BD%D1%8F+%D1%88%D0%BA%D0%BE%D0%B4%D1%8F%D1%82%D1%8C%2C+%D0%BA%D0%BE%D0%BB%D0%B8+%D0%B4%D0%BE%D0%BF%D0%BE%D0%BC%D0%B0%D0%B3%D0%B0%D1%8E%D1%82%D1%8C&url=https://do-your-own-seo.com&hashtags=PageRank,вага_посилань" aria-label="Share on Twitter">
+      <i class="icon icon-twitter" aria-hidden="true"></i>
+    </a>
+    <a rel="nofollow" href="https://www.linkedin.com/shareArticle?mini=true&url=https://do-your-own-seo.com&title=%D0%92%D0%B0%D0%B3%D0%B0+%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B8%3A+%D0%BA%D0%BE%D0%BB%D0%B8+%D0%BF%D0%BE%D1%81%D0%B8%D0%BB%D0%B0%D0%BD%D0%BD%D1%8F+%D1%88%D0%BA%D0%BE%D0%B4%D1%8F%D1%82%D1%8C%2C+%D0%BA%D0%BE%D0%BB%D0%B8+%D0%B4%D0%BE%D0%BF%D0%BE%D0%BC%D0%B0%D0%B3%D0%B0%D1%8E%D1%82%D1%8C&source=Do%20Your%20Own%20SEO" aria-label="Share on LinkedIn">
+      <i class="icon icon-linkedin2" aria-hidden="true"></i>
+    </a>
+    <a rel="nofollow" href="https://www.reddit.com/submit?url=https://do-your-own-seo.com&title=%D0%92%D0%B0%D0%B3%D0%B0+%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B8%3A+%D0%BA%D0%BE%D0%BB%D0%B8+%D0%BF%D0%BE%D1%81%D0%B8%D0%BB%D0%B0%D0%BD%D0%BD%D1%8F+%D1%88%D0%BA%D0%BE%D0%B4%D1%8F%D1%82%D1%8C%2C+%D0%BA%D0%BE%D0%BB%D0%B8+%D0%B4%D0%BE%D0%BF%D0%BE%D0%BC%D0%B0%D0%B3%D0%B0%D1%8E%D1%82%D1%8C&resubmit=true" aria-label="Share on Reddit">
+      <i class="icon icon-reddit-alien" aria-hidden="true"></i>
+    </a>
+    <a rel="nofollow" href="mailto:?Subject=Do%20Your%20Own%20SEO%20blog%20post&body=%D0%92%D0%B0%D0%B3%D0%B0+%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B8%3A+%D0%BA%D0%BE%D0%BB%D0%B8+%D0%BF%D0%BE%D1%81%D0%B8%D0%BB%D0%B0%D0%BD%D0%BD%D1%8F+%D1%88%D0%BA%D0%BE%D0%B4%D1%8F%D1%82%D1%8C%2C+%D0%BA%D0%BE%D0%BB%D0%B8+%D0%B4%D0%BE%D0%BF%D0%BE%D0%BC%D0%B0%D0%B3%D0%B0%D1%8E%D1%82%D1%8C" aria-label="Mail this">
+      <i class="icon icon-envelop" aria-hidden="true"></i>
+    </a>
+  </div>
+		<div itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumbs" >
+	<b itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+		<meta itemprop="position" content="1" />
+		<a itemprop="item" href="https://do-your-own-seo.com/"><span itemprop="name">SEO&nbsp;Blog</span></a>
+	</b>&ensp;&rarr;&ensp;
+
+	<b itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" >
+		<meta itemprop="position" content="2" />
+		<a itemprop="item" href="https://do-your-own-seo.com/"><span itemprop="name">uk</span></a>
+	</b>&ensp;&rarr;&ensp;
+	<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="tags-color" >
+		<meta itemprop="position" content="3" /><link itemprop="item" href="https://do-your-own-seo.com/vaga-storinky-formula-rozpodil-nofollow#PageRank"/>
+		<span itemprop="name">PageRank</span>
+	</span>
+</div>
+	</div>
+    <div class="relatedPosts" data-nosnippet> <strong>Пов’язані публікації:</strong>
+    <a href="/AI-generuje-SEO-content">AI + SEO: Як згенерувати статтю і фото з ключових слів</a>
+    <a href="/tekhnichnyj-seo-audit-sajtu">Технічний SEO аудит сайту з нуля. Безплатно. Власноруч</a>
+    <a href="/yak-rozshyryty-snipet-saitu-v-poshuku">Як розширити сніпет і підняти CTR сторінки в Google пошуку</a>
+    <a href="/vlasnyj-shryft-SVG-z-PNG-malyunkiv">SVG іконки з PNG: Створюємо власний шрифт з манги</a>
+    <a href="/yak-pratsiuiut-alhorytmy-google">Чинники ранжування в Google: що найголовніше для рейтингу?</a></div>
+    <h3 class="feedback"><i class="icon icon-bubbles4" aria-hidden="true"></i>&ensp;Коментарі</h3><div id="feedback">
+  <form id="comment-form" method="post" action="/f.php">
+  <a rel="nofollow" id="cancel-link" href="#feedback" class="hidden">
+    <b>Скасувати відповідь</b> &ensp;<i class="icon icon-cross">&#10006;</i>
+  </a>
+    <div class="form-group">
+      <label for="comment-form-name">Ім’я <sup>&Star;</sup>
+        <input type="text" id="comment-form-name" name="fields[name]" maxlength="50" required spellcheck="false">
+      </label>
+      <label for="comment-form-email">E-mail
+        <input type="email" id="comment-form-email" name="fields[email]" maxlength="70" placeholder="email@provider">
+      </label>
+      <label for="comment-form-url">Ваш сайт 
+        <input type="URL" id="comment-form-url" name="fields[url]" maxlength="70" placeholder="URL">
+      </label>
+    </div>
+    <div class="form-group">
+      <label for="comment-form-message">Коментар <sup>&Star;</sup>
+        <textarea id="comment-form-message" name="fields[message]" required rows="6" maxlength="700" placeholder=" reCAPTCHA – це Google-сервіс, який читає cookies.
+ Взаємодіючи з нею, ви погоджуєтеся з політикою Google:
+
+ policies.google.com/privacy"></textarea>
+      </label>
+    </div>
+    <input type="hidden" id="comment-post-id" name="options[slug]" value="vaga-storinky-formula-rozpodil-nofollow">
+    <input type="hidden" name="options[origin]" value="https://do-your-own-seo.com/vaga-storinky-formula-rozpodil-nofollow">
+    <input type="hidden" id="comment-parent" name="fields[replying_to]" value=""/>
+    <input type="hidden" name="options[reCaptcha][siteKey]" value="6LcrELsUAAAAABaEzQPKYAwk3YPEBQJbBlQMjnWJ">
+    <input type="hidden" name="options[reCaptcha][secret]" value="dD0f5GSBIfJBoqGynHs6Ovp6qatv9aGCUPnmHR/jS38QHeWfMUFhnKyPrk8qxA9BD+LS4fFnLQCHc4AEDsaFOaFHyUKRfpYx7fS0fn6MKk6ZcsXWE/7U39rBQ1ePKk9h8dWYWBLz0Ax5Ftyj0VPuRYnkvnqQupOz6igZxCV0vibNEu4RDs48fiMNDKb0QKtxy/WgcIEe89x3uUHgzmiIXS9Bk6WYLqdRrejr+Okbtdq/uSYuG1r/NHd5YHvQhyDKtOoaVygXMfR36uO5NtXAZtGWEo5QHrWn0k3Hrcxl4t4Ek3CAJ14bXmVAUhlfiHdtqP1mI0ACBdbvIVTaAoxvRw==">
+    <div class="alert txt-right">
+      <b class="ok hidden">Дякую за відгук! Повідомлення з’явиться на сайті після модерації людиною :)</b>
+      <b class="err hidden">:( На жаль, щось трапилось. Будь ласка, перевірте, чи всі важливі поля заповнені коректно.</b>
+    </div>
+    <div class="form-group">
+      <label for="comment-form-location">Пастка для ботів
+        <input type="text" id="comment-form-location" name="fields[hidden]" autocomplete="off" placeholder="залиште як є" />
+      </label>
+      <div class="g-recaptcha " data-sitekey="6LcrELsUAAAAABaEzQPKYAwk3YPEBQJbBlQMjnWJ"></div>
+
+      <button type="submit" id="submit-comment" class="button-ghost">
+        <b class="def">Надіслати</b>
+        <b class="sending hidden">В&nbsp;процесі...</b>
+        <span class="ok hidden"><i class="icon icon-checkmark">&#10004;</i>&emsp;<b>Відправлено</b></span>
+        <span class="err hidden"><i class="icon icon-cross">&#10006;</i>&emsp;<b>Відхилено</b></span>
+      </button>
+    </div>
+  </form>
+</div>
+  </div>
+<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@graph": [
+			{
+				"@type": "BlogPosting",
+				"image":"https://do-your-own-seo.com/images/posts/leaking-link-juice.jpg", 
+				"url": "https://do-your-own-seo.com/vaga-storinky-formula-rozpodil-nofollow",
+				"mainEntityOfPage": "True",  
+				"headline": "Як PageRank переходить з посиланням: про nofollow і не тільки",  
+				"alternativeHeadline": "Вага сторінки: коли посилання шкодять, коли допомагають",
+				"datePublished": "2019-12-03 20:09:00 +0000",
+				"dateModified": "2022-08-20 20:00:00 +0000",
+				"inLanguage": "українська",
+				"isFamilyFriendly": "true",
+				"author": {
+					"@type": "Person",
+					"name": "Olya Vo",
+					"JobTitle": "Technical SEO Specialist",
+					"sameAs": "https://twitter.com/do_your_own_seo"
+				},
+				"publisher": {
+					"@type": "Organization",
+					"name": "Do Your Own SEO",
+					"@id": "https://do-your-own-seo.com/#organization",
+					"logo": {
+						"@type": "ImageObject",
+						"url": "https://do-your-own-seo.com/apple-touch-icon.png",
+						"width":"240",
+						"height":"240"
+					}
+				}, 
+				"keywords": "вага сторінки",  
+				"articleSection": "PageRank, вага посилань, Google, SEO, " 
+			},
+			{
+		        "@type": "ImageObject",
+		        "@id": "/vaga-storinky-formula-rozpodil-nofollow#image",
+		        "url": "https://do-your-own-seo.com/images/posts/large/leaking-link-juice.jpg",
+		        "width": 1200,
+		        "height": 630
+			}]
+	}
+</script>
+</article>
+
+  </div>
+</main>
+
+  <footer class="site-footer txt-center">
+	<small>Made with <a href="https://jekyllrb.com/">Jekyll</a>. &#169;2019 Контент – предмет авторського права, код відкритий згідно з  <a href="https://github.com/do-your-own-seo/do-your-own-seo.github.io/blob/source/LICENSE">MIT license</a>
+	</small>
+  </footer>
+</body>
+</html>
