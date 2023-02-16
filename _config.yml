@@ -41,7 +41,7 @@ comments: true
 github-repo: "do-your-own-seo/do-your-own-seo.github.io"
 staticman:
     branch: "source"
-    app: "https://dyos.fly.dev/"
+    app: "https://dyos.fly.dev"
 
 recaptcha:
   siteKey: "6LcrELsUAAAAABaEzQPKYAwk3YPEBQJbBlQMjnWJ"
