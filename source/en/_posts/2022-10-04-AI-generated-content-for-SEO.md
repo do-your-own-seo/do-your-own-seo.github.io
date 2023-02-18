@@ -5,7 +5,7 @@ locale: en
 lang: en
 
 date: 2022-10-04T00:02:00Z
-last_modified_at: 2022-10-04T00:02:00Z
+last_modified_at: 2023-02-18T00:02:00Z
 
 
 title: "AI for SEO: How to create a post with photos from the keywords"
@@ -22,12 +22,12 @@ snippet: "The theme for an essay is the war in Ukraine. Let’s see how differen
 
 image: "ai-generated-content.jpg"
 ---
-<p>We’ll talk about the best AI content generators that you can use for free. Comparison of the tools is only possible within the use-case.</p>
+<p>We’ll talk about the best AI content generators you can enjoy for free. Comparison of the tools is only possible within the use case. <b class="red">UPD!</b> After the post was written, OpenAI launched ChatGPT. So I have tested that bot and added the results.</p>
 <ul class="toc">
-  <li><a href="#1">Longshot AI + keywords = blog post</a></li>
-  <li><a href="#2">Dall-E2: images for your content</a></li>
-  <li><a href="#3">Frase AI: an essay on any topic in 1 click</a></li>
-  <li><a href="#4">Rytr, the storytelling wizard</a></li>
+  <li><a href="#1">AI + keywords = blog post</a> (LongshotAI, ChatGPT)</li>
+  <li><a href="#2">Images for your content</a> (Dall-E2 and it alone)</li>
+  <li><a href="#3">Essay on any topic in one click</a> (Frase AI)</li>
+  <li><a href="#4">Storytelling wizards</a> (Rytr, ChatGPT)</li>
   <li><a href="#5">How to upgrade content with AI</a></li>
 </ul>
 <div>
@@ -39,25 +39,26 @@ image: "ai-generated-content.jpg"
 <p class="txt-center">
 	<small>“AI thinks about the picture while drawing it, sitting at the table, on which there is a cup of tea and a half-eaten sandwich”.</small>
 </p>
-<p>You can see a couple more sketches in the <a href="#imgs">last section</a>. The official <a href="https://openai.com/dall-e-2/#demos">DALL-E2 demo</a> is especially worth looking, but please come back as soon as possible; I can’t wait to tell you something.</p>
-<p>SEO sharks would probably ask AI to write about <strong>“How to Create a Blog Post with AI”</strong> and get the keyword-rich text. However, I’m interested in taking a vital issue and seeing if the machine can generate trustworthy content. For now, one of the hottest topics is <b class="red">the war in Ukraine</b>. But you can choose something of your own.</p>
-<p>Let’s get started! You need a desktop and some free time. I suppose you have a topic for an essay and have already <strong>collected keywords</strong> in advance. If not, why not use these simple, free tools: <a href="https://soovle.com/">Soovle</a> and <a href="https://seoscout.com/suggest">SeoScout</a>? Keep in mind that keywords are needed not just for SEO: a set of key phrases should outline the content of an upcoming article. Let’s use several AI text generators and compare their pros and cons.</p>
+<p>You can see a couple more sketches in the <a href="#imgs">last section</a>. The official <a href="https://openai.com/dall-e-2/#demos">DALL-E2 demo</a> is worth looking at, but please come back as soon as possible; I can’t wait to tell you something.</p>
+<p>SEO sharks would probably ask AI to write about <strong>“How to Create a Blog Post with AI”</strong> and get the keyword-rich text. Yet, I’m interested in taking a vital issue and seeing if the machine can generate trustworthy content. For now, one of the hottest topics is <b class="red">the war in Ukraine</b>. But you can choose something of your own.</p>
+<p>So, let’s get started! I suppose you have a topic for an essay and have already <strong>collected keywords</strong> in advance. If not, why not use these simple, free tools: <a href="https://soovle.com/">Soovle</a> and <a href="https://seoscout.com/suggest">SeoScout</a>? Keep in mind that keywords are needed not just for SEO: a set of key phrases should outline the content of an upcoming article. Let’s use several AI text generators and compare their pros and cons.</p>
 </div>
 <div>
-<h2 id="1">The article from the keywords. AI writes section after section.</h2>
-<p>The first way to create content is not the easiest, but it is the one that has worked for me with the theme where the facts matter. If your topic does not require fact-checking, you can <a href="#2">skip</a> this section. With those who stay, we switch to <a href="https://app.longshot.ai/standalones/keywordstotext">Keywords to Text</a> from Longshot AI, register there, and enter key phrases, up to 400 characters in total. I had the following:</p>
+<h2 id="1">An article just out of the box with key phrases</h2>
+<p><b class="red">UPD!</b> Initially, this section was dedicated to Longshot AI, but ChatGPT came along and solved the problem in a split second. So I’m leaving the Longshot manual untouched and posting an additional snippet at the <a href="#gpt">end of the section</a>.</p>
+<p>Why is <b>Longshot AI</b> named first? I’ve tried the other mentioned tools, and I’ve made sure this one is more suitable for sensitive topics because it doesn’t invent facts. If your niche doesn’t require fact-checking, you may want to <a href="#gpt">skip</a> this complicated method. With those who stay, we switch to <a href="https://app.longshot.ai/standalones/keywordstotext">Longshot AI Keywords to Text</a>, register there, and enter key phrases, up to 400 characters. Mine were like this:</p>
 <blockquote data-nosnippet><small>war in Ukraine, russian invasion, 24 february 2022, missile strikes, air bombs, cities destroyed, tens of thousands of civilians killed, russian war crimes, trial, putin goes all-in, russian oligarchs, public opinion polls, propaganda from tv screens, russian people support special military operation, partial mobilization in russia, ukrainians recapture their lands, victory, reparations</small></blockquote>
-<p>It’s better not to repeat my mistake: the program gives out a little text, so you’d better have the keywords separately for each section of the longread.</p>
+<p>It’s better not to repeat my mistake: the tool currently being tested gives out a little text, so you’d better have the keys separately for each subsection.</p>
 <h3>Plain text generation</h3>
-<p>In one attempt, AI has produced three unfinished text excerpts, each about 525–565 characters long. They looked like twins to each other, but their overall <strong>uniqueness was 100%</strong>, according to plagiarismdetector.net.</p>
+<p>In one attempt, AI has produced three unfinished text excerpts, each about 525–565 characters long. They looked like twins to each other, but their overall <strong>uniqueness was 100%</strong>, according to plagiarismdetector.net. Below, I’ve underlined the excerpts chosen to compose the final text.</p>
 <p class="txt-center"><img loading="lazy" src="/images/posts/longshot-keywords-to-text.jpg" alt="Инструмент Keywords-to-text от LongshotAI в действии" width="730" height="720"></p>
 <p>In a minute of mouse-clicking, it turned into this 910-character compilation:</p>
 <blockquote data-nosnippet><small>On February 24, 2022, Russian forces invaded Ukraine, launching missile strikes and air bombs against cities. Tens of thousands of civilians were killed in the attacks, and Russia was accused of war crimes. Putin justified the so-called "special military operation" by saying it was necessary to protect Russian citizens and interests in Ukraine. But many believe that he was trying to consolidate power. Putin went all-in, and Russian oligarchs supported him. They were funding the war effort, and propaganda from TV screens convinced the Russian people to support the special military operation. Public opinion polls had shown that the Russian people supported the war until partial mobilization was ordered in Russia and the conflict escalated. However, the Ukrainians were able to recapture their lands and ultimately achieve victory. As a result of the war, reparations were paid to Ukraine.</small></blockquote>
-<p>The reputable <strong>Grammarly Editor</strong> scored text quality at 86% due to passive voice misuse. I think AI did a good job!</p> 
+<p>The reputable <strong>Grammarly Editor</strong> scored text quality at only 86%, mainly due to passive voice misuse. I think AI did a job!</p> 
 <p>We have just seen that we can easily trust artificial intelligence to write plain text. But how about structure? LongshotAI will help with this too. I recommend trying two tools to generate the title and headlines.</p>
 <p>The first is simple: <a href="https://app.longshot.ai/standalones/faqs">Create FAQs</a>. You enter 400 characters of keywords into the input field and get a long list of questions.</p>
 <p class="txt-center"><img loading="lazy" src="/images/posts/longshot-create-faqs.jpg" alt="Longshot AI creates FAQs from keywords" width="805" height="320"></p>
-<p>But the primary use of this tool is different: it can help to create a FAQ article fragment in order to gain an <a href="{{site.url}}/how-to-earn-a-proper-snippet-on-SERP">extended (rich) snippet</a> in Google Web Search.</p>
+<p>But the primary use of this tool is different. It can help to create for your article a FAQ fragment, in order for it to gain an <a href="{{site.url}}/how-to-earn-a-proper-snippet-on-SERP">extended (rich) snippet</a> in Web Search Results.</p>
 <p>The second tool is called <a href="https://app.longshot.ai/standalones/headlines">Headlines</a>. It works with fewer keywords (up to 200 chars) and can generate three types of headings: descriptive, listicle, and engaging (<strong><abbr title="Call to Action">CTA</abbr></strong>). My stripped-down set of keys looked like this:</p>
 <blockquote data-nosnippet><small>war in Ukraine, russian invasion, 24.02.2022, cities destroyed, tens of thousands of civilians killed, putin goes all-in, oligarchs, propaganda, partial mobilization in russia, victory, reparations</small></blockquote>
 <p>Perhaps, for these emotionally charged key phrases, catchy headlines won’t fit? We’ll see soon.</p>
@@ -70,36 +71,40 @@ image: "ai-generated-content.jpg"
 <p class="txt-center"><img loading="lazy" src="/images/posts/longshot-listicle-headlines.jpg" alt="Listicle headlines" width="805" height="575"></p>
 <p>As you can see, AI chose the main key phrase and used it in all examples. Additionally, it singled out a secondary one and applied it three times.</p>
 <h3>Catchy CTA headlines</h3>
-<p>I show the outcomes of two attempts to create Call-to-Action headings at once. Neither satisfied me: the headings were too playful and didn’t match the intention of the post.</p>
+<p>I’ll show the outcomes of two attempts to create Call-to-Action headings. Neither satisfied me: the headings were too playful and didn’t match the intention of the post. But for entertaining content, they would be perfect!</p>
 <p class="txt-center"><img loading="lazy" src="/images/posts/longshot-cta-headlines-2.jpg" alt="СTA headlines: oligarchs" width="335" height="530"><img loading="lazy" src="/images/posts/longshot-cta-headlines-1.jpg" alt="СTA headlines: reparations" width="335" height="455" style="vertical-align:top"></p>
-<p>The first thing that catches your eye is the unequal list length. Yes, with sequential generation, we get a different number of options. The second is an excessive bias toward money: should that “hook” the Internet users majority?</p>
-<p>To be fair and avoid blaming a single AI system, I’ll share what I’ve obtained from another AI writer. Here are samples created in Hubspot’s <a href="https://www.hubspot.com/blog-topic-generator">Topic Generator</a>: the five headlines emerged from the five key phrases.</p>
+<p>The first thing that catches your eye is the unequal list length. Yes, with sequential generation, we get a different number of options. The second is an excessive bias toward money: should that “hook” the majority of Internet users?</p>
+<p>To be fair and avoid blaming a single AI system, I’ll share what I’ve obtained from another AI writer. Here are samples created in Hubspot’s <a href="https://www.hubspot.com/blog-topic-generator">Topic Generator</a>. Five headlines based on 5 keys.</p>
 <p class="txt-center"><img loading="lazy" src="/images/posts/hubspot-generated-headlines.jpg" alt="Hubspot generated headlines" width="725" height="575"></p>
 <p>I’d call them cliches. I don’t see any intelligence here, even artificial.</p>
+<p id="gpt"><b class="red">UPD!</b> And now <strong>ChatGPT</strong> gets the same task as LongshotAI and writes a keyword-based essay. I note that I first asked the bot if it was not afraid that its services would be used by disinformers. It answered that was acknowledged there is a possibility, and it is important for users to critically evaluate information and sources. So, here is that text:</p>
+<p class="txt-center"><img loading="lazy" src="/images/posts/chat-GPT-writes-about-the-war-in-Ukraine.jpg" alt="ChatGPT has incorporated keywords to text" width="780" height="625"></p>
+<p>The bot didn’t care about including exact phrases, but I didn’t ask for it. AI did the job well! I'm afraid most copywriters have already lost their jobs.</p> 
+<p>I especially liked the epilogue. It’s a hell reasonable bot this GPT! (But frankly, in other conversations, it didn’t always seem to be the king of logic).</p>
 </div>
 <div>
-<h2 id="2">Tell AI what should be in the picture, and get an image!</h2>
-<p>Any text requires illustrations to keep the reader interested. For pictures, we go to the Dall-E2 image generator. First, we have to create an account in <a href="https://labs.openai.com/auth/signup">Labs OpenAI</a>, and after registration, we’ll immediately get access to the AI tools. Our aim is to ask AI to create a picture in line with the description.</p>
-<p>You can specify the type <span class="under">or style of illustration</span>: a photo, a pencil sketch, a “Monet style painting” — whatever you want! For each request, the system will generate four pictures; every image can be continued on the sides or used as the basis for variations.</p>
-<p><b>NB!</b> The text for Dall-E2 must meet strict safety requirements: you can not mention famous people, describe cruelty, violence, etc. In the context of the war topic, I had to carefully choose the words for the description.</p>
+<h2 id="2">Tell DALL-E2 what should be in the picture, and get it!</h2>
+<p>Any text requires illustrations to keep the reader interested. For this, I went to the Dall-E2 image generator. I created an account in <a href="https://labs.openai.com/auth/signup">Labs OpenAI</a>, got access to the tools, and asked AI to create a picture by the text description.</p>
+<p>What is especially great is the possibility to specify the <span class="under">type and style of illustration</span>: a photo, a pencil sketch, a “Monet style painting” — whatever you want! For each request/description, the system will generate four items. Each of these images can be expanded to the sides or used as the basis for variations.</p>
+<p><b>NB!</b> The text for Dall-E2 must meet strict safety requirements: you can not mention famous people, describe cruelty or violence, etc. In the context of the war topic, I had to carefully choose the words for the description.</p>
 <p class="txt-center"><img loading="lazy" src="/images/posts/dall-e-building-after-shellings-2.jpg" alt="DALL-E2 generated image, describing a building after shellings" width="880" height="320"></p>
-<p>The AI generated photos are unique, according to <strong>Google Lens</strong> and <strong>Tineye.com</strong>. The ones at the top are realistic enough, but the other images from the output looked a bit like Escher’s impossible constructions. And, tellingly, there were no human figures in any of the pictures.</p>
-<p>How about trying a different AI image generator? Easy: here’s another free tool, <a href="https://socialbu.com/tools/generate-blog-image">Socialbu</a>; let’s give it the same task. The outcome does not require comments.</p>
+<p>The AI-generated photos are unique, according to <strong>Google Lens</strong> and <strong>Tineye.com</strong>. The ones at the top are realistic enough, but the others from the same output looked a bit like Escher’s impossible constructions. And, remarkably, there were no human figures in any of the pictures.</p>
+<p>How about trying a different AI image generator? Easy. Here’s another free tool, <a href="https://socialbu.com/tools/generate-blog-image">Socialbu</a>; let’s give it the same task. The outcome does not require comments.</p>
 <p class="txt-center"><img loading="lazy" src="/images/posts/socialbu-generated-image.jpg" alt="Socialbu generated image | Ukrainian cities after shelling" width="620" height="285"></p>
 <p>I’m not saying that other generators don’t exist. But one of them is enough for me — the one that is the best. The following pairs of pictures were created by the unsurpassed Dall-E2 in response to the phrase</p>
 <p class="txt-center" data-nosnippet><small>“A house after the shelling, with through holes in the walls and roof. A lonely dog is waiting for the owners”.</small></p>
 <p class="txt-center"><img loading="lazy" src="/images/posts/dall-e-lonely-dog-2.jpg" alt="DALL-E2 generated image, pencil drawing" width="880" height="320"></p>
 <p>The difference between the descriptions is the style given: the top pictures are “pencil drawings”, and the bottom ones are “fine arts”.</p>
 <p class="txt-center"><img loading="lazy" src="/images/posts/dall-e-lonely-dog.jpg" alt="DALL-E2 generated image, fine arts" width="880" height="320"></p>
-<p>Given the OpenAI Labs plan with free monthly credits, I believe there is no need to look for other opportunities if you want to illustrate a blog. However, if you have several websites or an online shop, then the free plan won’t be enough.</p>
+<p>In view of OpenAI’s plan with free monthly credits, I believe there is no need to look for other opportunities if you want to illustrate a blog. But if you have several websites or an online shop, then the free plan won’t be enough.</p>
 </div>
 <div>
 <h2 id="3">FraseAI writes a longread full of “facts” in a single click</h2>
-<p>Currently, one of the most popular content generators is Frase. At <a href="https://www.frase.io/tools/ai-content-generator/">www.frase.io</a>, anyone can create a text in English by entering only a short title into the form. That doesn’t even require registration!</p> <p>Here’s a screenshot of a 2300-character essay received on the query “Russian war in Ukraine”. The uniqueness according to plagiarism detector is 100%.</p> 
+<p>Currently, one of the most popular content generators is Frase. At <a href="https://www.frase.io/tools/ai-content-generator/">www.frase.io</a>, anyone can create a text in English by entering only a short title into the form. That doesn’t even require registration!</p> <p>Here’s a screenshot of a 2300-character essay based on the phrase “Russian war in Ukraine”. The uniqueness, according to the plagiarism detector, is 100%.</p> 
 <p class="txt-center"><img loading="lazy" src="/images/posts/frase-io.jpg" alt="Frase.io writes an essay in one click" width="720" height="960"></p>
-<p>After changing the date format, this auto-generated text received the following scores from Grammarly:</p> 
+<p>After changing the date format, this auto-generated text obtained the following scores from Grammarly:</p> 
 <p class="txt-center"><strong>Overall Score = 84%, &#160; Readability Score = 46.</strong></p>
-<p>So the text is comparable in complexity to the articles from The New York Times. The text is too long to reproduce here. However, it is already obvious that</p>
+<p>So the text is comparable in complexity to the articles from The New York Times. The essay is too long to reproduce here, but it’s already obvious that</p>
 <ol><li><span>Headings are logical and arranged in an adequate order</span>.</li>
 	<li><span>The uniqueness and quality of the text are high enough</span>.</li>
 	<li><span>The text is full of dates and facts</span>.</li>
@@ -111,8 +116,8 @@ image: "ai-generated-content.jpg"
 <p>For the sake of interest, I decided to ask Frase.io about something that is not on Wikipedia.</p>
 <p class="txt-center"><small>“How to tie a tie”</small><br><img loading="lazy" src="/images/posts/frase-io-how-to.jpg" alt="How-to text from Frase.io" width="720" height="490"></p>
 <p>Again, 100% unique text, but a different, more appropriate structure — a step-by-step guide. That is, AI understands the <strong>intent behind each query</strong>! The Twitter account mentioned at the end of the text exists and even has some how-to tweets, but I doubt there are any about ties.</p>
-<blockquote><b>NB!</b> If you use Frase.io without creating an account, you cannot reproduce the results; they will be different each time you try.</blockquote>
-<p>That created a problem for me, because the generated text was saved only in the Grammarly editor. When I decided to write a post, I re-generated it with the same title, “Russian war in Ukraine”, but the result was not as compelling. To make a screenshot with the old text, I had to insert it into the page code through the Developer Tools. However, I'll show you what Frase returned on the second request.</p> 
+<blockquote><b>NB!</b> If you use Frase.io without creating an account, you can’t reproduce the previous output; it will be different each time you try.</blockquote>
+<p>That created a problem because the text was saved only in a txt file. When I decided to write a post, I reiterated the same query, “Russian war in Ukraine”, but the result was not so exciting. To make a screenshot with the previous text, I had to insert it into the page code through the Developer Tools. Well, I’ll show you what Frase returned on the second try.</p> 
 <p class="txt-center"><img loading="lazy" src="/images/posts/frase-io-2.jpg" alt="Frase.io writes an essay, the second try" width="720" height="690"></p>
 <p>As you can see, the AI went a bit off-topic in the third paragraph, but the subheadings are interesting. For the curious, there was a “Load more” button below.</p>
 </div>
@@ -125,22 +130,24 @@ image: "ai-generated-content.jpg"
 <p>So, in my opinion, Rytr is definitely not suitable for creating SEO texts. But I didn’t call Rytr a talent for nothing; it’s just a wizard of storytelling! Just look at the way it writes stories! The idea is in the excerpt below.</p>
 <blockquote data-nosnippet>“One cowardly little man decided to steal the most precious thing from a neighbor that he had. And not to get rich (he already had enough money) but to become famous. He stole it and hid in a secret bunker.”</blockquote>
 <p>On the second try, Rytr generated the following story plot in the opted humorous tone.</p>
-<p class="txt-center"><img loading="lazy" src="/images/posts/rytr-story-plot-result.jpg" alt="Rytr invents the story about a cowardly man" width="600" height="600"></p><p>Inspired by the first two paragraphs, I asked DALL-E2 to draw an illustration based on the same idea. Usually, not all of its four creations are equally charming. But in this case, the favorite was obvious.</p>
+<p class="txt-center"><img loading="lazy" src="/images/posts/rytr-story-plot-result.jpg" alt="Rytr invents the story about a cowardly man" width="600" height="600"></p><p>Inspired by the first two paragraphs, I asked DALL-E2 to draw an illustration based on the same idea. Usually, not all four drawings it offers are equally charming. But in this case, the favorite was obvious.</p>
 <p class="txt-center"><img loading="lazy" src="/images/posts/dall-e-story-telling-hero.jpg" alt="DALL-E illustrates the tale of a little coward" width="880" height="540"></p>
-<p>I think the atmosphere was flawlessly recreated. Someone broke into the bunker to give that man a credit... or to take back what he owes. And how can you not respect such a creative personality as this Rytr AI? In tandem with the gifted illustrator DALL-E, they are able to impress. At least, they surprised me!</p>
+<p>I think the atmosphere was flawlessly recreated. Someone broke into the bunker to give that man a credit... or to take back what he owes. And how could you not respect such a creative personality as this Rytr AI? In tandem with the gifted illustrator DALL-E, they are able to impress. At least, they surprised me!</p>
+<p><b class="red">UPD!</b> And now <strong>ChatGPT</strong> gets the same task as Rytr and writes a story plot.</p>
+<p class="txt-center"><img loading="lazy" src="/images/posts/chat-GPT-writes-a-story-plot.jpg" alt="ChatGPT has written the story plot" width="780" height="510"></p>
 </div>
 <div>
 <h2 id="5">How to improve existing content with the help of AI</h2>
 <h3>1. Writing Assistants</h3>
 <p>There are online tools for checking the grammar, style, complexity, and SEO characteristics of the text. Most of them are statistical, but for English-language content, you can use AI assistants like <a href="https://www.grammarly.com/">Grammarly</a> or <a href="https://quillbot.com/grammar-check">QuillBot</a>. Both programs have premium and limited free versions and are available as browser extensions or in MS Word. In addition, QuillBot AI will offer you a <a href="https://quillbot.com/co-writer">co-writer</a> for free — it’s a super-assistant that will help polish your content.</p>
 <h3>2. Keyword Gap Analysis</h3>
-<p>It would be reasonable to identify and fill the gaps in the semantic core of a website or a specific page. It’s a wide-ranging topic and part of the competitor keyword analysis. In a nutshell, you have to identify relevant keywords for which your competitors are ranking well, but your site is not yet.</p>
+<p>It would be reasonable to identify and <b>fill the gaps in the semantic core</b> of the website or a specific page. It’s a wide-ranging topic that intersects with Competitor analysis and SERP analysis. In a nutshell, you have to identify relevant keywords for which your competitors are ranking well, but your site is not yet.</p>
 <p>Big SEO companies have their own tools for this (such as Moz’s Keyword Explorer), but don’t expect much for free. You could try to squeeze something out of <a href="https://ahrefs.com/webmaster-tools">Ahrefs Webmaster Tools</a>; it’s like a free Site Explorer tied to a single domain, the right to which must be confirmed. Then all that’s left is to quickly generate a relevant post using AI.</p>
 <h3>3. Image generation</h3>
-<p>You may need to decorate the content with auto-generated illustrations or update the old ones. The abovementioned DALL-E can not only draw on demand; it also allows you to upload images to expand and style them with the help of AI.</p>
-<p>Finally, a couple more pictures of “AI with a sandwich” (from the same description as the first ones). These are very different, aren’t they?</p>
+<p>You may need to decorate the content with auto-generated photos or update the old illustrations. DALL-E can not only draw on demand; it allows you also to upload images to expand and style them with the help of AI.</p>
+<p>Finally, a couple more pictures of “AI and the sandwich”. These were created with the same query as the first ones but are quite different, aren’t they?</p>
 <p class="txt-center" id="imgs"><img loading="lazy" src="/images/posts/dalle2-generated-image.jpg" alt="DALL-E2 generated image: AI thoughts" width="790" height="395">
 <br><small>As it turns out, AI draws with the left hand :)</small></p>
-<p>Of course, this is not a complete list of content generators. At least, AI plugins for CMS (such as CTRify for WordPress) were not mentioned, despite the fact that they are becoming more and more popular. If you have any ideas about which tools would have done the job for this post, please share your propositions in the comments.</p>
+<p>Of course, this is not a complete list of content generators. At least, AI plugins for CMS (such as CTRify for WordPress) were not mentioned, despite the fact that they are becoming more popular. If you have any ideas about which tools would have done the job for this post, please share your propositions in the comments.</p>
 </div>
 
