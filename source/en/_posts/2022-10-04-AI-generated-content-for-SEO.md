@@ -135,6 +135,7 @@ image: "ai-generated-content.jpg"
 <p>I think the atmosphere was flawlessly recreated. Someone broke into the bunker to give that man a credit... or to take back what he owes. And how could you not respect such a creative personality as this Rytr AI? In tandem with the gifted illustrator DALL-E, they are able to impress. At least, they surprised me!</p>
 <p><b class="red">UPD!</b> And now <strong>ChatGPT</strong> gets the same task as Rytr and writes a story plot.</p>
 <p class="txt-center"><img loading="lazy" src="/images/posts/chat-GPT-writes-a-story-plot.jpg" alt="ChatGPT has written the story plot" width="780" height="510"></p>
+<p>Good story, but unrealistic. Everyone would wish that the prototype of the fairy tale hero really “made a difficult decision to return the stolen item to his neighbor”...</p>
 </div>
 <div>
 <h2 id="5">How to improve existing content with the help of AI</h2>
