@@ -13,10 +13,12 @@ CONFIG = {
   'default_lang' => "uk",
   'default_loc' => "ua",
   'default_tags' => "SEO",
-  'post_ext' => "md"
+  'post_ext' => "md",
+  'bing' => "9e09b04a5b41402d873ed1f1979527aa",
+  'yandex' => "0b9b61b6de5ca336"
 }
 
-task :default => ["post"]
+task :default => ["test"]
 
 desc "Test with html-proofer"
 task :test do
@@ -29,33 +31,47 @@ task :test do
     typhoeus:  { :ssl_verifypeer => false },
     internal_domains: [CONFIG['url']],
     file_ignore: [/assets/, /editor/, /yandex(.+)\.html/],
-    url_ignore: [/LICENSE/, /gstatic\.com/, /google-analytics/, /fontello.com/, /#.*/]
+    url_ignore: [/gstatic\.com/, /google-analytics/, /fontello.com/, /quillbot.com/, /#.*/]
   }
   HTMLProofer.check_directory("./#{DEST}", options).run
 end
 
-desc "Jekyll serve"
+desc "Set up a server and run the site on localhost"
 task :serve do
   sh "bundle exec jekyll serve JEKYLL_ENV=development --drafts --livereload"
 end
 
-#desc "Ping the search engines if sitemap.xml has been updated"
-#task :ping => ["ping:google", "ping:bing"]
-#namespace :ping do
-#  url = "/ping?sitemap=https://#{CONFIG['url']}/sitemap.xml"
+desc "Ping Google if sitemap.xml has been updated"
+task :ping_google do
+  puts Net::HTTP.get("www.google.com", "/ping?sitemap=https://#{CONFIG['url']}/sitemap.xml")
+  rescue LoadError
+    puts "! Could not ping Google"
+end
 
-#  task :google do
-#    puts Net::HTTP.get("www.google.com", url)
-#    rescue LoadError
-#      puts "! Could not ping Google"
-#  end
+desc "Ping Bing and Yandex if a new page has been created"
+task :indexnow  => ["indexnow:bing", "indexnow:yandex"]
 
-#  task :bing do
-#    puts Net::HTTP.get("www.bing.com", url)
-#    rescue LoadError
-#      puts "! Could not ping Bing"
-#  end
-#end
+namespace :indexnow do
+  page = ENV["page"] || ""
+
+  task :ping, [:domain, :engine] do |_, args|
+    uri = URI("https://#{args[:domain]}/indexnow")
+    engine = args[:engine]
+    params = {:url => "https://#{CONFIG['url']}/#{page}", :key => CONFIG[engine]}
+    uri.query = URI.encode_www_form(params)
+    res = Net::HTTP.get_response(uri)
+    puts "code = #{res.code} from #{engine}"
+    puts "message = #{res.message}"
+  end
+  task :bing do
+    Rake::Task["indexnow:ping"].invoke("www.bing.com", "bing")
+    Rake::Task["indexnow:ping"].reenable
+  end
+  task :yandex do
+    Rake::Task["indexnow:ping"].invoke("yandex.com", "yandex")
+  end
+end
+
 
 desc "Create a new post or draft"
 task :post do
