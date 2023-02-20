@@ -10,30 +10,30 @@ last_modified_at: 2022-10-04T00:02:00Z
 
 title: "AI + SEO: Как сгенерировать статью с фото из ключевых слов"
 tags: [AI, Generated content, SEO]
-description: "AI-генераторы контента пробуют писать о войне в Украине. Тестируем Rytr, Frase, Longshot AI и DALL-E2: опознаете ли вы сгенерированный SEO текст и фото? Сможет ли искусственный интеллект вас удивить? А испугать?"
-keywords: "AI генераторы контента, ИИ для блогинга, OpenAI DALL"
+description: "Бесплатные AI-генераторы контента пробуют писать о &#10003;войне в Украине&#10003;. Тестируем ChatGPT, Rytr, Frase, LongshotAI и DALL-E2: определите ли вы сгенерированный SEO текст и фото? Сможет ли AI вас удивить? А испугать?"
+keywords: "AI генераторы контента, OpenAI DALL-E2"
 code_amount: 2
+schema: FAQPage
 
-
-h1: "Как за 20 мин создать статью из ключевых фраз? AI пишет и рисует за вас, даром!"
+h1: "Генераторы SEO контента: AI пишет и рисует за вас, даром"
 snippet_header: "Время генерировать контент? Как AI создает SEO текст, фото и рисунки"
 
 snippet: "Тема сочинения – война в Украине. Проверим в работе разные AI-инструменты: некоторые не справятся с задачей, некоторые удивят и встревожат не на шутку."
 
 image: "ai-generated-content.jpg"
 ---
-<p>Речь пойдет только о тех AI-генераторах контента, которыми можно воспользоваться бесплатно. Сравнение используемых инструментов возможно только в рамках use-case.</p>
+<p>Речь пойдет о <strong>наилучших из бесплатных</strong> AI-генераторов контента, которыми можно воспользоваться онлайн. Сравнивать их интеллект будем на конкретных примерах.</p>
 <ul class="toc">
-  <li><a href="#1">Longshot AI + ключевые слова</a></li>
-  <li><a href="#2">Dall-E2: иллюстрации на любой вкус</a></li>
-  <li><a href="#3">Frase: «Сочинение на тему» за 1 клик</a></li>
-  <li><a href="#4">Rytr: изобретателен, даже слишком</a></li>
+  <li><a href="#1">AI + ключевые слова = статья</a> (LongshotAI, ChatGPT)</li>
+  <li><a href="#2">Иллюстрации на любой вкус</a> (Dall-E2 и только он)</li>
+  <li><a href="#3">Текст с подзаголовками в 1 клик</a> (Frase AI)</li>
+  <li><a href="#4">Сюжеты и истории под заказ</a> (Rytr, ChatGPT)</li>
   <li><a href="#5">AI-апгрейд существующего контента</a></li>
 </ul>
 <div>
 <p>В контексте SEO искусственный интеллект <abbr title="Artificial Intelligence"><strong>(AI, ИИ)</strong></abbr> чаще упоминают как основу алгоритмов ранжирования (Google RankBrain и прочих). Однако методы NLP уже давно используются для контент-анализа, а в контент-маркетинге AI скоро напрочь заменит живых копирай&#173;теров. Так почему же этот пост появился только сегодня? Потому, что недавно всем стало доступно генерирование изображений исключительного качества.</p>
 <p class="txt-center">
-	<img loading="lazy" src="/images/posts/ai-generated-content.jpg" class="webfeedsFeaturedVisual" alt="DALL-E2 generated image: AI is drawing at the table" width="790" height="395"><br><small>Карандаш всегда немного не там:)</small>
+	<img loading="lazy" src="/images/posts/ai-generated-content.jpg" class="webfeedsFeaturedVisual" alt="Картинка от DALL-E2: AI рисует за столом" width="790" height="395"><br><small>Карандаш всегда немного не там:)</small>
 </p>
 <p>Нарисовать картинку по текстовому описанию способны разные системы машинного обучения, но <strong>DALL-E2</strong> от <strong>OpenAI</strong> словно бы по-человечески талантлив и, к тому же, рисует бесплатно! Титульное изображение поста сложено из этюдов, сгенерированных этой системой по шуточному запросу</p>
 <p class="txt-center">
@@ -41,31 +41,31 @@ image: "ai-generated-content.jpg"
 	<small>(«AI thinks about the picture while drawing it, sitting at the table, on which there is a cup of tea and a half-eaten sandwich»)</small>
 </p>
 <p>Еще пару этюдов на тему вы увидите <a href="#imgs">далее</a>; другие фантастические картинки можно посмотреть на <a href="https://openai.com/dall-e-2/#demos">DALL-E2 demo</a>. Официальное демо стоит внимания, но возвращайтесь, пожалуйста, скорее: мне не терпится кое-что рассказать.</p>
-<p>Акулы SEO, вероятно, попросили бы AI написать на тему «Как создать блог пост с помощью AI», и получили бы супер-насыщенный ключевыми фразами текст. Однако мне интересней взять тему из жизни и выяснить, сможет ли машина сгенерировать достойный доверия контент. И вот, наизлободневнейшая тема – <b class="red">война в Украине</b>. Вы можете выбрать что-то свое.</p>
-<p>Начинаем: понадобится лишь десктоп и немного свободного времени. Считаем, что у вас есть тема сочинения и вы заранее <strong>собрали ключевые слова</strong>. Если нет, рекомендую пару простых и бесплатных инструментов: <a href="https://soovle.com/">Soovle</a> и <a href="https://seoscout.com/suggest">SeoScout</a>. Имейте в виду, что ключи нужны не только для SEO: набор ключевых фраз должен очертить содержание будущей статьи.</p>
-<p>Воспользуемся несколькими ИИ-генераторами текста и сравним их возможности. Большинство из них пока лучше говорят по-английски (кроме Rytr), поэтому общаться придется на нем же. Учитывая уровень современных онлайн-переводчиков, это не составит труда.</p>
+<p>Акулы SEO, вероятно, попросили бы AI развить тему «Как создать блог пост с помощью AI», и получили бы насыщенный ключевыми фразами текст. Однако мне интересней взять топик из жизни и выяснить, сможет ли машина сгенерировать достойный доверия контент. И вот, наизлободневнейшая тема – <span class="red">война в Украине</span>. Но вы можете выбрать что-то свое.</p>
+<p>Итак, имеем тему статьи и заранее <strong>собранные ключевые слова</strong>. Протестируем известные AI-генераторы текста, сравним их сильные и слабые стороны. Большинство пока лучше говорит по-английски (кроме Rytr), но я переведу содержание скриншотов.</p>
 </div>
 <div>
-<h2 id="1">Статья из ключевых фраз. AI пишет раздел за разделом.</h2>
-<p>Первым будет не самый быстрый способ создания контента, но только он реально сработал там, где важны факты. Если ваша тематика не требует факт-чекинга, можно <a href="#2">пропустить этот раздел</a>. С теми, кто остается, переходим на <a href="https://app.longshot.ai/standalones/keywordstotext">Keywords to text</a> от Longshot AI, регистрируемся и вводим ключевые фразы, всего до 400 знаков. Мои были такие:</p>
-<blockquote data-nosnippet><small>war in Ukraine, russian invasion, 24 february 2022, missile strikes, air bombs, cities destroyed, tens of thousands of civilians killed, russian war crimes, trial, putin goes all-in, russian oligarchs, public opinion polls, propaganda from tv screens, russian people support special military operation, partial mobilization in russia, ukrainians recapture their lands, victory, reparations</small></blockquote>
+<h2 id="1">Статья из ключевых фраз: AI пишет SEO текст, а вы пьете кофе</h2>
+<p><b class="red">UPD!</b> Изначально этот раздел был посвящен Longshot AI, но на сцене появился ChatGPT и решил задачу за долю секунды! Оставляю описание функций Longshot нетронутым, а текст от ChatGPT размещу <a href="#gpt">в конце раздела</a>.</p>
+<p>Первым будет не самый быстрый способ создания контента, но только он сработал там, где важны факты. Если ваша тематика не требует факт-чекинга, можно начать со <a href="#3">способа попроще</a>. С теми, кто остается, переходим на <a href="https://app.longshot.ai/standalones/keywordstotext">Keywords to text</a> от Longshot AI, регистрируемся и вводим ключевые фразы, всего до 400 знаков. Мои были такие:</p>
+<blockquote data-nosnippet  id="keys"><small>war in Ukraine, russian invasion, 24 february 2022, missile strikes, air bombs, cities destroyed, tens of thousands of civilians killed, russian war crimes, trial, putin goes all-in, russian oligarchs, public opinion polls, propaganda from tv screens, russian people support special military operation, partial mobilization in russia, ukrainians recapture their lands, victory, reparations</small></blockquote>
 <p>Не повторите мою ошибку: текста программа выдаст немного, поэтому ключи лучше задавать отдельно под каждый раздел статьи.</p>
 <h3>Генерирование «простыни текста»</h3>
 <p>За одну попытку AI выдал на-гора три гладких, но недописанных отрывка длиной 525-565 символов. Друг на друга они похожи как близнецы, но их общая уникальность – 100% согласно plagiarismdetector.net.</p>
-<p class="txt-center"><img loading="lazy" src="/images/posts/longshot-keywords-to-text.jpg" alt="Инструмент Keywords-to-text от LongshotAI в действии" width="730" height="720"></p>
+<p class="txt-center"><img loading="lazy" src="/images/posts/longshot-keywords-to-text.jpg" alt="Инструмент Keywords-to-text от Longshot AI в действии" width="730" height="720"></p>
 <p>За минуту клацанья мышкой из этого получился такой копипаст на 910 знаков:</p>
 <blockquote data-nosnippet><small>On February 24, 2022, Russian forces invaded Ukraine, launching missile strikes and air bombs against cities. Tens of thousands of civilians were killed in the attacks, and Russia was accused of war crimes. Putin justified the so-called "special military operation" by saying it was necessary to protect Russian citizens and interests in Ukraine. But many believe that he was trying to consolidate power. Putin went all-in, and Russian oligarchs supported him. They had been funding the war effort, and propaganda from TV screens convinced the Russian people to support the special military operation. Public opinion polls had shown that the Russian people supported the war until partial mobilization was ordered in Russia and the conflict escalated. However, the Ukrainians were able to recapture their lands and ultimately achieve victory. As a result of the war, reparations were paid to Ukraine.</small></blockquote>
 <p>Редактор Grammarly оценил качество текста в 86% (из-за злоупотребления пассивом). По-моему, очень неплохо!</p> 
-<p>В том, что машине можно доверить написание текста, мы только что убедились. Как насчет структуры? LongshotAI и в этом поможет: для генерирования названия и заголовков рекомендую попробовать два инструмента.</p>
+<p>В том, что машине можно доверить написание текста, мы только что убедились. Как насчет структуры? Longshot и в этом поможет: для генерирования названия и заголовков рекомендую попробовать два инструмента.</p>
 <p>Первый простой, <a href="https://app.longshot.ai/standalones/faqs">ЧАВО</a>: на входе – выписанные выше 400 зн. ключевых слов, на выходе – ёмкий список вопросов:</p>
-<p class="txt-center"><img loading="lazy" src="/images/posts/longshot-create-faqs.jpg" alt="Longshot AI creates FAQs from keywords" width="805" height="320"></p>
+<p class="txt-center"><img loading="lazy" src="/images/posts/longshot-create-faqs.jpg" alt="Longshot AI создает FAQs из ключевых слов" width="805" height="320"></p>
 <p>Кстати, этой функции найдется и другое применение: она поможет создать для статьи фрагмент FAQs с прицелом на <a href="{{site.url}}/idealnyj-snippet-v-google-vydache">расширенный сниппет</a> в веб-поиске.</p>
 <p>Второй инструмент так и называется, <a href="https://app.longshot.ai/standalones/headlines">Заголовки</a>. Он работает с меньшим количеством ключей (до 200 знаков) и умеет генерировать три типа заголовков: описательные, перечислительные и побудительные (эмоционально окрашенные). Мой сокращенный набор ключевых фраз выглядел так:
 </p>
 <blockquote data-nosnippet><small>war in Ukraine, russian invasion, 24.02.2022, cities destroyed, tens of thousands of civilians killed, putin goes all-in, oligarchs, propaganda, partial mobilization in russia, victory, reparations</small></blockquote>
 <p>Вероятно, этим фразам, и так уже эмоционально окрашенным, не подойдут заголовки-воззвания. Ну, посмотрим. </p>
 <h3>Описательные заголовки</h3>
-<p>Чтобы LongshotAI их сгенерировал, в интерфейсе <strong>Headlines</strong> нужно установить переключатель на <strong>Descriptive</strong>, получим такое:</p>
+<p>Чтобы ИИ их сочинил, в интерфейсе <strong>Headlines</strong> нужно установить переключатель на <strong>Descriptive</strong>, получим такое:</p>
 <p class="txt-center"><img loading="lazy" src="/images/posts/longshot-descriptive-headlines.jpg" alt="Описательные заголовки" width="805" height="425"></p>
 <p>Внимание: машинный интеллект отредактировал статистику, и десятки тысяч превратились в 100 000. То есть с нестрогими данными он не осторожничает.</p>
 <h3>Перечислительные заголовки</h3>
@@ -77,25 +77,28 @@ image: "ai-generated-content.jpg"
 <p class="txt-center"><img loading="lazy" src="/images/posts/longshot-cta-headlines-2.jpg" alt="СTA headlines: об олигархах" width="335" height="530"><img loading="lazy" src="/images/posts/longshot-cta-headlines-1.jpg" alt="СTA headlines: о репарациях" width="335" height="455" style="vertical-align:top"></p>
 <p>Первое, что бросается в глаза – неодинаковая длина списка: да, при последовательной генерации получаем разное число вариантов. Второе – избыточный уклон в тему денег: видимо, по мнению AI, это должно «зацепить» большинство интернет-пользователей.</p>
 <p>Справедливости ради, показываю, что AI-писатели способны еще и не на такой «креатив». Вот образцы, созданные в <a href="https://www.hubspot.com/blog-topic-generator">топик-генераторе</a> от Hubspot: пять заголовков из пяти ключевых фраз.</p>
-<p class="txt-center"><img loading="lazy" src="/images/posts/hubspot-generated-headlines.jpg" alt="Hubspot generated headlines" width="725" height="575"></p>
+<p class="txt-center"><img loading="lazy" src="/images/posts/hubspot-generated-headlines.jpg" alt="Заголовки от Hubspot" width="725" height="575"></p>
 <p>Я бы назвала их просто клише. Не понимаю, как в этом поучаствовал интеллект, пусть даже искусственный.</p>
+<p id="gpt"><b class="red">UPD!</b> А теперь <strong>ChatGPT</strong> получает то же задание и создает текст из ключевых слов (список <a href="#keys">тут</a>). Отмечу, что сразу спросила бота, не опасается ли он, что его услугами воспользуются дезинформаторы. Ответил, что осведомлен о возможности, но считает, что для пользователя важно самому критически оценивать информацию. А вот и текст:</p>
+<p class="txt-center"><img loading="lazy" src="/images/posts/chat-GPT-writes-about-the-war-in-Ukraine.jpg" alt="ChatGPT включил в текст ключевые слова" width="780" height="625"></p>
+<p>Бот не заботился о точном вхождении фраз, но об этом его и не просили, так что отличная работа! Особенно мне понравился эпилог. Ну до чего же разумный бот этот GPT! (Объективности ради, в других наших разговорах он иногда демонстрировал проблемы с логикой).</p>
 </div>
 <div>
-<h2 id="2">Скажи AI, что должно быть на картинке, и получи готовую иллюстрацию</h2>
+<h2 id="2">Скажи DALL-E2 AI, что должно быть на картинке, и получи иллюстрацию</h2>
 <p>Чтобы удержать читателя, тексту недостает иллюстраций. Обратимся к генератору изображений Dall-E2: для этого регистрируемся в <a href="https://labs.openai.com/auth/signup">Labs OpenAI</a> и просим искусственный интеллект сгенерировать изображения по текстовому описанию. Можно указать <span class="under">желаемый тип и стиль</span> иллюстрации: фото, этюд карандашом, «в стиле Моне» – да что угодно! По каждому запросу система выдаст 4 картинки: каждую из них можно будет продолжить в стороны или выбрать основой для вариаций.</p>
 <p><b>NB!</b> Текст для Dall-E обязан удовлетворять суровым требованиям безопасности: нельзя упоминать известных личностей, описывать жестокость, насилие и игры для взрослых. В контексте выбранной темы мне пришлось тщательно подбирать слова.</p>
-<p class="txt-center"><img loading="lazy" src="/images/posts/dall-e-building-after-shellings-2.jpg" alt="DALL-E2 generated image | Ukrainian cities after shelling" width="880" height="320"></p>
+<p class="txt-center"><img loading="lazy" src="/images/posts/dall-e-building-after-shellings-2.jpg" alt="DALL-E2 generated image | Украинские города после обстрела" width="880" height="320"></p>
 <p>Сгенерированные ИИ фотографии абсолютно уникальны согласно <strong>Google Lens</strong> и <strong>Tineye.com</strong>. Те, что выше, достаточно реалистичны, но две другие слегка напоминали невозможные конструкции Эшера. Кстати, ни на одной из картинок не было изображений людей: ни силуэта, ни даже тени.</p>
 <p>Попробуем другой AI-генератор картинок? Запросто: вот еще один бесплатный инструмент, <a href="https://socialbu.com/tools/generate-blog-image">Socialbu</a>: дадим ему то же задание. Результат не требует комментариев.</p>
-<p class="txt-center"><img loading="lazy" src="/images/posts/socialbu-generated-image.jpg" alt="Socialbu generated image | Ukrainian cities after shelling" width="620" height="285"></p>
+<p class="txt-center"><img loading="lazy" src="/images/posts/socialbu-generated-image.jpg" alt="Socialbu generated image" width="620" height="285"></p>
 <p data-nosnippet>Не говорю, что других генераторов не существует. Просто мне достаточно одного – наилучшего. Следующие пары картинок создал непревзой&#173;денный Dall-E2 по фразе «Дом после обстрела, с дырами в стенах и крыше. Одинокий пес ждет хозяев».</p>
-<p class="txt-center"><img loading="lazy" src="/images/posts/dall-e-lonely-dog-2.jpg" alt="DALL-E2 generated image (pencil drawing) | A house after the shelling. A lonely dog is waiting for the owners" width="880" height="320"></p>
+<p class="txt-center"><img loading="lazy" src="/images/posts/dall-e-lonely-dog-2.jpg" alt="DALL-E2 generated image (рисунок карандашом)" width="880" height="320"></p>
 <p>Разница между запросами – в заданном стиле картинки: выше был «карандашный рисунок», ниже – «изящное искусство».</p>
-<p class="txt-center"><img loading="lazy" src="/images/posts/dall-e-lonely-dog.jpg" alt="DALL-E2 generated image (fine arts) | A house after the shelling. A lonely dog is waiting for the owners" width="880" height="320"></p>
+<p class="txt-center"><img loading="lazy" src="/images/posts/dall-e-lonely-dog.jpg" alt="DALL-E2 generated image (изящное искусство)" width="880" height="320"></p>
 <p>Учитывая наличие среди тарифов OpenAI Labs плана с ежемесячным бесплатным кредитом, считаю, что тема иллюстраций для блога закрыта. Однако, если у вас несколько сайтов или интернет-магазин, даровых баллов не будет достаточно.</p>
 </div>
 <div>
-<h2 id="3">Сочинение на тему в 1 клик: AI пишет объемный, насыщенный «фактами» текст</h2>
+<h2 id="3">Структурированное, насыщенное «фактами» сочинение на тему от Frase AI</h2>
 <p>Среди популярнейших контент-генераторов многие назовут Frase. На <a href="https://www.frase.io/tools/ai-content-generator/">www.frase.io</a> можно создать текст на английском, вбив в форму лишь краткий заголовок. Это даже не потребует регистрации!</p> 
 <p>Вот скриншот эссе на 2300 знаков, полученного по запросу "Russian war in Ukraine". Уникальность согласно plagiarismdetector – 100%.</p>
 <p class="txt-center"><img loading="lazy" src="/images/posts/frase-io.jpg" alt="Frase.io пишет структурированный текст" width="720" height="960"></p>
@@ -121,7 +124,7 @@ image: "ai-generated-content.jpg"
 <p>Как видите, ИИ слегка сбился с темы после п.2, но подзаголовки дельные. Ниже была кнопка «Загрузить больше результатов».</p>
 </div>
 <div>
-<h2 id="4">Нужна story? Зовите Rytr! Талантливый выдумщик... фактов</h2>
+<h2 id="4">Нужна story? Зовите Rytr AI, талантливого выдумщика... фактов. Или сразу ChatGPT</h2>
 <p>Благодаря дружественному интерфейсу и изобретательности, <a href="https://rytr.me">Rytr AI</a> заслуживает звания «народный любимец». К тому же, он хорошо говорит по-русски. Показать все, на что он способен, не могу, поскольку он скуп: предостав&#173;лен&#173;ного на месяц кредита ни на что не хватает, а пользоваться им платно не планирую (увидите, почему).</p>
 <p>Для начала продемонстрирую <strong>Blog Section Writing</strong> по короткому описанию и ключевым словам (по 125 знаков) на английском. Готовы?</p>
 <p class="txt-center"><img loading="lazy" src="/images/posts/rytr-blog-section-en.jpg" alt="Rytr пишет раздел для блога на английском"  width="740" height="495"></p>
@@ -140,6 +143,13 @@ image: "ai-generated-content.jpg"
 <p class="txt-center"><img loading="lazy" src="/images/posts/dall-e-story-telling-hero.jpg" alt="Dall-E2: иллюстрация к истории о трусливом человечке" width="880" height="540"></p>
 <p>По-моему, атмосферу передано безупречно: некто ворвался в бункер, чтобы отдать должное. Или забрать...</p>
 <p>Ну как не восхищаться такой творческой личностью, как этот Rytr AI?! В тандеме с одаренным иллюстратором DALL-E они способны поразить воображение. Меня, по меньшей мере, удивили!</p>
+<blockquote itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+	<span itemprop="name">Умеют ли поисковые системы определять сгенерированный AI контент?</span> 
+	<span itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">Нет, если он качественный. Не важно, как текст был создан, если он отвечает потребностям пользователя. Но справедливее будет указать, что в написании статьи принимал участие искусственный интеллект.</span></span>
+</blockquote>
+<p><b class="red">UPD!</b> А теперь очередь <strong>ChatGPT</strong> придумать сюжет по заданной завязке.</p>
+<p class="txt-center"><img loading="lazy" src="/images/posts/chat-GPT-writes-a-story-plot.jpg" alt="ChatGPT пишет историю" width="780" height="510"></p>
+<p>Добрая притча, но далека от реальности. Никто уже не верит, что прототип героя «примет сложное решение вернуть украденное соседу».</p>
 </div>
 <div>
 <h2 id="5">Как с помощью AI улучшить имеющийся контент</h2>
@@ -151,7 +161,7 @@ image: "ai-generated-content.jpg"
 <h3>3. Image generation</h3>
 <p>Снабдить контент новыми иллюстрациями либо обновить старые. Тот же DALL-E умеет не только рисовать по запросу: он также позволяет загрузить изображение, чтобы расширить его с помощью AI, стилизовать или дополнить новыми деталями.</p>
 <p>В заключение еще пара картинок про «AI с бутербродом» (по тому же описанию, что самые первые). Эти совсем другие, правда?</p>
-<p class="txt-center" id="imgs"><img loading="lazy" src="/images/posts/dalle2-generated-image.jpg" alt="DALL-E2 generated image: AI thoughts" width="790" height="395">
+<p class="txt-center" id="imgs"><img loading="lazy" src="/images/posts/dalle2-generated-image.jpg" alt="Рисунок от DALL-E2: AI думает" width="790" height="395">
 <br><small>Искусственный интеллект рисует левой:)</small></p>
-<p>Естественно, этим не исчерпывается список контент-генераторов. Как минимум, не были упомянуты AI-плагины для CMS (типа CTRify для Wordpress), которых с каждым днем становится больше. Если считаете, что пропущенные здесь программы справились бы с сочинением для этого поста, поделитесь, пожалуйста, идеей в комментариях.</p>
+<p>Естественно, это не полный перечень контент-генераторов. Как минимум, не были упомянуты AI-плагины для CMS (типа CTRify для Wordpress), которых с каждым днем становится больше. Если считаете, что пропущенные здесь программы справились бы с сочинением для этого поста, поделитесь, пожалуйста, идеей в комментах.</p>
 </div>
