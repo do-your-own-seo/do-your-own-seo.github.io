@@ -3,7 +3,7 @@ layout: pages
 ---
 {%- if page.lang == "ru" -%}
 <div id="banner" data-nosnippet class="clf">
-	<img class="fl-left" src="/images/support-ukraine.jpg" alt="Support Ukraine" width="467" height="160"><div><small>Дорогой читатель! Если ты знаешь украинский, <b>переходь на українську сторінку</b>. Если нет – не поздно выучить сейчас! Что бы тебе ни говорили в школе, украинский универсален. Это язык колыбельных и револю&#173;ци&#173;онных гимнов, незатейливых шуток и философских трактатов. На украинском можно быть ироничным, современным – любым, каким ты бываешь каждый<span class="under"> день своей жизни</span>.</small></div>
+	<img class="fl-left" src="/images/support-ukraine.jpg" alt="Support Ukraine" width="467" height="160"><div><small>Дорогой читатель! Если ты знаешь украинский, <b>переходь на українську сторінку</b>. Если нет – не поздно выучить сейчас! Что бы тебе ни говорили в школе, украинский универсален. Это язык колыбельных и револю&#173;ци&#173;онных гимнов, шуток и философских трактатов. На украинском можно быть ироничным, современным – любым, каким ты бываешь каждый<span class="under"> день своей жизни</span>.</small></div>
 </div>
 {%- endif -%}
 <h1 class="txt-center">{{page.h1}}</h1>
@@ -43,7 +43,7 @@ layout: pages
 	        {%- else -%}
 	        	{%- include dates.html date = post.date -%}
 	        {%- endif -%}
-	        {%- if modified -%} &#160;&#8594;&#160;<time datetime="{{ last_date | date:'%F' }}">
+	        {%- if modified -%} &#160;–&#160;<time datetime="{{ last_date | date:'%F' }}">
 	          	{%- if page.lang == "en" -%}
 	          		{{ last_date | date: "%b %-d, %Y" }}
 	          	{%- else -%}
