@@ -11,7 +11,7 @@ last_modified_at: 2022-08-20T20:00:00Z
 
 title: "How to enrich a webpage’s SERP snippet and increase CTR?"
 tags: [CTR, Rich Results, snippet, SERP, SEO]
-description: "Every web page on Google SERP wages a vital struggle for clicks. Low CTR means the page isn’t worthy of high ranking. So, how to improve the snippet and increase organic CTR?"
+description: "Every web page on Google SERP struggles for clicks. Low CTR means it's impossible to gain high rankings. So, how do we improve the page's snippet and increase organic CTR?"
 keywords: "SERP snippet"
 schema: FAQPage
 styles: /assets/post-on-snippets/snippet.css

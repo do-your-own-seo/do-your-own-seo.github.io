@@ -23,7 +23,7 @@ snippet: "Contrary to popular belief, SEO is not only about link building and ke
 image: "technical-website-audit-DIY.jpg"
 ---
 <ul class="toc">
-  <li><a href="#1">How does the site appear on Google?</a></li>
+  <li><a href="#1">SERP analysis</a></li>
   <li><a href="#2">Core Web Vitals</a></li>
   <li><a href="#3">Crawlers: the best and free</a></li>
   <li><a href="#4">On-Page SEO check-up</a></li>
@@ -50,7 +50,7 @@ image: "technical-website-audit-DIY.jpg"
 <p>In fact, all the dirty work does special software – the Web crawler. The mission of SEO-human is to analyze the result, systematize errors, and advise programmers on how to fix them. More about web crawlers see below, but here I’m saying that, for small websites, a simple Google SERP analysis may be even more beneficial.</p>
 </div>
 <div>
-<h2 id="1">Site-wide search and SERP analysis</h2>
+<h2 id="1">Site-wide search and SERP analysis: how does the site appear on Google?</h2>
 <p>If you have a small website and a similar budget to maintain it, you can easily handle the audit by yourself. Type <b>site:your-website</b> into the Google search bar and take a close look at the results.</p>
 <p class="txt-center"><img src="/images/posts/site-search.jpg" alt="Google Search on site:wikipedia.org" width="745" height="455" loading="lazy"></p>
 <ul>

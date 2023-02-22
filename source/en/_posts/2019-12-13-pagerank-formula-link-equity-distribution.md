@@ -47,7 +47,7 @@ image: "link-juice-leakage.jpg"
 <p id="FAQ">To sort things out, let’s start with simple questions.</p>
 <h3 class="faq">Why do inbound links add credibility to a website?</h3>
 <p>Because the page a link is on seems to suggest, &ldquo;Look, I highly recommend <span class="u">this</span>!&rdquo;</p>
-<h3 class="faq">Why do outbound links reduce link equity?</h3>
+<h3 class="faq">Why do outbound links decrease link equity?</h3>
 <p>Because every link silently says, &ldquo;Don’t stay here, you’d better stop by <span class="u">there.</span>&rdquo;</p>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<h3 itemprop="name">What are dofollow and nofollow links?</h3>

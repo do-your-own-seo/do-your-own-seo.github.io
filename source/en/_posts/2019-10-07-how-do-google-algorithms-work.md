@@ -15,10 +15,10 @@ keywords: "google algorithms, how google ranks pages"
 modal: "needed"
 schema: FAQPage
 
-h1: "Google Search in principle: what ranking factors matter more?"
-snippet_header: "How do Google Algorithms rank pages?"
+h1: "Google ranking algorithms in action: what factors matter more?"
+snippet_header: "Ranking by Google in outline: what factors matter?"
 
-snippet: "Unlike the situation in SEO ten years ago, now purchased magic does not work. Buying links won’t bring the page to the Top and could even hurt your rankings. Ranking algorithms are more likely to choose high-grade resources, and Google patents confirm this trend."
+snippet: "Unlike the situation in SEO ten years ago, black-hat magic now hardly works. Paid links won’t bring the page to the Top and could even hurt rankings. AI algorithms are more likely to choose high-grade resources, and Google’s patents confirm this trend."
 
 image: "how-do-google-algorithms-work.jpg"
 
