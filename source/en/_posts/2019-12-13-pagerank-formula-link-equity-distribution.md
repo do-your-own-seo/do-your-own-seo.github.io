@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post 
 i18n-link: PR
 lang: en
 locale: en
@@ -8,16 +8,16 @@ locale: en
 date: 2019-12-13T19:02:00Z
 last_modified_at: 2022-08-20T20:00:00Z
 
-title: "How do links pass equity? When links harm and when help"
-tags: [PageRank, link juice, link equity, Google, SEO]
-description: "Do you know the PageRank formula and why Google patents variations of it? &#10010; Use cases for link hints: nofollow, UGC, sponsored &#10010; How not to waste link equity and be prudent with links"
-keywords: "link juice"
+title: "How do links pass value? Explaining Nofollow, Ugc & Sponsored"
+tags: [PageRank, page value, Google, SEO]
+description: "Do you know the PageRank formula and why Google patents variations of it? &#10010; Use cases for link hints: nofollow, UGC, sponsored &#10010; How not to waste link equity and be careful with links"
+keywords: "link equity"
 schema: FAQPage
 
-h1: "How do links supply the page with juice? Talk about link attributes and more"
-snippet_header: "What if link juice is leaking? Let’s dive into how links pass value"
+h1: "How do links pass equity? What are link hints and when does Nofollow hurt?"
+snippet_header: "What if link juice is leaking? Let’s dive into how links pass PageRank"
 
-snippet: "Everybody wants to know how links distribute &#8220;juice&#8221; among webpages and what amount of it is usually dissipated. And while we endeavor to guess a proportion, the GoogleBot chuckles reading that &#8220;Every dofollow link passes XX% of equity&#8221;."
+snippet: "Everybody wants to know how links distribute &#8220;juice&#8221; among webpages and what amount of it is usually dissipated. And while we endeavor to guess a proportion, the GoogleBot chuckles reading that &#8220;Every dofollow link passes X% of equity&#8221;."
 
 image: "link-juice-leakage.jpg"
 ---
@@ -26,16 +26,19 @@ image: "link-juice-leakage.jpg"
 	<li><a href="#1">Good old PageRank formula</a></li>
 	<li><a href="#2">External links: pros and cons</a></li>
 	<li><a href="#3">Nofollow: how not to waste page value</a></li>
-	<li><a href="#4">New from Google: "ugc" and "sponsored"</a></li>
+	<li><a href="#4">Link hints "ugc" and "sponsored"</a></li>
 </ul>
 <div>
 <p> {{ page.snippet }}</p>
-<p>All those link juice, link equity, etc., mean nothing more than <strong>ranking power</strong> – the page’s ability to take high positions on the <abbr title="Search Engine Results Page">SERP</abbr>. But why a plain hyperlink can pass something from one document to another? That’s because search engines interpret <strong>links as votes</strong> for the cited page. Every vote is taken into account, but some weigh more than others.
+<p>To begin with, there is no exact <strong>page value</strong> or <strong>page weight</strong> unless we are talking about the size of the resources loaded. There is only page’s <span class="under">importance relative to other </span>web pages. Search engines calculate this value based on hundreds of factors, constantly refining the result. But the point is that Google, Bing, Yandex, Baidu, etc. do it in their own way, and we’ll never know the exact page value formula.
+</p>
+<p>All this <strong>link juice</strong>, <strong>link equity</strong>, etc., can be understood as a way of transferring some value between relevant pages using hyperlinks. The page with a higher value has more <strong>ranking power</strong> – the ability to take high positions on the <abbr title="Search Engine Results Page">SERP</abbr>.</p>
+<p>But why a plain hyperlink can pass something from one document to another? That’s because search engines interpret <strong>links as votes</strong> for the cited page. Every vote is taken into account, but some weigh more than others.
 </p>
 <p class="txt-center"> 
 <img src="/images/posts/{{ page.image }}" alt="SEO-task: prevent link juice leakage" class="webfeedsFeaturedVisual" width="490" height="450">
 </p>
-<p id="1">The point is that link juice is related to <strong>PageRank</strong> – an estimate of the page’s value that Google got a <a href="https://patents.google.com/patent/US6285999B1/en">patent</a> for in 2001. The underlying method calculates the importance rank of a page from the ranks of pages linking to it. Below is the original formula (click if you want to <a href="#FAQ"><b class="red">skip this</b></a>):
+<p id="1">The point is that link juice is related to <strong>PageRank</strong> – an estimate of the page’s value that Google got a <a href="https://patents.google.com/patent/US6285999B1/en">patent</a> for in 2001. The underlying method calculates the importance rank of a page from the ranks of pages linking to it. Below is the original formula (click if you want to <a href="#FAQ"><b class="red">skip it</b></a>):
 </p>
 <p class="txt-center"><img loading="lazy" src="/images/posts/page-rank-formula.jpg" alt="The PageRank formula" width="420" height="85"></p>
 <p>where <b><i>PR&#8239;(A)</i></b>&#8239; denotes PageRank of <i>A</i>; &#8239;<b><i>Q</i></b>&#8239; belongs to the set of all pages pointing to <i>A</i>; &#8239;<b><i>d</i></b>&#8239; is a damping factor (&#8776;&#8239;0.85); and the fraction denominator equals the number of outgoing links from the page <i>Q</i>&#8239;. In fact, the equation above isn’t perfect because <span class="under">it’s easy to manipulate the rank</span> with a bunch of pocket sites (i.e., with the so-called link-farm). That’s why the <a href="https://patents.google.com/patent/US9165040B1/en">renewed patent</a> proposes variations of the formula which estimate the &ldquo;distance&rdquo; from the high-quality <strong>seed pages</strong> to a given page. Besides, the alternate formulae assume that every link <b>has a weight</b> according to its properties. These weights are not known to anyone except Google, but we can guess which properties are involved.</p>
@@ -55,7 +58,7 @@ image: "link-juice-leakage.jpg"
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<h3 itemprop="name">How to check nofollow and dofollow links?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">It’s easy to highlight no-followed links, including <a href="#4">user-generated and sponsored</a>, with the help of a bookmarklet. Drag this <a class="red" href='javascript:(function(){var o,e,l=document.links;for(o=0;o<l.length;++o)-1!=(e=l[o].rel.toLowerCase()).indexOf("nofollow")?(l[o].style.backgroundColor="yellow",l[o].title+=" NOfollow"):l[o].style.backgroundColor="lightgreen",-1!=e.indexOf("ugc")&&(l[o].style.border="6px solid orange",l[o].title+=" UGC"),-1!=e.indexOf("sponsored")&&(l[o].style.outline="4px solid red",l[o].title+=" Sponsored")})()'>Nofollow-and-ugc-link-highlighter</a> to your browser bookmarks bar. On the page you want to check, click the bookmark&#173;let: all <b>no</b>-follow links will turn yellow; <b>do</b>-follow will become green. The users’ or paid links will have orange or red borders.</p>
+		<p itemprop="text">It’s easy to highlight no-followed links with the help of a bookmarklet. Drag this <a class="red" href='javascript:(function(){var o,e,l=document.links;for(o=0;o<l.length;++o)-1!=(e=l[o].rel.toLowerCase()).indexOf("nofollow")?(l[o].style.backgroundColor="yellow",l[o].title+=" NOfollow"):l[o].style.backgroundColor="lightgreen",-1!=e.indexOf("ugc")&&(l[o].style.border="6px solid orange",l[o].title+=" UGC"),-1!=e.indexOf("sponsored")&&(l[o].style.outline="4px solid red",l[o].title+=" Sponsored")})()'>Nofollow-and-ugc-link-highlighter</a> to your browser bookmarks bar. On the page you want to check, click the bookmark&#173;let: all <b>no</b>-follow links will turn yellow; <b>do</b>-follow will become green. The users’ or paid links will have orange or red borders.</p>
 	</div>
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
@@ -158,9 +161,11 @@ image: "link-juice-leakage.jpg"
 </ul>
 <p>In any situation, it’s safer to stick to the rule &ldquo;<span class="red">Do not interfere with the search bot</span> without any good reason&rdquo;.</p>
 </div>
-<div><h2 id="4">UGC and Sponsored: how these attributes influence the rank passing</h2>
-	<p>Two more link hints were added to the existing one in September 2019: rel="<b>ugc</b>"  and rel="<b>sponsored</b>". But, unlike the well-supported by different search engines nofollow, the last two make sense only to Googlebots.</p>
-	<p>UGC stands for <b>U</b>ser <b>G</b>enerated <b>C</b>ontent, such as comments, forum posts, profile bios, etc... Sponsored is intended to highlight affiliate and paid links.</p>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+	<h2 id="4"><span itemprop="name">What are UGC and Sponsored link hints</span> and why they aren’t directives</h2>
+	<p>In September 2019, the widely supported <strong>nofollow</strong> directive and its antipode, <strong>dofollow</strong>, were joined by two non-strict instructions, for Google bots exclusively.<p>
+	<p><span itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">They are the values of the rel attribute of the link tag: rel="<strong>ugc</strong>" and rel="<strong>sponsored</strong>". Both rel-values are just hints; bots can take them into account, but they aren’t obliged to do so. <strong>UGC</strong> stands for User Generated Content, such as comments, forum posts, profile bios, etc. <strong>Sponsored</strong> is intended to highlight affiliate and paid links.</span></span></p>
+	<p><b class="red">UPD!</b> In the summer of 2020, Bing <a href="https://www.bing.com/webmasters/help/webmasters-guidelines-30fba23a">confirmed</a> that its search bots support <strong>sponsored and ugc</strong> hints introduced by Google.</p>
 	<p class="txt-center">
 		<img loading="lazy" src="/images/posts/user-generated-content.jpg" alt="Young people generating ugc-content" width="600" height="420"><br>
 		<small><a href="https://www.freepik.com">Designed by Freepik</a></small>

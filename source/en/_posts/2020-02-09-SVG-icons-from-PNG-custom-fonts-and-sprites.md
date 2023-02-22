@@ -9,18 +9,18 @@ date: 2020-02-09T18:02:00Z
 last_modified_at: 2022-08-20T20:00:00Z
 
 
-title: "PNG cartoon to SVG icon + 2 ways of using custom icons"
+title: "How to convert PNG to tiny SVG and create your custom icon font"
 tags: [Content, svg icons, custom font, manga, SEO]
-description: "Content is King, but the presentation is royal &#9812; entourage. What we’ll do: Create SVG icons from PNG &#10004; Generate an SVG sprite or icon font &#10004; Use SVG icons and play with CSS styling"
-keywords: "png to svg"
+description: "Content is King, but design is the entourage! We’ll create SVG icons from PNG &#10004; Generate a custom webfont and SVG sprite &#10004; Use icons & play with CSS &#10004; Articles with custom icons convince, and the UI encourages actions!"
+keywords: "custom svg font from png"
 schema: HowTo
 styles: /assets/post-on-icons/manga.css
 code_amount: 2
 
-h1: "How to generate SVG of manageable size from PNG and create your custom icon set"
+h1: "How to turn PNG cartoons to tiny SVGs & create a custom icon set"
 snippet_header: "Need some flavoring to spice up your text content? The&#160;custom icon font will work"
 
-snippet: "How to convert PNG to a lightweight single-color SVG without any experience with vector graphics. How to create a web font or sprite from SVG icons, style them, and use to sharpen focus on your text content."
+snippet: "How to convert colorful PNG to a lightweight SVG without any experience with vector graphics. How to create a web font or sprite from SVG icons, style them, and use to sharpen focus on your text content."
 
 image: "how-to-create-manga-icon-font.jpg"
 ---
@@ -33,10 +33,11 @@ image: "how-to-create-manga-icon-font.jpg"
 </ul>
 <div>
 <p>You may say, am I need one more iconic font if there are enough already? Surely, yes. Using custom icons, you can equip your site with stylish buttons or revive the grave importance content. Another example: the mascot icons can accompany the user on his way to the landing page.</p> 
-<p>With the help of themed icons, it’s easy to emphasize the key paragraphs of the article. And if you decide to create an ornamental alphabet, you can use it for <b>drop caps</b> that open every new text section.</p>
+<p>With the help of themed icons, it’s easy to emphasize the key paragraphs of the article. And if you decide to create an ornamental alphabet, you can use it for <b>drop caps</b> that open every new text section, like below:</p>
 <p class="txt-center"><img src="/images/posts/celtic-and-slavic-initial-letters.jpg" alt="Celtic and Slavonic initials" loading="lazy" width="510" height="270"><br>
 <small>Celtic (on the left) and ancient Slavic initials</small></p>
 <p>In today’s post, we’ll create a collection of black-and-white SVG symbols, generate the Web font and learn how to style icons with CSS. Those who need colorful vector icons may still find the first section helpful since the mentioned tools apply to color PNGs and SVGs.</p>
+<blockquote>The efforts will be rewarded, because the likelihood that the user will <strong>stay on the page longer</strong> and <strong>click</strong> the unique icon is high. That implies that <strong>Web Session SEO metrics</strong> will improve. And your rankings, most likely, too (<a href="{{site.url}}/how-do-google-algorithms-work">more on ranking factors here</a>).</blockquote>
 </div>
 <div>
 <h2 id="1" itemprop="name">How to make an SVG icon from PNG</h2>
