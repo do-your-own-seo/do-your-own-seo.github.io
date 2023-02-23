@@ -32,7 +32,7 @@ image: "technical-website-audit-DIY.jpg"
 <p>Contrary to popular belief, SEO is not only building links and working with copywriters. The first task for the optimizer is the <strong>website’s health checkup</strong> in the broadest sense. The initial SEO audit begins with verification if the following holds.</p>
 <ol>
   <li><span>All useful pages are open to search bots, while auxiliary ones are closed.</span></li>
-  <li><span>Bots get everything they need to render the page (HTML, CSS, JS) fast enough.</span></li>
+  <li><span>Search engine bots get everything they need to render the page (HTML, CSS, JS) fast enough.</span></li>
   <li><span>The website is mobile-friendly and accessible (adapted for screen readers).</span></li>
   <li><span>It’s clear from the site architecture which pages are principal and how other ones are related to them.</span></li>
   <li><span>Each page, including paginated, has properly filled-in meta tags, a title, and a canonical link.</span></li>
@@ -47,7 +47,7 @@ image: "technical-website-audit-DIY.jpg"
 </ol>
 <p>Of course, this is only a frame of the audit. If the website was created with the Web Search in mind, all those checkmarks should be fulfilled by default. However, not all developers, let alone online site constructors, think about it. Therefore, we can’t do without a technical SEO checkup.</p>
 <blockquote>Decided to skip the audit because you have too much work to do? Then test the site with the <a href="https://www.siteliner.com/">Siteliner</a>: it’s free, and you’ll do it with a mouse click. At least you’ll be sure there are no broken links on your site. Come back when you have free time, we’ll do everything as it should!</blockquote>
-<p>In fact, all the dirty work does special software – the Web crawler. The mission of SEO-human is to analyze the result, systematize errors, and advise programmers on how to fix them. More about web crawlers see below, but here I’m saying that, for small websites, a simple Google SERP analysis may be even more beneficial.</p>
+<p>In fact, all the dirty work does special software – the Web crawler. The mission of SEO-human is to analyze the result, systematize errors, and advise programmers on how to fix them. More about web crawlers see <a href="{{site.url}}/{{page.url}}#3">below</a>, but here I’m saying that, for small websites, a simple Google SERP analysis may be even more beneficial.</p>
 </div>
 <div>
 <h2 id="1">Site-wide search and SERP analysis: how does the site appear on Google?</h2>
@@ -79,7 +79,7 @@ image: "technical-website-audit-DIY.jpg"
 <p class="txt-center"><img src="/images/posts/inurl.jpg" alt="bookmarklet UI for inurl: search" width="390" height="280" loading="lazy"></p>
 <p>Specify the query string of several: the script will walk through the search results and write the URLs into the &lt;textarea&gt;, where you’ll copy them easily. Here is an example of a website that hasn’t prevented sorting from indexing.</p>
 <p class="txt-center"><img src="/images/posts/sorting-pages-in-google-index.jpg" alt="Indexed sorting pages" width="830" height="480" loading="lazy"></p>
-<p>If you are the owner of the resource that you are exploring on SERP, Google will invite you to try the <a href="https://search.google.com/search-console/">Search Console</a>. And that’s right: you need to look into the Console to understand how the Search Engine indexes pages, whether it sees the Schema.org markup on them, and so on. The Search Console will inform the webmaster about the problems found on the site by email, but unfortunately, with a long delay.</p>
+<p>If you are the owner of the resource that you are exploring on SERP, Google will invite you to try the <a href="https://search.google.com/search-console/">Search Console</a>. And that’s right: you need to look into the Webmaster tools to understand how the Search Engine indexes pages, whether it sees the Schema.org markup on them, and so on. Google Search Console will inform the webmaster about the problems found on the site by email, but unfortunately, with a long delay. Additionally, it would be good to create an account in Bing Webmaster tools.</p>
 </div>
 <div>
 <h2 id="2">Core Web Vitals. Website performance checkup</h2>
@@ -104,14 +104,16 @@ image: "technical-website-audit-DIY.jpg"
 <div>
 <h2 id="3">The best free and powerful web crawlers</h2>
 <p>There will be mentioned not just totally free crawlers but also free-trial soft that you can use to a limited extent without any charge. With the help of these programs, you’ll conduct an audit of your website like SEO pro. The difficulty may be in how to interpret the report and how to fix errors without harming anything.</p>
-<p>Before you open any program, please review the terminology. The most necessary minimum:</p>
+<p>Before you open any program, please review the terminology. The absolute bare minimum:</p>
 <ul>
   <li><em>rel="canonical"</em> is the attribute of a &lt;link&gt;. Such a link refers to the principal page among a bunch of similar ones.</li>
   <li><em>redirect</em> is a technique that allows forwarding the original page request to another URL. It may be temporary (302) or permanent (301).</li>
-  <li><em>robots.txt</em> is a plain text file in which we can prohibit one or more Search robots from indexing pages, files, or directories on the website.</li>
-  <li><em>noindex</em> is a page-level directive that forbids indexing of the current page.</li>
+  <li><em>robots.txt</em> is a plain text file in which we can disallow one or more bots from accessing pages, files, or directories on the website.</li>
+  <li><em>noindex</em> is a directive that demands to exclude the current page from the index.</li>
+  <li><em>sitemap.xml</em> is a list of all indexed pages; it’s located in the root directory of your site.</li>
+  <li><em>hreflang</em> is an attribute of the link tag that specifies the page’s language.</li>
 </ul>
-<p>Now it’s time to choose a crawler: if something remains incomprehensible in the program UI, you can always ask Google. Please note that there exist cloud-based and desktop web crawlers.</p>
+<p>Now it’s time to choose a software platform among <strong>cloud-based</strong> and <strong>desktop</strong> web crawlers. To see your site as Google sees it, or to avoid blocking, they can pretend to be the Google bots, spoofing the User Agent string. But the cheating can be exposed by additional verification.</p>
 <h3>Cloud-based crawlers</h3>
 <p>They’re indispensable for large websites with hundreds of thousands of pages. Of course, no one will provide free crawling on such a scale.</p>
 <p class="txt-center"><img src="/images/posts/cloud-based-crawlers.jpg" alt="Best free-trial cloud-based crawlers" width="740" height="60" loading="lazy"></p>
