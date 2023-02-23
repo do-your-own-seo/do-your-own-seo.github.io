@@ -1,9 +1,9 @@
 <div itemscope itemtype="https://schema.org/HowTo" id="pagination-checklist">
   <p>Щоб бути корисною, <strong>сторінка пагінації №{{paginator.page}}</strong> розповідає, що у неї в голові. Точніше, <strong>у блоці &lt;head&gt;</strong> цього html-документа.</p>
-  <h2 class="txt-center"><span itemprop="name">Чекліст для перевірки SEO пагінації на сайті</span></h2>
+  <h2 class="txt-center"><span itemprop="name">{{ site.data.t.pagination.h2[page.lang] }}</span></h2>
   <meta itemprop="name" content="Як перевірити SEO пагінацію на сайті?" />
   <ol class="emphasis" >
-    <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><strong itemprop="name" class="under">Пересвідчитись, що всі URL є унікальні</strong>. <b itemprop="text">Кожна сторінка в ланцюжку пагінації повинна мати власну вебадресу. Для генерації адрес не можна використовувати фрагменти з #хешем, бо формально вони не змінюють локатор.</b> 
+    <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><strong itemprop="name" class="under">Пересвідчитись, що всі URL є унікальними</strong>. <b itemprop="text">Кожна сторінка в ланцюжку пагінації повинна мати власну вебадресу. Для генерації адрес не можна використовувати фрагменти з #хешем, бо формально вони не змінюють локатор.</b> 
     <ul><li><span>У цього блога в структурі URL використано піддиректорії: "../page=2/". <b>Увага!</b> Адреси з "/page=1/" створювати не можна, інакше матимемо класичний випадок дубльованого контенту.</span></li></ul>
     </li>
     <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><strong itemprop="name" class="under">Перевірте canonical посилання</strong>. <b itemprop="text">Канонічною версією сторінки пагінації має бути вона сама, у жодному разі не перша сторінка. Так каже Google в своїх «Рекомендаціях щодо розбиття контенту на сторінки».</b> 

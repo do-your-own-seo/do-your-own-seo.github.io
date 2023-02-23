@@ -1,6 +1,6 @@
 <div class="relatedPosts" data-nosnippet> <strong>{{site.data.t.related[page.lang]}}:</strong> 
   {%- assign posts = site.posts | where:"lang", page.lang -%}
-  {%- assign maxRelated = 5 -%} {%- assign minCommonTags =  1 -%} 
+  {%- assign maxRelated = {{ site.pagination.per_page }} -%} {%- assign minCommonTags =  1 -%} 
   {%- assign maxRelatedCounter = 0 -%}
   {% for post in posts %}
     {%- assign sameTagCount = 0 -%} 
@@ -19,4 +19,5 @@
       {%- if maxRelatedCounter >= maxRelated -%} {%- break -%} {%- endif -%}
     {%- endif -%}
   {%- endfor -%}
+  <a href="{{ site.url }}{%- if page.lang != 'uk' -%}/{{ page.lang }}{%- endif -%}/page=2/#pagination-checklist">{{ site.data.t.pagination.h2[page.lang] }}</a>
 </div>
