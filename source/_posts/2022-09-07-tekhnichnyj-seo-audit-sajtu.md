@@ -34,7 +34,7 @@ image: "technical-website-audit-DIY.jpg"
   <li><span>Пошуковий робот отримує все необхідне для відображення сторінки (стилі, скрипти), і достатньо швидко.</span></li>
   <li><span>Сайтом легко користуватися з мобільного, плюс він адаптований для скрінрідера.</span></li>
   <li><span>Зі структури сайту зрозуміло, які сторінки найважливіші і як із ними пов'язані всі інші.</span></li>
-  <li><span>Кожна сторінка має правильно заповнені метатеги й посилається на канонічну сторінку.</span></li>
+  <li><span>Кожна сторінка (включно з пагінацією) має правильно заповнені тайтл, метатеги й канонічне посилання.</span></li>
 </ol>
 <p class="txt-center"><img src="/images/posts/{{ page.image }}" alt="Technical SEO audit" class="webfeedsFeaturedVisual" width="750" height="370"></p>
 <ol start="6">
@@ -94,7 +94,7 @@ image: "technical-website-audit-DIY.jpg"
 <blockquote>Букмарклети для відправки сторінок на тестування «з льоту»: <b><a class="red" href="javascript:(function()%7b window.open('https://pagespeed.web.dev/report?url='+encodeURIComponent(location.href))%7d)();
 ">Pagespeed</a></b> * <b><a class="red" href="javascript:(function(){var win=window.open('https://search.google.com/test/mobile-friendly?url='+encodeURIComponent(window.location.href)+'&run=1','_blank');win.focus();})()
 ">Mobile</a></b> * <b><a class="red" href="javascript:(function(){var win=window.open('https://yellowlab.tools?url='+encodeURIComponent(window.location.href)+'&run=1','_blank');win.focus();})()
-">Yellowlab</a></b>. Додайте в закладки й натискайте зі сторінки, яку хочете перевірити.</blockquote>
+">Yellowlab</a></b>. Додайте в закладки й натискайте зі сторінки, яку треба перевірити.</blockquote>
 <p>Якщо результати вашого сайту неоптимістичні, доведеться звертатись з рекламацією до розробника або шукати серед знайомих експерта з HTML-JS-CSS.</p>
 <blockquote>Корисно ще виміряти затримку відповіді сервера, провести паралельне завантаження сторінок і т.п. – це тут, <a href="https://www.webpagetest.org/">на Webpagetest</a>. Не хочете занадто занурюватись? Тоді <a href="https://tools.pingdom.com/">на Pingdom</a>: він видасть просту і зрозумілу відповідь.</blockquote>
 <p>Хай там як, провальні тести не означатимуть кінець всьому. Поки що сайти можуть ранжуватись, користуючись з посилань та якісного контенту, але далі буде складніше. Тож, бажано виправити вади сайту якнайшвидше!</p>
@@ -130,10 +130,10 @@ image: "technical-website-audit-DIY.jpg"
 </div>
 <div>
 <h2 id="4">On-page SEO: перевіряємо сторінки «на лету» букмарклетами</h2>
-<p>Уявімо, що маємо результати краулінгу і хочемо вручну перевірити проблемну сторінку. Прихильники швидких рішень запросять в Ґугл «check on-page seo online», чи щось таке.</p> 
-<p>Втім, якщо попередні етапи пройдено, я не рекомендую шукати додаткові сервіси. До інформації від краулерів і порад від web.dev суттєво додати нічого. Але on-page-валідатори, вірогідно, знайдуть «жахливі вади» і відправлять вас скоротити дескріпшн, додати 5 слів до першого абзацу і таке інше. От тільки це вже терени суб'єктивізму, а не технічне сео.</p>
+<p>Тож, що маємо результати краулінгу і хочемо вручну перевірити проблемні сторінки. Прихильники швидких рішень запросять в Ґугл «check on-page seo online», чи щось таке.</p> 
+<p>Втім, якщо попередні етапи пройдено, я не рекомендую шукати додаткові сервіси. До інформації від краулерів і web.dev суттєво додати нічого. Прото On-page-валідатори, вірогідно, знайдуть «вади» і відправлять вас скоротити дескріпшн, додати 5 слів до першого абзацу і таке інше. От тільки це вже терени суб'єктивізму, а не технічне сео.</p>
 <p><b>1.</b> Про вимоги до тайтлу, дескріпшену і ключових слів є в <a href="{{site.url}}/yak-rozshyryty-snipet-saitu-v-poshuku#2">пості про сніпети</a>. А тут пропоную букмарклет, який покаже <b><a href="javascript:!function(){let a,b,e=document.title,f=document.all.description.content,g=document.all.keywords.content,h=document.getElementById('MetaBookmarklet'),d=document.getElementsByTagName('link'),i='';for(let c=0;c<d.length;c++)d[c].rel.match(/canonical/i)&&(i=d[c].href);h?h.remove():(a=document.createElement('div'),b=document.createElement('div'),a.id='MetaBookmarklet',a.style='position:fixed;z-index:999;left:0;right:0;text-align:center',b.style='display:inline-block;max-width:600px;margin:auto;padding:.8cm;background-color:#a6e8a6;text-align:left',b.innerHTML='<p><b>Title</b>%20('+e.length+'):%20'+e+'</p><p><b>Description</b>%20('+f.length+'):%20'+f+'</p><p><b>Keywords</b>%20('+g.length+'):%20'+g+'</p><p><b>canonical: </b> '+i+'</p>',a.appendChild(b),document.body.insertBefore(a,document.body.firstChild))}()" class="red">Title+meta-tags+canonical</a></b> поточної сторінки. Перетягніть до панелі закладок і користуйтеся.</p>
-<blockquote>Якщо канонікал не збігається з поточним URL, значить, поточна сторінка рекомендує пошуковику ранжувати замість себе<span class="under"> іншу – канонічну</span>. Це має бути свідомий вибір! Спрацює лише для сторінок зі схожим контентом та спільним призначенням.</blockquote>
+<blockquote>Якщо канонікал не збігається з поточним URL, значить, поточна сторінка рекомендує пошуковику ранжувати замість себе<span class="under"> іншу – канонічну</span>. Це має бути свідомий вибір! Спрацює лише для сторінок зі схожим контентом та спільним призначенням. Якщо збираєтеся за допомогою canonical розв'язати проблему <a href="{{site.url}}/page=2/#pagination-checklist">пагінації в індексі</a>, краще поглянути на статтю за посиланням.</blockquote>
 <p><b>2.</b> Наступний крок – передивитись посилання сторінки: ось букмарклет <b><a class="red" href="javascript: (function() {
     let num = 0, newWin = window.open().document, lnk = document.links, href, text, aria, title, isAccessible, isValid, error1 = '<b>????????href is not a valid URL</b>????????', error2 = '<b>????????inaccessible link????????</b>';
     function htmlEscape(s) { s = s.replace(/&/g, '&').replace(/>/g, '>').replace(/</g, '<'); return s; }

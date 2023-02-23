@@ -1,7 +1,7 @@
 ---
 layout: pages
 ---
-{%- if page.lang == "ru" -%}
+{%- if page.lang == "ru" and paginator.page == 1 -%}
 <div id="banner" data-nosnippet class="clf">
 	<img class="fl-left" src="/images/support-ukraine.jpg" alt="Support Ukraine" width="467" height="160"><div><small>Дорогой читатель! Если ты знаешь украинский, <b>переходь на українську сторінку</b>. Если нет – не поздно выучить сейчас! Что бы тебе ни говорили в школе, украинский универсален. Это язык колыбельных и револю&#173;ци&#173;онных гимнов, шуток и философских трактатов. На украинском можно быть ироничным, современным – любым, каким ты бываешь каждый<span class="under"> день своей жизни</span>.</small></div>
 </div>
@@ -59,6 +59,8 @@ layout: pages
   {% endfor %}
   {% include pagination.html %}
 </div>
+
+{%- if paginator.page ==2 -%}{%- if page.lang == "en" -%}{%- include ppage_en.html -%}{%- elsif page.lang == "ru" -%}{%- include ppage_ru.html -%}{%- else -%}{%- include ppage.html -%}{%- endif -%}{%- endif -%}
 {%- include cat.html -%}
 
 {%- comment -%} 
