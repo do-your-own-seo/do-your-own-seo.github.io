@@ -38,7 +38,7 @@ image: "how-to-create-manga-icon-font.jpg"
 </div>
 <div>
 <h2 id="1" itemprop="name">Як створити SVG-іконку з PNG</h2>
-<meta itemprop="image" content="{{site.url}}/assets/post-on-icons/result-thumbnail.svg" />
+<meta itemprop="image" content="{{site.url}}/assets/post-on-icons/result-thumbnail.svg" >
 <p itemprop="description">Задача &#8211; конвертувати PNG в одно&#173;колірний, проте виразистий SVG помірного розміру. На щастя, для її розв'язання не потрібен досвід роботи з векторною графікою.</p>
 <p>Загалом, логіка проста. Що більш контраст&#173;ними будуть сусідні кольори, що більш чіткими й плав&#173;ними вдасться зробити контури PNG, то кращим вийде SVG. Проте ми не прагнемо легких звершень: наш задум – створити іконки з героями манги.</p>
 <blockquote>Мабуть, всі в курсі: <b>манга</b> – це мальовані історії. На зразок коміксів, проте не завжди смішні: бувають сумні, зворушливі, жор&#173;сто&#173;кі – які завгодно. Народилася манга в Японії, але зараз її малю&#173;ють усюди. За мотивами популярних серій видають рома&#173;ни й створюють аніме.</blockquote>
@@ -59,37 +59,37 @@ image: "how-to-create-manga-icon-font.jpg"
       <li><span>Збільште контраст.</span></li>
       <li><span>Позбудьтеся незначних деталей.</span></li>
     </ol>
-    <meta itemprop="name" content="Підготовка та кадрування PNG" />
+    <meta itemprop="name" content="Підготовка та кадрування PNG" >
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Виділіть світлі ділянки, яким призначено бути білими на SVG, і вилучіть їхній вміст: вони мають стати порожніми (можливо, десь дове&#173;деться дове&#173;сти границю). Цей хід має підвищити чіткість контурів SVG.</span>
-    <meta itemprop="name" content="Обробка світлих ділянок" />
+    <meta itemprop="name" content="Обробка світлих ділянок" >
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Погляньте на темні ділянки: якщо вони містять світліші фрагменти, конвертер може вирішити, що вони «білі». Тож, краще зафар&#173;бувати їх темним, не прагнучи спеці&#173;альної краси: головне, аби контури не постраж&#173;дали. Збережіть отриманий PNG-файл. Він буде виглядати десь так:</span>
     <ul class="nobullets oneline txt-center"><li><img loading="lazy" src="/images/posts/after-the-3rd-step_1.jpg" alt="Png №1 після 3-го кроку" width="400" height="400"> &thinsp; </li><li><img loading="lazy" src="/images/posts/after-the-3rd-step_2.jpg" alt="Png №2 після 3-го кроку" width="400" height="400"></li></ul>
-    <meta itemprop="name" content="Перевірка темних ділянок" />
+    <meta itemprop="name" content="Перевірка темних ділянок" >
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Пропорційно зменште зображення до 200x200px: це має забезпечити баланс між деталізацією та розміром SVG-файлу. Знову підтягніть контраст&#173;ність та збережіть файл <span class="u">під назвою 200x200</span>.png.</span>
-    <meta itemprop="name" content="Ресайз PNG для конвертації" />
+    <meta itemprop="name" content="Ресайз PNG для конвертації" >
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text" id="p_5">Перейдіть на сайт PNG &#10132; SVG конвер&#173;тера. Рекомендую сервіс <a href="https://www.pngtosvg.com">pngtosvg.&#173;com</a>: він не потребує налашту&#173;вань і генерує SVG-файл з чистим кодом. Але можна обрати й інший ресурс, якщо є вподобання.</span>
-    <meta itemprop="name" content="Вибір конвертера PNG у SVG" />
-    <meta itemprop="url" content="{{site.url}}{{page.url}}#p_5" />
+    <meta itemprop="name" content="Вибір конвертера PNG у SVG" >
+    <meta itemprop="url" content="{{site.url}}{{page.url}}#p_5" >
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">На pngtosvg.com залиште в палітрі 1 колір (усього їх 5), завантажте свій файл та натисніть &#171;Генерувати&#187;.</span>
-    <meta itemprop="name" content="Налаштування конвертера" />
+    <meta itemprop="name" content="Налаштування конвертера" >
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Якщо якість не влаштовує, відредагуйте 200x200.png або створіть з більшого PNG файл 300x300.png і повторіть пункт&nbsp;6. Новий SVG буде охайні&#173;шим, але й заважить більше.</span>
-    <meta itemprop="name" content="Що робити, якщо якість не влаштовує" />
+    <meta itemprop="name" content="Що робити, якщо якість не влаштовує" >
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Лишилося подякувати конвертеру (там приймають дарунки) і стягнути собі SVG. Втім, розслабля&#173;тися зарано: вагу файлу можна суттєво врізати.</span>
-    <meta itemprop="name" content="Фінальне конвертування PNG" />
+    <meta itemprop="name" content="Фінальне конвертування PNG" >
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Йдемо на сайт <a href="https://jakearchibald.github.io/svgomg/">оптимізатора SVGOMG</a>. Відкриваємо свій файл через інтерфейс, в налаш&#173;туваннях задаємо нульову точність (Precision&thinsp;=&thinsp;0) і знімаємо вказівник з Remove&thinsp;viewBox. Результат з'являється тієї ж миті! Все: маємо придатну до викорис&#173;тання чорно-білу іконку з аніме.</span>
     <ul class="nobullets oneline txt-center">
       <li><svg width="210" height="210" role="img" aria-label="Кінцевий результат: SVG іконка-котик"><use xlink:href="/assets/post-on-icons/manga.svg#icon-cat2"/></svg> &emsp; </li> 
       <li><svg width="210" height="210" role="img" aria-label="SVG вагою менше 3 кб: хлопчик-манга"><use xlink:href="/assets/post-on-icons/manga.svg#icon-hero1"/></svg></li>
     </ul>
-    <meta itemprop="name" content="Оптимізація отриманого SVG" />
+    <meta itemprop="name" content="Оптимізація отриманого SVG" >
   </li>
 </ol>
 <p>У підсумку: розмір файлів <span class="under">– 2,05 та 2,75&thinsp;КБ</span>; буде навіть менше, якщо для SVG ввімкнуте GZIP-стискання. Зазначу, що перед останнім кроком файли важили 7,6 та 10,3&thinsp;КБ відпо&#173;відно, тобто схудли вони <span class="under">майже в 3.7 раза</span>!</p>

@@ -41,7 +41,7 @@ image: "how-to-create-manga-icon-font.jpg"
 </div>
 <div>
 <h2 id="1" itemprop="name">Как создать SVG-иконку из PNG</h2>
-<meta itemprop="image" content="{{site.url}}/assets/post-on-icons/result-thumbnail.svg" />
+<meta itemprop="image" content="{{site.url}}/assets/post-on-icons/result-thumbnail.svg" >
 <p itemprop="description">Задача &#8211; конвертировать PNG в одно&#173;цвет&#173;ный, но выразительный SVG малого веса. К счастью, для ее выпол&#173;нения не обя&#173;за&#173;телен опыт работы с векторной графикой.</p>
 <p>В общих чертах, логика простая. Чем контра&#173;стнее переходы цвета, чем чётче и плавнее контуры PNG, тем лучше получится SVG. Но мы не ищем легких путей: мы будем делать иконки с персонажами манги!</p>
 <blockquote>Кто не в курсе, <b>манга</b> – это рисованные истории: типа комиксов, но не обяза&#173;тельно смешные. Бывают грустные, трога&#173;тельные, жестокие – какие угодно. Роди&#173;лась манга в Японии, но сейчас ее рисуют повсюду; по мотивам популярных серий пишут романы и выпускают аниме.</blockquote>
@@ -62,37 +62,37 @@ image: "how-to-create-manga-icon-font.jpg"
       <li><span>Повысьте контрастность.</span></li>
       <li><span>Избавьтесь от мелких деталей.</span></li>
     </ol>
-    <meta itemprop="name" content="Подготовка и кадрирование PNG" />
+    <meta itemprop="name" content="Подготовка и кадрирование PNG" >
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Выделите светлые области, которые дол&#173;жны быть белыми на SVG, и очистите их: они должны стать пустыми (возможно, где-то придется дори&#173;совать границу). Это поз&#173;волит добиться большей четкости конту&#173;ров на SVG.</span>
-    <meta itemprop="name" content="Обработка светлых участков" />
+    <meta itemprop="name" content="Обработка светлых участков" >
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Взгляните на темные области: если внутри имеются более светлые фрагменты, конвертер может решить, что они «белые». Лучше закрасить их темным вручную, причем красота не особо важна: главное, чтобы контуры не пострадали. Сохраните полученный PNG. Он будет выглядеть при&#173;мерно так:</span>
     <ul class="nobullets oneline txt-center"><li><img loading="lazy" src="/images/posts/after-the-3rd-step_1.jpg" alt="Png №1 после 3-го шага" width="400" height="400"> &thinsp; </li><li><img loading="lazy" src="/images/posts/after-the-3rd-step_2.jpg" alt="Png №2 после 3-го шага" width="400" height="400"></li></ul>
-    <meta itemprop="name" content="Проверка темных участков" />
+    <meta itemprop="name" content="Проверка темных участков" >
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Уменьшьте картинку до 200x200px: для нашего способа это обеспечит разумный баланс между детализацией и весом SVG-файла. Снова повысьте контрастность и сохраните файл <span class="u">под именем 200x200</span>.png.</span>
-    <meta itemprop="name" content="Ресайз PNG для конвертации" />
+    <meta itemprop="name" content="Ресайз PNG для конвертации" >
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text" id="p_5">Перейдите на сайт PNG &#10132; SVG конвер&#173;тера. Рекомендую бесплатный сервис <a href="https://www.pngtosvg.com">pngtosvg.&#173;com</a>: он не требует настроек и выдает SVG-файл с чистым кодом. Но мож&#173;но выбрать и другой конвертер, если есть предпочтения.</span>
-    <meta itemprop="name" content="Выбор конвертера PNG в SVG" />
-    <meta itemprop="url" content="{{site.url}}{{page.url}}#p_5" />
+    <meta itemprop="name" content="Выбор конвертера PNG в SVG" >
+    <meta itemprop="url" content="{{site.url}}{{page.url}}#p_5" >
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">На pngtosvg.com сократите палитру до 1 цвета (по умолчанию их 5), загрузите свой файл и сгенерируйте SVG.</span>
-    <meta itemprop="name" content="Настройка конвертера" />
+    <meta itemprop="name" content="Настройка конвертера" >
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Если не устраивает качество, подредак&#173;тируйте 200x200.png (будет видно, что улуч&#173;шать) или соз&#173;дайте из большого PNG файл 300x300.png и заново пройдите п.&#8201;6. Новый SVG будет аккуратнее, но и тяжелее.</span>
-    <meta itemprop="name" content="Что делать, если качество не устраивает" />
+    <meta itemprop="name" content="Что делать, если качество не устраивает" >
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Остается поблагодарить сайт-конвертер и сохра&#173;нить результат конверти&#173;рования. Но расслаб&#173;ляться рано: размер файла мож&#173;но существенно уменьшить!</span>
-    <meta itemprop="name" content="Финальная конвертация PNG" />
+    <meta itemprop="name" content="Финальная конвертация PNG" >
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Идем на сайт <a href="https://jakearchibald.github.io/svgomg/">оптимизатора SVGOMG</a>. Загружаем свой файл, в настройках устана&#173;вливаем нулевую точность (Precision&thinsp;=&thinsp;0) и снимаем галочку с Remove&thinsp;viewBox. Боль&#173;ше ничего не делаем: резуль&#173;тат появится авто&#173;мати&#173;чески. Всё: пригодный для иконки черно-белый SVG готов!</span>
     <ul class="nobullets oneline txt-center">
       <li><svg width="210" height="210" role="img" aria-label="Результат после 9 шагов: иконка с кошкой"><use xlink:href="/assets/post-on-icons/manga.svg#icon-cat2"/></svg> &emsp; </li> 
       <li><svg width="210" height="210" role="img" aria-label="SVG весом менее 3 кб: лицо мальчика"><use xlink:href="/assets/post-on-icons/manga.svg#icon-hero1"/></svg></li>
     </ul>
-    <meta itemprop="name" content="Оптимизация полученного SVG" />
+    <meta itemprop="name" content="Оптимизация полученного SVG" >
   </li>
 </ol>
 <p>Вот что у нас получилось: вес файлов <span class="under">– 2,05&thinsp;КБ и 2,75&thinsp;КБ </span>(будет еще меньше, если вклю&#173;чить GZIP-сжатие для SVG). До оптимизации было 7,6&thinsp;КБ и 10,3&thinsp;КБ, то есть оба файла похудели <span class="under">примерно в 3.7 раза</span>!</p>

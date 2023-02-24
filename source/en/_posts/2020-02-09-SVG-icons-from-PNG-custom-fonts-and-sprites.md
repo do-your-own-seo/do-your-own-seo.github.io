@@ -41,7 +41,7 @@ image: "how-to-create-manga-icon-font.jpg"
 </div>
 <div>
 <h2 id="1" itemprop="name">How to make an SVG icon from PNG</h2>
-<meta itemprop="image" content="{{site.url}}/assets/post-on-icons/result-thumbnail.svg" />
+<meta itemprop="image" content="{{site.url}}/assets/post-on-icons/result-thumbnail.svg" >
 <p itemprop="description"><b>The task</b> is to convert the chosen PNG to a lightweight, single-color, but eloquent SVG. Fortunately, experience with vector graphics isn’t required to complete it. In general, the logic is simple. The more contrasting the neighboring colors are and smoother the contours of PNG we can make, the better SVG we’ll get.</p>
 <p>But we won’t take the easy road: we’ll make icons with manga characters!</p>
 <blockquote>Probably everybody knows that <b>manga means</b> the cartoon story: like comics, but not necessarily funny. It may be sad, heartwarming, cruel, and whatsoever. Manga was born in Japan, but today people draw these cartoons across the globe. People write novels based on popular episodes and even produce full-length series of anime.</blockquote>
@@ -62,38 +62,38 @@ image: "how-to-create-manga-icon-font.jpg"
       <li><span>Increase the contrast rate.</span></li>
       <li><span>Get rid of unessential details.</span></li>
     </ol>
-    <meta itemprop="name" content="Cropping and preparation of the chosen PNG" />
+    <meta itemprop="name" content="Cropping and preparation of the chosen PNG" >
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Select the light areas that should be white on the result SVG, and clear them. They should be empty (you may have to renew a border somewhere). This trick will give the lines in SVG more sharpness.</span>
-    <meta itemprop="name" content="Light areas handling" />
+    <meta itemprop="name" content="Light areas handling" >
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Look at the dark-colored areas: if there are lighter pieces inside, the converter may conclude that they are &ldquo;white&rdquo;. It’s better to make them darker by hand, and the accuracy is not very important. The main thing is not to go beyond the contours. Save the resulting PNG; it will look like these:</span>
     <ul class="nobullets oneline txt-center"><li><img loading="lazy" src="/images/posts/after-the-3rd-step_1.jpg" alt="Png no.1 after step 3" width="400" height="400"> &thinsp; </li><li><img loading="lazy" src="/images/posts/after-the-3rd-step_2.jpg" alt="Png no.2 after step 3" width="400" height="400"></li></ul>
-    <meta itemprop="name" content="Dark-colored areas examination" />
+    <meta itemprop="name" content="Dark-colored areas examination" >
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Resize the image to 200x200px: within our scheme, that provides a reasonable balance between detail and the SVG file size. Increase the contrast again and save the file <span class="u">as 200x200</span>.png.</span>
-    <meta itemprop="name" content="Resizing PNG befor the conversion" />
+    <meta itemprop="name" content="Resizing PNG befor the conversion" >
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text" id="p_5">
 Go to the website of PNG&#10132;SVG converter. I recommend the free tool <a href="https://www.pngtosvg.com">pngtosvg.com</a>: it doesn’t require any settings and produces SVGs with clean markup. But you can choose another converter if you have preferences.</span>
-    <meta itemprop="name" content="Picking a PNG-to-SVG converter" />
-    <meta itemprop="url" content="{{site.url}}{{page.url}}#p_5" />
+    <meta itemprop="name" content="Picking a PNG-to-SVG converter" >
+    <meta itemprop="url" content="{{site.url}}{{page.url}}#p_5" >
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">On pngtosvg.com, reduce the palette to 1 color (there are 5 by default), upload your file, and generate the SVG.</span>
-    <meta itemprop="name" content="Converter adjustment" />
+    <meta itemprop="name" content="Converter adjustment" >
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">If the quality is not satisfactory yet, edit 200x200.png or make 300x300.png from the large PNG, and redo step 6. The new SVG will be more precise but weighty.</span>
-    <meta itemprop="name" content="What if the quality is poor" />
+    <meta itemprop="name" content="What if the quality is poor" >
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">It remains to thank the converter (they accept donations) and save the output SVG. But it’s too early to relax: the file size can be significantly reduced!</span>
-    <meta itemprop="name" content="Final conversion of the enhanced PNG" />
+    <meta itemprop="name" content="Final conversion of the enhanced PNG" >
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Switch to the <a href="https://jakearchibald.github.io/svgomg/">SVGOMG optimizer</a>. Upload your file, set <em>Precision=0</em> in settings, and uncheck the <em>Remove&thinsp;viewBox</em>. That’s all! The result appears automatically: ready for use black-and-white icon has just been created!</span>
     <ul class="nobullets oneline txt-center">
       <li><svg width="210" height="210" role="img" aria-label="The result after the final step: the cat icon"><use xlink:href="/assets/post-on-icons/manga.svg#icon-cat2"/></svg> &emsp; </li> 
       <li><svg width="210" height="210" role="img" aria-label="SVG weighing less than 3 kb: boy’s face"><use xlink:href="/assets/post-on-icons/manga.svg#icon-hero1"/></svg></li>
     </ul>
-    <meta itemprop="name" content="Optimization of the outcome SVG" />
+    <meta itemprop="name" content="Optimization of the outcome SVG" >
   </li>
 </ol>
 <p>Here’s what we got: <span class="under">2.05&#8239;KB and 2.75&#8239;KB</span> files (and they’ll be even lighter if you enable GZIP compression for SVG). Before optimization, we had 7.6&#8239;KB and 10.3&#8239;KB, respectively. That is, both <span class="under">files lost more than 70% of</span> their weight!</p>
