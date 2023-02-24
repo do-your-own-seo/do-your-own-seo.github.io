@@ -25,11 +25,11 @@ snippet: "How to convert colorful PNG to a lightweight SVG without any experienc
 image: "how-to-create-manga-icon-font.jpg"
 ---
 <ul class="toc">
-  <li><a href="#1">PNG image to SVG icon in 9 steps</a></li>
-  <li><a href="#2">Web font from SVG: pros and cons</a></li>
-  <li><a href="#2.1">&bullet;&ensp;Fontello vs IcoMoon for creating a webfont</a></li>
-  <li><a href="#3">How to use custom icons and SVG sprites in HTML</a></li>
-  <li><a href="#3.1">&bullet;&ensp;CSS styles for SVG sprites and webfonts &nbsp;<span class="red">&#42;interactive</span></a></li>
+  <li><a href="{{ site.url }}{{ page.url }}#1">PNG image to SVG icon in 9 steps</a></li>
+  <li><a href="{{ site.url }}{{ page.url }}#2">Web font from SVG: pros and cons</a></li>
+  <li><a href="{{ site.url }}{{ page.url }}#2.1">&bullet;&ensp;Fontello vs IcoMoon for creating a webfont</a></li>
+  <li><a href="{{ site.url }}{{ page.url }}#3">How to use custom icons and SVG sprites in HTML</a></li>
+  <li><a href="{{ site.url }}{{ page.url }}#3.1">&bullet;&ensp;CSS styles for SVG sprites and webfonts &nbsp;<span class="red">&#42;interactive</span></a></li>
 </ul>
 <div>
 <p>You may say, am I need one more iconic font if there are enough already? Surely, yes. Using custom icons, you can equip your site with stylish buttons or revive the grave importance content. Another example: the mascot icons can accompany the user on his way to the landing page.</p> 
@@ -54,7 +54,7 @@ image: "how-to-create-manga-icon-font.jpg"
 <p>Let’s "iconize" two pictures at once:</p>
 <p class="txt-center"><img loading="lazy" src="/images/posts/before_1.png" alt="The source PNG no.1" width="400" height="400"> &thinsp; <img loading="lazy" src="/images/posts/before_2.png" alt="The source PNG no.2" width="400" height="400"></p>
 <p>These and other sources for icons were downloaded from the websites offering free PNG: <b>hiclipart.com</b>, <b>imgbin.com</b>, <b>pngocean.com</b>, <b>pngguru.&#173;com</b>. But there are plenty of other resources on the Internet.</p>
-<p>Already have a <span itemprop="supply" itemtype="http://schema.org/HowToSupply" itemscope><span itemprop="name">proper PNG</span></span>? Let’s start with the following steps. You can go immediately to <a href="#p_5">step 5</a>, but it would be nice to work a little on the drawing.</p>
+<p>Already have a <span itemprop="supply" itemtype="http://schema.org/HowToSupply" itemscope><span itemprop="name">proper PNG</span></span>? Let’s start with the following steps. You can go immediately to <a href="{{ site.url }}{{ page.url }}#p_5">step 5</a>, but it would be nice to work a little on the drawing.</p>
 <ol class="emphasis">
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Open your PNG in the online (<a href="https://pixlr.com/editor/">pixlr.com</a>, <a href="https://www7.lunapic.com/editor/">lunapic.&#173;com</a>, etc.) or desktop editor.</span>
     <ol type="A">  
@@ -101,7 +101,7 @@ Go to the website of PNG&#10132;SVG converter. I recommend the free tool <a href
 </div>
 <div><h2 id="2">Webfont from SVG icons: the scheme of creation and known pitfalls</h2>
 <p>We already have 11 manga icons: here are these <a href="https://github.com/do-your-own-seo/icons">SVGs</a>. Why not make an amateur web font from them? (To the point, everyone can post links to other custom SVG collections in the comments.)</p>
-<blockquote>Webfont isn’t the only way to use icons: a single SVG can be loaded from an external file or embedded into HTML. It’s also a common practice to use <a href="#3">SVG sprites</a>. There are many ways to use custom icons, but each has some limitations.</blockquote>
+<blockquote>Webfont isn’t the only way to use icons: a single SVG can be loaded from an external file or embedded into HTML. It’s also a common practice to use <a href="{{ site.url }}{{ page.url }}#3">SVG sprites</a>. There are many ways to use custom icons, but each has some limitations.</blockquote>
 <p>What can we say in favor of Web fonts?</p>
 <ul class="featured plus">
   <li>They do not clog the markup: in order for the icon to appear inside the &lt;span&gt;, just add the class to the tag.</li>
@@ -114,7 +114,7 @@ Go to the website of PNG&#10132;SVG converter. I recommend the free tool <a href
 <li>Iconic fonts are not working in the Opera Mini browser (usage is about 2%).</li>
 </ul>
 <p>However, in our case, the main drawback is not so frightful. The custom webfont can be hosted on the same server as the entire site, and the client browser won’t establish the connection to the CDN. Besides, at least 80% of browsers support the <a href="https://caniuse.com/#search=preload">preload</a> hint, enabling the preloading of cacheable resources like webfonts.</p>
-<p>So, if a webfont is your choice for organizing the set of icons, let’s continue. Otherwise, <a href="#3">let’s jump</a> through the section.</p>
+<p>So, if a webfont is your choice for organizing the set of icons, let’s continue. Otherwise, <a href="{{ site.url }}{{ page.url }}#3">let’s jump</a> through the section.</p>
 <h3 id="2.1">Webfont generators in use: IcoMoon vs Fontello</h3>
 <p>Here are two powerful and user-friendly font generation applications: <b><a href="https://icomoon.io/app/">IcoMoon App</a></b> and <b><a href="https://fontello.com">Fontello</a></b>.</p>
 <table class="txt-center"><caption><small><em>The comparison of Web font generators Fontello and IcoMoon App</em></small></caption>

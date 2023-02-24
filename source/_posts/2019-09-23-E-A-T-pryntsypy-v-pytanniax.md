@@ -20,7 +20,7 @@ image: "writing.jpg"
 
 ---
 <ul class="toc txt-right">
-  <li><a href="#fin">Тим, хто зневіриться у власній &#171;авторитетності&#187;, читаючи&nbsp;це</a></li>
+  <li><a href="{{ site.url }}{{ page.url }}#fin">Тим, хто зневіриться у власній &#171;авторитетності&#187;, читаючи&nbsp;це</a></li>
 </ul>
 <div>
 <p> {{ page.snippet }}</p>

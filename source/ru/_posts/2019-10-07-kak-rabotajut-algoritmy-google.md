@@ -24,10 +24,10 @@ image: "how-do-google-algorithms-work.jpg"
 
 ---
 <ul class="toc">
-	<li><a href="#1">Вес, надежность, авторитет</a></li>
-	<li><a href="#2">Реакция пользователя</a></li>
-	<li><a href="#3">Ссылки и авторитет VS содержание страницы</a></li>
-	<li><a href="#4">Как в Google Топ-10 попадают некачественные сайты?</a></li>
+	<li><a href="{{ site.url }}{{ page.url }}#1">Вес, надежность, авторитет</a></li>
+	<li><a href="{{ site.url }}{{ page.url }}#2">Реакция пользователя</a></li>
+	<li><a href="{{ site.url }}{{ page.url }}#3">Ссылки и авторитет VS содержание страницы</a></li>
+	<li><a href="{{ site.url }}{{ page.url }}#4">Как в Google Топ-10 попадают некачественные сайты?</a></li>
 </ul>
 <div>
 <p>{{ page.snippet }}</p>

@@ -23,10 +23,10 @@ image: "link-juice-leakage.jpg"
 ---
 
 <ul class="toc">
-	<li><a href="#1">Good old PageRank formula</a></li>
-	<li><a href="#2">External links: pros and cons</a></li>
-	<li><a href="#3">Nofollow: how not to waste page value</a></li>
-	<li><a href="#4">Link hints "ugc" and "sponsored"</a></li>
+	<li><a href="{{ site.url }}{{ page.url }}#1">Good old PageRank formula</a></li>
+	<li><a href="{{ site.url }}{{ page.url }}#2">External links: pros and cons</a></li>
+	<li><a href="{{ site.url }}{{ page.url }}#3">Nofollow: how not to waste page value</a></li>
+	<li><a href="{{ site.url }}{{ page.url }}#4">Link hints "ugc" and "sponsored"</a></li>
 </ul>
 <div>
 <p> {{ page.snippet }}</p>
@@ -38,7 +38,7 @@ image: "link-juice-leakage.jpg"
 <p class="txt-center"> 
 <img src="/images/posts/{{ page.image }}" alt="SEO-task: prevent link juice leakage" class="webfeedsFeaturedVisual" width="490" height="450">
 </p>
-<p id="1">The point is that link juice is related to <strong>PageRank</strong> – an estimate of the page’s value that Google got a <a href="https://patents.google.com/patent/US6285999B1/en">patent</a> for in 2001. The underlying method calculates the importance rank of a page from the ranks of pages linking to it. Below is the original formula (click if you want to <a href="#FAQ"><b class="red">skip it</b></a>):
+<p id="1">The point is that link juice is related to <strong>PageRank</strong> – an estimate of the page’s value that Google got a <a href="https://patents.google.com/patent/US6285999B1/en">patent</a> for in 2001. The underlying method calculates the importance rank of a page from the ranks of pages linking to it. Below is the original formula (click if you want to <a href="{{ site.url }}{{ page.url }}#FAQ"><b class="red">skip it</b></a>):
 </p>
 <p class="txt-center"><img loading="lazy" src="/images/posts/page-rank-formula.jpg" alt="The PageRank formula" width="420" height="85"></p>
 <p>where <b><i>PR&#8239;(A)</i></b>&#8239; denotes PageRank of <i>A</i>; &#8239;<b><i>Q</i></b>&#8239; belongs to the set of all pages pointing to <i>A</i>; &#8239;<b><i>d</i></b>&#8239; is a damping factor (&#8776;&#8239;0.85); and the fraction denominator equals the number of outgoing links from the page <i>Q</i>&#8239;. In fact, the equation above isn’t perfect because <span class="under">it’s easy to manipulate the rank</span> with a bunch of pocket sites (i.e., with the so-called link-farm). That’s why the <a href="https://patents.google.com/patent/US9165040B1/en">renewed patent</a> proposes variations of the formula which estimate the &ldquo;distance&rdquo; from the high-quality <strong>seed pages</strong> to a given page. Besides, the alternate formulae assume that every link <b>has a weight</b> according to its properties. These weights are not known to anyone except Google, but we can guess which properties are involved.</p>

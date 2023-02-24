@@ -23,18 +23,18 @@ image: "leaking-link-juice.jpg"
 
 ---
 <ul class="toc">
-	<li><a href="#1">Старая добрая формула PageRank</a></li>
-	<li><a href="#2">Исходящие ссылки: польза и вред</a></li>
-	<li><a href="#3">Nofollow: как сберечь вес сайта</a></li>
-	<li><a href="#4">Подсказки для ботов: ugc и sponsored</a></li>
-	<li><a href="#5">Типы веса страницы (лишний раздел)</a></li>
+	<li><a href="{{ site.url }}{{ page.url }}#1">Старая добрая формула PageRank</a></li>
+	<li><a href="{{ site.url }}{{ page.url }}#2">Исходящие ссылки: польза и вред</a></li>
+	<li><a href="{{ site.url }}{{ page.url }}#3">Nofollow: как сберечь вес сайта</a></li>
+	<li><a href="{{ site.url }}{{ page.url }}#4">Подсказки для ботов: ugc и sponsored</a></li>
+	<li><a href="{{ site.url }}{{ page.url }}#5">Типы веса страницы (лишний раздел)</a></li>
 </ul>
 <div>
 <p>{{ page.snippet }}</p>
 <p class="txt-center"> 
 <img src="/images/posts/{{ page.image }}" alt="Как не допустить утечки ссылочного сока на сайте" class="webfeedsFeaturedVisual" width="490" height="450"></p>
 <p class="txt-justify">Начнем с того, что точного веса у страницы нет, если не говорить о размере загру&#173;женных ресурсов. Есть <strong>сравнительная ценность</strong> по отношению к другим страницам. Эта ценность (значимость, вес) передается между сайтами с помощью гиперссылок, т.к. поисковик воспринимает ссылку как голос в пользу цитируемой страницы.</p>
-<p id="1">Поисковые системы вычисляют значимость веб-страниц с учетом сотен факторов, многократно уточняя результат. Однако Google, Bing, Yandex, Baidu и пр. делают это по-своему, и точной формулы веса мы никогда не узнаем. Хотя известно, что началось все с этой рекуррентной формулы ранга страницы (если не желаете вспоминать этот кошмар из детства, <a href="#FAQ"><b class="red">жмите сюда</b></a>):</p>
+<p id="1">Поисковые системы вычисляют значимость веб-страниц с учетом сотен факторов, многократно уточняя результат. Однако Google, Bing, Yandex, Baidu и пр. делают это по-своему, и точной формулы веса мы никогда не узнаем. Хотя известно, что началось все с этой рекуррентной формулы ранга страницы (если не желаете вспоминать этот кошмар из детства, <a href="{{ site.url }}{{ page.url }}#FAQ"><b class="red">жмите сюда</b></a>):</p>
 <p class="txt-center"> 
 <img loading="lazy" src="/images/posts/page-rank-formula.jpg" alt="Формула PageRank (ранга страницы)" width="420" height="85"></p>
 <p>где <b><i>PR&#8239;(A)</i></b> – <strong>PageRank</strong> страницы <b><i>A</i></b>, а <b><i>d</i> </b>– коэф&#173;фициент затухания (&#8776;&#8239;0.85), который в фор&#173;муле умножается на сумму по всем ссылкам на <b><i>A</i></b>. &#8239;Каждое слагаемое представляет собой частное от деления ранга ссыла&#173;ющейся страницы <b><i>Q</i></b>&#8239; на количество ее исходящих ссылок. Хотя выра&#173;жение в ходу в Интернет, вряд ли Google слишком на него полага&#173;ется. Иначе N «карманных» сайтов, ссылаясь друг на друга, могли бы повысить ранг отдельных страниц.</p>
@@ -54,7 +54,7 @@ image: "leaking-link-juice.jpg"
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<h3 itemprop="name">Как проверить ссылки на <em>dofollow/nofollow</em>?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">Это легко сделать с помощью букмарклета – закладки с кодом JavaScript. Перетащите <a href='javascript:(function(){var o,e,l=document.links;for(o=0;o<l.length;++o)-1!=(e=l[o].rel.toLowerCase()).indexOf("nofollow")?(l[o].style.backgroundColor="yellow",l[o].title+=" NOfollow"):l[o].style.backgroundColor="lightgreen",-1!=e.indexOf("ugc")&&(l[o].style.border="6px solid orange",l[o].title+=" UGC"),-1!=e.indexOf("sponsored")&&(l[o].style.outline="4px solid red",l[o].title+=" Sponsored")})()'>Nofollow-and-ugc-link-highlighter</a> на панель закладок браузера. Находясь на странице, ссылки которой хотите проверить, клик&#173;ните букмарклет-хайлайтер. Все nofollow станут желтыми, остальные ссылки – зелеными, причем <a href="#3">пользо&#173;вательские и спонсорские</a> будут обведены оранжевым и красным.</p>
+		<p itemprop="text">Это легко сделать с помощью букмарклета – закладки с кодом JavaScript. Перетащите <a href='javascript:(function(){var o,e,l=document.links;for(o=0;o<l.length;++o)-1!=(e=l[o].rel.toLowerCase()).indexOf("nofollow")?(l[o].style.backgroundColor="yellow",l[o].title+=" NOfollow"):l[o].style.backgroundColor="lightgreen",-1!=e.indexOf("ugc")&&(l[o].style.border="6px solid orange",l[o].title+=" UGC"),-1!=e.indexOf("sponsored")&&(l[o].style.outline="4px solid red",l[o].title+=" Sponsored")})()'>Nofollow-and-ugc-link-highlighter</a> на панель закладок браузера. Находясь на странице, ссылки которой хотите проверить, клик&#173;ните букмарклет-хайлайтер. Все nofollow станут желтыми, остальные ссылки – зелеными, причем <a href="{{ site.url }}{{ page.url }}#3">пользо&#173;вательские и спонсорские</a> будут обведены оранжевым и красным.</p>
 	</div>
 </div>
 

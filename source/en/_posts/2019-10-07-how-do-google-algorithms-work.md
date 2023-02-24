@@ -25,10 +25,10 @@ image: "how-do-google-algorithms-work.jpg"
 ---
 
 <ul class="toc">
-  <li><a href="#1">Link equity and website reputation</a></li>
-  <li><a href="#2">User experience and response</a></li>
-  <li><a href="#3">Domain authority VS content quality</a></li>
-  <li><a href="#4">Why can low-grade websites get into the Top 10?</a></li>
+  <li><a href="{{ site.url }}{{ page.url }}#1">Link equity and website reputation</a></li>
+  <li><a href="{{ site.url }}{{ page.url }}#2">User experience and response</a></li>
+  <li><a href="{{ site.url }}{{ page.url }}#3">Domain authority VS content quality</a></li>
+  <li><a href="{{ site.url }}{{ page.url }}#4">Why can low-grade websites get into the Top 10?</a></li>
 </ul>
 <div><p>{{ page.snippet }}</p>
 <p class="txt-center"> 

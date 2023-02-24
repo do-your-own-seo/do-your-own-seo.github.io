@@ -26,9 +26,9 @@ snippet: "Can we influence how users see our website on the Google results page?
 image: "how-to-earn-a-proper-snippet.jpg"
 ---
 <ul class="toc">
-  <li><a href="#1">The aim is to get to Rich Results</a></li>
-  <li><a href="#2">SEO behind the SERP snippet</a></li>
-  <li><a href="#3">Usefull SEO tools&#160;&#160;<i class="icon icon-wrench red"></i></a></li>
+  <li><a href="{{ site.url }}{{ page.url }}#1">The aim is to get to Rich Results</a></li>
+  <li><a href="{{ site.url }}{{ page.url }}#2">SEO behind the SERP snippet</a></li>
+  <li><a href="{{ site.url }}{{ page.url }}#3">Usefull SEO tools&#160;&#160;<i class="icon icon-wrench red"></i></a></li>
 </ul>
 <div>
 	<p>Every web resource dreams of getting to the Top 10, but this is not enough. You also need the user to follow the blue link. So, you should know the needs of the audience and manage to hook the user on in seconds while he glances along the <abbr title="Search Engine Results Page">SERP</abbr>. How to achieve this goal? It’s enough to have the proper snippet.</p>
@@ -55,11 +55,11 @@ image: "how-to-earn-a-proper-snippet.jpg"
 	<p>The preferred markup format is <strong>JSON-LD</strong>, but both Microdata and RDFa are supported by the search engines. The image below shows the Google snippet for the post with Microdata embedded.</p>
 	<p class="txt-center"> <img loading="lazy" src="/images/posts/faq-schema-en.jpg" alt="The post with FAQ microdata markup" width="611" height="225"></p>
 	<blockquote><b>NB!&#160;</b> In that case, JSON-LD would mean duplication of questions and answers already presented in the document. But increasing the page weight, we lose a lot. There are <a href="https://www.polemicdigital.com/how-seo-for-news-helps-all-websites/">opinions</a> among SEO pros that during the first visit, the Googlebot sends to index a limited number of KB per page.</blockquote>
-	<p>As for common entities like Person, Organization, BlogPosting, etc., it’s better to present them in JSON. Many helpful tools serve this purpose; we mention some in <a href="#3">this section</a>.</p>
+	<p>As for common entities like Person, Organization, BlogPosting, etc., it’s better to present them in JSON. Many helpful tools serve this purpose; we mention some in <a href="{{ site.url }}{{ page.url }}#3">this section</a>.</p>
 	<p>From common to private: why not talk about business? Let’s look at the markup widely used in online commerce. For the<span class="under"> product cards</span>, online stores use <strong>Product</strong> with <strong>Offer</strong> and <strong>AggregateRating</strong>. But that markup has one more application: it’s intended to summarize trade offers <span class="under">at price aggregators</span> (<a href="https://developers.google.com/search/docs/data-types/product">so says</a> Google).</p> 
 	<p>Why have I mentioned it? Because it gives a real possibility to replace the nonexisting <strong>Product Category</strong> markup: pay attention to the price range in the following image.</p>
 	<p class="txt-center"> <img loading="lazy" src="/images/posts/category-markup-en.jpg" alt="The replacement for category markup" width="610" height="144"></p>
-	<p>I’ve checked that the page above contains the Product markup (one of these <a href="#3">Tools</a> will make you sure).</p>
+	<p>I’ve checked that the page above contains the Product markup (one of these <a href="{{ site.url }}{{ page.url }}#3">Tools</a> will make you sure).</p>
 	<p>Officially Google warns against the not intended use of markup. Warns for many years, and all the time the brave use it: any ranking penalty wasn’t noticed. Sometimes the price range disappears from the snippet and then comes back again. Nobody knows how it will behave tomorrow. That is, if you decide to use it, you must be responsible the consequences.</p>
 	<p><img loading="lazy" src="/images/posts/knowledge-card.jpg" alt="Organization" class="fl-right" width="210" height="220">
 		Some words on <b>оrganizations on the web</b>. For large or/and well-known companies the knowledge network cards will be generated without their participation. For others, it’s important to have an account on <b>Google Maps</b>, upload quality photos, and update all the information on time.
@@ -86,7 +86,7 @@ image: "how-to-earn-a-proper-snippet.jpg"
 		<li>Уou can only take into account desktop snippets. If needed for mobile users, Google itself will add an extra fragment to the description.</li>
 		<li>Or, you can provide more (up to 280-300 chars), dividing written into two parts in your mind. The most important part must fit in the first 140 characters. If you cut the second one, nothing will happen.</li>
 	</ul>
-	<p>There is the working <b><a href="#simulator" class="red">Google snippet simulator</a></b> in the Tools section. It will show you a sketch of the real snippet.</p>
+	<p>There is the working <b><a href="{{ site.url }}{{ page.url }}#simulator" class="red">Google snippet simulator</a></b> in the Tools section. It will show you a sketch of the real snippet.</p>
 	<h3>2. Subheadings and jump links</h3>
 	<p>Well, everybody knows that (and why) subheadings should include the secondary keys. But there’s one more thing: you can add to tags identifiers, like id=“N”; and generate the <abbr title="Table Of Contents">TOC</abbr>. What will you get from this? Simply more blue links.</p>
     <p>The page that <span class="under">on the first screen</span> has the separated group <span class="under"> of internal links</span> located in the content area will have benefits on SERP. I mean, if those links aren’t menu or sidebar items, then the page’s fragment on SERP may contain <strong>“Jump to” links</strong>. The extra blue ones you can see in the picture below.</p>

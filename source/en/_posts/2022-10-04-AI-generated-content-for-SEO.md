@@ -24,11 +24,11 @@ image: "ai-generated-content.jpg"
 ---
 <p>We’ll talk about the <strong>best AI content generators</strong> you can enjoy for free. The intelligence of these tools will be compared by giving them the same task.</p>
 <ul class="toc">
-  <li><a href="#1">AI + keywords = blog post</a> (LongshotAI, ChatGPT)</li>
-  <li><a href="#2">Images for your content</a> (Dall-E2 and it alone)</li>
-  <li><a href="#3">Essay with subheadings in one click</a> (Frase AI)</li>
-  <li><a href="#4">Storytelling wizards</a> (Rytr, ChatGPT)</li>
-  <li><a href="#5">How to upgrade content with AI</a></li>
+  <li><a href="{{ site.url }}{{ page.url }}#1">AI + keywords = blog post</a> (LongshotAI, ChatGPT)</li>
+  <li><a href="{{ site.url }}{{ page.url }}#2">Images for your content</a> (Dall-E2 and it alone)</li>
+  <li><a href="{{ site.url }}{{ page.url }}#3">Essay with subheadings in one click</a> (Frase AI)</li>
+  <li><a href="{{ site.url }}{{ page.url }}#4">Storytelling wizards</a> (Rytr, ChatGPT)</li>
+  <li><a href="{{ site.url }}{{ page.url }}#5">How to upgrade content with AI</a></li>
 </ul>
 <div>
 <p>In SEO, <strong>Artificial Intelligence</strong> is often mentioned as the basis of ranking algorithms such as Google RankBrain and others. However, AI has long been used for content analysis (NLP), and in content marketing, it will soon completely replace human copywriters. So why did this post only appear today? Because recently, the generation of exceptionally high-quality images has become available to everyone.</p>
@@ -39,14 +39,14 @@ image: "ai-generated-content.jpg"
 <p class="txt-center">
 	<small>“AI thinks about the picture while drawing it, sitting at the table, on which there is a cup of tea and a half-eaten sandwich”.</small>
 </p>
-<p>You can see a couple more sketches in the <a href="#imgs">last section</a>. The official <a href="https://openai.com/dall-e-2/#demos">DALL-E2 demo</a> is worth looking at, but please come back as soon as possible; I can’t wait to tell you something.</p>
+<p>You can see a couple more sketches in the <a href="{{ site.url }}{{ page.url }}#imgs">last section</a>. The official <a href="https://openai.com/dall-e-2/#demos">DALL-E2 demo</a> is worth looking at, but please come back as soon as possible; I can’t wait to tell you something.</p>
 <p>SEO sharks would probably ask AI to write about <strong>“How to Create a Blog Post with AI”</strong> and get the keyword-rich text. Yet, I’m interested in taking a vital issue and seeing if the machine can generate trustworthy content. For now, one of the hottest topics is <b class="red">the war in Ukraine</b>. But you can choose something of your own.</p>
 <p>So, let’s get started. I assume you also have a topic for an upcoming article and have already done <strong>keyword research</strong>. Let’s test several AI text generators and compare their pros and cons.</p>
 </div>
 <div>
 <h2 id="1">A post just out of the box with key phrases. AI writes SEO text while you’re having coffee</h2>
-<p><b class="red">UPD!</b> Initially, this section was dedicated to Longshot AI, but ChatGPT came along and solved the problem in a split second. So I’m leaving the Longshot manual untouched and posting an additional snippet at the <a href="#gpt">end of the section</a>.</p>
-<p>Why is <b>LongshotAI</b> named first? I’ve tried the other mentioned tools, and I’ve made sure this one is more suitable for sensitive topics because it doesn’t invent facts. But you may want to <a href="#gpt">skip</a> this complicated method. With those who stay, we switch to <a href="https://app.longshot.ai/standalones/keywordstotext">Keywords to Text</a> AI tool, create an account, and enter key phrases, up to 400 characters. Mine were like this:</p>
+<p><b class="red">UPD!</b> Initially, this section was dedicated to Longshot AI, but ChatGPT came along and solved the problem in a split second. So I’m leaving the Longshot manual untouched and posting an additional snippet at the <a href="{{ site.url }}{{ page.url }}#gpt">end of the section</a>.</p>
+<p>Why is <b>LongshotAI</b> named first? I’ve tried the other mentioned tools, and I’ve made sure this one is more suitable for sensitive topics because it doesn’t invent facts. But you may want to <a href="{{ site.url }}{{ page.url }}#gpt">skip</a> this complicated method. With those who stay, we switch to <a href="https://app.longshot.ai/standalones/keywordstotext">Keywords to Text</a> AI tool, create an account, and enter key phrases, up to 400 characters. Mine were like this:</p>
 <blockquote data-nosnippet id="keys"><small>war in Ukraine, russian invasion, 24 february 2022, missile strikes, air bombs, cities destroyed, tens of thousands of civilians killed, russian war crimes, trial, putin goes all-in, russian oligarchs, public opinion polls, propaganda from tv screens, russian people support special military operation, partial mobilization in russia, ukrainians recapture their lands, victory, reparations</small></blockquote>
 <p>It’s better not to repeat my mistake: the tool currently being tested gives out a little text, so you’d better have the keys separately for each subsection.</p>
 <h3>Plain text generation</h3>
@@ -77,7 +77,7 @@ image: "ai-generated-content.jpg"
 <p>To be fair and avoid blaming a single AI system, I’ll share what I’ve obtained from another AI content writer. Here are samples created in Hubspot’s <a href="https://www.hubspot.com/blog-topic-generator">Topic Generator</a>. Five headlines based on 5 keys.</p>
 <p class="txt-center"><img loading="lazy" src="/images/posts/hubspot-generated-headlines.jpg" alt="Hubspot generated headlines" width="725" height="575"></p>
 <p>I’d call them cliches. I don’t see any intelligence here, even artificial.</p>
-<p id="gpt"><b class="red">UPD!</b> And now <strong>ChatGPT</strong> gets the same task and writes a keyword-based essay (the keys see <a href="#keys">here</a>). I note that I first asked the bot if it was not afraid that its services would be used by disinformers. It answered that was acknowledged there is a possibility, and it is important for users to critically evaluate information and sources. So, here is that text:</p>
+<p id="gpt"><b class="red">UPD!</b> And now <strong>ChatGPT</strong> gets the same task and writes a keyword-based essay (the keys see <a href="{{ site.url }}{{ page.url }}#keys">here</a>). I note that I first asked the bot if it was not afraid that its services would be used by disinformers. It answered that was acknowledged there is a possibility, and it is important for users to critically evaluate information and sources. So, here is that text:</p>
 <p class="txt-center"><img loading="lazy" src="/images/posts/chat-GPT-writes-about-the-war-in-Ukraine.jpg" alt="ChatGPT has incorporated keywords to text" width="780" height="625"></p>
 <p>The bot didn’t care about including exact phrases, but I didn’t ask for it. AI did the job well! I'm afraid most copywriters have already lost their jobs.</p> 
 <p>I especially liked the epilogue. It’s a hell reasonable bot this GPT! (But frankly, in other conversations, it didn’t always seem to be the king of logic).</p>

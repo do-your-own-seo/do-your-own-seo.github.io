@@ -23,10 +23,10 @@ snippet: "Contrary to popular belief, SEO is not only about link building and ke
 image: "technical-website-audit-DIY.jpg"
 ---
 <ul class="toc">
-  <li><a href="#1">SERP analysis</a></li>
-  <li><a href="#2">Core Web Vitals</a></li>
-  <li><a href="#3">Crawlers: the best and free</a></li>
-  <li><a href="#4">On-Page SEO check-up</a></li>
+  <li><a href="{{ site.url }}{{ page.url }}#1">SERP analysis</a></li>
+  <li><a href="{{ site.url }}{{ page.url }}#2">Core Web Vitals</a></li>
+  <li><a href="{{ site.url }}{{ page.url }}#3">Crawlers: the best and free</a></li>
+  <li><a href="{{ site.url }}{{ page.url }}#4">On-Page SEO check-up</a></li>
 </ul>
 <div>
 <p>Contrary to popular belief, SEO is not only building links and working with copywriters. The first task for the optimizer is the <strong>website’s health checkup</strong> in the broadest sense. The initial SEO audit begins with verification if the following holds.</p>
@@ -47,7 +47,7 @@ image: "technical-website-audit-DIY.jpg"
 </ol>
 <p>Of course, this is only a frame of the audit. If the website was created with the Web Search in mind, all those checkmarks should be fulfilled by default. However, not all developers, let alone online site constructors, think about it. Therefore, we can’t do without a technical SEO checkup.</p>
 <blockquote>Decided to skip the audit because you have too much work to do? Then test the site with the <a href="https://www.siteliner.com/">Siteliner</a>: it’s free, and you’ll do it with a mouse click. At least you’ll be sure there are no broken links on your site. Come back when you have free time, we’ll do everything as it should!</blockquote>
-<p>In fact, all the dirty work does special software – the Web crawler. The mission of SEO-human is to analyze the result, systematize errors, and advise programmers on how to fix them. More about web crawlers see <a href="{{site.url}}/{{page.url}}#3">below</a>, but here I’m saying that, for small websites, a simple Google SERP analysis may be even more beneficial.</p>
+<p>In fact, all the dirty work does special software – the Web crawler. The mission of SEO-human is to analyze the result, systematize errors, and advise programmers on how to fix them. More about web crawlers see <a href="{{site.url}}{{page.url}}#3">below</a>, but here I’m saying that, for small websites, a simple Google SERP analysis may be even more beneficial.</p>
 </div>
 <div>
 <h2 id="1">Site-wide search and SERP analysis: how does the site appear on Google?</h2>

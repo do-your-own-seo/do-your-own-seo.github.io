@@ -20,7 +20,7 @@ image: "writing.jpg"
 
 ---
 
-<ul class="toc txt-right"><li><a href="#fin">For those who may lose faith in their authoritativeness when reading this</a></li> </ul>
+<ul class="toc txt-right"><li><a href="{{ site.url }}{{ page.url }}#fin">For those who may lose faith in their authoritativeness when reading this</a></li> </ul>
 <div>
   <p>{{ page.snippet }}</p>
   <p>The fact is that the Search Engine will not consider a page to be trustworthy based on the quality of the publication alone. The trust also requires the significant professional authority of the post’s author and the reliability of the website as a whole. Below are the main theses of the <a href="https://webmasters.googleblog.com/2019/08/core-updates.html" rel="noopener">article on E-A-T concept</a> from GoogleBlog for webmasters and website owners.</p>

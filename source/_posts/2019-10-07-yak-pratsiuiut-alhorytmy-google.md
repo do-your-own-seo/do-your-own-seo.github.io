@@ -25,10 +25,10 @@ image: "how-do-google-algorithms-work.jpg"
 
 ---
 <ul class="toc">
-	<li><a href="#1">Вага, довіра й авторитет</a></li>
-	<li><a href="#2">Поведінка користувача</a></li>
-	<li><a href="#3">Вміст сторінки VS посилання й авторитет</a></li>
-	<li><a href="#4">Як до Топ-10 Google потрапляють неякісні сайти?</a></li>
+	<li><a href="{{ site.url }}{{ page.url }}#1">Вага, довіра й авторитет</a></li>
+	<li><a href="{{ site.url }}{{ page.url }}#2">Поведінка користувача</a></li>
+	<li><a href="{{ site.url }}{{ page.url }}#3">Вміст сторінки VS посилання й авторитет</a></li>
+	<li><a href="{{ site.url }}{{ page.url }}#4">Як до Топ-10 Google потрапляють неякісні сайти?</a></li>
 </ul>
 <div>
 <p> {{ page.snippet }}</p>
