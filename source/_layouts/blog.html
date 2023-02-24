@@ -2,13 +2,13 @@
 layout: pages
 ---
 {%- if page.lang == "ru" and paginator.page == 1 -%}
-<div id="banner" data-nosnippet class="clf">
-	<img class="fl-left" src="/images/support-ukraine.jpg" alt="Support Ukraine" width="467" height="160"><div><small>Дорогой читатель! Если ты знаешь украинский, <b>переходь на українську сторінку</b>. Если нет – не поздно выучить сейчас! Что бы тебе ни говорили в школе, украинский универсален. Это язык колыбельных и револю&#173;ци&#173;онных гимнов, шуток и философских трактатов. На украинском можно быть ироничным, современным – любым, каким ты бываешь каждый<span class="under"> день своей жизни</span>.</small></div>
-</div>
-{%- endif -%}
-{%- if paginator.page != 2 -%}<h1 class="txt-center">{{ page.h1 }}</h1>{%- endif -%}
+<div id="banner" data-nosnippet class="clf">{%- include ru/banner.html -%}</div>{%- endif -%}
+{%- if paginator.page == 2 -%}{% include {{ page.lang }}/ppage_intro.html %}{%- include pagination.html -%}{%- endif -%}
+<h1 class="txt-center" id="pagination-checklist">{%- if paginator.page == 2 -%}{{site.data.t.pagination.header[page.lang]}}{%- else -%}{{ page.h1}}{%- endif -%}</h1>
 {%- if paginator.page == 1 -%}{{ content }}{%- endif -%}
-<div id="cat-shelter"></div>
+{%- if paginator.page == 2 -%}<div itemscope itemtype="https://schema.org/HowTo">{%- include {{page.lang}}/ppage.html -%}</div>{%- endif -%}
+{%- if paginator.page == 2 -%}<p><b>Posts, page 2</b></p>{%- endif -%}
+<div id="cat-shelter">{%- if paginator.page == 2 -%}{%- include cat.html -%}{%- endif -%}</div>
 <div class="post-list" data-nosnippet>
   {%- for post in paginator.posts -%}
     <div class="post card clf">
@@ -57,12 +57,9 @@ layout: pages
 	  </div>
 	</div>
   {% endfor %}
-  {% include pagination.html %}
+{%- if paginator.page != 2 -%} {%- include pagination.html -%}{%- endif -%}
 </div>
-
-{%- if paginator.page ==2 -%}{%- if page.lang == "en" -%}{%- include ppage_en.html -%}{%- elsif page.lang == "ru" -%}{%- include ppage_ru.html -%}{%- else -%}{%- include ppage.html -%}{%- endif -%}{%- endif -%}
-{%- include cat.html -%}
-
+{%- if paginator.page != 2 -%}{%- include cat.html -%}{%- endif -%}
 {%- comment -%} 
 	JS changes the language if the referrer =/= our domain, Navigator.languages exists and doesn't contain uk-**.
 {%- endcomment -%}
