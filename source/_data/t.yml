@@ -24,7 +24,7 @@ pagination:
     ru: "Мультиязычный SEO блог --> Русский --> Страница "
     en: "Multilingual SEO blog --> English --> Page "
 
-  h2:
+  header:
     uk: "Чекліст для перевірки SEO пагінації на сайті"
     ru: "Чек-лист для проверки SEO пагинации на сайте"
     en: "Pagination SEO Checklist"
