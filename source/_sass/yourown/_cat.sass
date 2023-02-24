@@ -191,13 +191,12 @@
   position: absolute
 
 #cat-shelter
-  right: 320px
-  margin-top: 17px
+  right: 286px
 
 .cat
   height: 50px
-  bottom: 0
-  left: 90px
+  bottom: -8px
+  left: 85px
   border-top-left-radius: 100px
   border-top-right-radius: 100px
 
@@ -436,12 +435,15 @@
     transform: scale(0.6, 0.6)
     filter: blur(3px)
 
+
 +media($tablet)
   #cat-shelter
-    margin-top: -49px
-    right: 35%
+    right: 45%
 
   .cat
-    bottom: -66px
     z-index: 2
     left: calc(25vw - 100px)
+
++media($desktop)
+  #cat-shelter
+    right: 50%
