@@ -163,7 +163,7 @@ image: "link-juice-leakage.jpg"
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<h2 id="4"><span itemprop="name">What are UGC and Sponsored link hints</span> and why they aren’t directives</h2>
-	<p>In September 2019, the widely supported <strong>nofollow</strong> directive and its antipode, <strong>dofollow</strong>, were joined by two non-strict instructions, for Google bots exclusively.<p>
+	<p>In September 2019, the widely supported <strong>nofollow</strong> directive and its antipode, <strong>dofollow</strong>, were joined by two non-strict instructions, for Google bots exclusively.</p>
 	<p><span itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">They are the values of the rel attribute of the link tag: rel="<strong>ugc</strong>" and rel="<strong>sponsored</strong>". Both rel-values are just hints; bots can take them into account, but they aren’t obliged to do so. <strong>UGC</strong> stands for User Generated Content, such as comments, forum posts, profile bios, etc. <strong>Sponsored</strong> is intended to highlight affiliate and paid links.</span></span></p>
 	<p><b class="red">UPD!</b> In the summer of 2020, Bing <a href="https://www.bing.com/webmasters/help/webmasters-guidelines-30fba23a">confirmed</a> that its search bots support <strong>sponsored and ugc</strong> hints introduced by Google.</p>
 	<p class="txt-center">
@@ -176,4 +176,4 @@ image: "link-juice-leakage.jpg"
 	<blockquote>This <a href="https://moz.com/blog/ugc-distilledodn-seo-test">A/B testing</a> confirms that it’s harmful to give up nofollow if it is in the right place. The article tells us about the experiment on <span class="under">replacing nofollow with ugc </span>for half of the anchor tags in MOZ’s blog comments.</blockquote> 
 <p>By the end of the testing, a slight decrease in traffic had been detected. It has been proven that at a 95% confidence interval, the traffic shift stays <span class="under">between -26 000 and +9 300 visits</span>/month. No big deal, but possible losses far outweigh the potential increase.</p>
 <p><b>To summarize.</b> New Google’s hints restrain the passing of ranking signals and the more so <em>sponsored</em>. But the most steady way to manage the PageRank is still rel="nofollow". For backward compatibility, it’s better to add nofollow to any other a-tag hint. If you don’t want to give an extra clue to bots, it’s OK not to change existing links on your site. In most cases, Google itself can figure out which link is paid, which is spam, and which is useful, placed for the user’s convenience.</p>
-</div> 
+</div>

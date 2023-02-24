@@ -71,4 +71,4 @@ image: "writing.jpg"
 <ul>
   <li>automatically translated into all the world languages clones of popular Q&A services;</li>
   <li>the paraphrase of some complex instructions or cooking recipes in simple words.</li>
-</ul>.
+</ul>
