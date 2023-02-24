@@ -19,5 +19,5 @@
       {%- if maxRelatedCounter >= maxRelated -%} {%- break -%} {%- endif -%}
     {%- endif -%}
   {%- endfor -%}
-  <a href="{{ site.url }}{%- if page.lang != 'uk' -%}/{{ page.lang }}{%- endif -%}/page=2/#pagination-checklist">{{ site.data.t.pagination.h2[page.lang] }}</a>
+  <a href="{{ site.url }}{%- if page.lang != 'uk' -%}/{{ page.lang }}{%- endif -%}/page=2/">{{ site.data.t.pagination.header[page.lang] }}</a>
 </div>

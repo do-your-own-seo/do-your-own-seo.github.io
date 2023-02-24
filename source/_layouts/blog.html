@@ -4,7 +4,7 @@ layout: pages
 {%- if page.lang == "ru" and paginator.page == 1 -%}
 <div id="banner" data-nosnippet class="clf">{%- include ru/banner.html -%}</div>{%- endif -%}
 {%- if paginator.page == 2 -%}{% include {{ page.lang }}/ppage_intro.html %}{%- include pagination.html -%}{%- endif -%}
-<h1 class="txt-center" id="pagination-checklist">{%- if paginator.page == 2 -%}{{site.data.t.pagination.header[page.lang]}}{%- else -%}{{ page.h1}}{%- endif -%}</h1>
+<h1 class="txt-center">{%- if paginator.page == 2 -%}{{site.data.t.pagination.header[page.lang]}}{%- else -%}{{ page.h1}}{%- endif -%}</h1>
 {%- if paginator.page == 1 -%}{{ content }}{%- endif -%}
 {%- if paginator.page == 2 -%}<div itemscope itemtype="https://schema.org/HowTo">{%- include {{page.lang}}/ppage.html -%}</div>{%- endif -%}
 {%- if paginator.page == 2 -%}<p><b>Posts, page 2</b></p>{%- endif -%}
