@@ -2,13 +2,13 @@
 <nav class="pagination" role="navigation" aria-label="pagination">
   <ul>
     {%- if paginator.previous_page -%}
-      <li><a class="prev button-ghost" href="{{ paginator.previous_page_path }}" title="Newer">&#10094;&#10094;</a></li>
+      <li><a class="prev button-ghost" href="{{ paginator.previous_page_path }}" title="Previous">&#10094;&#10094;</a></li>
     {%- else -%}
       <li><span class="prev button-ghost disabled">&#10095;&#10095;</span></li>
     {%- endif -%}
     <li><span class="page-number"> {{paginator.page}} of {{paginator.total_pages}}</span></li>
     {%- if paginator.next_page -%}
-      <li><a class="next button-ghost" href="{{ paginator.next_page_path }}" title="Older">&#10095;&#10095;</a></li>
+      <li><a class="next button-ghost" href="{{ paginator.next_page_path }}" title="Next page">&#10095;&#10095;</a></li>
     {%- else -%}
       <li><span class="next button-ghost disabled">&#10094;&#10094;</span></li>
     {%- endif -%}

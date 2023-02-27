@@ -83,7 +83,7 @@ image: "technical-website-audit-DIY.jpg"
 </div>
 <div>
 <h2 id="2">Core Web Vitals. Website performance checkup</h2>
-<p>Relevant and high-quality content is always #1. However, if the website is slow, it won’t be easy to get high positions on Google SERP. As back in 2021, Google <a href="https://developers.google.com/search/blog/2020/11/timing-for-page-experience">stated that Core Web Vitals</a> (load speed, interactivity, layout stability) had become ranking factors. For now, they are far from being the main factors, but this is only for now.</p>
+<p>Relevant and high-quality content is always #1. However, if the website is slow, it won’t be easy to get high positions on Google SERP. As back in 2021, Google <a href="https://developers.google.com/search/blog/2020/11/timing-for-page-experience">stated that Core Web Vitals</a> (load speed, interactivity, layout stability) had become important ranking factors.</p>
 <p>Thus the first step is to check the performance of the site’s <span class="under">homepage and all typical pages</span>, such as categories, products, etc. There is a service, <a href="https://pagespeed.web.dev/">Pagespeed Insights</a>: it identifies performance bottlenecks and suggests ways to get rid of them.</p> 
 <p>For perfectionists, I recommend a multi-purpose alternative to this tool, <a href="https://web.dev/measure/">Web.dev Measure</a>: in addition to performance, it’ll verify the page’s accessibility for screen readers, check the source code quality, and validate the main aspects of page-level SEO. <b class="red">Update!</b> Google has decided to shut down this service, completely transferring the functionality to Pagespeed Insights (see the link above).</p> 
 <p>For example, here are the scores of the PACE website.</p>
