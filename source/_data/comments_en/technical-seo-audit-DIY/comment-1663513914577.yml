@@ -1,0 +1,12 @@
+_id: 3ae4bdc0-3764-11ed-8291-ed2ba51fbd02
+lang: en
+name: Olya Vo
+message: >-
+  Hello! 
+
+  Alas, I won't be able to personally respond to anyone, as I won't see the email. It is immediately hashed and stored that way on GitHub.
+
+  The commenting system (Staticman) tries to use this hash to find a gravatar. I have my own instance of Staticman for this blog, so I can get rid of the email field entirely.
+  But I don't want to change something that works well. If Heroku kills the free dynos, then maybe I'll change something.
+replying_to: '1'
+date: '2022-09-18T15:11:54.576Z'
