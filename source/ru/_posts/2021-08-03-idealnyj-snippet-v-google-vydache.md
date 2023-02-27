@@ -9,9 +9,9 @@ date: 2021-08-03T18:02:00Z
 last_modified_at: 2022-08-20T20:00:00Z
 
 
-title: "Как улучшить сниппет страницы в Google и повысить CTR?"
+title: "Формируем расширенный сниппет в Поиске: знания + инструменты"
 tags: [CTR, Rich Results, сниппет, SERP, SEO]
-description: "Появившись в Google выдаче, страница борется за клик и свое будущее в Поиске. Органический CTR ниже, чем у конкурентов? &#10004; Добавляем schema-markup, улучшаем сниппет и повышаем CTR!"
+description: "Появившись в Google выдаче, страница борется за клик и свое будущее в Поиске. Органический CTR ниже, чем у конкурентов? &#10004; Генерируем сниппет, добавляем schema-markup и повышаем CTR!"
 keywords: "SERP сниппет"
 schema: FAQPage
 styles: /assets/post-on-snippets/snippet.css
@@ -25,14 +25,14 @@ snippet: "Как повлиять на вид вашего фрагмента в
 image: "how-to-earn-a-proper-snippet.jpg"
 ---
 <ul class="toc">
-  <li><a href="{{ site.url }}{{ page.url }}#1">Цель – расширенный фрагмент в Поиске</a></li>
-  <li><a href="{{ site.url }}{{ page.url }}#2">On-page SEO: оптимизируем сниппет</a></li>
-  <li><a href="{{ site.url }}{{ page.url }}#3">Инструменты для моделирования сниппета&#160;&#160;<i class="icon icon-wrench red"></i></a></li>
+  <li><a href="{{ site.url }}{{ page.url }}#1">Цель – расширенный сниппет в Поиске</a></li>
+  <li><a href="{{ site.url }}{{ page.url }}#2">Как On-page SEO влияет на вид сайта в выдаче</a></li>
+  <li><a href="{{ site.url }}{{ page.url }}#3">Генератор Google сниппетов и другие&#160;&#160;<i class="icon icon-wrench red"></i></a></li>
 </ul>
 <div>
 	<p>Любой онлайн-ресурс хочет быть заметным в Поиске, но этого мало: нужно быть убедительным! Нужно знать, что ищет потенциальная аудитория и успеть заинтересовать пользователя <b>за 1-2 секунды</b>, пока он скользит взглядом вдоль описания в выдаче. Как этого добиться? Сформировать правильный сниппет.</p>
 	<p>Тут стоит прояснить: указать поисковику, как должны выглядеть результаты, увы, не в нашей власти. Всё, что мы можем – это подать поисковой системе ту информацию, которая, <span class="under">в её понимании,</span> украсит результаты поиска. Тогда в выигрыше будут все!</p>
-	<p class="txt-center"> <img src="/images/posts/{{ page.image }}" alt="Про Schema.org, nosnippet и другое, что позволяет управлять своим фрагментом в Google выдаче" class="webfeedsFeaturedVisual" width="700" height="322"></p>
+	<p class="txt-center"> <img src="/images/posts/{{ page.image }}" alt="Про Schema.org, nosnippet и другое, что позволяет управлять своим фрагментом в Google выдаче" class="webfeedsFeaturedVisual" width="740" height="350"></p>
 	<p>Перед тем, как перейти к делу, придется развеять миф. Доводилось ли вам слышать &#171;легкий рецепт&#187; SEO оптимизации: &#171;5 звезд в рейтинг статьи или продукта, ключевое слово в тайтл и дважды в дескрипшен – и вуаля, плюс 10 позиций&#187;? Легко, да только с позиции сдвинуться так просто не выйдет.</p>
     <p>Похоже, на текущий момент ни <strong>description</strong> (описание), ни звездный рейтинг прямо <strong>не влияют на ранжирование</strong>. Даже URL страницы – и тот уже нет. Вот <strong>title</strong> (название), вероятно, имеет вес и должен быть оптимизирован. Еще одно &#171;влиятельное&#187; исключение – поле <strong>InStock</strong> разметки продукта: справедливо, если актуальные товары получат фору. Но тут важно быть честным, так как возврат юзеров в Поиск будет тревожным сигналом для поисковика.</p>
 	<p itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"><span itemprop="name">Так что же, богатый сниппет не повысит ранг страницы в Google?</span> <span itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">Напрямую – нет, но <strong>реакция пользователей</strong> на него может быть учтена машиной пересчета ранга. Больше о поведенческих <a href="{{site.url}}/kak-rabotajut-algoritmy-google#2">факторах ранжирования тут</a>.</span></span></p>
@@ -42,9 +42,8 @@ image: "how-to-earn-a-proper-snippet.jpg"
 </div>
 <div>
 	<h2 id="1">Что такое Расширенные Результаты Google и как попасть в их число</h2>
-	<p>
-		Упрощенно, сюда относятся любые нестандартные фрагменты <abbr title="Страница результатов поиска = Search Engine Results Page">SERP</abbr>а, выделяющиеся на фоне текстовых сниппетов. <strong>Рецепт, Мероприятие, ЧаВо, Вопрос-Ответ, Продукт, Карусель, Рецензия, Фильм, Приложение</strong> и другое. Тут <a href="https://developers.google.com/search/docs/guides/search-gallery">полный список от Google</a>, и он продолжает пополняться новыми типами расширенных результатов.
-	</p>
+	<p itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"><meta itemprop="name" content="Что такое Расширенные Результаты Google?">
+		 <span itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">Упрощенно, сюда относятся любые нестандартные фрагменты <abbr title="Страница результатов поиска = Search Engine Results Page">SERP</abbr>а, выделяющиеся на фоне текстовых сниппетов. <strong>Рецепт, Мероприятие, ЧаВо, Вопрос-Ответ, Продукт, Карусель, Рецензия, Фильм, Приложение</strong> и другое.</span></span> Тут <a href="https://developers.google.com/search/docs/guides/search-gallery">полный список от Google</a>, и он продолжает пополняться новыми типами расширенных результатов.</p>
 	<p class="txt-center">
 		<img loading="lazy" src="/images/posts/rich-results-ru.jpg" alt="Варианты расширенных сниппетов" width="800" height="360">
 	</p>
@@ -71,7 +70,7 @@ image: "how-to-earn-a-proper-snippet.jpg"
 	<p>Что до остальных расширенных результатов в Яндексе: необходимым условием вывода добавочных сведений является подключение <strong>технологии Турбо</strong>. В начале апреля Турбо-страницам <a href="https://webmaster.yandex.ru/blog/novye-predstavleniya-turbo-stranits-dlya-internet-magazinov-na-poiskovoy-vydache">стали доступны</a> категорийные сниппеты с каруселью и товарные – с галереей изображений.</p>
 </div>
 <div>
-	<h2 id="2">Оптимизация сниппета: мелочей в SEO не бывает</h2>
+	<h2 id="2">Оптимизация сниппета страницы: мелочей в SEO не бывает</h2>
 	<p>Раздел о том, как on-page SEO отражается на представлении страницы в Поиске. И о том, какие меры способны обеспечить прирост CTR.</p>
 	<h3>1. Title (заголовок), keywords (&#171;ключи&#187;) и description (описание) <img loading="lazy" src="/images/posts/in-the-details.jpg" alt="The devil is in the details" class="fl-right restrict vw40" width="285" height="245"></h3>
 	<p>На <strong>тайтл</strong> страницы seo-специалисты смотрят прежде всего. Посколько именно он обычно является анкором той самой заветной синей ссылки Google. Почему <span class="under">обычно</span>?</p>
@@ -90,7 +89,7 @@ image: "how-to-earn-a-proper-snippet.jpg"
 		<li>Можно ориентироваться на десктоп. Если будет нужно, Гугл сам дополнит сниппет фразами из текста.</li>
 		<li>Можно писать больше, около 280 знаков, условно <span class="under">деля на две части</span>. Самое важное обязано уместиться в первых 135-160 знаках: если остальное отбросить, смысл сохранится.</li>
 	</ul>
-	<p>В разделе Инструменты есть рабочий <b><a href="{{ site.url }}{{ page.url }}#simulator" class="red">симулятор сниппета</a></b>: он покажет эскиз фрагмента результатов Google.</p>
+	<p>В разделе Инструменты есть рабочий <b><a href="{{ site.url }}{{ page.url }}#simulator" class="red">генератор сниппета</a></b>: он покажет эскиз фрагмента результатов Google.</p>
 	<h3>2. Подзаголовки и быстрые ссылки</h3>
     <p>О пользе подзаголовков и наличия в них вторичных ключевых фраз сказано выше, но есть еще кое-что. Можно присвоить подзаголовкам идентификаторы (id="section-N") и сгенерировать <abbr title="Table Of Contents">TOC</abbr>&#160;– содержание статьи. </p>
     <p>Ведь страница, где <span class="under">на первом экране</span> в области контента присутствует выделенная группа <span class="under">внутренних ссылок</span>, может иметь в Google выдаче больше кликабельных элементов. В ее сниппете появятся <strong>быстрые ссылки</strong>, как на рисунках ниже.</p>
@@ -141,14 +140,14 @@ image: "how-to-earn-a-proper-snippet.jpg"
 	<p> О наполнении контентом сейчас не говорим; сниппет будем лечить радикально. Для этого всем &#171;посторонним&#187; элементам страницы добавим логический атрибут <strong>data-nosnippet</strong>: должно получиться <b>&lt;div&#160; data-nosnippet &#160;id="widget"&gt;</b>. Живой пример – секция &#171;Другие статьи по теме&#187; под этим постом.</p> 
 	<blockquote><b>Внимание!</b> Атрибут сработает только на &lt;div&gt;, &lt;section&gt; или &lt;span&gt;. Если нежелательный блок содержит нестандартные HTML-элементы, его придется обернуть в &lt;div&gt;. </blockquote>
 	<p>Переходим к <span class="under">директивам уровня страницы</span>, которые задаются в мета-теге robots. Самая суровая – <strong>nosnippet</strong>: она запрещает Гуглу использовать в Поиске любой фрагмент документа и изображения из контекста. Более мягкая директива <strong>max-snippet:[number|&#160;0&#160;|&#160;-1]</strong> лишь устанавливает ограничение на количество знаков. Ноль означает то же, что и nosnippet; -1 декларирует отсутствие ограничений.</p>
-	<p itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"><span itemprop="name">В каких случаях стоит пользоваться max-snippet?</span> <span itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">Основной use case – совместно с max-image-preview, например:</span></span></p>
+	<p itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"><span itemprop="name">Когда стоит воспользоваться max-snippet?</span> <span itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">Основной use case – совместно с max-image-preview, например:</span></span></p>
 	<p class="txt-center">&lt;meta name="robots" content="<b>max-snippet:60, max-image-preview:large"</b>&gt;</p>
 	<p>Смысл понятен: мы одновременно ограничиваем текст и разрешаем максимально большую картинку.</p>
-	<blockquote>Изначально эти директивы были введены для гугл-ботов. Но в <span class="under">апреле 2020 Bing </span>заявил, что его роботы тоже научились понимать max-snippet и max-image-preview.</blockquote>
+	<blockquote>Изначально эти директивы были введены для гугл-ботов. Но в <span class="under">апреле 2020 <strong>Bing</strong> </span>заявил, что его роботы тоже научились понимать <strong>max-snippet и max-image-preview</strong>. Но не <strong>data-nosnippet</strong>: Bing не планирует его внедрять.</blockquote>
 	<p>У Яндекса на замену им есть тег &lt;noindex&gt;, в который можно вложить фрагмент контента. Он не будет проиндексирован и, соответственно, не попадет в сниппет. Чтобы HTML оставался валидным, &#171;тег&#187; можно заменить на комментарий: &lt;!--noindex--&gt;&lt;!--/noindex--&gt;. Ну согласитесь: атрибут был бы логичнее...</p>
 </div>
 <div>
-	<h2 id="3">Инструменты, которые помогут сформировать идеальный сниппет</h2>
+	<h2 id="3">Симулятор Google сниппета, генераторы Schema-разметки и др. SEO инструменты</h2>
 <p>Тем, кто поставил целью расширить сниппет сайта в Поиске, не обойтись без Schema.org – основного словаря семантической разметки. Работу с ним облегчат следующие онлайн-ресурсы.</p>
 <ul>
 	<li>Генераторы Schema-разметки в формате JSON-LD: <a href="https://technicalseo.com/tools/schema-markup-generator/">Merkle Technicalseo</a> – самый универсальный,&#160; <a href="https://jsonld.com/json-ld-generator/">JsonLD.com</a> – ограничен в возможностях, но предлагает готовые примеры, которые легко редактировать.</li>
@@ -158,9 +157,9 @@ image: "how-to-earn-a-proper-snippet.jpg"
 <blockquote><i class="green"><i class="icon icon-attachment"></i></i>&#160;&thinsp;Бонус. Букмарклеты для отправки страниц на проверку &#171;на лету&#187;: <b><a class="red" href="javascript:void(window.open(%27https%3A%2F%2Fsearch.google.com%2Ftest%2Frich-results%3Furl=%27+window.location.href,%27_blank%27));">Rich-Results</a></b> и <b><a class="red" href="javascript:void(window.open(%27https://validator.schema.org?url=%27+window.location.href,%27_blank%27));">Schema.org</a></b>. Применение: перетащить ссылку на панель закладок браузера. Находясь на нужной странице, нажать кнопку букмарклета. (Придется разрешить всплывающие окна, которые браузер попытается блокировать).
 </blockquote>
 <p>Перечисленные валидаторы не только помогут проверить готовый код, но и подскажут, что за разметка используется на успешных страницах конкурентов.</p>
-<p>Следующий класс помощников – симуляторы сниппета: они создают превью на основе мета-данных. Я пользуюсь этим:</p>
+<p>Следующий тип помощников – <strong>генераторы сниппета</strong>: они создают превью фрагмента в Google. Я пользуюсь этим:</p>
 <div id="component" class="card"></div>
-<p>Из посторонних не колеблясь посоветую <a href="https://technicalseo.com/tools/google-serp-simulator/">Merkle Google SERP simulator</a>: на этом сайте вообще уйма полезных приложений, включая рекомендованный выше генератор JSON.</p>
+<p>Из сторонних симуляторов не колеблясь посоветую <a href="https://technicalseo.com/tools/google-serp-simulator/">Merkle Google SERP simulator</a>: на этом сайте вообще уйма полезных приложений, включая рекомендованный выше генератор JSON.</p>
 <blockquote><i class="green"><i class="icon icon-attachment"></i></i>&#160;&thinsp;Еще букмарклеты: для подсчета <b><a class="red" href="javascript:(function()%7bfunction f(d)%7bvar t;if(d.getSelection)t=d.getSelection();else if(d.selection)t=d.selection.createRange();if(t.text!=undefined)t=t.text;if(!t||t=='')%7bvar a=d.getElementsByTagName('textarea');for(var i=0;i<a.length;++i)%7bif(a[i].selectionStart!=undefined&&a[i].selectionStart!=a[i].selectionEnd)%7bt=a[i].value.substring(a[i].selectionStart,a[i].selectionEnd);break;%7d%7d%7d return t;%7d;function g(d)%7bvar t;try%7bt=f(d);%7dcatch(e)%7b%7d;if(!t||t=='')%7bvar fs=d.getElementsByTagName('frame');for(var i=0;i<fs.length;++i)%7bt=g(fs[i].contentDocument);if(t&&t.toString()!='')break;%7d if(!t||t.toString()=='')%7bfs=d.getElementsByTagName('iframe');for(var i=0;i<fs.length;++i)%7bt=g(fs[i].contentDocument);if(t&&t.toString()!='')break;%7d%7d%7dreturn t;%7d;var t=g(document);if(!t||t=='')alert('Текст не выделен...');else alert('Знаков с пробелами: '+t.toString().length+'\nСлов: '+t.toString().match(/(\S+)/g).length);%7d)()">Слов и символов</a></b> в выделенном и получения <b><a class="red" href="javascript:void(!function(){var a=document.title,b=document.all.description.content,c=document.all.keywords.content,d=document.getElementById('MetaBookmarklet'),f,g;if(d)d.remove();else{f=document.createElement('div');g=document.createElement('div');f.id='MetaBookmarklet';f.style='position:fixed;z-index:999;left:0;right:0;text-align:center';g.style='display:inline-block;max-width:600px;margin:auto;padding:.8cm;background-color:#a6e8a6;text-align:left';g.innerHTML='<p><b>Title</b>%20('+a.length+'):%20'+a+'</p><p><b>Description</b>%20('+b.length+'):%20'+b+'</p><p><b>Keywords</b>%20('+c.length+'):%20'+c+'</p>';f.appendChild(g);document.body.insertBefore(f,document.body.firstChild)}}())">Title-Description-Keys</a></b> текущей страницы (и их длин). Для пользования сохранить в закладках браузера и запускать нажатием.</blockquote>
 <p>Обе закладки можно использовать совместно: выделить часть длинного тайтла, полученного <b>Title-Description-Keys</b>, и в ней подсчитать символы. Для скрытия просмотренной информации можно еще раз кликнуть букмарклет.</p>
 <p class="txt-center">✽ ✽ ✽</p>

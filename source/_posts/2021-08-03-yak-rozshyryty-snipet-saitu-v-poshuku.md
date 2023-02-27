@@ -9,9 +9,9 @@ date: 2021-08-03T18:02:00Z
 last_modified_at: 2022-08-20T20:00:00Z
 
 
-title: "Як покращити сніпет і підняти CTR сторінки в Google пошуку"
+title: "Як згенерувати ідеальний сніпет в Google: знання + інструменти"
 tags: [CTR, Rich Results, сніпет, SERP, SEO]
-description: "Кожна сторінка з результатів Google пошуку змагається за клік і своє майбутнє. Органічний CTR нижче, ніж у конкурентів? &#10004; Збагачуємо сніпет, додаємо schema-markup і підвищуємо CTR!"
+description: "Кожна сторінка в результатах Google пошуку змагається за клік і своє майбутнє. Органічний CTR низький – позиції просядуть &#10004; Генеруємо сніпет, додаємо Schema-markup і підвищуємо CTR"
 keywords: "SERP сніпет"
 schema: FAQPage
 styles: /assets/post-on-snippets/snippet.css
@@ -27,13 +27,13 @@ image: "how-to-earn-a-proper-snippet.jpg"
 ---
 <ul class="toc">
   <li><a href="{{ site.url }}{{ page.url }}#1">Мета – розширений фрагмент у Пошуку</a></li>
-  <li><a href="{{ site.url }}{{ page.url }}#2">On-page SEO: оптимізуємо сніпет</a></li>
-  <li><a href="{{ site.url }}{{ page.url }}#3">Інструменти для моделювання сніпета&#160;&#160;<i class="icon icon-wrench red"></i></a></li>
+  <li><a href="{{ site.url }}{{ page.url }}#2">Як On-page SEO впливає на сніпет сторінки</a></li>
+  <li><a href="{{ site.url }}{{ page.url }}#3">Генератор Google сніпетів та інші&#160;&#160;<i class="icon icon-wrench red"></i></a></li>
 </ul>
 <div>
-<p>Кожен онлайн-ресурс мріє з'явитися у 1-й десятці Google, але цього замало: треба ще й переконати юзера перейти за посиланням. Тому слід знати потреби аудиторії і вміти зацікавити користувача впродовж <b>1-2 секунд</b>, поки він веде очима вздовж стрічки результатів. Тож, як отримати <b>бліц-клік</b>? – Сформувати сторінці правильний сніпет.</p>
+<p>Кожен онлайн-ресурс мріє з'явитися у першій десятці Google. Але цього замало: треба переконати юзера перейти за посиланням. Тому слід знати потреби аудиторії і вміти зацікавити користувача впродовж <b>1-2х секунд</b>, поки він веде очима вздовж стрічки результатів. Тож, як отримати <b>бліц-клік</b>? – Сформувати правильний сніпет!</p>
 <p>Диктувати пошуковій системі, як мають виглядати результати, ми, звісно, не можемо. На що ми спроможні – це надати системі саме ту інформацію, яка, <span class="under">за її критеріями,</span> здатна прикрасити сторінку результатів (<abbr title="Search Engine Results Page">SERP</abbr>).</p>
-<p class="txt-center"> <img src="/images/posts/{{ page.image }}" alt="Про Schema.org, nosnippet та інше, що дозволяє керувати своїм фрагментом у Google-пошуку" class="webfeedsFeaturedVisual" width="700" height="322"> </p>
+<p class="txt-center"> <img src="/images/posts/{{ page.image }}" alt="Про Schema.org, nosnippet та інше, що дозволяє керувати своїм фрагментом у Google-пошуку" class="webfeedsFeaturedVisual" width="740" height="350"> </p>
 <p>Перш ніж перейти до змісту, доведеться спростувати один міф. Мабуть, всі чули &#171;легкий рецепт&#187; SEO оптимізації: &#171;5 зірок у рейтингу статті чи продукту, ключове слово в тайтлі і двічи в дескріпшені – і вуаля, плюс 10 позицій!&#187;? Так, то зробити неважко, але позиціям воно навряд чи допоможе.</p>
 <p>Наразі ані description (опис сторінки), ані зірковий рейтинг прямо <strong>не впливають на ранжування</strong>. Навіть URL – і той вже ні. Ось <strong>title</strong> (назва), ймовірно, є складником рангу, тому його належить оптимізувати. Ще один &#171;впливовий&#187; виняток – поле <strong>InStock</strong> розмітки продукту: справедливо, якщо актуальні картки товарів отримають фору.</p>
 <p>То невже ж розкішний сніпет – ваш фрагмент у Пошуку – не в змозі поліпшити позиції сторінки? Сам собою – ні, але реакція користувачів на нього буде узагальнена і врахована машиною модифікації рангу. Більше про поведінкові <a href="{{site.url}}/yak-pratsiuiut-alhorytmy-google#2">чинники ранжування тут</a>.</p>
@@ -41,8 +41,9 @@ image: "how-to-earn-a-proper-snippet.jpg"
 <blockquote>Отже, мета оптимізації сніпета – привернути увагу користувача, стимулювати перехід на сайт та... обійняти<span class="under"> якомога більше місця</span> на сторінці видачі. Це знизить шанси на клік для конкурентів, які на крок позаду.</blockquote>
 <p>Чи завжди таке вдається? Ні. В кращому разі ви отримаєте бажаний сніпет за <span class="under">основними пошуковими фразами</span>. Безліч інших пошуковик сформує на свій розсуд, й інколи це буде несподівано. Добре є те, що від потрапляння у SERP недоцільних фрагментів контенту сторінку можна убезпечити.</p>
 </div>
-<div><h2 id="1">Що таке розширені результати Google і як туди потрапити</h2>
-<p>До <strong>Rich Results</strong> – розширених результатів – відносять будь-які нестандартні фрагменти SERPа, що вирізняються на тлі текстових описів. Рецепт, Інструкція, Поширені питання, Продукт, Карусель, Захід, Фільм, Додаток, Подкаст та інші. В <a href="https://developers.google.com/search/docs/guides/search-gallery">галереї</a> від Google їх біля 25, і цей перелік ще буде доповнюватись новими типами розширених сніпетів.</p>
+<div><h2 id="1">Що таке Розширені Результати Google і як туди потрапити</h2>
+<p itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"><meta itemprop="name" content="Що таке Розширені Результати Google?">
+		 <span itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">До <strong>Rich Results</strong> – розширених результатів – відносять будь-які нестандартні фрагменти SERPа, що вирізняються на тлі текстових описів. Рецепт, Інструкція, Поширені питання, Продукт, Карусель, Захід, Фільм, Додаток, Подкаст та інші. В <a href="https://developers.google.com/search/docs/guides/search-gallery">галереї</a> від Google їх біля 25</span></span>, і цей перелік ще буде доповнюватись новими типами розширених сніпетів.</p>
 <p class="txt-center"> <img loading="lazy" src="/images/posts/rich-results-ua.jpg" alt="Види розширених результатів пошуку" width="800" height="358"></p>
 <p>Теоретично, кожна веб-сторінка має шанс на <strong>Featured Snippet</strong> – <strong>позицію&#160;№&thinsp;0</strong>, або <strong>Виокремлений фрагмент</strong>. Довідка Google <a href="https://support.google.com/webmasters/answer/6229325">стверджує</a>, що замовити потрапляння на нульову позицію неможливо: окремої розмітки для цього не існує. Для кожного пошукового запиту Google вирішує ситуативно, кого показувати у розширеному вигляді, а кого – ні.</p>
 <p> Однак деякі види контенту (How-to, Recipe, VideoObject), а також <span class="under">звичайні таблиці та списки</span> можуть спрацювати на виділений сніпет. І тоді сторінка, якщо вона ранжується не далі 10-ї позиції, &#171;стрибне вище голови&#187; і злетить над рештою конкурентів. Далі буде про інструменти, що підготують сторінку до успіху, а зараз пара цікавих ілюстрацій.</p>
@@ -85,7 +86,7 @@ image: "how-to-earn-a-proper-snippet.jpg"
 		<li>Можна орієнтуватися лише на десктоп: за потреби Google сам доповнить сніпет фразами з тексту.</li>
 		<li> Можна писати більше, десь до 280 знаків. Умовно розділивши<span class="under"> їх на 2 частини</span>: якщо другу відкинути, нічого критичного не станеться. Проте все найважливіше має вміститися в перші 135-160 символів.</li>
 	</ul>
-	<p>В розділі Інструменти є робочий <b><a href="{{ site.url }}{{ page.url }}#simulator" class="red">симулятор Google-сніпета</a></b>: він покаже ескіз фрагмента в результатах пошуку.</p>
+	<p>В розділі Інструменти є робочий <b><a href="{{ site.url }}{{ page.url }}#simulator" class="red">генератор Google-сніпета</a></b>: він покаже ескіз фрагмента в результатах пошуку.</p>
 	<h3>2. Заголовки нижчого рівня та &#171;швидкі посилання&#187;</h3>
     <p>Так, всім зрозуміло, чому варто насичувати підзаголовки ключовими фразами. Але є ще дещо: можна присвоїти тегам ідентифікатори (id="section-N") та згенерувати <abbr title="Table Of Contents">TOC</abbr>&#160;– зміст статті. Що це дасть? Більше синіх посилань.</p>
 	<p class="txt-center"> <img loading="lazy" src="/images/posts/toc-in-snippets-ua.jpg" alt="Швидкі посилання" width="610" height="105"></p>
@@ -123,7 +124,7 @@ image: "how-to-earn-a-proper-snippet.jpg"
 		<li><span>Застосувати до того основного зображення розмітку <a href="https://schema.org/ImageObject">ImageObject</a>. В тексті за потреби можно вивести зменшену копію картинки.</span></li>
 		<li><span>Заповнити meta-тег Open Graph: &lt;meta property="<strong>og:image</strong>" content="...">. Він призначений для соцмереж, але пошукові машини теж його розуміють. Для Bing це може спрацювати на прев'ю.</span></li>
 	</ol>
-	<p>Якщо ваш основний контент – відео, краще розмітити сторінку як <a href="https://schema.org/VideoObject">VideoObject</a>. Втім, про відео не варто надміру турбуватись: прев'ю і без розмітки потрапить до сніпета, якщо пошуковик вирішить, що <strong>намір користувача</strong> – дивитись.</p>
+	<p>Якщо ваш основний контент – відео, краще розмітити сторінку як <a href="https://schema.org/VideoObject">VideoObject</a>. Втім, про відео не варто надміру турбуватись: прев'ю без того потрапить до сніпета, якщо пошуковик вирішить, що <strong>намір користувача</strong> – дивитись.</p>
 	<p class="txt-center"> <img loading="lazy" src="/images/posts/thumbnail-ua.jpg" alt="Прев'ю відео в веб-пошуку" width="592" height="130"></p>
 	<p>А що як навпаки, небажано, аби наш медіа-контент з'явився у стрічці результатів? Тоді додамо до head документа</p>
 	<p class="txt-center">&lt;meta&#160; name="robots"&#160; content="<b>max-image-preview: none</b>"&gt;.</p>
@@ -135,13 +136,13 @@ image: "how-to-earn-a-proper-snippet.jpg"
 	<p>Про наповнення контентом наразі не говоримо (може, він справді там не потрібен). Сніпет будемо лікувати радикально. Для цього &#171;небажаним&#187; елементам сторінки додамо до тегу логічний атрибут <strong>data-nosnippet</strong>, матимемо <b>&lt;div&#160; data-nosnippet &#160;id="widget"&gt;</b>. Актуальний приклад – секція &#171;Пов'язані публікації&#187; під цим постом.</p> 
 	<blockquote><b>Увага!</b> Атрибут спрацює лише на &lt;div&gt;, &lt;section&gt; або &lt;span&gt;. Якщо небажаний блок містить нестандартні HTML-елементи, його доведеться загортати в &lt;div&gt;. </blockquote>
 	<p>Переходимо до <span class="under">директив рівня сторінки</span>, які задаються в мета-тезі robots. Найжорсткіша з них – <strong>nosnippet</strong>: вона забороняє використовувати в Пошуку будь-який фрагмент документа чи зображення з контексту. Більш м'яка директива – <strong>max-snippet:[number|&#160;0&#160;|&#160;-1]</strong>, вона лише обмежує кількість символів. Нуль – це те саме, що nosnippet; -1 декларує відсутність обмежень.</p>
-	<p itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"><span itemprop="name">Коли варто обрати max-snippet?</span> <span itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">Здебільшого його використовують разом з max-image-preview, приміром:</span></span></p>
+	<p itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"><span itemprop="name">Коли варто встановити max-snippet?</span> <span itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">Здебільшого його використовують разом з max-image-preview, приміром:</span></span></p>
 	<p class="txt-center">&lt;meta name="robots" content="<b>max-snippet:60, max-image-preview:large"</b>&gt;</p>
 	<p>Тобто ми одночасно обмежуємо довжину тексту та дозволяємо максимально можливе зображення.</p>
-	<blockquote>Відпочатку ці директиви з meta robots були призначені лише для ґугл-ботів. Але в <span class="under">квітні 2020 Bing </span>заявив, що його роботи теж навчилися розуміти max-snippet та max-image-preview.</blockquote>
+	<blockquote>Відпочатку ці robots-директиви були призначені лише для ґуглботів. Але в <span class="under">квітні 2020 <strong>Bing</strong> </span>заявив, що його роботи теж розуміють <strong>max-snippet і max-image-preview</strong>. Але <strong> data-nosnippet</strong> Bing не планує впроваджувати.</blockquote>
 </div>
 <div>
-<h2 id="3">Інструменти, що допоможуть сформувати ідеальний сніпет</h2>
+<h2 id="3">Симулятор Google сніпетів, генератори Schema-розмітки й інші SEO інструменти</h2>
 <p> Тим, хто прагне зайняти в результатах веб-пошуку якомога більше місця, не обійтися без <strong>Schema.org</strong>&#160;– словника семантичної розмітки. Роботу з ним суттєво полегшують наступні онлайн-ресурси.</p>
 <ul>
 	<li>Генератори Schema-розмітки в форматі JSON-LD: <a href="https://technicalseo.com/tools/schema-markup-generator/">Merkle Technicalseo</a> – універсальний; &#160;<a href="https://jsonld.com/json-ld-generator/">JsonLD.com</a>&#160;– має обмежені можливості, але пропонує готові шаблони, які легко редагувати.</li>
@@ -151,7 +152,7 @@ image: "how-to-earn-a-proper-snippet.jpg"
 <blockquote><i class="green"><i class="icon icon-attachment"></i></i>&#160;&#160;Бонус. Букмарклети для відправки сторінок на перевірку з льоту: <b><a class="red" href="javascript:void(window.open(%27https%3A%2F%2Fsearch.google.com%2Ftest%2Frich-results%3Furl=%27+window.location.href,%27_blank%27));">Rich-Results</a></b> і <b><a class="red" href="javascript:void(window.open(%27https://validator.schema.org?url=%27+window.location.href,%27_blank%27));">Schema.org</a></b>. Застосування: перетягність посилання на панель закладок браузера. Перебуваючи на потрібній сторінці, натисніть кнопку букмарклета. (Задля цього доведеться дозволити вспливаючі вікна, які браузер блокує за замовчанням).
 </blockquote>
 <p>Наведені валідатори не лише допоможуть перевірити готовий код, але й підкажуть, яка розмітка розміщена на успішних сторінках конкурентів.</p>
-<p>Наступний клас помічників – симулятори сніпета, які створюють прев'ю на основі мета-даних. Я користуюся цим:</p>
+<p>Наступний клас помічників – <strong>генератори сніпета</strong>, які створюють прев'ю фрагмента в Google. Я користуюся цим:</p>
 <div id="component" class="card"></div>
 <p>Зі сторонніх симуляторів можу порадити <a href="https://technicalseo.com/tools/google-serp-simulator/">Merkle Google SERP simulator</a>: на тому сайті взагалі купа корисних застосунків, включно з рекомендованим вище генератором JSON.</p>
 <blockquote><i class="green"><i class="icon icon-attachment"></i></i>&#160;&#160;Ще пара букмарклетів: для підрахунку <b><a class="red" href="javascript:(function()%7bfunction f(d)%7bvar t;if(d.getSelection)t=d.getSelection();else if(d.selection)t=d.selection.createRange();if(t.text!=undefined)t=t.text;if(!t||t=='')%7bvar a=d.getElementsByTagName('textarea');for(var i=0;i<a.length;++i)%7bif(a[i].selectionStart!=undefined&&a[i].selectionStart!=a[i].selectionEnd)%7bt=a[i].value.substring(a[i].selectionStart,a[i].selectionEnd);break;%7d%7d%7d return t;%7d;function g(d)%7bvar t;try%7bt=f(d);%7dcatch(e)%7b%7d;if(!t||t=='')%7bvar fs=d.getElementsByTagName('frame');for(var i=0;i<fs.length;++i)%7bt=g(fs[i].contentDocument);if(t&&t.toString()!='')break;%7d if(!t||t.toString()=='')%7bfs=d.getElementsByTagName('iframe');for(var i=0;i<fs.length;++i)%7bt=g(fs[i].contentDocument);if(t&&t.toString()!='')break;%7d%7d%7dreturn t;%7d;var t=g(document);if(!t||t=='')alert('Текст не виділено...');else alert('Знаків включно з пробілами: '+t.toString().length+'\nСлов: '+t.toString().match(/(\S+)/g).length);%7d)()">слів та символів в виділеному</a></b> та отримання <b><a class="red" href="javascript:void(!function(){var a=document.title,b=document.all.description.content,c=document.all.keywords.content,d=document.getElementById('MetaBookmarklet'),f,g;if(d)d.remove();else{f=document.createElement('div');g=document.createElement('div');f.id='MetaBookmarklet';f.style='position:fixed;z-index:999;left:0;right:0;text-align:center';g.style='display:inline-block;max-width:600px;margin:auto;padding:.8cm;background-color:#a6e8a6;text-align:left';g.innerHTML='<p><b>Title</b>%20('+a.length+'):%20'+a+'</p><p><b>Description</b>%20('+b.length+'):%20'+b+'</p><p><b>Keywords</b>%20('+c.length+'):%20'+c+'</p>';f.appendChild(g);document.body.insertBefore(f,document.body.firstChild)}}())">Title-Description-Keys</a></b> поточної сторінки (а також їхньої довжини). Треба зберегти їх в закладках та звідти запускати на виконання.</blockquote>
