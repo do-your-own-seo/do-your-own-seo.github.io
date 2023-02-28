@@ -33,7 +33,7 @@ noindex: true
             {%- endif -%}
             {{ description | strip_html }}
             {%- if post.image -%}
-            <![CDATA[<img src="{{ site.url }}/images/posts/large/{{ post.image }}" class="webfeedsFeaturedVisual"/>]]>
+            <![CDATA[<img src="{{ site.url }}/images/preview/{{ post.image }}" class="webfeedsFeaturedVisual"/>]]>
             {% endif %}
         </description>
         <pubDate>{{ post.date |  date_to_rfc822}}</pubDate>
