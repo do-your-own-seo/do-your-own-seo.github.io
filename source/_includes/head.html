@@ -81,10 +81,10 @@ https://www.gstatic.com https://www.google-analytics.com https://www.google.com;
 <meta name="twitter:image" content="{{ site.url }}/images/posts/large/{{ page.image }}" > {% else %}
 <meta name="twitter:image" content="{{ site.url }}/icon-2x-to-x.png" >
 <meta property="og:image" content="{{ site.url }}/icon-2x-to-x.png" > {% endif %} 
-{% endif %}  {% unless paginator.page >1 %}
+{% endif %}  {% unless paginator.page >2 %}
 <meta property="og:url" content="{{ canonical }}" >
-<meta property="og:title" content="{{ title }}" >
-<meta property="og:description" content="{{ descr }}" >
+<meta property="og:title" content="{% unless paginator.page == 2 %}{{ title }}{% else %}{{ site.data.t.pagination.header[page.lang] }}{% endunless %}" >
+<meta property="og:description" content="{% unless paginator.page == 2 %}{{ descr }}{% else %}{% capture intro %}{% include {{ page.lang }}/ppage_intro.html %}{% endcapture %}{{ intro | strip_html }}{% endunless %}" >
 <meta property="og:site_name" content="Homemade SEO" > {% if page.locale and page.lang !="en" %}
 <meta property="og:locale" content="{{ page.lang }}_{{ page.locale | upcase }}" > {% endif %}  
 <meta property="og:type" content="{% if page.layout == 'about' %}profile{% else %}article{% endif %}" >{% unless page.layout == "post" %}
