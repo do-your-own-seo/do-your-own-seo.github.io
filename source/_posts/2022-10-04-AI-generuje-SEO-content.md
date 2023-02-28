@@ -5,7 +5,7 @@ locale: ua
 lang: uk
  
 date: 2022-10-04T00:02:00Z
-last_modified_at: 2022-10-04T00:02:00Z
+last_modified_at: 2023-02-18T00:02:00Z
 
 
 title: "AI + SEO: Як згенерувати статтю і фото з ключових слів"
