@@ -1,7 +1,7 @@
 {%- unless page.comments_locked == true -%}
 <div id="feedback">
   <form id="comment-form" method="post" action="/f.php">
-  <a rel="nofollow" id="cancel-link" href="#feedback" class="hidden">
+  <a id="cancel-link" href="#feedback" class="hidden">
     <b>{{site.data.t.cancelReply[page.lang]}}</b> &ensp;<i class="icon icon-cross">&#10006;</i>
   </a>
     <div class="form-group">
@@ -47,7 +47,7 @@
 {%- else -%}
 <div class="notice">
   {%-if page.lang == site.lang-%}{%-assign lng ="/"-%}{%-elsif page.lang-%}{%-assign lng=page.lang | prepend:"/" | append:"/"-%}
-  {%-endif-%} <h4>{{site.data.t.commentsClosed[page.lang]}}</h4>
+  {%-endif-%} <b>{{site.data.t.commentsClosed[page.lang]}}</b>
     <p>{{site.data.t.pleaseContactMe[page.lang]}}<a href="{{site.author.email}}">{{site.data.t.pleaseContactMeAnchor[page.lang]}}</a>.</p>
 </div>
 {%- endunless -%}

@@ -13,15 +13,15 @@
   </div>
   <div class="comment-main">
     <div class="comment-meta">
-      <h4 itemprop="author" itemscope itemtype="https://schema.org/Person">
+      <b itemprop="author" itemscope itemtype="https://schema.org/Person">
         {%- if include.url and include.url !='' -%}
           <a title="{{ userName }}'s site" rel="ugc nofollow" href="{{ include.url | truncate 100 | replace: 'javascript:', ''}}" itemprop="url"><span itemprop="name">{{ userName }}</span></a>
         {%- else -%}
           <span itemprop="name">{{ userName }}</span>
         {%- endif -%}
-      </h4>
+      </b>
       {%- if include.date -%}&ensp;
-        {% if include.index %}<a rel="nofollow" href="#comment{% if r %}{{ index | prepend: '-' }}{% else %}{{ include.index | prepend: '-' }}{% endif %}" title="Permalink to this comment" itemprop="url">{% endif %}
+        {% if include.index %}<a href="#comment{% if r %}{{ index | prepend: '-' }}{% else %}{{ include.index | prepend: '-' }}{% endif %}" title="Permalink to this comment" itemprop="url">{% endif %}
         <small><time datetime="{{ include.date | date_to_xmlschema }}" itemprop="datePublished">
           {%- if page.lang == "en" -%}{{ include.date | date: "%b %-d, %Y %R" }}{%- else -%}{%- include dates.html date=date minute=true -%}{%- endif -%}
         </time></small>
@@ -33,7 +33,7 @@
     </div>
     {% unless include.replying_to >0 or page.comments_locked == true %}
       <div class="comment-reply">
-        <small><a rel="nofollow" data-i="{{ include.index }}" href="#comment-{{ include.index }}"> {{site.data.t.reply[page.lang]}}&nbsp;&#10548;</a></small>
+        <small><a data-i="{{ include.index }}" href="#comment-{{ include.index }}"> {{site.data.t.reply[page.lang]}}&nbsp;&#10548;</a></small>
       </div>
     {% endunless %}
   </div>
