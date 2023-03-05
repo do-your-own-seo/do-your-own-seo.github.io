@@ -24,6 +24,11 @@ pagination:
     ru: "Мультиязычный SEO блог --> Русский --> Страница "
     en: "Multilingual SEO blog --> English --> Page "
 
+  keywords:
+    uk: "пагінація, перевірити пагінацію на сайті"
+    ru: "пагинация, проверить пагинацию на сайте"
+    en: "pagination checklist"
+
   header:
     uk: "Чекліст для перевірки SEO пагінації на сайті"
     ru: "Чек-лист для проверки SEO пагинации на сайте"
@@ -34,11 +39,15 @@ pagination:
     ru: "Эксперимент: «Чек-лист SEO пагинации» на странице №2"
     en: "An experiment: “Pagination SEO Checklist” on the paginated Page 2"
 
+search:
+  uk: "Пошук"
+  ru: "Поиск"
+  en: "Site search"
 
 about:
   uk: "Від автора"
   ru: "От автора"
-  en: "Author’s Intro"
+  en: "Author’s intro"
 
 show:
   uk: "Меню"
