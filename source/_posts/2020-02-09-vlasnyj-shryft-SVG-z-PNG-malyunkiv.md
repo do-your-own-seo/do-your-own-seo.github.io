@@ -166,7 +166,7 @@ image: "how-to-create-manga-icon-font.jpg"
 <p class="danger"><b>NB!</b> Не можу гарантувати, що всі сайти, на яких знайдено PNG, дбають про захист прав авторів. Якщо володар прав на малюнок впізнає його в якомусь із SVG і буде проти розповсюдження файлу, ось <a href="https://contact.do/44CB" rel="nofollow">форма для звернень</a>.</p>
 <p>Тут варто було б вивести такі самі іконки, але вже як елементи web-шрифту. Проте... мені шкода наван&#173;тажувати сторінку:-(. Нехай мо&#173;деллю стане іcomoon-шрифт, який вже вико&#173;ристовується на сайті: за його прикладом легко підключити й манга-шрифт.</p>
 <div class="iconset flex-wrap flex-center" role="img" aria-label="Піктограми з web-шрифту">
-  <i class="icon icon-pencil"></i><i class="icon icon-menu"></i><i class="icon icon-question"></i><i class="icon icon-envelop"></i><i class="icon icon-attachment"></i><i class="icon icon-bubbles4"></i><i class="icon icon-mobile"></i><i class="icon icon-rss"></i><i class="icon icon-twitter"></i><i class="icon icon-github"></i><i class="icon icon-facebook"></i>
+  <i class="icon icon-pencil"></i><i class="icon icon-menu"></i><i class="icon icon-key"></i><i class="icon icon-envelop"></i><i class="icon icon-attachment"></i><i class="icon icon-bubbles4"></i><i class="icon icon-mobile"></i><i class="icon icon-search"></i><i class="icon icon-twitter"></i><i class="icon icon-github"></i><i class="icon icon-facebook"></i>
 </div>
 <p>Кожен елемент – це просто <code>&lt;i&nbsp;class="icon icon-name"/&gt;&lt;i&gt;</code>, а в стилях зафіксовано</p>
 {%- highlight CSS -%} {%- raw -%}
