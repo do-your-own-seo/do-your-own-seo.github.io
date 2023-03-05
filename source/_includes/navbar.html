@@ -3,7 +3,7 @@
   <div class="container">
     <nav>
       <input type="checkbox" id="toggleNavbar" aria-label="mobile menu">
-      <div class="logo"><a href="{{ site.url }}{{lng}}">Do Your Own SEO!</a></div>
+      <div class="logo"><a href="{{ site.url }}{{ lng }}">Do Your Own SEO!</a></div>
       <label for="toggleNavbar" class="toggle-navbar-button">
         <i class="icon icon-menu" role="button" aria-label="{{ site.data.t.show[page.lang] }}"></i>
         <i class="icon icon-cross" role="button" aria-label="{{ site.data.t.hide[page.lang] }}">&#10006;</i>
@@ -22,7 +22,7 @@
           {%- endif -%}
         {%- endfor -%}
           <li><a href="{{ site.url }}{{ lng }}about" title="{{ site.data.t.about[page.lang] }}"><i class="icon icon-about" aria-hidden="true">&thinsp;</i><span class="mobile">{{site.data.t.about[page.lang]}}</span></a></li>
-          <li><a href="{{ site.url }}{{ lng }}feed.xml" target="_blank" title="RSS"><i class="icon icon-rss" aria-hidden="true">&thinsp;</i><span class="mobile">RSS feed</span></a></li>
+          <li><a href="{{ site.url }}{{ lng }}search" title="Search"><i class="icon icon-search" aria-hidden="true">&thinsp;</i><span class="mobile">{{site.data.t.search[page.lang]}}...</span></a></li>
         </ul>
       </div>
     </nav>

@@ -3,6 +3,6 @@
 
 User-agent: *
 Allow: /
-Disallow: /*feed.xml$
+Disallow: /*search$
 
 Sitemap: {{ site.url }}/sitemap.xml

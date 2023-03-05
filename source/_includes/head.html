@@ -14,8 +14,7 @@
 {% if page.noindex %} <meta name="robots" content="noindex{%if page.nofollow%}, nofollow{%endif%}"> 
 {% endif %} {% if page.layout == "about" %}
 <meta name="robots" content="noimageindex, noarchive">{% endif %}
-<meta http-equiv="Content-Security-Policy" content="script-src 'self' {% if page.lang=='uk'%}'sha256-GKjMy2faNoU9FApFa/8K0vqAlOdQKWQaZ+mZQbawci4=' 'sha256-6xLOktMVIpI31rUfRovUh+nZsZDgmW2ep/5pmDYdylo=' {% else %}'sha256-cC/QKmY6dJNVaB5x12YuIKJjuvoNOweXDt1bPtUQ6T0='{% endif %} {% if page.lang=='en'%} 'sha256-VPQ8i8SrVDsRByw+T78gj8zR13koGryqg3JZfFXkwtM='{% elsif page.lang=='ru'%}'sha256-l884zM0oIaL5EqI4A16ArRAdRTSsa6K6EXpfanhpZYI='{% endif %}
-https://www.gstatic.com https://www.google-analytics.com https://www.google.com; base-uri 'self';">
+<meta http-equiv="Content-Security-Policy" content="script-src 'self' {% if page.lang=='uk'%}'sha256-GKjMy2faNoU9FApFa/8K0vqAlOdQKWQaZ+mZQbawci4=' 'sha256-6xLOktMVIpI31rUfRovUh+nZsZDgmW2ep/5pmDYdylo=' {% else %}'sha256-cC/QKmY6dJNVaB5x12YuIKJjuvoNOweXDt1bPtUQ6T0='{% endif %} {% if page.lang=='en'%} 'sha256-VPQ8i8SrVDsRByw+T78gj8zR13koGryqg3JZfFXkwtM='{% elsif page.lang=='ru'%}'sha256-l884zM0oIaL5EqI4A16ArRAdRTSsa6K6EXpfanhpZYI='{% endif %} {% assign tail=page.url |split:'/'| last %}{% if tail=='search' %} 'sha256-yOj7LTbXazKca3FqG3tTkLMAUyAgFHoIc8vQxIcOPJ0='{% endif %} https://www.gstatic.com https://www.google.com https://www.google-analytics.com; base-uri 'self';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta http-equiv="X-XSS-Protection" content="1; mode=block">
 <meta charset="utf-8">
@@ -23,7 +22,7 @@ https://www.gstatic.com https://www.google-analytics.com https://www.google.com;
 <meta name="theme-color" content="#618930">
 <title>{{title}}</title>
 <meta name="description" content="{{ descr }}">
-<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% elsif site.data.t.keywords %}{{ site.data.t.keywords[page.lang] }}{% endif %}">
+<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% elsif paginator.page == 2 %}{{ site.data.t.pagination.keywords[page.lang] }}{% else %}{{ site.data.t.keywords[page.lang] }}{% endif %}">
 <link rel="canonical" href="{{ canonical }}">
 {% if page.layout == "about" %}
 	{% if page.lang == "en" %}
@@ -48,8 +47,8 @@ https://www.gstatic.com https://www.google-analytics.com https://www.google.com;
 {% capture critical %}{% include fundamentals.sass %}{% include navbar.sass %}{%if page.layout == "post"%}{% include post_head.sass %}{%endif%}{% endcapture %}
 <style>{{ critical | sassify }}</style>
 {%if jekyll.environment == 'production'%}
-<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create', '{{ site.ga }}', 'auto', { 'transport': 'beacon' });ga('send', 'pageview', {'dimension1' : '{{page.lang}}'});</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QZCH80K1FD"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);} gtag('js', new Date());gtag('config', 'G-QZCH80K1FD');</script>
 {% endif %}
 <link rel="stylesheet" href="/css/main.css"> {% if page.layout == "about" %}
 <link rel="stylesheet" href="/css/about.css"> {% endif %}  {% if page.layout == "blog" %}

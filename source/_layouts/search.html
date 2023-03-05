@@ -1,0 +1,17 @@
+---
+layout: pages
+sitemap: false
+noindex: true
+---
+<div id="search-container">
+<input type="text" id="query" placeholder="Search...">
+<ul id="output"></ul>
+</div>
+<script src="/assets/site-search.js" type="text/javascript"></script>
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('query'),
+  resultsContainer: document.getElementById('output'),
+  json: '/search.JSON'
+})
+</script>

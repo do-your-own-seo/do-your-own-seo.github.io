@@ -1,0 +1,24 @@
+---
+---
+[ {% for post in site.posts %} {% unless post.draft %}
+  {
+    "title"    : "{{ post.title | escape }}",
+    "h1"       : "{{ post.h1 | escape }}",
+    "tags"     : "{{ post.tags | join: ', ' }}",
+    "keys "    : "{{ post.keywords }}",
+    "desc"     : "{{ post.description }}",
+    "url"      : "{{ site.url }}{{ post.url }}",
+    "lang"     : "{{ post.lang }}"
+  } {% unless forloop.last %},{% endunless %} {% endunless %} {% endfor %}
+  {% assign langs = site.languages| split:" "%} {% for lang in langs %}
+  , 
+  {
+    "title"    : "{{ site.data.t.pagination.header[lang] | escape }}",
+    "h1"       : "{{ site.data.t.pagination.anchor[lang] | escape }}",
+    "tags"     : "Pagination, Пагінація, Пагинация",
+    "keys"     : "{{ site.data.t.pagination.keywords[lang] }}",
+    "desc"     : "{% capture intro %}{% include {{ lang }}/ppage_intro.html %}{% endcapture %}{{ intro | strip_html }}",
+    "url"      : "{{ site.url }}{% if lang != 'uk' %}/{{ lang }}{% endif %}/page=2",
+    "lang"     : "{{ lang }}"
+  } {% endfor %}
+]
