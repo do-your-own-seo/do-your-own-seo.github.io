@@ -10,9 +10,10 @@
 
 * Pagination for each language via [Jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2) (non-supported by GitHub Pages).
 * Full control over the commenting system with [Staticman](https://github.com/eduardoboucas/staticman).
-* Sitemap.xml with all the images for every post. Adding `sitemap:false` to the front-matter excludes the page from the map; setting `sitemap_exclude:[paths]` in *\_config.yml* does the same with files and folders.
+* Instant site search for each language with [Simple-Jekyll-Search](https://github.com/christian-fei/Simple-Jekyll-Search).
+* Sitemap.xml: adding `sitemap:false` to the front-matter excludes the page from the map; setting `sitemap_exclude:[paths]` in *\_config.yml* does the same with files and folders.
 * RSS-feed for each language, optimized for Feedly.
-* Post sharing buttons (Twitter, Facebook, LinkedIn, Reddit) + social meta tags.
+* Post sharing buttons (Twitter, Facebook, LinkedIn, Reddit, Telegram) + Open Graph meta tags.
 * Schema.org markup (WebSite, WebPage, BlogPosting).
 
 NB! TOCs for the posts are compiled manually, because I prefer to change the anchor text when necessary. You might want to use the [Jekyll-toc](https://github.com/toshimaru/jekyll-toc) plugin instead. In this case, you can remove the "snippet" variable from the front matter and use {{post.excerpt}} in templates.
@@ -31,7 +32,7 @@ As of September 2019, neither v2 nor v3 of public Staticman instance was working
 
 I'm grateful to all the people mentioned for the opportunity to use the results of their work!
 
-Oh, and the cat :cat:: I met a similar [on CodePen](https://codepen.io/agoodwin/pen/ypeWYE). Now the pet is resting in the footer of the homepage and asks not to offer him any kind of :mouse: mice.
+Oh, and the cat :cat:: I met a similar [on CodePen](https://codepen.io/agoodwin/pen/ypeWYE). Now the pet is resting in the footer of the homepage and asks not to be offered any kind of :mouse: mice.
 
 ## Quick start
 
