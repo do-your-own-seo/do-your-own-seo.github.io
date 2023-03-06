@@ -47,8 +47,8 @@
 {% capture critical %}{% include fundamentals.sass %}{% include navbar.sass %}{%if page.layout == "post"%}{% include post_head.sass %}{%endif%}{% endcapture %}
 <style>{{ critical | sassify }}</style>
 {%if jekyll.environment == 'production'%}
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QZCH80K1FD"></script>
-<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);} gtag('js', new Date());gtag('config', 'G-QZCH80K1FD');</script>
+<script defer src="https://www.googletagmanager.com/gtag/js?id=G-QZCH80K1FD"></script>
+<script defer src="/assets/gtag-init.js"></script>
 {% endif %}
 <link rel="stylesheet" href="/css/main.css">
 {% if page.layout == "blog" %}
