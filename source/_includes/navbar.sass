@@ -1,3 +1,9 @@
+html
+  scroll-behavior: smooth
+  -ms-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+  text-size-adjust: 100%
+
 body
   margin: 0
   padding-top: 75px
@@ -16,6 +22,69 @@ body
   src: url('#{$icon-font-path}/icomoon.woff2') format('woff2'), url('#{$icon-font-path}/icomoon.woff') format('woff'), url('#{$icon-font-path}/icomoon.ttf') format('truetype')
   font-display: swap
   font-style: normal
+
+//heading latin
+@font-face
+  font-family: 'Source Sans Pro'
+  font-style: normal
+  font-weight: 600
+  font-display: swap
+  src:  local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2) format('woff2'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdo.woff) format('woff'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdr.ttf) format('truetype')
+  unicode-range: U+0020-007F
+
+//heading cyrillic
+@font-face
+  font-family: 'Source Sans Pro'
+  font-style: normal
+  font-weight: 600
+  font-display: swap
+  src:  local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'),  url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwkxdu.woff2) format('woff2'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwkxdo.woff) format('woff'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwkxdr.ttf) format('truetype')
+  unicode-range: U+0410-0457
+
+//base latin
+@font-face
+  font-family: 'Noto Sans'
+  font-style: normal
+  font-weight: 400
+  font-display: swap
+  src: local('Noto Sans'), local('NotoSans'), url(https://fonts.gstatic.com/s/notosans/v9/o-0IIpQlx3QUlC5A4PNr5TRA.woff2) format('woff2'), url(https://fonts.gstatic.com/s/notosans/v9/o-0IIpQlx3QUlC5A4PNr5TRG.woff) format('woff'), url(https://fonts.gstatic.com/s/notosans/v9/o-0IIpQlx3QUlC5A4PNr5TRFSf6M7Q.ttf) format('truetype')
+  unicode-range: U+0020-007F, U+201C, U+201D
+
+// base cyrillic
+@font-face
+  font-family: 'Noto Sans'
+  font-style: normal
+  font-weight: 400
+  font-display: swap
+  src: local('Noto Sans'), local('NotoSans'), url(https://fonts.gstatic.com/s/notosans/v9/o-0IIpQlx3QUlC5A4PNr4TRAW_0.woff2) format('woff2'), url(https://fonts.gstatic.com/s/notosans/v9/o-0IIpQlx3QUlC5A4PNr4TRG.woff) format('woff'), url(https://fonts.gstatic.com/s/notosans/v9/o-0IIpQlx3QUlC5A4PNr4TRFSf6M7Q.ttf) format('truetype')
+  unicode-range: U+0410-0457, U+0490-0491
+  
+.main-container
+  position: relative
+  min-height: calc(100vh - 200px)
+  padding: $base-spacing 0
+
+.container
+  margin: 0 auto
+  padding: 0 $mid-spacing
+
+  +media($tablet-small)
+    padding: 0 $base-spacing
+
+  +media($tablet)
+    max-width: 980px
+
+.hidden
+  display: none
+
+=clearfix
+  &::after
+    clear: both
+    content: ""
+    display: block
+
+.clf
+  +clearfix
 
 .icon
   font-family: 'icomoon'

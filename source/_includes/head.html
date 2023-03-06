@@ -50,11 +50,15 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QZCH80K1FD"></script>
 <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);} gtag('js', new Date());gtag('config', 'G-QZCH80K1FD');</script>
 {% endif %}
-<link rel="stylesheet" href="/css/main.css"> {% if page.layout == "about" %}
-<link rel="stylesheet" href="/css/about.css"> {% endif %}  {% if page.layout == "blog" %}
-<link rel="stylesheet" href="/css/blog.css"> {% endif %} {% if page.layout == "post" %}
-<link rel="stylesheet" href="/css/post.css"> {% if page.styles %}
-<link rel="stylesheet" href="{{page.styles}}">{% endif %}{% endif %}
+<link rel="stylesheet" href="/css/main.css">
+{% if page.layout == "blog" %}
+<link rel="stylesheet" href="/css/blog.css">{% endif %}
+{% if page.layout == "about" %}
+<link rel="stylesheet" href="/css/about.css"> {% endif %}  
+{% if page.layout == "post" %}
+<link rel="stylesheet" href="/css/post.css">{% if page.styles %}
+<link rel="stylesheet" href="{{page.styles}}">{% endif %}
+{% endif %}
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="240x240">
 {% for tr in translated reversed %}
