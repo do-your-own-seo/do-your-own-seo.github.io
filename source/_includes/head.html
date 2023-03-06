@@ -14,7 +14,7 @@
 {% if page.noindex %} <meta name="robots" content="noindex{%if page.nofollow%}, nofollow{%endif%}"> 
 {% endif %} {% if page.layout == "about" %}
 <meta name="robots" content="noimageindex, noarchive">{% endif %}
-<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'sha256-qgaUuCo4bjAED6+Au9wWCLwctBZ3uL0seI9rfMxnf6w=' {% if page.lang=='uk'%}'sha256-GKjMy2faNoU9FApFa/8K0vqAlOdQKWQaZ+mZQbawci4=' 'sha256-6xLOktMVIpI31rUfRovUh+nZsZDgmW2ep/5pmDYdylo=' {% else %}'sha256-cC/QKmY6dJNVaB5x12YuIKJjuvoNOweXDt1bPtUQ6T0='{% endif %} {% if page.lang=='en'%} 'sha256-VPQ8i8SrVDsRByw+T78gj8zR13koGryqg3JZfFXkwtM='{% elsif page.lang=='ru'%}'sha256-l884zM0oIaL5EqI4A16ArRAdRTSsa6K6EXpfanhpZYI='{% endif %} {% assign tail=page.url |split:'/'| last %}{% if tail=='search' %} 'sha256-yOj7LTbXazKca3FqG3tTkLMAUyAgFHoIc8vQxIcOPJ0=' 'sha256-qgaUuCo4bjAED6+Au9wWCLwctBZ3uL0seI9rfMxnf6w='{% endif %} https://www.gstatic.com https://www.google.com https://www.googletagmanager.com https://www.google-analytics.com; base-uri 'self';">
+<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'sha256-qgaUuCo4bjAED6+Au9wWCLwctBZ3uL0seI9rfMxnf6w=' {% if page.lang=='uk'%}'sha256-GKjMy2faNoU9FApFa/8K0vqAlOdQKWQaZ+mZQbawci4=' {% else %}'sha256-cC/QKmY6dJNVaB5x12YuIKJjuvoNOweXDt1bPtUQ6T0='{% endif %} {% assign tail=page.url |split:'/'| last %}{% if tail=='search' %} 'sha256-yOj7LTbXazKca3FqG3tTkLMAUyAgFHoIc8vQxIcOPJ0=' {% endif %} https://www.gstatic.com https://www.google.com https://www.googletagmanager.com https://www.google-analytics.com; base-uri 'self';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta http-equiv="X-XSS-Protection" content="1; mode=block">
 <meta charset="utf-8">
