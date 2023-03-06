@@ -83,12 +83,12 @@ image: "use-JS-bookmarklets-on-mobile.jpg"
 <p>Що незвичніше було ім'я закладки, то вищою вона буде в підказках omnibox.</p> <p>Підіб'ємо підсумок: порівняємо придатність мобільних браузерів до роботи з JavaScript букмарклетами.</p>
 <table class="txt-center"><caption><small>Аспекти роботи з JS букмарклетами в різних браузерах</small></caption>
   <tr>
-    <th>Адреса в контекст-меню</th>
-    <th>Створення нової закладки</th>
-    <th>Запуск з адресного рядка</th> 
-    <th>Запуск з панелі закладок</th>
-    <th>Дозвіл Pop-ups</th>
-    <th>Браузер</th>  
+    <th class="vert">Адреса в контекст-меню</th>
+    <th class="vert">Створення нової закладки</th>
+    <th class="vert">Запуск з адресного рядка</th> 
+    <th class="vert">Запуск з панелі закладок</th>
+    <th class="vert">Дозвіл Pop-ups</th>
+    <th class="vert"></th>  
   </tr>
   <tbody>
     <tr>
