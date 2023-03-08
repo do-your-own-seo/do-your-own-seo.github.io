@@ -73,7 +73,7 @@ image: "ai-generated-content.jpg"
 <p>Видно, що AI обрав найголовнішу ключову фразу й використав її в усіх прикладах. І ще одну другорядну, яку застосував тричі.</p>
 <h3>Зазивні заголовки, що «чіпляють»</h3>
 <p>В оригінальному англійському прочитанні це звучить як <strong><abbr title="Call to Action">CTA</abbr></strong> – заклик до дії. Демонструю результати двох спроб: їх можна вважати успішними, але жоден з результатів мене (очікувано) не задовольнив.</p>
-<p class="txt-center"><img loading="lazy" src="/images/posts/longshot-cta-headlines-2.jpg" alt="СTA headlines: олігархи" width="335" height="530"><img loading="lazy" src="/images/posts/longshot-cta-headlines-1.jpg" alt="СTA headlines: репарації" width="335" height="455" style="vertical-align:top"></p>
+<p class="txt-center"><img loading="lazy" src="/images/posts/longshot-cta-headlines-2.jpg" alt="СTA headlines: олігархи" width="335" height="530"><img loading="lazy" src="/images/posts/longshot-cta-headlines-1.jpg" alt="СTA headlines: репарації" width="335" height="455" class="v-top"></p>
 <p>Перше, що впадає в око – різна довжина списку. Так, при послідовному генеруванні матимемо різну кількість варіантів. Друге – це надмірний ухил в тему грошей, яка, на думку AI, має «зачепити» широкі верстви населення.</p>
 <p>Вам теж не дуже? Заради справедливості покажу, що AI-дописувачі здатні й не на такий «креатив». Для прикладу наводжу зразки, створені в цьому <a href="https://www.hubspot.com/blog-topic-generator">топік-генераторі</a> від Hubspot: п'ять заголовків за п'ятьма ключовими фразами.</p>
 <p class="txt-center"><img loading="lazy" src="/images/posts/hubspot-generated-headlines.jpg" alt="Заголовки від Hubspot" width="725" height="575"></p>

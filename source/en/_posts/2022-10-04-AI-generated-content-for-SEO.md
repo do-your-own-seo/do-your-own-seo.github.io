@@ -72,7 +72,7 @@ image: "ai-generated-content.jpg"
 <p>As you can see, AI chose the main key phrase and used it in all examples. Additionally, it singled out a secondary one and applied it three times.</p>
 <h3>Catchy CTA headlines</h3>
 <p>I’ll show the outcomes of two attempts to create Call-to-Action headings. Neither satisfied me: the headings were too playful and didn’t match the intention of the post. But for entertaining content, they would be perfect!</p>
-<p class="txt-center"><img loading="lazy" src="/images/posts/longshot-cta-headlines-2.jpg" alt="СTA headlines: oligarchs" width="335" height="530"><img loading="lazy" src="/images/posts/longshot-cta-headlines-1.jpg" alt="СTA headlines: reparations" width="335" height="455" style="vertical-align:top"></p>
+<p class="txt-center"><img loading="lazy" src="/images/posts/longshot-cta-headlines-2.jpg" alt="СTA headlines: oligarchs" width="335" height="530"><img loading="lazy" src="/images/posts/longshot-cta-headlines-1.jpg" alt="СTA headlines: reparations" width="335" height="455" class="v-top"></p>
 <p>The first thing that catches your eye is the unequal list length. Yes, with sequential generation, we get a different number of options. The second is an excessive bias toward money: should that “hook” the majority of Internet users?</p>
 <p>To be fair and avoid blaming a single AI system, I’ll share what I’ve obtained from another AI content writer. Here are samples created in Hubspot’s <a href="https://www.hubspot.com/blog-topic-generator">Topic Generator</a>. Five headlines based on 5 keys.</p>
 <p class="txt-center"><img loading="lazy" src="/images/posts/hubspot-generated-headlines.jpg" alt="Hubspot generated headlines" width="725" height="575"></p>
