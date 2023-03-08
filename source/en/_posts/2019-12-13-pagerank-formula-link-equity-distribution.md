@@ -56,29 +56,29 @@ image: "link-juice-leakage.jpg"
 	</div>
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-	<h3 itemprop="name">How to check nofollow and dofollow links?</h3>
+	<h3 itemprop="name">How to check nofollow and dofollow links</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">It’s easy to highlight no-followed links with the help of a bookmarklet. Drag this <a class="red" href='javascript:(function(){var o,e,l=document.links;for(o=0;o<l.length;++o)-1!=(e=l[o].rel.toLowerCase()).indexOf("nofollow")?(l[o].style.backgroundColor="yellow",l[o].title+=" NOfollow"):l[o].style.backgroundColor="lightgreen",-1!=e.indexOf("ugc")&&(l[o].style.border="6px solid orange",l[o].title+=" UGC"),-1!=e.indexOf("sponsored")&&(l[o].style.outline="4px solid red",l[o].title+=" Sponsored")})()'>Nofollow-and-ugc-link-highlighter</a> to your browser bookmarks bar. On the page you want to check, click the bookmark&#173;let: all <b>no</b>-follow links will turn yellow; <b>do</b>-follow will become green. The users’ or paid links will have orange or red borders.</p>
+		<p itemprop="text">It’s easy to highlight no-followed links with the help of a bookmarklet. Drag this <a class="red" href='javascript:(function(){var o,e,l=document.links;for(o=0;o<l.length;++o)-1!=(e=l[o].rel.toLowerCase()).indexOf("nofollow")?(l[o].style.backgroundColor="yellow",l[o].title+=" NOfollow"):l[o].style.backgroundColor="lightgreen",-1!=e.indexOf("ugc")&&(l[o].style.border="6px solid orange",l[o].title+=" UGC"),-1!=e.indexOf("sponsored")&&(l[o].style.outline="4px solid red",l[o].title+=" Sponsored")})()'>Nofollow-and-ugc-link-highlighter</a> to your browser’s bookmarks bar. On the page you want to check, click the bookmarklet: all <b>no</b>-follow links will turn yellow; <b>do</b>-follow will turn green. The users’ or paid links will have orange or red borders.</p>
 	</div>
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<h3 itemprop="name">Why aren’t nofollow links intended to pass PageRank?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">Because the value and credibility cannot be transmitted blindly. If the bot can’t follow the link, it won’t be able to check the relevance of the linked webpage.</p>
+		<p itemprop="text">Because value and credibility cannot be transmitted blindly. If the bot can’t follow the link, it won’t be able to check the relevance of the linked webpage.</p>
 	</div>
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<img loading="lazy" src="/images/posts/bot.jpg" alt="How the Googlebot works" class="fullscreen-right" title="It may not be the Googlebot, but it’s cute" width="300" height="515">
 	<h3 itemprop="name">What does it mean that nofollow becomes a hint?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">The nofollow attribute of the anchor tag is no longer a directive. <span class="u">On March 1, 2020</span>, the Googlebot <span class="u">got the right to ignore it</span>, follow the link and crawl the destination page. So, every link may be considered by search engines for ranking purposes.</p>
+		<p itemprop="text">The nofollow attribute of the anchor tag is no longer a directive. <span class="u">On March 1, 2020</span>, the Googlebot <span class="u">got the right to ignore it</span>, follow the link, and crawl the destination page. So, every link may be considered by search engines for ranking purposes.</p>
 	</div>
 </div>
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<h3 itemprop="name">Do nofollow links help rankings?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">Yes, the nofollow link from a trusted domain like Wikipedia.org can increase site traffic and likely improve its rankings. Also, this <a href="https://www.seroundtable.com/google-nofollow-link-attribute-change-sponsored-ugc-28196.html">collection of tweets</a> from informed people would suggest that the Google search engine could use nofollowed links when ranking pages.</p>
+		<p itemprop="text">Yes, a nofollow link from a trusted domain like Wikipedia.org can increase site traffic and likely improve its rankings. Also, this <a href="https://www.seroundtable.com/google-nofollow-link-attribute-change-sponsored-ugc-28196.html">collection of tweets</a> from informed people would suggest that the Google search engine could use nofollowed links when ranking pages.</p>
 	</div>
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
@@ -91,46 +91,46 @@ image: "link-juice-leakage.jpg"
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<h3 itemprop="name">How are <em>noopener</em> and <em>noreferrer</em> related to nofollow?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">The only thing they have in common — they are values of the <em>rel</em> attribute of the &lt;a&gt; tag. The noopener and noreferrer do NOT affect PageRank and are NOT intended for bots. One of their main tasks is to secure a page containing a link with target = "_blank" <span class="under">to another domain</span> from malicious attacks using window.opener.</p>
+		<p itemprop="text">The only thing they have in common is that they are values of the <em>rel</em> attribute of the &lt;a&gt; tag. The noopener and noreferrer do NOT affect PageRank and are NOT intended for bots. One of their main tasks is to secure a page containing a link with target = "_blank" <span class="under">to another domain</span> from malicious attacks using window.opener.</p>
 	</div>
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<h3 itemprop="name">Does a 301 redirect pass link juice?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">In general, yes. But if the new and previous pages are different in purpose, then most likely no ranking signals will be passed through a redirect. When a redirect chain occurs, the situation gets complicated. Google will try to select the canonical page, but <span class="under">the longer is the chain</span>, <span class="under">the fewer chances for</span> the destination page to become canonical.</p>
+		<p itemprop="text">In general, yes. But if the new and previous pages are different in purpose, then most likely no ranking signals will be passed through a redirect. When a redirect chain occurs, the situation gets complicated. Google will try to select the canonical page, but <span class="under">the longer is the chain</span>, <span class="under">the fewer chances there are</span>  for the destination page to become canonical.</p>
 	</div>
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<h3 itemprop="name">How do I check my Google PageRank?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">Until 2013, it was possible to find the PageRank value on the Google Toolbar. Later, the company stopped updating those values, and in 2016 PR was deprecated. But there are some third-party sites like <a href="https://www.checkpagerank.net/">checkpagerank.net</a> that can help you to check page rank online. Yet, there is no guarantee that the tool will take into account all existing links to your page.</p>
+		<p itemprop="text">Until 2013, it was possible to find the PageRank value on the Google Toolbar. Later, the company stopped updating those values, and in 2016, PR was deprecated. But there are some third-party sites, like <a href="https://www.checkpagerank.net/">checkpagerank.net</a>, that can help you check page rank online. Yet, there is no guarantee that the tool will take into account all existing links to your page.</p>
 	</div>
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<h3 itemprop="name">What are alternatives to Google PageRank?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">You can check <em>Ahrefs URL Rank, Moz’s Page Authority, Majestic’s Trust Flow</em>, or even branded PR-variations like <em>Serpstat PageRank</em>. If you are interested in graph theory and programming, you might appreciate the <a href="https://en.wikipedia.org/wiki/SALSA_algorithm">SALSA</a> and <a href="https://www2003.org/cdrom/papers/refereed/p007/p7-abiteboul.html">OPIC</a> algorithms for page importance computation.</p>
+		<p itemprop="text">You can check <em>Ahrefs URL Rank, Moz’s Page Authority, Majestic’s Trust Flow</em>, or even branded PR variations like <em>Serpstat PageRank</em>. If you are interested in graph theory and programming, you might appreciate the <a href="https://en.wikipedia.org/wiki/SALSA_algorithm">SALSA</a> and <a href="https://www2003.org/cdrom/papers/refereed/p007/p7-abiteboul.html">OPIC</a> algorithms for page importance computation.</p>
 	</div>
 </div>
 
 <div><h2 id="2">Outbound links: when they harm and when help</h2>
-	<p>It might seem unreasonable to pass a portion of link juice to other sites. So webmasters sometimes totally avoid external links or set rel="nofollow" for each anchor tag. In the pure form, both strategies do not lead to anything good. Outbound links are not so dangerous if you understand how they work.</p>
+	<p>It might seem unreasonable to pass a portion of link juice to other sites. So webmasters sometimes totally avoid external links or set rel="nofollow" for each anchor tag. In their pure form, both strategies do not lead to anything good. Outbound links are not so dangerous if you understand how they work.</p>
 	<p>You <span class="under">share link juice <b>without any benefit</b></span> when:</p>
 	<ul>
-		<li><img loading="lazy"  class="fl-right restrict vw35" src="/images/posts/give.jpg" alt="When links hurt" width="160" height="160">you refer to a suspicious or much less reliable web resource;</li>
-		<li>the link is proposed in such a context that users are likely to follow and not return to the site (&ldquo;we don’t have many photos, but there are plenty of them <span class="u">here</span>&rdquo;);</li>
+		<li><img loading="lazy"  class="fl-right restrict vw35" src="/images/posts/give.jpg" alt="When links hurt" width="160" height="160">you refer to a suspicious or much less reliable website;</li>
+		<li>the link is proposed in such a context that users are likely to follow it and not return to the site (&ldquo;we don’t have many photos, but there are plenty of them <span class="u">here</span>&rdquo;);</li>
 		<li>the anchor text matches the keyword for which your page is optimized;</li>
 		<li>an outbound link is placed in the navigation or sidebar, meaning all the pages of the site waste link equity.</li>
 	</ul>
-	<p>You share <span class="under">PageRank, but <b>build up the site</b> reputation</span> if you:</p>
+	<p>You share <span class="under">PageRank but <b>build up the site’s</b> reputation</span> if you:</p>
 	<ul>
 		<li>refer to prominent authorities in the whole industry;</li>
-		<li>create mega-useful content for your users (e.g., the rating of free software);
+		<li>create incredibly useful content for your users (e.g., the rating of free software);
 		<img loading="lazy"  class="fl-right restrict vw35" src="/images/posts/give-back.jpg" alt="When you benefit from external links" width="160" height="160"></li>
 		<li>establish a good relationship with a site whose audience might be interested in your content;</li>
-		<li>provide the user with a list of online resources that will be useful to him in the next step.</li>
+		<li>provide users with a list of online resources that will be useful to them in the next step.</li>
 	</ul>
-<blockquote>It is unthinkable that one site can meet all the needs of the user: he or she will leave anyway, yet will be grateful to you for farewell recommendations. Next time seeing your logo on the SERP, the loyal user will immediately go to the site.</blockquote>
+<blockquote>It is unthinkable that one site can meet all the needs of the user; he or she will leave anyway but will be grateful to you for farewell recommendations. Next time seeing your logo on the SERP, the loyal user will immediately go to the site.</blockquote>
 <p>You <span class="under">definitely <b>need to add</b> an</span> external link, regardless of cost, when:</p>
 	<ol type="i">
 		<li><span>using someone else’s content under a license with attribution required;</span></li>
@@ -139,23 +139,23 @@ image: "link-juice-leakage.jpg"
 	</ol>
 <p>That isn’t just about ethics: in either case, it’s unlikely that the search engine will applaud the site owner for the missing link.</p>
 <p class="txt-center"><img loading="lazy" src="/images/posts/webpages-and-links.jpg" alt="Google PageRank and rel=sponsored, nofollow, ugc" width="710" height="450"></p>
-<p>So far, we mostly have been talking about outgoing and backward links (commonly spelled as &ldquo;backlinks&rdquo;). But internal links are also essential: they can radically redistribute the link equity. Some crawlers calculate the Internal PageRank for all the pages of a given site. As examples, let’s highlight <a href="https://www.oncrawl.com/solutions/seo-challenges/internal-linking/">OnCrawl</a> (cloud-based) and <a href="https://netpeaksoftware.com/spider#features">Netpeak Spider</a> (desktop). In fact, the internal linking strategy is the basis of website optimization, but talking about that requires more space than we can take.</p>
+<p>So far, we’ve mostly been talking about outgoing and backward links (commonly spelled as &ldquo;backlinks&rdquo;). But internal links are also essential: they can radically redistribute the link equity. Some crawlers calculate the Internal PageRank for all the pages of a given site. As examples, let’s highlight <a href="https://www.oncrawl.com/solutions/seo-challenges/internal-linking/">OnCrawl</a> (cloud-based) and <a href="https://netpeaksoftware.com/spider#features">Netpeak Spider</a> (desktop). In fact, the internal linking strategy is the basis of website optimization, but talking about that requires more space than we have.</p>
 </div>
 <div><h2 id="3">Nofollow usage: cut off the extremes. How not to waste link equity</h2>
-	<p>Using nofollow indiscriminately, you can force search bots to misunderstand your site structure and eliminate the benefits of outgoing links. Thus we, website owners, should use link hints consciously.</p>
-<p><strong>It makes sense to set rel="nofollow"</strong> for the hyperlinks below.</p>
+	<p>Using nofollow indiscriminately, you can make search engines misinterpret your website’s architecture and nullify the benefits of outgoing links. Thus, website owners should use link hints consciously.</p>
+<p><strong>It makes sense to set rel="nofollow"</strong> for the hyperlinks like below.</p>
 	<ul class="featured plus">
-	  <li>Internal links to non-indexable pages (search, sorting, etc.). That can save the link juice, efforts of search bots, and your crawl budget.</li>
+	  <li>Internal links to non-indexable pages (search, sorting, etc.): that can save link juice, the efforts of search bots, and your crawl budget.</li>
 	  <li>External links for which you wouldn’t like to vouch (e.g., the link posted by the user).</li>
+	  <li>Links from widgets, counters, and other side elements if you have an opportunity to edit the code.</li>
 	  <li>Social sharing links.</li>
-	  <li>Links from widgets, counters, and other alien elements if you have an opportunity to edit the code.</li>
-	  <li>Any noticeable link pointing to the archive or other source that doesn’t care about rankings and isn’t recognized as authoritative. An alternative to nofollow is rendering that source with a linked footnote.</li>
+	  <li>Any noticeable link pointing to the archive or another source that doesn’t care about rankings and isn’t recognized as authoritative. An alternative to nofollow is rendering that source with a linked footnote.</li>
 </ul>
-<p> <b>NB!</b> No value of <em>rel</em> can protect the page to which a link points from crawling, and no attribute at all gives reliable protection against indexing. You can disallow unwanted internal URLs in robots.txt, but it is better to <a href="https://support.google.com/webmasters/answer/93710?hl=en">prevent indexing</a> properly.</p>
+<p> <b>NB!</b> No value of <em>rel</em> can protect the page to which the link points from crawling and indexing. You can disallow unwanted internal URLs in robots.txt, but it is better to <a href="https://support.google.com/webmasters/answer/93710?hl=en">prevent their indexing</a> properly.</p>
 <p>If on some dead-end page most links point to pages that search robots should not see, it’s preferable to use the tag &lt;<b>meta</b>&nbsp;name="<b>robots</b>" content="nofollow"&#8239;/&gt;. It should be placed in the &lt;head&gt; of the HTML document so that bots do not follow the links. Unlike the nofollow attribute, this meta tag is a strict directive.</p>
 <p><strong>When not to use rel="nofollow"</strong>:</p>
 <ul class="featured minus">
-	<li>For all external links indiscriminately: each case is worth to be examined.</li>
+	<li>For all external links indiscriminately, each case is worth examining.</li>
 	<li>When referring to the source of information or the profile of the person you are quoting.</li>
 	<li>For PageRank sculpting, which means the artificial redistribution of the Internal PageRank.</li>
 </ul>

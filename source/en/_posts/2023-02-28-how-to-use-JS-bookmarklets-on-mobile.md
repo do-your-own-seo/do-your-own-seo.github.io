@@ -9,7 +9,7 @@ last_modified_at: 2023-02-28T10:11:00Z
 
 title: "How to use bookmarklets on mobile (depending on the browser)"
 tags: [JavaScript, bookmarklets, On-page, SEO]
-description: "Is it true that you can use JavaScript bookmarks on PC only? – Nope! Bookmarklets work on smartphones too! You just have to know how to run them in the context of the current page"
+description: "It’s quite promising that you can use JavaScript bookmarks on your smartphone. You just have to know how to run bookmarklets in the context of the current page"
 keywords: "bookmarklets on mobile"
 schema: FAQPage
 code_amount: 1
