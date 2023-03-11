@@ -7,7 +7,7 @@ locale: en
 date: 2023-03-08T0:09:00Z
 last_modified_at: 2023-03-08T0:09:00Z
 
-title: "How to protect your brand queries from hijacking by competitors on Google"
+title: "How to protect your brand queries from hijacking by competitors"
 tags: [Brand, Web Search, SEO]
 description: "How to steal a user away from the SERP for “competitor’s brand”. How to protect your brand from being hijacked on Google and be the No. 1 for branded keywords"
 keywords: "brand query hijacking"
@@ -120,7 +120,7 @@ The text should outline the <b>advantages</b> and <b>benefits of using</b> the p
 <ol>
    <li><span>Claim that your competitor is targeting a different Internet segment. You can even provide a rationale for why the target segment is being ignored.</span></li>
    <li><span>If the competitor’s site has changed its address, refer to the old one and let a redirect happen when search engine bots follow the link.</span></li>
-   <li><span>In a stricter version, link out of context to a prohibited page (code 403) if you find one on the competitor’s website.</span></li>
+   <li><span>In a stricter version, link out of context to a page with restricted access if you find one on the competitor’s website.</span></li>
 </ol>
 <p><strong>Protecting the brand</strong> from this hijacking tactic is only possible with an active content strategy and wide representation on social networks (choose the most popular in the target region). Each social profile should have a link to the localized company website. Otherwise, you’ll stay “focused on the distant foreign market, because more money circulates there”.</p>
 </div>
@@ -139,7 +139,7 @@ The text should outline the <b>advantages</b> and <b>benefits of using</b> the p
 <p>Yes, this is overkill, but you shouldn’t wait for an unfair competitor to use such tactics. It’s better to <strong>engage in prevention</strong>.</p> 
 <p>You are lucky if there is a Great Guy among the bloggers or industry influencers who benefited from the brand’s products in a difficult situation and is grateful for this from the bottom of his heart. He could review the products, compliment the customer service and support team, and even mention some shortcomings in a friendly way.</p>
 <p>You say you don’t have such friends? It’s a pity; it wouldn’t hurt to make some.</p>
-<p>In addition, it’s worth remembering about SMM, increasing brand awareness, taking tours around the manufacturing facility, and making your employees feel proud to be a part of your company.</p>
+<p>In addition, it’s worth remembering about social media marketing, increasing brand awareness, taking tours around the manufacturing facility, and making your employees feel proud to be a part of your company.</p>
 </div>
 <div>
 <h2 id="4">Buying Search Ads for the competitor’s brand keyphrases</h2>
@@ -152,11 +152,11 @@ The text should outline the <b>advantages</b> and <b>benefits of using</b> the p
     <img loading="lazy" src="/images/posts/paid-organic.jpg" alt="Moz is advertised for their own brand query, but Ahrefs doesn’t do this" width="720" height="600">
   </picture>
 </p>
-<p>If a competitor lies in an advertisement, the main task is to expose it and file a complaint with the search engine Ads service. But it can be difficult to detect fraud since such ads often have geographic targeting. Also, the abuser may buy impressions in other search engines where the victim is not promoted (for example, not in Google but in Bing).</p>
+<p>If a competitor lies in the ad text, the main task is to expose it and file a complaint with the search engine Ads service. But it can be difficult to detect fraud since such ads often have geographic targeting. Also, the hijackers may buy impressions on other search engines where the victim is not promoted (for example, not in Google but in Bing).</p>
 <p>It’s also hard to fight brand hijacking on retail platforms like <strong>Amazon</strong>. The platform has a vested interest in sales, and its interests are not harmed if the seller is not an official store but a counterfeit store (provided the customer is not deceived about the origin of the product).</p>
 </div>
 <div>
-<h2 id="5">Domain name hijacking: branded domain falsification</h2> 
+<h2 id="5">Domain hijacking: branded domain name falsification</h2> 
 <p>Websites that look similar to the site of a respectable brand are typically created to direct organic and advertising traffic there. If the domain name doesn’t correspond with the <strong>registered trademark</strong>, it’ll be nearly impossible to fight the fraudsters. Otherwise, it’s possible, but the process can be long and complicated.</p> 
 <p>So if there is a long-term business plan associated with your site, it makes sense to <span class="under">buy up similar names</span> on all major top-level domains (<em>.org, .com, .info</em> and so on) and merge them with the main domain by permanent redirection. Even Google has to do this to avoid endangering users: for example, <em>google.info, google.net</em>, and even <em>goog<b>el</b>.com</em> will redirect your browser to a well-known <em>google.com</em>. </p>
 </div>
