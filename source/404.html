@@ -21,10 +21,23 @@ https://www.gstatic.com https://www.google-analytics.com https://www.google.com;
 </head>
 <body>
   <header class="site-header">
-  <div class="container">
-    <div class="logo"><a href="{{site.url}}/en/">Do Your Own SEO!</a></div>
-  </div>
-</header>
+    <div class="container">
+      <nav>
+        <input type="checkbox" id="toggleNavbar" aria-label="mobile menu">
+        <div class="logo"><a href="{{ site.url }}{{ lng }}">Do Your Own SEO!</a></div>
+        <label for="toggleNavbar" class="toggle-navbar-button">
+          <i class="icon icon-menu" role="button" aria-label="{{ site.data.t.show[page.lang] }}"></i>
+          <i class="icon icon-cross" role="button" aria-label="{{ site.data.t.hide[page.lang] }}">&#10006;</i>
+        </label>
+        <div class="navbar">
+          <ul>
+            <li><a href="{{ site.url }}{{ lng }}about" title="{{ site.data.t.about[page.lang] }}"><i class="icon icon-about" aria-hidden="true">&thinsp;</i><span class="mobile">{{site.data.t.about[page.lang]}}</span></a></li>
+            <li><a href="{{ site.url }}{{ lng }}search" title="Search" rel="nofollow"><i class="icon icon-search" aria-hidden="true">&thinsp;</i><span class="mobile">{{site.data.t.search[page.lang]}}...</span></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
 <main class="main-container">
   <div class="container">
     <div class="page card">
