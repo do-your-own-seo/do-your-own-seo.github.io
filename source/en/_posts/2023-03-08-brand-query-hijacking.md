@@ -107,7 +107,7 @@ The text should outline the <b>advantages</b> and <b>benefits of using</b> the p
 <p>Such an article will add points to the brand’s reputation, if only someone reads it. For this to happen, the company’s home page must be at the top of the “company brand” search. You say, “Can it be otherwise?” – Easy.</p></div>
 <div>
 <h2 id="2">Intercepting a competitor’s navigation query</h2>
-<p>It works if the victim brand is poorly represented in the local segment of the Internet. As an example, this is a “SEMRUSH”-optimized article on the blog of another SEO company, successfully operating in Runet. The page is in Russian, its title translates to “SEMRUSH. <a href="https://netpeak.net/ru/blog/semrush_shpionaj_za_konkurentami_pri_raskrutke_saitov/" rel="nofollow">Spying on competitors in website promotion</a> — Netpeak Blog”.</p>
+<p>It works if the victim brand is poorly represented in the local segment of the Internet. As an example, this is a “SEMRUSH”-optimized article on the blog of another SEO company, successfully operating in Runet. The page about competitor analysis is in Russian; its title translates to “SEMRUSH. <a href="https://netpeak.net/ru/blog/semrush_shpionaj_za_konkurentami_pri_raskrutke_saitov/" rel="nofollow">Spying on competitors in website promotion</a> — Netpeak Blog”.</p>
 <p class="txt-center">
   <picture>
     <source srcset="/images/posts/wp/spy.webp" type="image/webp">
