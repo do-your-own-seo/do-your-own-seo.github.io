@@ -3,5 +3,6 @@
 
 User-agent: *
 Allow: /
+Disallow: /search.JSON
 
 Sitemap: {{ site.url }}/sitemap.xml
