@@ -94,6 +94,11 @@ comment:
   ru: "Сообщение"
   en: "Message"
 
+message:
+  uk: "Ваше повідомлення, запитання чи доповнення контенту"
+  ru: "Ваше сообщение, вопросы или дополнения к контенту"
+  en: "Your feedback, maybe questions, or additions to the content"
+
 commentName:
   uk: "Ім’я"
   ru: "Имя"
