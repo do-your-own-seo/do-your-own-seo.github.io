@@ -23,8 +23,6 @@
     <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.url | replace: '/', ''}}">
     <input type="hidden" name="options[origin]" value="{{ site.url }}{{ page.url}}">
     <input type="hidden" id="comment-parent" name="fields[replying_to]" value="">
-    <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.recaptcha.siteKey }}">
-    <input type="hidden" name="options[reCaptcha][secret]" value="{{ site.recaptcha.secret }}">
     <div class="alert txt-right">
       <b class="ok hidden">{{site.data.t.commentSuccess[page.lang]}}</b>
       <b class="err hidden">{{site.data.t.commentReject[page.lang]}}</b>
@@ -33,8 +31,6 @@
       <label for="comment-form-location">{{site.data.t.honeypot[page.lang]}}
         <input type="text" id="comment-form-location" name="fields[hidden]" autocomplete="off" placeholder="{{site.data.t.honeypotPlacehold[page.lang]}}" >
       </label>
-      <div class="g-recaptcha " data-sitekey="{{ site.recaptcha.siteKey }}"></div>
-
       <button type="submit" id="submit-comment" class="button-ghost">
         <b class="def">{{site.data.t.submitComment[page.lang]}}</b>
         <b class="sending hidden">{{site.data.t.commentSending[page.lang]}}</b>
