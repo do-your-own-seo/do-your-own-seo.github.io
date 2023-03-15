@@ -60,11 +60,6 @@
     label[for="comment-form-url"]
       padding-top: 2px
 
-/* fix reCAPTCHA iframe overflow */
-    &.g-recaptcha > *
-      margin-left: 0.5em
-      padding: 0
-
 .comment
   display: flex
 
@@ -134,16 +129,3 @@ button .icon
   &.hidden
     display: none
 
-.g-recaptcha
-  display: inline-block
-  margin: $small-spacing $small-spacing 0 0
-
-.g-recaptcha,
-.g-recaptcha iframe
-  max-width: 230px
-
-  +media($phone)
-    max-width: 290px
-
-  +media($phone-large)
-    max-width: 100%

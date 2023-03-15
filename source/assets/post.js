@@ -8,14 +8,7 @@ function showEl(str1, str2) {
     });
   document.querySelector(str1 +' '+ str2).classList.remove('hidden');
 }
-function loadRecaptcha() {
-  var recaptchaJS = document.createElement('script');
-  recaptchaJS.type = 'text/javascript';
-  recaptchaJS.src = 'https://www.google.com/recaptcha/api.js'
-  document.getElementsByTagName('head')[0].appendChild(recaptchaJS);
-  // remove onfocusin
-  getById('comment-form').removeEventListener('focusin', loadRecaptcha)
-}
+
 var app = "{{site.staticman.app}}",
     repo = "{{site.github-repo}}",
     branch = "/{{site.staticman.branch}}/",
@@ -25,8 +18,6 @@ var app = "{{site.staticman.app}}",
 
 (function(){
   document.addEventListener('DOMContentLoaded', function(){
-
-    getById('comment-form').addEventListener('focusin', loadRecaptcha, false);
 
     if (window.matchMedia("(min-width: 768px)").matches) {
       try {
