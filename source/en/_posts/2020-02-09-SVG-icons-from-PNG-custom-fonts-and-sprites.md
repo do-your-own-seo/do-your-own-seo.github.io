@@ -88,7 +88,7 @@ Go to the website of PNG&#10132;SVG converter. I recommend the free tool <a href
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">It remains to thank the converter (they accept donations) and save the output SVG. But it’s too early to relax: the file size can be significantly reduced!</span>
     <meta itemprop="name" content="Final conversion of the enhanced PNG" >
   </li>
-  <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Switch to the <a href="https://jakearchibald.github.io/svgomg/">SVGOMG optimizer</a>. Upload your file, set <em>Precision=0</em> in settings, and uncheck the <em>Remove&thinsp;viewBox</em>. That’s all! The result appears automatically: ready for use black-and-white icon has just been created!</span>
+  <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Switch to the <a href="https://jakearchibald.github.io/svgomg/" rel="noopener" target="_blank">SVGOMG optimizer</a>. Upload your file, set <em>Precision=0</em> in settings, and uncheck the <em>Remove&thinsp;viewBox</em>. That’s all! The result appears automatically: ready for use black-and-white icon has just been created!</span>
     <ul class="nobullets oneline txt-center">
       <li><svg width="210" height="210" role="img" aria-label="The result after the final step: the cat icon"><use xlink:href="/assets/post-on-icons/manga.svg#icon-cat2"/></svg> &emsp; </li> 
       <li><svg width="210" height="210" role="img" aria-label="SVG weighing less than 3 kb: boy’s face"><use xlink:href="/assets/post-on-icons/manga.svg#icon-hero1"/></svg></li>

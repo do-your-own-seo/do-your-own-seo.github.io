@@ -87,7 +87,7 @@ image: "how-to-create-manga-icon-font.jpg"
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Остается поблагодарить сайт-конвертер и сохра&#173;нить результат конверти&#173;рования. Но расслаб&#173;ляться рано: размер файла мож&#173;но существенно уменьшить!</span>
     <meta itemprop="name" content="Финальная конвертация PNG" >
   </li>
-  <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Идем на сайт <a href="https://jakearchibald.github.io/svgomg/">оптимизатора SVGOMG</a>. Загружаем свой файл, в настройках устана&#173;вливаем нулевую точность (Precision&thinsp;=&thinsp;0) и снимаем галочку с Remove&thinsp;viewBox. Боль&#173;ше ничего не делаем: резуль&#173;тат появится авто&#173;мати&#173;чески. Всё: пригодный для иконки черно-белый SVG готов!</span>
+  <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Идем на сайт <a href="https://jakearchibald.github.io/svgomg/" rel="noopener" target="_blank">оптимизатора SVGOMG</a>. Загружаем свой файл, в настройках устана&#173;вливаем нулевую точность (Precision&thinsp;=&thinsp;0) и снимаем галочку с Remove&thinsp;viewBox. Боль&#173;ше ничего не делаем: резуль&#173;тат появится авто&#173;мати&#173;чески. Всё: пригодный для иконки черно-белый SVG готов!</span>
     <ul class="nobullets oneline txt-center">
       <li><svg width="210" height="210" role="img" aria-label="Результат после 9 шагов: иконка с кошкой"><use xlink:href="/assets/post-on-icons/manga.svg#icon-cat2"/></svg> &emsp; </li> 
       <li><svg width="210" height="210" role="img" aria-label="SVG весом менее 3 кб: лицо мальчика"><use xlink:href="/assets/post-on-icons/manga.svg#icon-hero1"/></svg></li>

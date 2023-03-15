@@ -84,7 +84,7 @@ image: "how-to-create-manga-icon-font.jpg"
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Лишилося подякувати конвертеру (там приймають дарунки) і стягнути собі SVG. Втім, розслабля&#173;тися зарано: вагу файлу можна суттєво врізати.</span>
     <meta itemprop="name" content="Фінальне конвертування PNG" >
   </li>
-  <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Йдемо на сайт <a href="https://jakearchibald.github.io/svgomg/">оптимізатора SVGOMG</a>. Відкриваємо свій файл через інтерфейс, в налаш&#173;туваннях задаємо нульову точність (Precision&thinsp;=&thinsp;0) і знімаємо вказівник з Remove&thinsp;viewBox. Результат з'являється тієї ж миті! Все: маємо придатну до викорис&#173;тання чорно-білу іконку з аніме.</span>
+  <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="text">Йдемо на сайт <a href="https://jakearchibald.github.io/svgomg/" rel="noopener" target="_blank">оптимізатора SVGOMG</a>. Відкриваємо свій файл через інтерфейс, в налаш&#173;туваннях задаємо нульову точність (Precision&thinsp;=&thinsp;0) і знімаємо вказівник з Remove&thinsp;viewBox. Результат з'являється тієї ж миті! Все: маємо придатну до викорис&#173;тання чорно-білу іконку з аніме.</span>
     <ul class="nobullets oneline txt-center">
       <li><svg width="210" height="210" role="img" aria-label="Кінцевий результат: SVG іконка-котик"><use xlink:href="/assets/post-on-icons/manga.svg#icon-cat2"/></svg> &emsp; </li> 
       <li><svg width="210" height="210" role="img" aria-label="SVG вагою менше 3 кб: хлопчик-манга"><use xlink:href="/assets/post-on-icons/manga.svg#icon-hero1"/></svg></li>

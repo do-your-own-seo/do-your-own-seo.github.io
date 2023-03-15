@@ -52,7 +52,7 @@ image: "link-juice-leakage.jpg"
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<h3 itemprop="name">What are dofollow and nofollow links?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">It’s all about the <em>rel</em> attribute of the link tag. If <span class="red">rel="nofollow"</span>, the search robot won’t follow the link (we assume it’s a well-mannered bot). The default value of <em>rel</em> is "dofollow": such a link kindly asks the bot to go to the href and pass some value to the target page.</p>
+		<p itemprop="text">It’s all about the <em>rel</em> attribute of the link tag &#60;a&#62;. If <span class="red">rel="nofollow"</span>, the search robot won’t follow the link (we assume it’s a well-mannered bot). The default value of <em>rel</em> is "dofollow": such a link kindly asks the bot to go to the href and pass some value to the target page.</p>
 	</div>
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
