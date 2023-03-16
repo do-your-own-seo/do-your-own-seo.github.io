@@ -9,7 +9,7 @@ last_modified_at: 2022-09-07T00:02:00Z
 
 
 title: "Technical SEO audit of your website from scratch. DIY for free!"
-tags: [SEO-audit, Technical SEO, SEO]
+tags: [SEO-audit, On-page, Bookmarklets, SERP, JavascriptS, SEO]
 description: "Do you have high-quality content and want to promote your site on Google? Then the first need is a technical SEO audit. Do It Yourself: it’s fast, reliable, and free! Some helpful tools and bookmarklets will be recommended."
 keywords: "Technical SEO audit"
 code_amount: 2

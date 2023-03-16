@@ -8,7 +8,7 @@ date: 2023-02-28T10:11:00Z
 last_modified_at: 2023-02-28T10:11:00Z
 
 title: "Как пользоваться букмарклетами в мобильном браузере"
-tags: [JavaScript, bookmarklets, On-page, SEO]
+tags: [JavaScript, Bookmarklets, On-page, SEO]
 description: "Вы знали, что JavaScript закладки работают и на смартфоне? Но нужно уметь запустить букмарклет в контексте текущей страницы. Браузеры Chrome, Edge, Firefox и "
 keywords: "букмарклеты на мобильном"
 schema: FAQPage

@@ -8,7 +8,7 @@ date: 2019-09-23T18:14:01Z
 last_modified_at: 2022-08-20T20:00:00Z
 
 title: "E-A-T концепція: значущість контенту в розумінні Google"
-tags: [E-A-T, Google, SEO]
+tags: [E-A-T, SEO]
 description: "Переклад розділу статті &#171;Що вебмайстру слід знати про ключові оновлення Google&#187; з webmasters.googleblog.com (1 серп 2019). Не підрядний, з коментарями."
 keywords: "google E-A-T, якість контенту"
 

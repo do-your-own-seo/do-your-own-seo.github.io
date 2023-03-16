@@ -8,7 +8,7 @@ date: 2023-03-08T0:09:00Z
 last_modified_at: 2023-03-08T0:09:00Z
 
 title: "How to protect your brand queries from hijacking by competitors"
-tags: [Brand, Web Search, SEO]
+tags: [Brand, SERP, Content, SEO]
 description: "How to steal a user away from the SERP for “competitor’s brand”. How to protect your brand from being hijacked on Google and be the No. 1 for branded keywords"
 keywords: "brand query hijacking"
 schema: FAQPage

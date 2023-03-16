@@ -10,7 +10,7 @@ last_modified_at: 2022-08-20T20:00:00Z
 
 
 title: "Хочу расширенный сниппет в Поиске: знания + инструменты"
-tags: [CTR, Rich Results, сниппет, SERP, SEO]
+tags: [CTR, SERP, Snippet, On-page, Bookmarklets, JavaScript, Google, SEO]
 description: "Появившись в Google выдаче, страница борется за клик и свое будущее в Поиске. Органический CTR ниже, чем у конкурентов? &#10004; Генерируем сниппет, добавляем schema-markup и повышаем CTR"
 keywords: "SERP сниппет"
 schema: FAQPage

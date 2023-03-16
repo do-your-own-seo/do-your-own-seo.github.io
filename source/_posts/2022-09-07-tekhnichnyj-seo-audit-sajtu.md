@@ -9,7 +9,7 @@ last_modified_at: 2022-09-07T00:02:00Z
 
 
 title: "Технічний SEO аудит сайту з нуля. Безплатно. Власноруч"
-tags: [SEO-audit, Technical SEO, SEO]
+tags: [SEO-audit, On-page, Bookmarklets, SERP, JavaScript, SEO]
 description: "Плануєте просувати сайт? Перша необхідність – технічний аудит. Зробіть SEO аналіз сайту самостійно: це швидко(!), надійно, безплатно! Інструменти для SEO аудиту + букмарклети тут"
 keywords: "технічний SEO аудит, технічний аналіз сайту"
 code_amount: 2

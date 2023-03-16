@@ -4,13 +4,12 @@ i18n-link: manga
 lang: en
 locale: en
 
-
 date: 2020-02-09T18:02:00Z
 last_modified_at: 2022-08-20T20:00:00Z
 
 
 title: "How to convert PNG to tiny SVG and create your custom icon font"
-tags: [Content, svg icons, custom font, manga, SEO]
+tags: [Images, SVG, Content, JavaScript, SEO]
 description: "Content is King, but design is the entourage! We’ll create SVG icons from PNG &#10004; Generate a custom webfont and SVG sprite &#10004; Use icons & play with CSS &#10004; Articles with custom icons convince, and the UI encourages actions!"
 keywords: "custom svg font from png"
 schema: HowTo

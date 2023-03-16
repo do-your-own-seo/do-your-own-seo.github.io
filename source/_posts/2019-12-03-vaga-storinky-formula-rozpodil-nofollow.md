@@ -9,7 +9,7 @@ date: 2019-12-03T20:09:00Z
 last_modified_at: 2022-08-20T20:00:00Z
 
 title: "Як nofollow, ugc, sponsored впливають на PageRank"
-tags: [PageRank, вага посилань, Google, SEO]
+tags: [PageRank, Links, On-page, Bookmarklets, Google, SEO]
 description: "Про перенесення ваги сайту з посиланнями й обачне використання rel-атрибутів nofollow, ugc і sponsored &#10010; Про формулу PageRank і те, чому Google патентує інші її варіанти"
 keywords: "вага сторінки"
 schema: FAQPage

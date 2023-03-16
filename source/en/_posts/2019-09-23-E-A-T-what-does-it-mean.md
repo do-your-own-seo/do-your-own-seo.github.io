@@ -8,7 +8,7 @@ date: 2019-09-23T18:14:01Z
 last_modified_at: 2022-08-20T20:00:00Z
 
 title: "Expertise, Authority, and Trustworthiness matter to Google"
-tags: [E-A-T, Google, SEO]
+tags: [E-A-T, SEO]
 description: "Based on the article about &#171;Google’s core updates&#187; from webmasters.googleblog.com, Aug 2019. Anyone who is stubbornly ignored by Google should ask themselves a series of questions.."
 keywords: "google E-A-T, content quality"
 

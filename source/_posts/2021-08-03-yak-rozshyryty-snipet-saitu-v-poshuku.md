@@ -10,7 +10,7 @@ last_modified_at: 2022-08-20T20:00:00Z
 
 
 title: "Як розширити свій сніпет в Google: знання + інструменти"
-tags: [CTR, Rich Results, сніпет, SERP, SEO]
+tags: [CTR, SERP, Snippet, On-page, Bookmarklets, JavaScript, Google, SEO]
 description: "Кожна сторінка в результатах Google пошуку змагається за клік і своє майбутнє. Органічний CTR низький – позиції просядуть &#10004; Генеруємо сніпет, додаємо Schema-markup і підвищуємо CTR"
 keywords: "SERP сніпет"
 schema: FAQPage

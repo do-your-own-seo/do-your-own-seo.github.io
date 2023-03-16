@@ -8,7 +8,7 @@ date: 2023-02-28T10:11:00Z
 last_modified_at: 2023-02-28T10:11:00Z
 
 title: "How to use bookmarklets on mobile (depending on the browser)"
-tags: [JavaScript, bookmarklets, On-page, SEO]
+tags: [JavaScript, Bookmarklets, On-page, SEO]
 description: "It’s quite promising that you can use JavaScript bookmarks on your smartphone. You just have to know how to run bookmarklets in the context of the current page"
 keywords: "bookmarklets on mobile"
 schema: FAQPage

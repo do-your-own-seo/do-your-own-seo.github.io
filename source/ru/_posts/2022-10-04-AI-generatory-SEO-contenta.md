@@ -9,7 +9,7 @@ last_modified_at: 2023-02-18T00:02:00Z
 
 
 title: "AI + SEO: Как сгенерировать статью с фото из ключевых слов"
-tags: [AI, Generated content, SEO]
+tags: [AI, Content, Images, SEO]
 description: "Бесплатные AI-генераторы контента пробуют писать о &#10003;войне в Украине&#10003;. Тестируем ChatGPT, Rytr, Frase, LongshotAI и DALL-E2: определите ли вы сгенерированный SEO текст и фото? Сможет ли AI вас удивить? А испугать?"
 keywords: "AI генераторы контента, OpenAI DALL-E2"
 code_amount: 2

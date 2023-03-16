@@ -10,7 +10,7 @@ last_modified_at: 2022-08-20T20:00:00Z
 
 
 title: "How to enrich your snippets on Google: tools and knowledge"
-tags: [CTR, Rich Results, snippet, SERP, SEO]
+tags: [CTR, SERP, Snippet, On-page, Bookmarklets, JavaScript, Google, SEO]
 description: "Every webpage on Google struggles for clicks and its future. With low CTR, it's impossible to gain high rankings &#10004; Let's generate snippets, implement Schema.org markup, and increase organic CTR"
 keywords: "SERP snippet"
 schema: FAQPage

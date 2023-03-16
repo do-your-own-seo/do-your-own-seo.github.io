@@ -9,7 +9,7 @@ date: 2019-12-13T19:02:00Z
 last_modified_at: 2022-08-20T20:00:00Z
 
 title: "How do links pass value? Explaining Nofollow, Ugc & Sponsored"
-tags: [PageRank, page value, Google, SEO]
+tags: [PageRank, Links, On-page, Bookmarklets, Google, SEO]
 description: "Do you know the PageRank formula and why Google patents variations of it? &#10010; Use cases for link hints: nofollow, UGC, sponsored &#10010; How not to waste link equity and be careful with links"
 keywords: "link equity"
 schema: FAQPage
