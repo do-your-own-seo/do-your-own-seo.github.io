@@ -39,6 +39,16 @@ pagination:
     ru: "Эксперимент: «Чек-лист SEO пагинации» на странице №2"
     en: "An experiment: “Pagination SEO Checklist” on the paginated Page 2"
 
+  snippet_header:
+    uk: "Пагінація для людей і ботів:&#160; 5 кроків для перевірки впровадження"
+    ru: "Пагинация для людей и ботов:&#160 5 шагов для проверки корректности внедрения"
+    en: "Website pagination checkup: taking care of users and search bots"
+
+  snippet:
+    uk: "Хочете, щоб заглиблюватися в багатосторінкові каталоги було так само легко, як на малюнку? Проведіть SEO чекап пагінації на сайті. Чекліст з п'яти пунктів для перевірки реалізації."
+    ru: "Хотите, чтобы пролистывать многостраничные каталоги на сайте было необременительно? Проведите SEO чекап пагинации: список из пяти пунктов для проверки имплементации."
+    en: "Do you want to make it as easy to deepen into multi-page catalogs on your website? Check out the pagination implementation: just 5 steps to ensure the paginated pages are bot- and user-friendly."
+
 search:
   uk: "Пошук"
   ru: "Поиск"

@@ -1,63 +1,53 @@
 ---
 layout: pages
 ---
+{%- if page.lang == site.lang -%}{%- assign lng ="/" -%}{%- elsif page.lang -%}{%- assign lng = page.lang | prepend:"/" | append:"/" -%}{%- endif -%}
 {%- if page.lang == "ru" and paginator.page == 1 -%}
 <div id="banner" data-nosnippet class="clf">{%- include ru/banner.html -%}</div>{%- endif -%}
 {%- if paginator.page == 2 -%}{% include {{ page.lang }}/ppage_intro.html %}{%- include pagination.html -%}{%- endif -%}
 <h1 class="txt-center">{%- if paginator.page == 2 -%}{{site.data.t.pagination.header[page.lang]}}{%- else -%}{{ page.h1}}{%- endif -%}</h1>
 {%- if paginator.page == 1 -%}{{ content }}{%- endif -%}
 {%- if paginator.page == 2 -%}<div itemscope itemtype="https://schema.org/HowTo">{%- include {{page.lang}}/ppage.html -%}</div>{%- endif -%}
-{%- if paginator.page == 2 -%}<p><b>Posts, page 2</b></p>{%- endif -%}
+{%- if paginator.page == 2 -%}<p id="posts"><b>Posts, page 2</b></p>{%- endif -%}
 <div id="cat-shelter">{%- if paginator.page == 2 -%}{%- include cat.html -%}{%- endif -%}</div>
-<div class="post-list" data-nosnippet>
-  {%- for post in paginator.posts -%}
-    <div class="post card clf">
-	  {%- if post.image -%}
-	  	<picture>
-	  		<source type="image/webp" srcset="/images/preview/wp/{{ post.image | split: '.' | first }}.webp">
-            <source type="image/jpeg" srcset="/images/preview/{{ post.image }}">
-	  		<img class="post-thumbnail" src="/images/preview/{{ post.image }}" alt="{%- if forloop.index == 1 -%} {{ site.data.t.preview[page.lang] | append:'1'}}{%- else -%}{{ site.data.t.preview[page.lang] }}{{ forloop.index }}{%- endif -%}" width="250" height="180">  	
-	    </picture>
-	  {%- endif -%}
+<div class="post-list" data-nosnippet> {%- assign posts = paginator.posts -%} 
+{%- comment -%}  Add a snippet of a page that is NOT a post to the 1st paginator page  {%- endcomment -%}
+{%- if paginator.page == 1 -%}{%- assign added_post = paginator.posts[1] -%}{%- assign posts = paginator.posts | push: added_post -%} {%- endif -%}
+  {%- for post in posts -%}
+	  {%- assign url = post.url -%}
+	  {%- assign date = post.date -%}
+	  {%- if post.image -%} {%- assign image = post.image -%} {%- endif -%}
+      {%- if post.snippet_header -%}{%- assign h2 = post.snippet_header -%}{%- elsif post.h1 -%} {%- assign h2 = post.h1 -%}{%- else -%}{%- assign h2 = post.title -%}{%- endif -%}
+      {%- capture snippet -%}{%- if post.snippet -%}{{ post.snippet | strip_html }}{%- else -%}{{ post.content | strip_html | truncatewords:40 }}{%- endif -%}{%- endcapture -%}
+  	  {%- assign last_date = post.date -%}{%- if post.last_modified_at -%}{%- assign last_date = post.last_modified_at -%}{%- if last_date > post.date -%}{%- assign modified = 1 -%}{%- endif -%}{%- endif -%}
+  	  {%- if paginator.page == 1 and forloop.rindex == 1 -%} 
+  	  	{%- assign url = lng | append: "page=2/" -%} {%- assign date = 0 -%} {%- assign image = "pagination.jpg" -%}
+ 		{%- assign h2 =  site.data.t.pagination.snippet_header[page.lang]  -%}
+ 		{%- assign snippet =  site.data.t.pagination.snippet[page.lang] -%} 
+  	  {%- endif -%}
+    <div class="post card clf"> {%- if image -%}
+  	  <picture>
+  		<source type="image/webp" srcset="/images/preview/wp/{{ image | split: '.' | first }}.webp">
+        <source type="image/jpeg" srcset="/images/preview/{{ image }}">
+  		<img class="post-thumbnail" src="/images/preview/{{ image }}" alt="{{ site.data.t.preview[page.lang] }}{{ forloop.index }}" width="250" height="180">  	
+      </picture> {%- endif -%}
 	  <div class="post-content">
-	    <header {% unless post.image %}class="noimage"{% endunless %}>
-	      {%- if post.snippet_header -%}
-	      	{%- assign h2 = post.snippet_header -%}
-	      {%- elsif post.h1 -%}
-	      	{%- assign h2 = post.h1 -%}
-	      {%- else -%}
-	      	{%- assign h2 = post.title -%}
-	      {%- endif -%}
-	      <a href="{{ post.url }}"><h2 class="post-title">{{h2}}</h2></a>
-	      <div class="post-meta">
-	      	{%- assign last_date = post.date -%}
-			{%- if post.last_modified_at -%}
-				{%- assign last_date = post.last_modified_at -%}
-				{%- if last_date > post.date -%}
-					{%- assign modified = 1 -%}
-				{%- endif -%}
-			{%- endif -%}
+	    <header {% unless image %}class="noimage"{% endunless %}> 
+	      <a href="{{ url }}"><h2 class="post-title">{{h2}}</h2></a>
+	      <div class="post-meta">{%- if date !=0 -%}
 	        <small>{%- if modified !=1 -%}<time datetime="{{ last_date | date:'%F' }}">{%- endif -%}
-	        {%- if page.lang == "en" -%}
-	        	{{ post.date | date: "%b %-d, %Y" }}
-	        {%- else -%}
-	        	{%- include dates.html date = post.date -%}
+	        {%- if page.lang == "en" -%} {{ date | date: "%b %-d, %Y" }} {%- else -%} {%- include dates.html date = date -%} {%- endif -%}
+	        {%- if modified >0 -%} &#160;–&#160;<time datetime="{{ last_date | date:'%F' }}">
+	          	{%- if page.lang == "en" -%} {{ last_date | date: "%b %-d, %Y" }} {%- else -%} {%- include dates.html date = last_date -%} {%- endif -%}
 	        {%- endif -%}
-	        {%- if modified -%} &#160;–&#160;<time datetime="{{ last_date | date:'%F' }}">
-	          	{%- if page.lang == "en" -%}
-	          		{{ last_date | date: "%b %-d, %Y" }}
-	          	{%- else -%}
-	          		{%- include dates.html date = last_date -%}
-	          	{%- endif -%}
-	        {%- endif -%}
-	        </time></small>
+	        </time></small>{%- endif -%}
 	      </div>
 	    </header>
-	    <p>{%- if post.snippet -%}{{ post.snippet | strip_html }}..{%- else -%}{{ post.content | strip_html | truncatewords:40 }}{%- endif -%}</p>
+	    <p>{{ snippet }}..</p>
 	  </div>
 	</div>
   {% endfor %}
-{%- if paginator.page != 2 -%} {%- include pagination.html -%}{%- endif -%}
+  {%- if paginator.page != 2 -%} {%- include pagination.html -%}{%- endif -%}
 </div>
 {%- if paginator.page != 2 -%}{%- include cat.html -%}{%- endif -%}
 {%- comment -%} 

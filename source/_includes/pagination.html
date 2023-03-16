@@ -8,7 +8,7 @@
     {%- endif -%}
     <li><span class="page-number"> {{paginator.page}} of {{paginator.total_pages}}</span></li>
     {%- if paginator.next_page -%}
-      <li><a class="next button-ghost" href="{{ paginator.next_page_path }}" title="Next page">&#10095;&#10095;</a></li>
+      <li><a class="next button-ghost" href="{{ paginator.next_page_path }}{% if paginator.page == 1 %}#posts{% endif %}" title="Next page">&#10095;&#10095;</a></li>
     {%- else -%}
       <li><span class="next button-ghost disabled">&#10094;&#10094;</span></li>
     {%- endif -%}
