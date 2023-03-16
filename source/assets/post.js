@@ -54,13 +54,6 @@ var app = "{{site.staticman.app}}",
         ga('send', 'event', 'outbound', 'click', url, options);
       }
     });
-    var modal = getById("modal"),
-        trigger = getById("trigger"),
-        content = document.querySelector("#modal .content");
-    if (modal && trigger) {
-      trigger.onclick=function(){content.src=this.dataset.src;modal.style.display="block"};
-      modal.onclick=function(e){if(e.target.tagName!=="IMG"){modal.style.display="none"}};
-    }
   });
 })();
 

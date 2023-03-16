@@ -21,7 +21,7 @@ layout: pages
 		    {%- assign words_per_min = 220 -%}
 		{%- else -%}
 			{%- if modified -%}
-				{%- if page.lang == "uk" -%}Оновлено{%- else -%}Обновлен{%- endif -%} &#160;
+				{%- if page.lang == "uk" -%}Оновлено{%- else -%}Обновлено{%- endif -%} &#160;
 			{%- endif -%}
 			{%- include dates.html date = last_date -%}
 			{%- assign words_per_min = 180 -%}
@@ -40,8 +40,3 @@ layout: pages
   </div>
 {% include schema_post.JSON %}
 </article>
-{% if page.modal =="needed" %} 
-<div id="modal">
-  <img class="content" src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=" alt="modal" width="1" height="1">
-  <span class="close">&#215;</span>
-</div>{% endif %}
