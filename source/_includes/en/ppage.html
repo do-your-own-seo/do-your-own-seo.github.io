@@ -1,6 +1,6 @@
   <meta itemprop="name" content="How to check SEO pagination on your website?">
   <ol class="emphasis" >
-    <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><strong itemprop="name" class="under">Make sure bots consider URLs to be unique</strong>. <span itemprop="text">Each page in the chain must have its own web address. For URL generation, you</span> shouldn’t use #hash fragments<span> ("#page=2") because, technically, they don’t change the location.</span> 
+    <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><strong itemprop="name" class="under">Make sure bots consider URLs to be unique</strong>. <span itemprop="text">Each page in the chain must have its own web address. For URL generation, you <b>shouldn’t use #hash fragments</b> ("#page=2") because, technically, they don’t change the location.</span> 
     <ul><li><span>On this site, the subdirectories are used in URL construction: "/en/page=2/". <b>NB!</b> Do not create addresses with "/page=1/", because the first page is the category page. Otherwise, we would have a duplicate content issue.</span></li></ul>
     </li>
     <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><strong itemprop="name" class="under">Check the canonical link’s href</strong>. <span itemprop="text">The canonical version of the pagination page should be the page itself, never the first page. This is what Google recommends in its “Pagination Best Practices”.</span> 
@@ -21,3 +21,47 @@
   <span itemprop="tool" itemtype="http://schema.org/HowToTool" itemscope><meta itemprop="name" content="web-browser"></span>
   <span itemprop="tool" itemtype="http://schema.org/HowToTool" itemscope><meta itemprop="name" content="CMS or code access"></span>
   <span itemprop="tool" itemtype="http://schema.org/HowToTool" itemscope><meta itemprop="name" content="your attention"></span> 
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "image": "{{ site.url }}/images/posts/large/pagination.jpg", 
+        "url": "{{ site.url }}/en/page=2/",
+        "mainEntityOfPage": "True", 
+        "headline": "SEO checklist for the pagination on your website",  
+        "alternativeHeadline": "Website pagination checkup: taking care of users and search bots",
+        "datePublished": "2022-12-07 00:03:00 +0000",
+        "dateModified": "2022-12-07 00:03:00 +0000",
+        "inLanguage": "English",
+        "isFamilyFriendly": "true",
+        "author": {
+          "@type": "Person",
+          "name": "{{ site.author.name }}",
+          "JobTitle": "{{ site.author.job }} Specialist",
+          "sameAs": "{{site.author.twitter}}"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "{{ site.name }}",
+          "@id": "{{ site.url }}/#organization",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "{{ site.url }}/apple-touch-icon.png",
+            "width":"240",
+            "height":"240"
+          }
+        }, 
+        "keywords": "pagination checkup",
+        "articleSection": "On-page SEO, Google"
+      },
+      {
+            "@type": "ImageObject",
+            "@id": "/en/page=2/#image",
+            "url": "{{ site.url }}/images/posts/large/pagination.jpg",
+            "width": 1200,
+            "height": 630
+      }
+    ]
+  }</script>

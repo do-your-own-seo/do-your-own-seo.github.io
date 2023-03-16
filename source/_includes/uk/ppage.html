@@ -1,6 +1,6 @@
   <meta itemprop="name" content="Як перевірити SEO пагінацію на сайті?">
   <ol class="emphasis" >
-    <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><strong itemprop="name" class="under">Впевнитись, що боти сприймають URL як унікальні</strong>. <span itemprop="text">Кожна сторінка в ланцюжку пагінації повинна мати власну вебадресу. Для генерації адрес</span> не можна використовувати фрагменти з #хешем<span>, бо формально вони не змінюють локатор.</span> 
+    <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><strong itemprop="name" class="under">Впевнитись, що боти сприймають URL як унікальні</strong>. <span itemprop="text">Кожна сторінка в ланцюжку пагінації повинна мати власну вебадресу. Для генерації адрес<b> не можна використовувати фрагменти з #хешем</b>, бо формально вони не змінюють локатор.</span> 
     <ul><li><span>У цього блога в структурі URL використано піддиректорії: "../page=2/". <b>Увага!</b> Адреси з "/page=1/" створювати не треба, бо першою вже є сторінка категорії. Інакше мали б проблеми з дубльованим контентом.</span></li></ul>
     </li>
     <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><strong itemprop="name" class="under">Перевірити canonical посилання</strong>. <span itemprop="text">Канонічною версією сторінки пагінації має бути вона сама, у жодному разі не перша сторінка. Так каже Google в своїх «Рекомендаціях щодо розбиття контенту на сторінки».</span> 
@@ -20,3 +20,47 @@
   <span itemprop="tool" itemtype="http://schema.org/HowToTool" itemscope><meta itemprop="name" content="веб-браузер"></span>
   <span itemprop="tool" itemtype="http://schema.org/HowToTool" itemscope><meta itemprop="name" content="CMS або доступ до коду"></span>
   <span itemprop="tool" itemtype="http://schema.org/HowToTool" itemscope><meta itemprop="name" content="уважність"></span>
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "image": "{{ site.url }}/images/posts/large/pagination.jpg", 
+        "url": "{{ site.url }}/en/page=2/",
+        "mainEntityOfPage": "True", 
+        "headline": "Чекліст для перевірки SEO пагінації на сайті",  
+        "alternativeHeadline": "Пагінація для людей і ботів: 5 кроків для перевірки впровадження",
+        "datePublished": "2022-12-07 00:03:00 +0000",
+        "dateModified": "2022-12-07 00:03:00 +0000",
+        "inLanguage": "українська",
+        "isFamilyFriendly": "true",
+        "author": {
+          "@type": "Person",
+          "name": "{{ site.author.name }}",
+          "JobTitle": "{{ site.author.job }} Specialist",
+          "sameAs": "{{site.author.twitter}}"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "{{ site.name }}",
+          "@id": "{{ site.url }}/#organization",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "{{ site.url }}/apple-touch-icon.png",
+            "width":"240",
+            "height":"240"
+          }
+        }, 
+        "keywords": "pagination checkup",
+        "articleSection": "On-page SEO, Google"
+      },
+      {
+            "@type": "ImageObject",
+            "@id": "/en/page=2/#image",
+            "url": "{{ site.url }}/images/posts/large/pagination.jpg",
+            "width": 1200,
+            "height": 630
+      }
+    ]
+  }</script>

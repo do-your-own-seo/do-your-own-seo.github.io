@@ -1,6 +1,6 @@
   <meta itemprop="name" content="Как проверить SEO пагинацию на сайте?">
   <ol class="emphasis" >
-    <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><strong itemprop="name" class="under">Убедиться, что боты считают URL уникальными</strong>. <span itemprop="text">Каждая страница в цепочке пагинации должна иметь собственный веб-адрес. Для генерации URL</span> нельзя использовать фрагменты с #хешем<span>, поскольку формально они не изменяют локатор. </span> 
+    <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><strong itemprop="name" class="under">Убедиться, что боты считают URL уникальными</strong>. <span itemprop="text">Каждая страница в цепочке пагинации должна иметь собственный веб-адрес. Для генерации URL<b> нельзя использовать фрагменты с #хешем</b>, поскольку формально они не изменяют локатор. </span>
     <ul><li><span>У этого блога в структуре URL используются поддиректории: "../page=2/". <b>Внимание!</b> Адреса с "/page=1/" создавать не нужно, ведь первой является страница категории. Иначе будем иметь проблему дублированного контента.</span></li></ul>
     </li>
     <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><strong itemprop="name" class="under">Проверить canonical ссылку</strong>. <span itemprop="text">Канонической версией страницы пагинации должна быть она сама, ни в коем случае не первая страница. Так говорит Google в своих «Рекомендациях по разбивке контента на страницы». </span> 
@@ -19,4 +19,48 @@
   <p>Чтобы увидеть html-код страницы в браузере, нажмите <b>Ctrl+U</b> или добавьте в адресной строке <b>view-source:</b> прямо перед URL.</p>
   <span itemprop="tool" itemtype="http://schema.org/HowToTool" itemscope><meta itemprop="name" content="веб-браузер"></span>
   <span itemprop="tool" itemtype="http://schema.org/HowToTool" itemscope><meta itemprop="name" content="CMS или доступ к коду"></span>
-  <span itemprop="tool" itemtype="http://schema.org/HowToTool" itemscope><meta itemprop="name" content="внимательность"></span> 
+  <span itemprop="tool" itemtype="http://schema.org/HowToTool" itemscope><meta itemprop="name" content="внимательность"></span>
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "image": "{{ site.url }}/images/posts/large/pagination.jpg", 
+        "url": "{{ site.url }}/en/page=2/",
+        "mainEntityOfPage": "True", 
+        "headline": "Чек-лист для проверки SEO пагинации на сайте",  
+        "alternativeHeadline": "Пагинация для людей и ботов: 5 шагов для проверки корректности внедрения",
+        "datePublished": "2022-12-07 00:03:00 +0000",
+        "dateModified": "2022-12-07 00:03:00 +0000",
+        "inLanguage": "русский",
+        "isFamilyFriendly": "true",
+        "author": {
+          "@type": "Person",
+          "name": "{{ site.author.name }}",
+          "JobTitle": "{{ site.author.job }} Specialist",
+          "sameAs": "{{site.author.twitter}}"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "{{ site.name }}",
+          "@id": "{{ site.url }}/#organization",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "{{ site.url }}/apple-touch-icon.png",
+            "width":"240",
+            "height":"240"
+          }
+        }, 
+        "keywords": "pagination checkup",
+        "articleSection": "On-page SEO, Google"
+      },
+      {
+            "@type": "ImageObject",
+            "@id": "/en/page=2/#image",
+            "url": "{{ site.url }}/images/posts/large/pagination.jpg",
+            "width": 1200,
+            "height": 630
+      }
+    ]
+  }</script>
