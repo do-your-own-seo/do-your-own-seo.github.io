@@ -14,7 +14,7 @@
 {% if page.noindex %} <meta name="robots" content="noindex{%if page.nofollow%}, nofollow{%endif%}"> 
 {% endif %} {% if page.layout == "about" %}
 <meta name="robots" content="noimageindex, noarchive">{% endif %}
-<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'sha256-qgaUuCo4bjAED6+Au9wWCLwctBZ3uL0seI9rfMxnf6w=' {% if page.lang=='uk'%}'sha256-GKjMy2faNoU9FApFa/8K0vqAlOdQKWQaZ+mZQbawci4=' {% else %}'sha256-cC/QKmY6dJNVaB5x12YuIKJjuvoNOweXDt1bPtUQ6T0='{% endif %} {% assign tail=page.url |split:'/'| last %}{% if tail=='search' %} 'sha256-yOj7LTbXazKca3FqG3tTkLMAUyAgFHoIc8vQxIcOPJ0=' {% endif %} https://www.gstatic.com https://www.google.com https://www.googletagmanager.com https://www.google-analytics.com; base-uri 'self';">
+<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'sha256-qgaUuCo4bjAED6+Au9wWCLwctBZ3uL0seI9rfMxnf6w=' 'sha256-ifya9kO3IfqVIu8/tm5KYCbaTpOK0ZIm/3EyFYQYjtI=' {% if page.lang=='uk'%} 'sha256-GKjMy2faNoU9FApFa/8K0vqAlOdQKWQaZ+mZQbawci4=' {% else %} 'sha256-cC/QKmY6dJNVaB5x12YuIKJjuvoNOweXDt1bPtUQ6T0='{% endif %} {% assign tail=page.url |split:'/'| last %}{% if tail=='search' %} 'sha256-yOj7LTbXazKca3FqG3tTkLMAUyAgFHoIc8vQxIcOPJ0=' {% endif %} https://www.gstatic.com https://www.google.com https://www.googletagmanager.com https://www.google-analytics.com; base-uri 'self';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta http-equiv="X-XSS-Protection" content="1; mode=block">
 <meta charset="utf-8">
@@ -44,12 +44,10 @@
 <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/notosans/v9/o-0IIpQlx3QUlC5A4PNr4TRAW_0.woff2" crossorigin="anonymous">
   {% endif %}
 {% endif %} 
-{% capture critical %}{% include fundamentals.sass %}{% include navbar.sass %}{%if page.layout == "post"%}{% include post_head.sass %}{%endif%}{% endcapture %}
-<style>{{ critical | sassify }}</style>
-{%if jekyll.environment == 'production'%}
+{% capture critical %}{% include fundamentals.sass %}{% include navbar.sass %}{% include cookies.sass %}{%if page.layout == "post"%}{% include post_head.sass %}{%endif%}{% endcapture %}
+<style>{{ critical | sassify }}</style> {% if jekyll.environment == 'production' %}
 <script defer src="https://www.googletagmanager.com/gtag/js?id=G-QZCH80K1FD"></script>
-<script defer src="/assets/gtag-init.js"></script>
-{% endif %}
+<script defer src="/assets/gtag-init.js"></script> {% endif %}
 <link rel="stylesheet" href="/css/main.css">
 {% if page.layout == "blog" %}
 <link rel="stylesheet" href="/css/blog.css">{% endif %}

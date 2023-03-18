@@ -184,6 +184,28 @@ cancelReply:
   ru: "Отменить ответ"
   en: "Cancel reply"
 
+cookies:
+  title:
+    uk: "Трохи cookies"
+    ru: "Немного cookies"
+    en: "Here are some cookies"
+
+  description:
+    uk: "Цей сайт використовує <b>два типи cookies</b>: <span class='u'>аналітичні</span> та ті, що потрібні, щоб працював цей діалог. <span class='u'>Analytics від Google</span> допомагає мені зрозуміти, як користувачі взаємодіють з сайтом та що я можу покращити."
+    ru: "На этом сайте используется <b>два вида cookies</b>: <span class='u'>аналитические</span> и те, которые необходимы, чтобы работал этот диалог. <span class='u'>Analytics от Google</span> дает мне понять, как пользователи взаимодействуют с сайтом и что я могу улучшить."
+    en: "This site uses <b>two types of cookies</b>: <span class='u'>analytical</span> and those needed for this dialog to work. <span class='u'>Google Analytics</span> helps me understand how users interact with the site and what I can improve."
+
+  accept:
+    uk: "Прийняти всі"
+    ru: "Принять все"
+    en: "Accept All"
+
+  deny:
+    uk: "Лише необхідні"
+    ru: "Только необходимые"
+    en: "Reject Analytics"
+
+
 preview:
   uk: "Прев’ю зображення з посту №"
   ru: "Превью картинки из поста №"
