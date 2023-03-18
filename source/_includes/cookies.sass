@@ -1,0 +1,35 @@
+
+#modal 
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  background-color: #c6eb90
+  border: 4px groove #d5dedf
+  padding: 20px
+  box-sizing: border-box
+  border-radius: 50px
+  z-index: 101
+  width: 80%  
+  max-width: 720px
+
+  button
+    border-radius: $mid-spacing
+    padding: $xsmall-spacing
+    +media($tablet-small)
+      padding: $small-spacing $mid-spacing
+
+#accept-all
+  color: $blue
+  border: 1px solid $blue
+  margin: 3px
+  +media($phone-large)
+    margin-left: $mid-spacing
+
+#accept-necessary
+  color: $base-font-color
+  background: #97b5cb
+  margin: 3px
+  +media($phone-large)
+    margin-right: $mid-spacing
+
