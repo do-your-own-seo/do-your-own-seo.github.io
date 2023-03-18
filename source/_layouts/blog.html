@@ -1,5 +1,5 @@
 ---
-layout: pages
+layout: default
 ---
 {%- if page.lang == site.lang -%}{%- assign lng ="/" -%}{%- elsif page.lang -%}{%- assign lng = page.lang | prepend:"/" | append:"/" -%}{%- endif -%}
 {%- if page.lang == "ru" and paginator.page == 1 -%}

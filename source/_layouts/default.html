@@ -5,11 +5,19 @@
 </head>
 <body>
   {%- include navbar.html -%}
-  {{ content }}
+    <main class="main-container">
+      <div class="container">
+		  {{ content }}
+		  <div id="modal" class="hidden" data-role="cookieconsent">
+		  	<h2>{{site.data.t.cookies.title[page.lang]}}</h2><p>{{site.data.t.cookies.description[page.lang]}}</p><p class="txt-center"><button id="accept-necessary">{{site.data.t.cookies.deny[page.lang]}}</button><button id="accept-all" autofocus>{{site.data.t.cookies.accept[page.lang]}}</button></p>
+		  </div>
+	  </div>
+	</main>
   <footer class="site-footer txt-center">
   	<small>Do your own thing! Do SEO on your own.</small><br>
 	<small>Made with <a href="https://jekyllrb.com/">Jekyll</a>. &#169;2023 {{site.data.t.footnote[page.lang]}} <a href="https://github.com/{{site.github-repo}}/blob/source/LICENSE">MIT license</a>
 	</small>
   </footer>
+  <script>{% include cookieconsent-min.js %}</script>
 </body>
 </html>
