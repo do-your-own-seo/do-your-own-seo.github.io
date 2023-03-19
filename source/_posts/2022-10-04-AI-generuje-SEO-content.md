@@ -148,8 +148,8 @@ image: "ai-generated-content.jpg"
 <p>Вважаю, атмосферу відтворено бездоганно: хтось вдерся до бункера, аби віддати належне. Чи забрати належне...</p>
 <p>І як не поважати настільки творчу особистість, як цей Rytr AI?! В тандемі з обдарованим ілюстратором DALL-E вони здатні вразити. Мене, принаймні, здивували!</p>
 <blockquote itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-	<span itemprop="name">Чи вміють пошукові системи визначити згенерований AI контент?</span> 
-	<span itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">Ні, якщо він якісний. Насправді для Google неважливо, хто створив текст, який задовольнить потреби користувача. Проте справедливіше буде вказати, що до написання статті було залучено штучний інтелект.</span></span>
+	<span itemprop="name">Чи вміють пошукові системи <strong>визначати згенерований AI</strong> контент?</span> 
+	<span itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">Якщо контент якісний, не існує надійного способу довести, що його створив не людський мозок. До того ж Google неважливо, хто написав текст, який <strong>задовольнить потреби</strong> користувача. Проте буде справедливо завжди вказувати, якщо до написання статті було залучено AI.</span></span>
 </blockquote>
 <p><b class="red">UPD!</b> А тепер черга <strong>ChatGPT</strong> вигадувати сюжет за заданою зав'язкою.</p>
 <p class="txt-center"><img loading="lazy" src="/images/posts/chat-GPT-writes-a-story-plot.jpg" alt="ChatGPT створює історію" width="780" height="510"></p>

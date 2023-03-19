@@ -135,7 +135,7 @@ image: "ai-generated-content.jpg"
 <p>I think the atmosphere was flawlessly recreated. Someone broke into the bunker to give that man a credit... or to take back what he owes. And how could you not respect such a creative personality as this Rytr AI? In tandem with the gifted illustrator DALL-E, they are able to impress. At least, they surprised me!</p>
 <blockquote itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<span itemprop="name">Can search engines identify AI-generated content?</span> 
-	<span itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">No, if is of high quality. Actually, it doesn’t matter who created the text, as long as it meets the user’s needs. But I think it’s fair to always mention if AI software was involved in writing the article.</span></span>
+	<span itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">I believe there is no reliable way to <strong>detect AI-generated</strong> text if it is of high quality. And actually, it doesn’t matter who created the content, as long as it <strong>meets the user’s needs</strong>. But I think it’s fair to always mention if AI software was involved in the writing.</span></span>
 </blockquote>
 <p><b class="red">UPD!</b> And now <strong>ChatGPT</strong> gets the same task as Rytr and writes a story plot.</p>
 <p class="txt-center"><img loading="lazy" src="/images/posts/chat-GPT-writes-a-story-plot.jpg" alt="ChatGPT has written the story plot" width="780" height="510"></p>
