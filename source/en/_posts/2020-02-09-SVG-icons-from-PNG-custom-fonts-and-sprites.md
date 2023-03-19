@@ -35,13 +35,13 @@ image: "how-to-create-manga-icon-font.jpg"
 <p>With the help of themed icons, it’s easy to emphasize the key paragraphs of the article. And if you decide to create an ornamental alphabet, you can use it for <b>drop caps</b> that open every new text section, like below:</p>
 <p class="txt-center"><img src="/images/posts/celtic-and-slavic-initial-letters.jpg" alt="Celtic and Slavonic initials" loading="lazy" width="510" height="270"><br>
 <small>Celtic (on the left) and ancient Slavic initials</small></p>
-<p>In today’s post, we’ll create a collection of black-and-white SVG symbols, generate the Web font and learn how to style icons with CSS. Those who need colorful vector icons may still find the first section helpful since the mentioned tools apply to color PNGs and SVGs.</p>
-<blockquote>The efforts will be rewarded, because the likelihood that the user will <strong>stay on the page longer</strong> and <strong>click</strong> the unique icon is high. That implies that <strong>Web Session SEO metrics</strong> will improve. And your rankings, most likely, too (<a href="{{site.url}}/how-do-google-algorithms-work">more on ranking factors here</a>).</blockquote>
+<p>In today’s post, we’ll create a collection of black-and-white SVG symbols, generate the Web font and learn how to style icons with CSS. Those who need colorful vector icons may still find the guide helpful since the mentioned tools apply to color PNGs and SVGs too.</p>
+<blockquote>The effort of creating a font will be rewarded because the likelihood that the user will <strong>stay on the page</strong> longer and <strong>click</strong> the unique icon will increase. That implies that your site’s <strong>web session metrics</strong> will improve and your rankings will, most likely, too (<a href="{{site.url}}/how-do-google-algorithms-work">more on ranking factors here</a>).</blockquote>
 </div>
 <div>
 <h2 id="1" itemprop="name">How to make an SVG icon from PNG</h2>
 <meta itemprop="image" content="{{site.url}}/assets/post-on-icons/result-thumbnail.svg" >
-<p itemprop="description"><b>The task</b> is to convert the chosen PNG to a lightweight, single-color, but eloquent SVG. Fortunately, experience with vector graphics isn’t required to complete it. In general, the logic is simple. The more contrasting the neighboring colors are and smoother the contours of PNG we can make, the better SVG we’ll get.</p>
+<p itemprop="description"><b>The task</b> is to convert the PNG to a lightweight, single-color, but eye-catching SVG icon. Fortunately, experience with vector graphics isn’t required to complete it. In general, the logic is simple. The more contrasting the neighboring colors are and smoother the contours of PNG we can make, the better SVG we’ll get.</p>
 <p>But we won’t take the easy road: we’ll make icons with manga characters!</p>
 <blockquote>Probably everybody knows that <b>manga means</b> the cartoon story: like comics, but not necessarily funny. It may be sad, heartwarming, cruel, and whatsoever. Manga was born in Japan, but today people draw these cartoons across the globe. People write novels based on popular episodes and even produce full-length series of anime.</blockquote>
 <p>For our purpose, we’ll use only<span class="under"> free online tools</span> (details will appear as we go on):</p>
@@ -96,7 +96,7 @@ Go to the website of PNG&#10132;SVG converter. I recommend the free tool <a href
   </li>
 </ol>
 <p>Here’s what we got: <span class="under">2.05&#8239;KB and 2.75&#8239;KB</span> files (and they’ll be even lighter if you enable GZIP compression for SVG). Before optimization, we had 7.6&#8239;KB and 10.3&#8239;KB, respectively. That is, both <span class="under">files lost more than 70% of</span> their weight!</p>
-<p>But what would happen if we converted the cat into SVG <a href="/assets/post-on-icons/improper_1.svg" rel="nofollow">without preparation</a> and did not optimize the result? An extra 20&#8239;KB + unsuitability for use! The original manga PNG is more contrasting, so the raw SVG from it <a href="/assets/post-on-icons/improper_2.svg" rel="nofollow">would have turned out</a> to be sharp but also overloaded with trifles.</p>
+<p>But what would happen if we converted the PNG cat to SVG without preparation? The file would have gained an extra 20KB and would be <a href="/assets/post-on-icons/improper_1.svg" rel="nofollow">completely unusable</a> as icon. The manga-boy PNG is more contrasty, so the raw SVG from it would <a href="/assets/post-on-icons/improper_2.svg" rel="nofollow">come out sharp</a> but still overloaded with details.</p>
 </div>
 <div><h2 id="2">Webfont from SVG icons: the scheme of creation and known pitfalls</h2>
 <p>We already have 11 manga icons: here are these <a href="https://github.com/do-your-own-seo/icons">SVGs</a>. Why not make an amateur web font from them? (To the point, everyone can post links to other custom SVG collections in the comments.)</p>
