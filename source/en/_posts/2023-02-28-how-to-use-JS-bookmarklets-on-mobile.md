@@ -25,7 +25,7 @@ image: "use-JS-bookmarklets-on-mobile.jpg"
 <ul class="toc">
   <li><a href="{{ site.url }}{{ page.url }}#1">How to add a script to Favorites on mobile</a></li>
   <li><a href="{{ site.url }}{{ page.url }}#2">How to use bookmarklets</a></li>
-  <li><a href="{{ site.url }}{{ page.url }}#2">Reasons why SEO bookmarklets may not work</a></li>
+  <li><a href="{{ site.url }}{{ page.url }}#3">Reasons why SEO bookmarklets may not work</a></li>
 </ul>
 <div><p>The idea to write a guide on how to use mobile bookmarklets came from a comment under the post  <a href="{{site.url}}/how-to-earn-a-proper-snippet-on-SERP#comments">about rich snippets</a>. It mentioned that bookmarklets don’t work on the Android device. Yes, that happens. The good news is that it isn’t the fault of the OS but of the browser, which is easy to change.</p>
  <p class="txt-center">

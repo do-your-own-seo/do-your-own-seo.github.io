@@ -25,7 +25,7 @@ image: "use-JS-bookmarklets-on-mobile.jpg"
 <ul class="toc">
   <li><a href="{{ site.url }}{{ page.url }}#1">Як зберегти скрипт в закладках на мобільному</a></li>
   <li><a href="{{ site.url }}{{ page.url }}#2">Як користуватися букмарклетом</a></li>
-  <li><a href="{{ site.url }}{{ page.url }}#2">SEO букмарклет не працює: причини</a></li>
+  <li><a href="{{ site.url }}{{ page.url }}#3">SEO букмарклет не працює: причини</a></li>
 </ul>
 <div>
   <p>На думку створити гід з використання мобільних букмарклетів мене наштовхнув коментар під постом <a href="{{site.url}}/yak-rozshyryty-snipet-saitu-v-poshuku#comments">про розширені сніпети</a>. Йшлося про те, що букмарклети не працюють на <strong>пристрої з Android</strong>. Таке трапляється. Добра новина в тому, що у цьому винна не OS, а браузер, який легко змінити.</p>

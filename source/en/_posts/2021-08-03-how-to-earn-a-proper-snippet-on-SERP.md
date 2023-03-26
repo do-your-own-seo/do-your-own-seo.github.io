@@ -96,7 +96,7 @@ image: "how-to-earn-a-proper-snippet.jpg"
 	<p>What could be better? Only the large <strong>branded snippet</strong>: if the search query is “the-big-brand-name”, the description on SERP will be supplemented with several rows of mini-snippets.</p>
 	<p class="txt-center"> <img loading="lazy" src="/images/posts/big-links-en.jpg" alt="Branded big links" width="480" height="255"> </p>
 	<p>Menu items and popular website pages are often included in the branded snippet. Unfortunately, it’s impossible to influence the choice of quick links. In the example above, you can see that some links may be unexpected. But still, the most likely candidates are pages pointed to by many internal links <span class="under">with the same short anchor</span> (like “Log In”).</p>
-	<h3>3. Navigation and the breadcrumbs</h3>
+	<h3 id="breadcrumbs">3. Navigation and the breadcrumbs</h3>
 	<p>Do you remember the fairy tale where children scattered crumbs on a forest path to find their way home later? Likewise, a navigation chain that leads the user from the depth of the website to the home page is called <strong>breadcrumbs</strong>.</p>
 	<p class="txt-center"> <img loading="lazy" src="/images/posts/bread-crumbs.jpg" alt="Hansel and Gretel leaves a trail of bread crumbs" width="450" height="360"> </p>
 	<p>On SERP snippets, that chain can be located above or below the title, depending on the search engine. It looks like this:</p>
