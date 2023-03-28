@@ -10,6 +10,7 @@ layout: default
 {%- if paginator.page == 2 -%}<div itemscope itemtype="https://schema.org/HowTo">{%- include {{page.lang}}/ppage.html -%}</div>{%- endif -%}
 {%- if paginator.page == 2 -%}<p id="posts"><b>Posts, page 2</b></p>{%- endif -%}
 <div id="cat-shelter">{%- if paginator.page == 2 -%}{%- include cat.html -%}{%- endif -%}</div>
+{%- if paginator.page == 1 -%} {%- comment -%} Temporarily disable post-list on the next pages {%- endcomment -%}
 <div class="post-list" data-nosnippet> {%- assign posts = paginator.posts -%} 
 {%- comment -%}  Add a snippet of a page that is NOT a post to the 1st paginator page  {%- endcomment -%}
 {%- if paginator.page == 1 -%}{%- assign added_post = paginator.posts[1] -%}{%- assign posts = paginator.posts | push: added_post -%} {%- endif -%}
@@ -46,12 +47,12 @@ layout: default
 	    <p>{{ snippet }}..</p>
 	  </div>
 	</div>
-  {% endfor %}
+  {%- endfor -%}
   {%- if paginator.page != 2 -%} {%- include pagination.html -%}{%- endif -%}
-</div>
+</div>{%- endif -%}
 {%- if paginator.page != 2 -%}{%- include cat.html -%}{%- endif -%}
 {%- comment -%} 
 	JS changes the language if the referrer =/= our domain, Navigator.languages exists and doesn't contain uk-**.
 {%- endcomment -%}
-<script>{%- if page.lang == 'uk' -%}{%- include redirect.js -%}{%- else -%}if(window.location.pathname.indexOf("index.html")!==-1){window.location.replace(window.location.href.split("index.html")[0])};{%- endif -%}document.querySelector(".post-list").addEventListener("click",function(e){if(!e.target.closest(".cat")){var t=e.target.closest(".post");t&&t.querySelector("header a").click()}});var timer,cat=document.getElementsByClassName("cat")[0],catHandler=function(){var t=cat,e=t.getElementsByTagName("span")[0],a=document.getElementById("cat-shelter");e&&t.removeChild(e),t.classList.add("vanish"),t.closest("#cat-shelter")?setTimeout(function(){a.previousElementSibling.style.paddingBottom="0"},800):setTimeout(function(){t.previousElementSibling.style.paddingBottom="0",a.appendChild(cat),window.matchMedia("(max-width: 970px)").matches&&(a.previousElementSibling.style.paddingBottom="1.32em"),t.classList.remove("vanish")},800)};setTimeout(function(){cat.classList.add("live")},2500),"ontouchstart"in window?(cat.addEventListener("touchstart",function(){timer=setTimeout(function(){},500)},{passive:true}),cat.addEventListener("touchend",function(){timer&&clearTimeout(timer),catHandler()},{passive:true})):cat.addEventListener("click",catHandler);</script>
+<script>{%- if page.lang == 'uk' -%}{%- include redirect.js -%}{%- else -%}if(window.location.pathname.indexOf("index.html")!==-1){window.location.replace(window.location.href.split("index.html")[0])};{%- endif -%}var list=document.querySelector(".post-list");if(list){list.addEventListener("click",function(e){if(!e.target.closest(".cat")){var t=e.target.closest(".post");t&&t.querySelector("header a").click()}})}var timer,cat=document.getElementsByClassName("cat")[0],catHandler=function(){var t=cat,e=t.getElementsByTagName("span")[0],a=document.getElementById("cat-shelter");e&&t.removeChild(e),t.classList.add("vanish"),t.closest("#cat-shelter")?setTimeout(function(){a.previousElementSibling.style.paddingBottom="0"},800):setTimeout(function(){t.previousElementSibling.style.paddingBottom="0",a.appendChild(cat),window.matchMedia("(max-width: 970px)").matches&&(a.previousElementSibling.style.paddingBottom="1.32em"),t.classList.remove("vanish")},800)};setTimeout(function(){cat.classList.add("live")},2500),"ontouchstart"in window?(cat.addEventListener("touchstart",function(){timer=setTimeout(function(){},500)},{passive:true}),cat.addEventListener("touchend",function(){timer&&clearTimeout(timer),catHandler()},{passive:true})):cat.addEventListener("click",catHandler);</script>
 {%- include schema_blog.JSON -%}
