@@ -23,7 +23,7 @@
     {%- else -%} 
     {%- assign page_set = site[name] -%} 
   {%- endif-%}
-  {% for page in page_set %}
+  {%- for page in page_set -%}{%- unless page.sitemap == false -%}
   <url>
     <loc>{{ site.url }}{{ page.url }}</loc>
     <lastmod>{{ date }}</lastmod>
@@ -39,16 +39,16 @@
         {%- if preSRC == '' or preSRC == '-' -%}
           {% assign src = besideSRC[1] | split:'"' | first %}
 {%- comment -%}  unless uniqueImages contains src  {%- endcomment -%}
-{% comment %}  assign uniqueImages = uniqueImages | push: src  {% endcomment %}
+{%- comment -%}  assign uniqueImages = uniqueImages | push: src  {%- endcomment -%}
     <image:image>
       <image:loc>{{ site.url }}{{ src }}</image:loc>
     </image:image>
-{%-comment-%} { endunless } {%-endcomment-%}
+{%- comment -%} { endunless } {%- endcomment -%}
         {%- endif -%}
       {%- endif -%}
-    {% endfor %}
+    {%- endfor -%}
   </url>
-  {% endfor %}
+  {%- endunless -%}{%- endfor -%}
 {%- endfor -%}
 
 {%- for page in site.pages -%} 
