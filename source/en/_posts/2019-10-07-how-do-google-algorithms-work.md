@@ -7,7 +7,7 @@ lang: en
 date: 2019-10-07T22:19:00Z
 last_modified_at: 2022-08-20T20:00:00Z
 
-tags: [Google, PageRank, Links, SERP, Content, SEO]
+tags: [Google, PageRank, Links, SERP, SEO]
 title: "What Ranking Factors matter more to Google Algorithms?"
 description: "Gray-hat techniques are unreliable because Google algorithms can rank websites like human experts. So what matters more for SEO: content, links, or other ranking factors?"
 keywords: "google algorithms, how google ranks pages"
@@ -50,8 +50,7 @@ image: "how-do-google-algorithms-work.jpg"
 <div><h2 id="2">Behavioral ranking factors (user experience and response)</h2>
 <p>Then the behavior factor comes into effect. No matter how inconsistent googlers’ cues were, practice convinces (and patents indirectly confirm) that user actions on the SERP and later on the page may <strong>affect the rank modification</strong>.</p>
 <p>An example: the actions of the visitor who has just returned from the website to the SERP might tell the search engine whether the site met expectations and whether the search results were satisfactory. But who measures satisfaction?</p>
-<p><img loading="lazy" class="fl-left" src="/images/posts/user-response.jpg" alt="User response" width="300" height="90"><strong>RankBrain algorithm</strong>. Of course, it doesn’t read the minds of visitors but determines a context and analyzes user interactions with search result data.</p>
-<p>RankBrain (a <a href="https://patents.google.com/patent/US9104750">possible patent</a>), along with Panda, Penguin for spam filtering, and Pigeon for local search, have strengthened the complex Google <strong>algorithm Hummingbird</strong>.</p>
+<p><img loading="lazy" class="fl-left" src="/images/posts/user-response.jpg" alt="User response" width="300" height="90">The <strong>RankBrain</strong> algorithm (see <a href="https://patents.google.com/patent/US9104750">possible patent</a>). Of course, it doesn’t read the minds of visitors but examines the context and analyzes user interactions with SERPs. Along with <strong>Panda</strong>, <strong>Penguin</strong> for spam filtering, and <strong>Pigeon</strong> for local search, RankBrain strengthened the complex Google algorithm <strong> Hummingbird</strong>. But a year after the rollout, in 2016, it began to handle the majority of Google searches and became a standalone entity.</p>
 <p>No one can say for sure what exactly the ranking engine takes into account when comparing trillions of pages. Still, it’s probable that some activity-oriented metrics have been implemented and may somehow affect the page ranking. They’re:</p>
 <ul>
   <li>click data for the given snippet and others on the particular SERP (click-through rate, wait time, etc.);</li>
