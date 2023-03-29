@@ -5,7 +5,7 @@ locale: ua
 lang: uk
 
 date: 2019-09-23T18:14:01Z
-last_modified_at: 2022-08-20T20:00:00Z
+last_modified_at: 2023-01-23T18:10:01Z
 
 title: "E-A-T концепція: значущість контенту в розумінні Google"
 tags: [E-A-T, Content, Google, SEO]
