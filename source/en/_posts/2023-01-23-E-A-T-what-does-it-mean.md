@@ -45,7 +45,7 @@ image: "writing.jpg"
 <p>Here are some ways to earn trust without relying on social networks or link building:</p>
 <ol>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="name">Focus on creating high-quality, informative content.</span> <span itemprop="text">You should ensure that the articles on your website are well-researched, well-written, and provide value to your target audience.</span></li>
-  <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><meta itemprop="name" content="Showcase your expertise."><span itemprop="text">Demonstrate your expertise by showcasing your qualifications and experience. This can be done by including an “About” page on your website that outlines your background, education, and relevant experience.</span>
+  <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><meta itemprop="name" content="Show your professional competence."><span itemprop="text">Demonstrate your expertise by showcasing your qualifications and experience. This can be done by including an<span class="under"> “About” page on</span> your website that outlines your background, education, and relevant experience. It should also contain a link to your LinkedIn or other professional accounts.</span>
     <picture>
       <source srcset="/images/posts/wp/writing.webp" type="image/webp">
       <source srcset="/images/posts/writing.jpg" type="image/jpeg">
@@ -53,8 +53,8 @@ image: "writing.jpg"
     </picture>
   </li>
   <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="name">Provide evidence to support your claims.</span> <span itemprop="text">Whenever you make claims or cite statistics, it’s important to provide evidence to back them up. This can include citing reputable sources or linking to studies that support your arguments.</span></li>
-  <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="name">Ensure your website is easy to navigate.</span> <span itemprop="text">A well-designed website that is easy to navigate can help build trust and credibility with your audience. Make sure that your website is organized logically, with clear navigation menus and well-structured content.</span></li>
-  <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="name">Engage with your audience on multiple platforms.</span> <span itemprop="text">Responding to comments and feedback from your audience can help build trust and establish your authority in your niche. This can also help foster a sense of community around your website.</span></li>
+  <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="name">Test your site and make sure of its quality.</span> <span itemprop="text">A well-designed website that is easy to navigate can help build trust and credibility with your audience. Make sure that your layouts are logically organized and the content is clearly structured.</span></li>
+  <li itemprop="step" itemscope itemtype="http://schema.org/HowToStep"><span itemprop="name">Engage with your audience on multiple platforms.</span> <span itemprop="text">Respond to comments and answer questions on social media and Google Maps. Feedback can help you build trust and establish your authority in the niche. This can also help foster a sense of community around your website and brand.</span></li>
 </ol>
 <p>While social media and link building can be beneficial for visibility and traffic, they are not essential for building credibility and trust with your audience.</p>
 <blockquote><strong>The concept of E-A-T has evolved into Double-E-A-T. What’s the difference?</strong></blockquote>
@@ -98,7 +98,7 @@ image: "writing.jpg"
     <img src="/images/posts/funny-memes.jpg" alt="Funny Google search results on memes" loading="lazy" width="750" height="535">
   </picture>
 </p>
-<blockquote>The intent there is clear. I guess Google will easily cope with rankings. <strong>How about an ambiguous intent?</strong>
+<blockquote>In these examples, both the query and the user’s intent are straightforward. I guess Google will easily cope with rankings. <strong>How about ambiguous queries?</strong>
 </blockquote>
 <p><i>“best conspiracy theories”, “best get rich quick schemes”, “DIY repairs” “home remedies”, “quick weight loss tips”</i></p>
 <p class="txt-center">
