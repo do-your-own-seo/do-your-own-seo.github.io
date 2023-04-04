@@ -163,7 +163,7 @@ image: "how-to-create-manga-icon-font.jpg"
   <div class="box"><svg><use xlink:href="/assets/post-on-icons/manga.svg#icon-hero7"/></svg><div class="txt-center hidden">icon-hero7</div></div>
   <b class="arrow hidden">&#10238;</b>
 </div>
-<p>Пусть это не самый кроссбраузерный способ (см. <a href="https://caniuse.com/#feat=mdn-svg_elements_use_external_uri" rel="nofollow">browser support</a>), зато не раздут объем документа. Впрочем, если картинки нужны для единственной статьи и их не слишком много, содержимое спрайта можно включить в тело &lt;html&gt;. Тогда ссылки на отдельные иконки сократятся до <code>&lt;svg&gt;&lt;use&thinsp;xlink:href="#icon-name"/&gt;&lt;/svg&gt;</code>.</p>
+<p>Пусть это не самый кроссбраузерный способ (см. <a href="https://caniuse.com/#feat=mdn-svg_elements_use_external_uri">browser support</a>), зато не раздут объем документа. Впрочем, если картинки нужны для единственной статьи и их не слишком много, содержимое спрайта можно включить в тело &lt;html&gt;. Тогда ссылки на отдельные иконки сократятся до <code>&lt;svg&gt;&lt;use&thinsp;xlink:href="#icon-name"/&gt;&lt;/svg&gt;</code>.</p>
 <p class="danger"><b>NB!</b> Не могу ручаться, что сайты, с которых взяты PNG, щепетильны в отношении авторских прав. Если правообладатель картинки узнает ее в одном из SVG и будет против его распространения, вот <a href="https://contact.do/44CB" rel="nofollow">форма для обращений</a>.</p>
 <p>Следом стоило бы вывести те же иконки как элементы web-шрифта, но мне жаль нагружать страницу. Пусть моделью послужит иконочный шрифт, который используется на сайте: по его примеру легко подключить манга-шрифт.</p>
 <div class="iconset flex-wrap flex-center" role="img" aria-label="Иконки стандартного веб-шрифта">

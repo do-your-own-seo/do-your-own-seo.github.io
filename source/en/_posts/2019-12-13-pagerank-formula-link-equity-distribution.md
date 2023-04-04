@@ -109,7 +109,7 @@ image: "link-juice-leakage.jpg"
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<h3 itemprop="name">What are alternatives to Google PageRank?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">You can check <em>Ahrefs URL Rank, Moz’s Page Authority, Majestic’s Trust Flow</em>, or even branded PR variations like <em>Serpstat PageRank</em>. If you are interested in graph theory and programming, you might appreciate the <a href="https://en.wikipedia.org/wiki/SALSA_algorithm">SALSA</a> and <a href="https://www2003.org/cdrom/papers/refereed/p007/p7-abiteboul.html">OPIC</a> algorithms for page importance computation.</p>
+		<p itemprop="text">You can check <em>Ahrefs URL Rank, Moz’s Page Authority, Majestic’s Trust Flow</em>, or even branded PR variations like <em>Serpstat PageRank</em>. If you are interested in graph theory and programming, you might appreciate the <a href="https://en.wikipedia.org/wiki/SALSA_algorithm">SALSA</a> and <a href="https://www.researchgate.net/publication/269157620_Adaptive_on-line_page_importance_computation">OPIC</a> algorithms for page importance computation.</p>
 	</div>
 </div>
 

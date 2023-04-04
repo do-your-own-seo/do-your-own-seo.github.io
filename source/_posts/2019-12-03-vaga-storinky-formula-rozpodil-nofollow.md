@@ -186,7 +186,7 @@ image: "leaking-link-juice.jpg"
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	<h3 itemprop="name">Чи існує <em>альтернатива</em> PageRank?</h3>
 	<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-		<p itemprop="text">Як альтернативу можна розглянути метрики <em>Ahrefs URL Rank, Page Authority (MOZ), Trust Flow (Majestic)</em> і фірмові різновиди рангу – <em>Serpstat PageRank</em> та ін. Якщо ж питання поставлене з думкою про методи ранжування вершин динамічних графів, варто згадати про алгоритми <a href="https://www2003.org/cdrom/papers/refereed/p007/p7-abiteboul.html">OPIC</a> і <a href="https://en.wikipedia.org/wiki/SALSA_algorithm">SALSA</a>.</p>
+		<p itemprop="text">Як альтернативу можна розглянути метрики <em>Ahrefs URL Rank, Page Authority (MOZ), Trust Flow (Majestic)</em> і фірмові різновиди рангу – <em>Serpstat PageRank</em> та ін. Якщо ж питання поставлене з думкою про методи ранжування вершин динамічних графів, варто згадати про алгоритми <a href="https://www.researchgate.net/publication/269157620_Adaptive_on-line_page_importance_computation">OPIC</a> і <a href="https://en.wikipedia.org/wiki/SALSA_algorithm">SALSA</a>.</p>
 	</div>
 </div>
 </div>
