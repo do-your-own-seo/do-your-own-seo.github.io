@@ -1,0 +1,1 @@
+let smallScreen=window.matchMedia("(max-width: 767px)");if(smallScreen.matches){let e=document.getElementsByTagName("nav")[0];e&&e.addEventListener("click",function(e){e.target.closest("a")&&(document.getElementById("toggleNavbar").checked=!1)},!1)}
