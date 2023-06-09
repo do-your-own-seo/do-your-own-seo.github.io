@@ -24,17 +24,7 @@ https://www.gstatic.com https://www.google-analytics.com https://www.google.com;
     <div class="container">
       <nav>
         <input type="checkbox" id="toggleNavbar" aria-label="mobile menu">
-        <div class="logo"><a href="{{ site.url }}{{ lng }}">Do Your Own SEO!</a></div>
-        <label for="toggleNavbar" class="toggle-navbar-button">
-          <i class="icon icon-menu" role="button" aria-label="{{ site.data.t.show[page.lang] }}"></i>
-          <i class="icon icon-cross" role="button" aria-label="{{ site.data.t.hide[page.lang] }}">&#10006;</i>
-        </label>
-        <div class="navbar">
-          <ul>
-            <li><a href="{{ site.url }}{{ lng }}about" title="{{ site.data.t.about[page.lang] }}"><i class="icon icon-about" aria-hidden="true">&thinsp;</i><span class="mobile">{{site.data.t.about[page.lang]}}</span></a></li>
-            <li><a href="{{ site.url }}{{ lng }}search" title="Search" rel="nofollow"><i class="icon icon-search" aria-hidden="true">&thinsp;</i><span class="mobile">{{site.data.t.search[page.lang]}}...</span></a></li>
-          </ul>
-        </div>
+        <div class="logo"><a href="{{ site.url }}">Do Your Own SEO!</a></div>
       </nav>
     </div>
   </header>
@@ -42,12 +32,16 @@ https://www.gstatic.com https://www.google-analytics.com https://www.google.com;
   <div class="container">
     <div class="page card">
       <div class="post-content txt-center">
-        <h1><span style="color:#c32711">Error 404</span> &nbsp;:&nbsp;(&nbsp;&nbsp;Not&nbsp;found</h1>
+        <h1><span style="color:#c32711">Error 404</span> &nbsp;Page not found</h1>
         <ul>
+          <li><a href="{{site.url}}/en/search">Let's find</a> something here (EN)</li>
+          <li>Може, щось <a href="{{site.url}}/search">пошукаємо</a>? (UA)</li>
+          <li>А вдруг что-то <a href="{{site.url}}/ru/search">найдется</a>? (RU)</li>
           <li>Return to the <a href="{{site.url}}/en/">homepage (EN)</a></li>
-          <li>Повернутися на <a href="{{site.url}}">головну сторінку (UA)</a></li>
-          <li>Вернуться на <a href="{{site.url}}/ru/">главную страницу (RU)</a></li>
+          <li>Повернутися на <a href="{{site.url}}">головну (UA)</a></li>
+          <li>Вернуться на <a href="{{site.url}}/ru/">главную (RU)</a></li>
         </ul>
+        <br>
         <image src="/images/404.jpg" alt="Page not found" style="border-style:ridge;border-radius:10px">
       </div>
     </div>
