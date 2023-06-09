@@ -1,0 +1,330 @@
+[  
+  {
+    "title"    : "Формируем архитектуру сайта и скрепляем перелинковкой",
+    "h1"       : "О структуре сайта и правилах внутренней перелинковки",
+    "tags"     : "Crosslinking, Links, On-page, SEO",
+    "keys "    : "архитектура сайта",
+    "desc"     : "Под архитектурой сайта понимают его 3D структуру (в противовес плоским дизайн-макетам). За счет семантики между страницами возникают связи; скрепляет каркас внутренняя перелинковка",
+    "url"      : "https://do-your-own-seo.com/arkhitektura-sajta-perelinkovka",
+    "lang"     : "ru"
+  } ,   
+  {
+    "title"    : "Cementing your site’s architecture with internal linking",
+    "h1"       : "Good site structure: the basic rules for internal linking",
+    "tags"     : "Crosslinking, Links, On-page, SEO",
+    "keys "    : "website architecture",
+    "desc"     : "By site architecture, we mean its 3D structure, not layouts. Thanks to semantics, there are ties between the pages, and the structure is bound together by internal cross-linking",
+    "url"      : "https://do-your-own-seo.com/website-architecture-internal-linking",
+    "lang"     : "en"
+  } ,   
+  {
+    "title"    : "Формуємо архітектуру сайту й скріпляємо перелінковкою",
+    "h1"       : "Про структуру сайту й основи внутрішньої перелінковки",
+    "tags"     : "Crosslinking, Links, On-page, SEO",
+    "keys "    : "архітектура сайту",
+    "desc"     : "Під архітектурою сайту розуміємо його 3D структуру (на противагу пласким дизайн-макетам). Завдяки семантиці між сторінками виникають зв'язки; скріплює каркас внутрішня переліковка",
+    "url"      : "https://do-your-own-seo.com/arkhitektura-sajtu-perelinkovka",
+    "lang"     : "uk"
+  } ,   
+  {
+    "title"    : "Тактика «угон запроса»: защитим бренд от угона в Поиске",
+    "h1"       : "(Анти)пособие по угону запросов у конкурента",
+    "tags"     : "Brand, SERP, Content, SEO",
+    "keys "    : "угон запроса",
+    "desc"     : "Как увести пользователя из поисковой выдачи по запросу «бренд конкурента»? Как защитить свой бренд от угона в Google и возглавлять Топ по брендовым ключевым фразам?",
+    "url"      : "https://do-your-own-seo.com/ugon-brendovykh-zaprosov",
+    "lang"     : "ru"
+  } ,   
+  {
+    "title"    : "How to protect your brand queries from hijacking by competitors",
+    "h1"       : "An (anti)guide on competitor’s brand query hijacking",
+    "tags"     : "Brand, SERP, Content, SEO",
+    "keys "    : "brand query hijacking",
+    "desc"     : "How to steal a user away from the SERP for “competitor’s brand”. How to protect your brand from being hijacked on Google and be the No. 1 for branded keywords",
+    "url"      : "https://do-your-own-seo.com/brand-query-hijacking",
+    "lang"     : "en"
+  } ,   
+  {
+    "title"    : "Перехоплення брендових запитів конкурента в веб Пошуку",
+    "h1"       : "(Анти)посібник з угнання запиту в конкурента",
+    "tags"     : "Brand, SERP, Content, SEO",
+    "keys "    : "перехоплення запиту",
+    "desc"     : "Як забрати користувачів із пошукової видачі за запитом «бренд конкурента»? Як захистити свій бренд від угнання в Google й очолювати Топ за брендовими ключовими фразами",
+    "url"      : "https://do-your-own-seo.com/perekhoplennya-brendovykh-zapytiv",
+    "lang"     : "uk"
+  } ,   
+  {
+    "title"    : "Как пользоваться букмарклетами в мобильном браузере",
+    "h1"       : "Как запустить SEO букмарклет на Android, iOS? Зависит от браузера",
+    "tags"     : "JavaScript, Bookmarklets, On-page, SEO",
+    "keys "    : "букмарклеты на мобильном",
+    "desc"     : "Вы знали, что JavaScript закладки работают и на смартфоне? Но нужно уметь запустить букмарклет в контексте текущей страницы. Браузеры Chrome, Edge, Firefox и ",
+    "url"      : "https://do-your-own-seo.com/kak-zapustit-bookmarklet-na-mobilnom",
+    "lang"     : "ru"
+  } ,   
+  {
+    "title"    : "How to use bookmarklets on mobile (depending on the browser)",
+    "h1"       : "How to run SEO bookmarklets on Android, iOS? It depends on your browser",
+    "tags"     : "JavaScript, Bookmarklets, On-page, SEO",
+    "keys "    : "bookmarklets on mobile",
+    "desc"     : "It’s quite promising that you can use JavaScript bookmarks on your smartphone. You just have to know how to run bookmarklets in the context of the current page",
+    "url"      : "https://do-your-own-seo.com/how-to-use-JS-bookmarklets-on-mobile",
+    "lang"     : "en"
+  } ,   
+  {
+    "title"    : "Як користуватися букмарклетами в мобільному браузері",
+    "h1"       : "Як запустити SEO букмарклет на Android, iOS? Залежить від вашого браузера",
+    "tags"     : "JavaScript, Bookmarklets, On-page, SEO",
+    "keys "    : "букмарклети на мобільному",
+    "desc"     : "Ви знали, що JavaScript закладки працюють і на смартфоні? Треба лише запустити скрипт в контексті поточної сторінки. Браузери Chrome, Edge, Firefox, Opera Mini..",
+    "url"      : "https://do-your-own-seo.com/jak-zapustyty-bookmarklet-na-mobilnomu",
+    "lang"     : "uk"
+  } ,   
+  {
+    "title"    : "AI + SEO: Как сгенерировать статью с фото из ключевых слов",
+    "h1"       : "Генераторы SEO контента: AI пишет и рисует за вас, даром",
+    "tags"     : "AI, Content, Images, SEO",
+    "keys "    : "AI генераторы контента, OpenAI DALL-E2",
+    "desc"     : "Бесплатные AI-генераторы контента пробуют писать о &#10003;войне в Украине&#10003;. Тестируем ChatGPT, Rytr, Frase, LongshotAI и DALL-E2: определите ли вы сгенерированный SEO текст и фото? Сможет ли AI вас удивить? А испугать?",
+    "url"      : "https://do-your-own-seo.com/AI-generatory-SEO-contenta",
+    "lang"     : "ru"
+  } ,   
+  {
+    "title"    : "AI for SEO: How to create a post with photos from the keywords ",
+    "h1"       : "How to use free AI tools to generate text and image content",
+    "tags"     : "AI, Content, Images, SEO",
+    "keys "    : "AI content generators, OpenAI DALL-E2",
+    "desc"     : "Free AI content generators (ChatGPT, Rytr, Frase, LongshotAI + DALL-E2) create posts about the &#10003;war in Ukraine&#10003;. Can you detect autogenerated SEO texts and photos? Will AI surprise or scare you?",
+    "url"      : "https://do-your-own-seo.com/AI-generated-content-for-SEO",
+    "lang"     : "en"
+  } ,   
+  {
+    "title"    : "AI + SEO: Як згенерувати статтю і фото з ключових слів",
+    "h1"       : "Генератори SEO контенту: AI пише та малює за вас, задарма",
+    "tags"     : "AI, Content, Images, SEO",
+    "keys "    : "AI генератори контенту, OpenAI DALL-E2",
+    "desc"     : "Безплатні AI-генератори тексту й зображень створюють пост про &#10003;війну в Україні&#10003;. Тестуємо ChatGPT, Rytr, Frase, LongshotAI й DALL-E2: чи впізнаєте ви генерований SEO контент і фото? Чи зможе AI вас здивувати й налякати?",
+    "url"      : "https://do-your-own-seo.com/AI-generuje-SEO-content",
+    "lang"     : "uk"
+  } ,   
+  {
+    "title"    : "Технический SEO анализ сайта. Бесплатно. Своими силами",
+    "h1"       : "SEO аудит сайта инструментами без входного барьера",
+    "tags"     : "SEO-audit, On-page, Bookmarklets, SERP, JavaScript, SEO",
+    "keys "    : "SEO анализ сайта",
+    "desc"     : "Планируешь продвигать сайт? Первоочередная задача – технический аудит. Проведи SEO анализ сайта сам: это быстро(!), надежно, бесплатно! Инструменты для SEO аудита + букмарклеты тут",
+    "url"      : "https://do-your-own-seo.com/tehnicheskij-seo-audit-sajta",
+    "lang"     : "ru"
+  } ,   
+  {
+    "title"    : "Technical SEO audit of your website from scratch. DIY for free!",
+    "h1"       : "Free SEO audit of your website by powerful entry-level tools",
+    "tags"     : "SEO-audit, On-page, Bookmarklets, SERP, JavascriptS, SEO",
+    "keys "    : "Technical SEO audit",
+    "desc"     : "Do you have high-quality content and want to promote your site on Google? Then the first need is a technical SEO audit. Do It Yourself: it’s fast, reliable, and free! Some helpful tools and bookmarklets will be recommended.",
+    "url"      : "https://do-your-own-seo.com/technical-seo-audit-DIY",
+    "lang"     : "en"
+  } ,   
+  {
+    "title"    : "Технічний SEO аудит сайту з нуля. Безплатно. Власноруч",
+    "h1"       : "SEO аудит сайту інструментами без вхідного бар&#39;єру",
+    "tags"     : "SEO-audit, On-page, Bookmarklets, SERP, JavaScript, SEO",
+    "keys "    : "технічний SEO аудит, технічний аналіз сайту",
+    "desc"     : "Плануєте просувати сайт? Перша необхідність – технічний аудит. Зробіть SEO аналіз сайту самостійно: це швидко(!), надійно, безплатно! Інструменти для SEO аудиту + букмарклети тут",
+    "url"      : "https://do-your-own-seo.com/tekhnichnyj-seo-audit-sajtu",
+    "lang"     : "uk"
+  } ,   
+  {
+    "title"    : "Хочу расширенный сниппет в Поиске: знания + инструменты",
+    "h1"       : "Как расширить сниппет страницы в Поиске и повысить органический CTR",
+    "tags"     : "CTR, SERP, Snippet, On-page, Bookmarklets, JavaScript, Google, SEO",
+    "keys "    : "SERP сниппет",
+    "desc"     : "Появившись в Google выдаче, страница борется за клик и свое будущее в Поиске. Органический CTR ниже, чем у конкурентов? &#10004; Генерируем сниппет, добавляем schema-markup и повышаем CTR",
+    "url"      : "https://do-your-own-seo.com/idealnyj-snippet-v-google-vydache",
+    "lang"     : "ru"
+  } ,   
+  {
+    "title"    : "How to enrich your snippets on Google: tools and knowledge",
+    "h1"       : "What should be done to get an expanded featured snippet on SERP",
+    "tags"     : "CTR, SERP, Snippet, On-page, Bookmarklets, JavaScript, Google, SEO",
+    "keys "    : "SERP snippet",
+    "desc"     : "Every webpage on Google struggles for clicks and its future. With low CTR, it's impossible to gain high rankings &#10004; Let's generate snippets, implement Schema.org markup, and increase organic CTR",
+    "url"      : "https://do-your-own-seo.com/how-to-earn-a-proper-snippet-on-SERP",
+    "lang"     : "en"
+  } ,   
+  {
+    "title"    : "Як розширити свій сніпет в Google: знання + інструменти",
+    "h1"       : "Сайт невиразно виглядає в Пошуку?&lt;br&gt; Розширюємо сніпет і покращуємо органічний CTR",
+    "tags"     : "CTR, SERP, Snippet, On-page, Bookmarklets, JavaScript, Google, SEO",
+    "keys "    : "SERP сніпет",
+    "desc"     : "Кожна сторінка в результатах Google пошуку змагається за клік і своє майбутнє. Органічний CTR низький – позиції просядуть &#10004; Генеруємо сніпет, додаємо Schema-markup і підвищуємо CTR",
+    "url"      : "https://do-your-own-seo.com/yak-rozshyryty-snipet-saitu-v-poshuku",
+    "lang"     : "uk"
+  } ,   
+  {
+    "title"    : "SVG иконки из PNG комикса: создаем кастомный шрифт из манги",
+    "h1"       : "Необычный иконочный шрифт &amp;#8211; легко! Переводим PNG в мини-SVG и создаем веб-шрифт (или SVG-спрайт, на выбор)",
+    "tags"     : "Images, SVG, Content, JavaScript, SEO",
+    "keys "    : "пользовательский svg шрифт из png",
+    "desc"     : "Контент &#8211; король, а оформление &#8211; свита! Создаем SVG-иконки из PNG и применяем CSS-эффекты &#10004; Генерируем Веб-шрифт и SVG-спрайт &#10004; Статья с кастомными иконками убедительнее простыни текста!",
+    "url"      : "https://do-your-own-seo.com/kastomnyj-shrift-SVG-ikonki-iz-PNG",
+    "lang"     : "ru"
+  } ,   
+  {
+    "title"    : "How to convert PNG to tiny SVG and create your custom icon font",
+    "h1"       : "How to turn PNG cartoons to tiny SVGs &amp; create a custom icon set",
+    "tags"     : "Images, SVG, Content, JavaScript, SEO",
+    "keys "    : "custom svg font from png",
+    "desc"     : "Content is King, but design is the entourage! We’ll create SVG icons from PNG &#10004; Generate a custom webfont and SVG sprite &#10004; Use icons & play with CSS &#10004; Articles with custom icons convince, and the UI encourages actions!",
+    "url"      : "https://do-your-own-seo.com/SVG-icons-from-PNG-custom-fonts-and-sprites",
+    "lang"     : "en"
+  } ,   
+  {
+    "title"    : "SVG іконки з PNG коміксу: створюємо кастомний шрифт з манги",
+    "h1"       : "Іконковий шрифт &amp;#8211; це легко! Перетворюємо PNG на міні-SVG і створюємо веб-шрифт (чи SVG-спрайт, на вибір)",
+    "tags"     : "Images, SVG, Content, JavaScript, SEO",
+    "keys "    : "як створити svg шрифт з png",
+    "desc"     : "Контент &#8211; король, але оформлення важливе! Створюємо SVG-іконки з PNG та застосовуємо CSS &#10004; Генеруємо Веб-шрифт і SVG-спрайт &#10004; Статті з кастомними іконками переконують, а інтерфейс спонукає до дії!",
+    "url"      : "https://do-your-own-seo.com/vlasnyj-shryft-SVG-z-PNG-malyunkiv",
+    "lang"     : "uk"
+  } ,   
+  {
+    "title"    : "How do links pass value? Explaining Nofollow, Ugc &amp; Sponsored",
+    "h1"       : "How do links pass equity? What are link hints and when does Nofollow hurt?",
+    "tags"     : "PageRank, Links, On-page, Bookmarklets, Google, SEO",
+    "keys "    : "link equity",
+    "desc"     : "Do you know the PageRank formula and why Google patents variations of it? &#10010; Use cases for link hints: nofollow, UGC, sponsored &#10010; How not to waste link equity and be careful with links",
+    "url"      : "https://do-your-own-seo.com/pagerank-formula-link-equity-distribution",
+    "lang"     : "en"
+  } ,   
+  {
+    "title"    : "Ссылочный вес сайта: про PageRank, nofollow, ugc и sponsored",
+    "h1"       : "Вес страницы и передача PageRank со ссылкой. Объяснение nofollow, ugc и sponsored",
+    "tags"     : "PageRank, Links, On-page, Bookmarklets, Google, SEO",
+    "keys "    : "вес страницы",
+    "desc"     : "Как не допустить утечки ссылочного веса? Какую формулу PageRank использует Google &#10010; Про nofollow, ugc и sponsored: как rel-атрибуты ссылки влияют на передачу веса страницы",
+    "url"      : "https://do-your-own-seo.com/ves-stranitsy-raspredelenie-formula-nofollow",
+    "lang"     : "ru"
+  } ,   
+  {
+    "title"    : "Як nofollow, ugc, sponsored впливають на PageRank",
+    "h1"       : "Про вагу сторінки й те, як посилання передають PageRank. Пояснення nofollow, ugc і sponsored",
+    "tags"     : "PageRank, Links, On-page, Bookmarklets, Google, SEO",
+    "keys "    : "вага сторінки",
+    "desc"     : "Про перенесення ваги сайту з посиланнями й обачне використання rel-атрибутів nofollow, ugc і sponsored &#10010; Про формулу PageRank і те, чому Google патентує інші її варіанти",
+    "url"      : "https://do-your-own-seo.com/vaga-storinky-formula-rozpodil-nofollow",
+    "lang"     : "uk"
+  } ,   
+  {
+    "title"    : "Факторы ранжирования в Google: что важнее для рейтинга?",
+    "h1"       : "Как Google ранжирует сайты и на какие факторы мы можем влиять",
+    "tags"     : "Google, PageRank, Links, SERP, SEO",
+    "keys "    : "ранжирование google",
+    "desc"     : "Серых техник SEO уже недостаточно: алгоритмы Google оценивают сайты не хуже экспертов. Но что важнее для &#10112;&#10113;&#10114; ранжирования: ссылки или другие факторы?",
+    "url"      : "https://do-your-own-seo.com/kak-rabotajut-algoritmy-google",
+    "lang"     : "ru"
+  } ,   
+  {
+    "title"    : "What Ranking Factors matter more to Google Algorithms?",
+    "h1"       : "Google ranking in action: what factors matter more?",
+    "tags"     : "Google, PageRank, Links, SERP, SEO",
+    "keys "    : "google algorithms, how google ranks pages",
+    "desc"     : "Gray-hat techniques are unreliable because Google algorithms can rank websites like human experts. So what matters more for SEO: content, links, or other ranking factors?",
+    "url"      : "https://do-your-own-seo.com/how-do-google-algorithms-work",
+    "lang"     : "en"
+  } ,   
+  {
+    "title"    : "Фактори ранжування в Google: що найголовніше для рейтингу?",
+    "h1"       : "Як Google ранжує сайти й на які чинники можна вплинути?",
+    "tags"     : "Google, PageRank, Links, SERP, SEO",
+    "keys "    : "ранжування google",
+    "desc"     : "Сірих технік SEO вже недостатньо: алгоритми Google ранжують сайти &#10112;&#10113;&#10114; не гірше за експертів. То що ж важливіше: контент, посилання чі інші фактори ранжування?",
+    "url"      : "https://do-your-own-seo.com/yak-pratsiuiut-alhorytmy-google",
+    "lang"     : "uk"
+  } ,   
+  {
+    "title"    : "E-A-T концепция: значимость контента в понимании Google",
+    "h1"       : "Принцип E-E-A-T: доверие к сайту, как его понимает Google",
+    "tags"     : "E-A-T, Content, Google, SEO",
+    "keys "    : "google E-A-T, качество контента",
+    "desc"     : "Что предпринять владельцу сайта, чтобы соответствовать принципу E-E-A-T от Google &#10004; Всегда ли полезный контент обязан быть качественным &#10004; Почему E-E-A-T не всегда работает?",
+    "url"      : "https://do-your-own-seo.com/E-A-T-contseptsia-v-voprosakh",
+    "lang"     : "ru"
+  } ,   
+  {
+    "title"    : "Experience, Expertise, Authority, and Trust matter to Google",
+    "h1"       : "Website trustability through the eyes of Google",
+    "tags"     : "E-A-T, Content, Google, SEO",
+    "keys "    : "Google’s E-A-T, content quality",
+    "desc"     : "We’re talking about how a website owner can meet the requirements of Google’s E-E-A-T, about the quality of content, and why E-A-T principles don’t always work.",
+    "url"      : "https://do-your-own-seo.com/E-A-T-what-does-it-mean",
+    "lang"     : "en"
+  } ,   
+  {
+    "title"    : "E-A-T концепція: значущість контенту в розумінні Google",
+    "h1"       : "Надійність сайту та компетентність, як їх розуміє Google",
+    "tags"     : "E-A-T, Content, Google, SEO",
+    "keys "    : "Google E-A-T, якість контенту",
+    "desc"     : "Говоримо про те, як власник сайту може задовольнити вимоги E-E-A-T від Google &#10004; Про якість і корисність контенту &#10004; Про те, чому принцип E-E-A-T не завжди працює",
+    "url"      : "https://do-your-own-seo.com/E-A-T-pryntsypy-v-pytanniax",
+    "lang"     : "uk"
+  } ,   
+  {
+    "title"    : "_",
+    "h1"       : "",
+    "tags"     : "",
+    "keys "    : "",
+    "desc"     : "",
+    "url"      : "https://do-your-own-seo.com/_",
+    "lang"     : "ru"
+  } ,   
+  {
+    "title"    : "_",
+    "h1"       : "",
+    "tags"     : "",
+    "keys "    : "",
+    "desc"     : "",
+    "url"      : "https://do-your-own-seo.com/_",
+    "lang"     : "en"
+  } ,   
+  {
+    "title"    : "_",
+    "h1"       : "",
+    "tags"     : "",
+    "keys "    : "",
+    "desc"     : "",
+    "url"      : "https://do-your-own-seo.com/_",
+    "lang"     : "uk"
+  }   
+   
+  , 
+  {
+    "title"    : "Чекліст для перевірки SEO пагінації на сайті",
+    "h1"       : "Експеримент: «Чекліст SEO пагінації» на сторінці №2",
+    "tags"     : "Pagination, Пагінація, Пагинация",
+    "keys"     : "пагінація, перевірити пагінацію на сайті",
+    "desc"     : "Щоб бути корисною, сторінка пагінації № розповідає, що у неї в голові. Точніше, у блоці &lt;head&gt; цього html-документа.",
+    "url"      : "https://do-your-own-seo.com/page=2",
+    "lang"     : "uk"
+  } 
+  , 
+  {
+    "title"    : "Чек-лист для проверки SEO пагинации на сайте",
+    "h1"       : "Эксперимент: «Чек-лист SEO пагинации» на странице №2",
+    "tags"     : "Pagination, Пагінація, Пагинация",
+    "keys"     : "пагинация, проверить пагинацию на сайте",
+    "desc"     : "Чтобы быть полезной, страница пагинации № рассказывает, что у нее в голове – то есть в блоке &lt;head&gt;  html-документа.",
+    "url"      : "https://do-your-own-seo.com/ru/page=2",
+    "lang"     : "ru"
+  } 
+  , 
+  {
+    "title"    : "SEO checklist for the pagination on your website",
+    "h1"       : "An experiment: “Pagination SEO Checklist” on the paginated Page 2",
+    "tags"     : "Pagination, Пагінація, Пагинация",
+    "keys"     : "pagination checklist",
+    "desc"     : "To be useful, the pagination Page &#8239; tells us what it has in its head. Namely, in the &lt;head&gt; section of this HTML-document.",
+    "url"      : "https://do-your-own-seo.com/en/page=2",
+    "lang"     : "en"
+  } 
+]

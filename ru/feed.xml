@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:webfeeds="http://webfeeds.org/rss/1.0"><channel>
+    <title>Homemade SEO ru</title>
+    <description>Оптимизация сайта своими руками &#9728; Как понять и применять SEO на практике &#9728; Как поладить с Google и не бояться апдейтов поисковых систем &#9728; Технические аспекты On-page SEO</description>
+    <link>https://do-your-own-seo.com/ru/</link>
+    <atom:link href="https://do-your-own-seo.com/ru/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 09 Jun 2023 12:32:33 +0000</pubDate>
+    <lastBuildDate>Fri, 09 Jun 2023 12:32:33 +0000</lastBuildDate>
+    <xhtml:meta xmlns:xhtml="http://www.w3.org/1999/xhtml" name="robots" content="noindex" />
+    <webfeeds:cover image="https://do-your-own-seo.com/images/logo-1.jpg" />
+    <webfeeds:icon>https://do-your-own-seo.com/images/logo.png</webfeeds:icon>
+    <webfeeds:logo>https://do-your-own-seo.com/images/favicon-30px-height.png</webfeeds:logo>
+    <webfeeds:accentColor>618930</webfeeds:accentColor>
+    <webfeeds:related layout="card" target="browser"/>
+      <item>
+        <title>Как семантика и внутренние ссылки формируют архитектуру сайта</title>
+        <description>Плоская или многоуровневая архитектура – какую предпочтете? О нет, это не о застройке, а о структуре веб-сайта и внутренней перелинковке страниц.<![CDATA[<img src="https://do-your-own-seo.com/images/preview/website-architecture.jpg" class="webfeedsFeaturedVisual"/>]]>
+            
+        </description>
+        <pubDate>Sat, 25 Mar 2023 10:20:10 +0000</pubDate>
+        <link>https://do-your-own-seo.com/arkhitektura-sajta-perelinkovka</link>
+        <guid isPermaLink="true">https://do-your-own-seo.com/arkhitektura-sajta-perelinkovka</guid><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://do-your-own-seo.com/images/preview/website-architecture.jpg" /><category>Crosslinking</category><category>Links</category><category>On-page</category><category>SEO</category></item>
+    
+      <item>
+        <title>Тактика угона брендовых запросов: учимся у сильных мира SEO</title>
+        <description>По прочтении вы научитесь присваивать чужие бренды, начнете подозревать конкурентов и нервно озираться, ожидая увидеть за спиной Black-Hat SEO.<![CDATA[<img src="https://do-your-own-seo.com/images/preview/brand-hijacking-tactics.jpg" class="webfeedsFeaturedVisual"/>]]>
+            
+        </description>
+        <pubDate>Wed, 08 Mar 2023 00:09:00 +0000</pubDate>
+        <link>https://do-your-own-seo.com/ugon-brendovykh-zaprosov</link>
+        <guid isPermaLink="true">https://do-your-own-seo.com/ugon-brendovykh-zaprosov</guid><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://do-your-own-seo.com/images/preview/brand-hijacking-tactics.jpg" /><category>Brand</category><category>SERP</category><category>Content</category><category>SEO</category></item>
+    
+      <item>
+        <title>Как заставить SEO букмарклеты работать из "Favorites" на мобильном</title>
+        <description>Правда, несправедливо, что JavaScript закладки из предыдущих постов можно запустить только на ПК? Неправда! Букмарклеты работают и на мобильном<![CDATA[<img src="https://do-your-own-seo.com/images/preview/use-JS-bookmarklets-on-mobile.jpg" class="webfeedsFeaturedVisual"/>]]>
+            
+        </description>
+        <pubDate>Tue, 28 Feb 2023 10:11:00 +0000</pubDate>
+        <link>https://do-your-own-seo.com/kak-zapustit-bookmarklet-na-mobilnom</link>
+        <guid isPermaLink="true">https://do-your-own-seo.com/kak-zapustit-bookmarklet-na-mobilnom</guid><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://do-your-own-seo.com/images/preview/use-JS-bookmarklets-on-mobile.jpg" /><category>JavaScript</category><category>Bookmarklets</category><category>On-page</category><category>SEO</category></item>
+    
+      <item>
+        <title>Главное – опознать сгенерированный контент. Как AI создает SEO текст, фото и рисунки</title>
+        <description>Тема сочинения – война в Украине. Проверим в работе разные AI-инструменты: некоторые не справятся с задачей, некоторые удивят и встревожат не на шутку.<![CDATA[<img src="https://do-your-own-seo.com/images/preview/ai-generated-content.jpg" class="webfeedsFeaturedVisual"/>]]>
+            
+        </description>
+        <pubDate>Tue, 04 Oct 2022 00:02:00 +0000</pubDate>
+        <link>https://do-your-own-seo.com/AI-generatory-SEO-contenta</link>
+        <guid isPermaLink="true">https://do-your-own-seo.com/AI-generatory-SEO-contenta</guid><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://do-your-own-seo.com/images/preview/ai-generated-content.jpg" /><category>AI</category><category>Content</category><category>Images</category><category>SEO</category></item>
+    
+      <item>
+        <title>SEO аудит сайта даром? Закатывайте рукава: за вечер справимся!</title>
+        <description>Вопреки расхожему мнению, SEO – это не только ключевые слова и линкбил&#173;динг. Первичная задача оптимизатора – диагностика здоровья сайта в целом.<![CDATA[<img src="https://do-your-own-seo.com/images/preview/technical-website-audit_DIY_ru.jpg" class="webfeedsFeaturedVisual"/>]]>
+            
+        </description>
+        <pubDate>Wed, 07 Sep 2022 00:02:00 +0000</pubDate>
+        <link>https://do-your-own-seo.com/tehnicheskij-seo-audit-sajta</link>
+        <guid isPermaLink="true">https://do-your-own-seo.com/tehnicheskij-seo-audit-sajta</guid><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://do-your-own-seo.com/images/preview/technical-website-audit_DIY_ru.jpg" /><category>SEO-audit</category><category>On-page</category><category>Bookmarklets</category><category>SERP</category><category>JavaScript</category><category>SEO</category></item>
+    
+      <item>
+        <title>Клик с первого взгляда, или&#160; Как не ударить сниппетом в грязь в Поиске</title>
+        <description>Как повлиять на вид вашего фрагмента в результатах Google? Хотя поисковик формирует сниппет под каждый запрос по-разному, есть способы помочь ему подать страницу в лучшем виде. Юзер не устоит перед богатым сниппетом.<![CDATA[<img src="https://do-your-own-seo.com/images/preview/how-to-earn-a-proper-snippet.jpg" class="webfeedsFeaturedVisual"/>]]>
+            
+        </description>
+        <pubDate>Tue, 03 Aug 2021 18:02:00 +0000</pubDate>
+        <link>https://do-your-own-seo.com/idealnyj-snippet-v-google-vydache</link>
+        <guid isPermaLink="true">https://do-your-own-seo.com/idealnyj-snippet-v-google-vydache</guid><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://do-your-own-seo.com/images/preview/how-to-earn-a-proper-snippet.jpg" /><category>CTR</category><category>SERP</category><category>Snippet</category><category>On-page</category><category>Bookmarklets</category><category>JavaScript</category><category>Google</category><category>SEO</category></item>
+    
+      <item>
+        <title>Иконочный шрифт ручной работы: обновляем поблекшие от времени статьи</title>
+        <description>Как конвертировать цветной PNG в SVG иконку, никогда не работав с векторной графикой. Как собрать из иконок веб-шрифт, стилизовать с помощью CSS и использовать на сайте<![CDATA[<img src="https://do-your-own-seo.com/images/preview/how-to-create-manga-icon-font.jpg" class="webfeedsFeaturedVisual"/>]]>
+            
+        </description>
+        <pubDate>Sun, 09 Feb 2020 18:02:00 +0000</pubDate>
+        <link>https://do-your-own-seo.com/kastomnyj-shrift-SVG-ikonki-iz-PNG</link>
+        <guid isPermaLink="true">https://do-your-own-seo.com/kastomnyj-shrift-SVG-ikonki-iz-PNG</guid><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://do-your-own-seo.com/images/preview/how-to-create-manga-icon-font.jpg" /><category>Images</category><category>SVG</category><category>Content</category><category>JavaScript</category><category>SEO</category></item>
+    
+      <item>
+        <title>Как ссылки питают веб-страницы. Когда сайт теряет и набирает вес</title>
+        <description>Никто не отказался бы узнать, сколько веса передает и рассеивает каждая ссылка. И пока мы силимся угадать пропорцию, гуглбот хихикает украдкой, читая, что «каждая исходящая ссылка отбирает у донора 10&#8211;15% веса».<![CDATA[<img src="https://do-your-own-seo.com/images/preview/leaking-link-juice.jpg" class="webfeedsFeaturedVisual"/>]]>
+            
+        </description>
+        <pubDate>Tue, 03 Dec 2019 20:09:00 +0000</pubDate>
+        <link>https://do-your-own-seo.com/ves-stranitsy-raspredelenie-formula-nofollow</link>
+        <guid isPermaLink="true">https://do-your-own-seo.com/ves-stranitsy-raspredelenie-formula-nofollow</guid><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://do-your-own-seo.com/images/preview/leaking-link-juice.jpg" /><category>PageRank</category><category>Links</category><category>On-page</category><category>Bookmarklets</category><category>Google</category><category>SEO</category></item>
+    
+      <item>
+        <title>Факторы ранжирования в Google: какие важнее и на что мы можем влиять</title>
+        <description>Чтобы вывести сайт в Топ-10 результатов поиска, давно уже недостаточно, да и небезопасно закупать ссылки. Алгоритмы ранжирования все чаще поощряют качество контента, и новые патенты Google подтверждают тенденцию.<![CDATA[<img src="https://do-your-own-seo.com/images/preview/how-do-google-algorithms-work.jpg" class="webfeedsFeaturedVisual"/>]]>
+            
+        </description>
+        <pubDate>Mon, 07 Oct 2019 22:19:00 +0000</pubDate>
+        <link>https://do-your-own-seo.com/kak-rabotajut-algoritmy-google</link>
+        <guid isPermaLink="true">https://do-your-own-seo.com/kak-rabotajut-algoritmy-google</guid><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://do-your-own-seo.com/images/preview/how-do-google-algorithms-work.jpg" /><category>Google</category><category>PageRank</category><category>Links</category><category>SERP</category><category>SEO</category></item>
+    
+      <item>
+        <title>E-E-A-T, или Доверие к сайту, как его понимает Google</title>
+        <description>Каждый, кого упорно игнорирует Гугл, должен задать себе ряд вопросов. Отвечать жела&#173;тельно начистоту, заранее проверив, какие страницы выходят на первый план в Поиске по целевым запросам.<![CDATA[<img src="https://do-your-own-seo.com/images/preview/writing.jpg" class="webfeedsFeaturedVisual"/>]]>
+            
+        </description>
+        <pubDate>Mon, 23 Sep 2019 18:14:01 +0000</pubDate>
+        <link>https://do-your-own-seo.com/E-A-T-contseptsia-v-voprosakh</link>
+        <guid isPermaLink="true">https://do-your-own-seo.com/E-A-T-contseptsia-v-voprosakh</guid><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://do-your-own-seo.com/images/preview/writing.jpg" /><category>E-A-T</category><category>Content</category><category>Google</category><category>SEO</category></item>
+    
+  </channel>
+</rss>

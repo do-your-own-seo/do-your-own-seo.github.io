@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /search.JSON
+
+Sitemap: https://do-your-own-seo.com/sitemap.xml
