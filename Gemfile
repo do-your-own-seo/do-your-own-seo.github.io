@@ -14,10 +14,10 @@ gem "jekyll", "3.9.2"
 
 gem "rake", "~>12.0"
 gem "sass", "~>3.4"
-gem "html-proofer"
+gem 'html-proofer', '~> 5.0', '>= 5.0.8'
 gem "kramdown", "~>2.3.1"
 gem "kramdown-parser-gfm", "1.1.0"
-gem "nokogiri", "1.15.6"
+gem "nokogiri", "2.0.5"
 # Currently used version of nokogiri requires ruby >=2.6.0"
 
 # If you have any other plugins, list them here:
